@@ -9,6 +9,8 @@
 
 ## Visualization
 
+- `HiTC` - import, normalize, annotate and visualize Hi-C data, https://bioconductor.org/packages/release/bioc/html/HiTC.html and https://www.bioconductor.org/packages/devel/bioc/vignettes/HiTC/inst/doc/HiTC.pdf
+
 - `pyGenomeTracks` - Standalone program and library to plot beautiful genome browser tracks. https://github.com/deeptools/pyGenomeTracks
 
 
