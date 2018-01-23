@@ -1,5 +1,9 @@
 # A collection of tools using Hi-C data 
 
+## General
+
+- `my5C` tools - well-documented analysis and visualization of 5S data, http://my5c.umassmed.edu/
+
 ## Visualization
 
 - `pyGenomeTracks` - Standalone program and library to plot beautiful genome browser tracks. https://github.com/deeptools/pyGenomeTracks
