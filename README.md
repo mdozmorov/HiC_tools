@@ -1,4 +1,6 @@
-# A collection of tools using Hi-C data 
+# A collection of tools for Hi-C data analysis
+
+Slowly growing as notes from my Zotero collection are getting organized.
 
 ## Reviews
 
