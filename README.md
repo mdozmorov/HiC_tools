@@ -6,6 +6,8 @@ Slowly growing as notes from my Zotero collection are getting organized.
 
 - Waldispühl, Jérôme, Eric Zhang, Alexander Butyaev, Elena Nazarova, and Yan Cyr. “Storage, Visualization, and Navigation of 3D Genomics Data.” Methods, May 2018. https://doi.org/10.1016/j.ymeth.2018.05.008. - Review of tools for visualization of 3C-Hi-C data, challenges, analysis (Table 1). Data formats (hic, cool, BUTLR, ccmap). Database to quickly access 3D data. Details of each visualization tool in Section 4
 
+- Yardımcı, Galip Gürkan, and William Stafford Noble. “Software Tools for Visualizing Hi-C Data.” Genome Biology 18, no. 1 (December 2017). https://doi.org/10.1186/s13059-017-1161-y. - Hi-C technology, data, and visualization review. Suggestion about graph representation.
+
 - A list of tools available for data analysis and/or visualization of 4DN-related datasets. https://www.4dnucleome.org/software.html
 
 - Ay, Ferhat, and William S. Noble. “Analysis Methods for Studying the 3D Architecture of the Genome.” Genome Biology 16 (September 2, 2015): 183. https://doi.org/10.1186/s13059-015-0745-7. - Hi-C technology and methods review. [Table 1](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0745-7#Tab1) - list of tools. Biases, normalization, matrix balancing. Extracting significant contacts, obs/exp ratio, parametric (powerlaw, neg binomial, double exponential), non-parametric (splines). 3D enrichment. References. TAD identification, directionality index. Outlook, importance of comparative analysis
