@@ -48,6 +48,8 @@ Slowly growing as notes from my Zotero collection are getting organized.
 
 - HiView - visualization of SNPs in context of Hi-C interactions. Highlight statistically significant interactions. IMR90 data. https://www.unc.edu/~yunmli/HiView/. - Xu, Zheng, Guosheng Zhang, Qing Duan, Shengjie Chai, Baqun Zhang, Cong Wu, Fulai Jin, Feng Yue, Yun Li, and Ming Hu. “HiView: An Integrative Genome Browser to Leverage Hi-C Results for the Interpretation of GWAS Variants.” BMC Research Notes 9 (March 11, 2016): 159. https://doi.org/10.1186/s13104-016-1947-0.
 
+- 3DIV (a 3D-genome In- teraction Viewer and database) an up-to-date database of chromosomal interaction from 80 Hi-C samples, and epigenomics data sets, distance-centric normalization. Negative binomial for normalization. TopDom and DomainCaller for defining domains. three modules; interaction table, interaction visualization and comparative interaction visualization. http://kobic.kr/3div/. - Yang, Dongchan, Insu Jang, Jinhyuk Choi, Min-Seo Kim, Andrew J. Lee, Hyunwoong Kim, Junghyun Eom, Dongsup Kim, Inkyung Jung, and Byungwook Lee. “3DIV: A 3D-Genome Interaction Viewer and Database.” Nucleic Acids Research 46, no. D1 (January 4, 2018): D52–57. https://doi.org/10.1093/nar/gkx1017.
+
 
 ## Normalization
 
