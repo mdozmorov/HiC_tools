@@ -46,6 +46,8 @@ Slowly growing as notes from my Zotero collection are getting organized.
 
 - CHiCP - visualization for Promoter Capture Hi-C. Uses a circular representation of the sequences, in which long-range chromosomal interactions are represented with arcs. Exploratory. Search for gene, explore interactions, in multiple cell types. https://github.com/D-I-L/django-chicp. - Schofield, E. C., T. Carver, P. Achuthan, P. Freire-Pritchett, M. Spivakov, J. A. Todd, and O. S. Burren. “CHiCP: A Web-Based Tool for the Integrative and Interactive Visualization of Promoter Capture Hi-C Datasets.” Bioinformatics (Oxford, England) 32, no. 16 (15 2016): 2511–13. https://doi.org/10.1093/bioinformatics/btw173.
 
+- HiView - visualization of SNPs in context of Hi-C interactions. Highlight statistically significant interactions. IMR90 data. https://www.unc.edu/~yunmli/HiView/. - Xu, Zheng, Guosheng Zhang, Qing Duan, Shengjie Chai, Baqun Zhang, Cong Wu, Fulai Jin, Feng Yue, Yun Li, and Ming Hu. “HiView: An Integrative Genome Browser to Leverage Hi-C Results for the Interpretation of GWAS Variants.” BMC Research Notes 9 (March 11, 2016): 159. https://doi.org/10.1186/s13104-016-1947-0.
+
 
 ## Normalization
 
