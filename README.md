@@ -44,6 +44,7 @@ Slowly growing as notes from my Zotero collection are getting organized.
 
 - "Genome contact map explorer" gcMapExplorer - analyze and compare Hi-C contact maps, plot other data types alongside. Normalization: KR, IC, and their distance-centric normalization MCFS (median contact frequency). HDF5 file format for fast data access, LZF compression. Python3. Command line and GUI versions. https://rjdkmr.github.io/gcMapExplorer/, https://gcmapexplorer.readthedocs.io/en/latest/. Rajendra Kumar et al., “Genome Contact Map Explorer: A Platform for the Comparison, Interactive Visualization and Analysis of Genome Contact Maps,” Nucleic Acids Research 45, no. 17 (September 29, 2017): e152–e152, https://doi.org/10.1093/nar/gkx644.
 
+- CHiCP - visualization for Promoter Capture Hi-C. Uses a circular representation of the sequences, in which long-range chromosomal interactions are represented with arcs. Exploratory. Search for gene, explore interactions, in multiple cell types. https://github.com/D-I-L/django-chicp. - Schofield, E. C., T. Carver, P. Achuthan, P. Freire-Pritchett, M. Spivakov, J. A. Todd, and O. S. Burren. “CHiCP: A Web-Based Tool for the Integrative and Interactive Visualization of Promoter Capture Hi-C Datasets.” Bioinformatics (Oxford, England) 32, no. 16 (15 2016): 2511–13. https://doi.org/10.1093/bioinformatics/btw173.
 
 
 ## Normalization
