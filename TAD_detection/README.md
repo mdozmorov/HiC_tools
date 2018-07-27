@@ -6,6 +6,8 @@
 - `CaTCH` - identification of hierarchical TAD structure, https://github.com/zhanyinx/CaTCH_R
     - Zhan, Yinxiu, Luca Mariani, Iros Barozzi, Edda G. Schulz, Nils Blüthgen, Michael Stadler, Guido Tiana, and Luca Giorgetti. “Reciprocal Insulation Analysis of Hi-C Data Shows That TADs Represent a Functionally but Not Structurally Privileged Scale in the Hierarchical Folding of Chromosomes.” Genome Research 27, no. 3 (2017): 479–90. https://doi.org/10.1101/gr.212803.116. - CaTCH - identification of hierarchical TAD structure. Reciprocal insulation (RI) index. Benchmarked against Dixon's TADs (diTADs). CTCF enrichment as a benchmark, enrichment of TADs in differentially expressed genes. https://github.com/zhanyinx/CaTCH_R
 
+- `cLoops` - loops calling for ChIA-PET, Hi-C and HiChIP. https://github.com/YaqiangCao/cLoops
+
 - `ClusterTAD` - A clustering method for identifying topologically associated domains (TADs) from Hi-C data, https://github.com/BDM-Lab/ClusterTAD
     - Oluwadare, Oluwatosin, and Jianlin Cheng. “ClusterTAD: An Unsupervised Machine Learning Approach to Detecting Topologically Associated Domains of Chromosomes from Hi-C Data.” BMC Bioinformatics 18, no. 1 (November 14, 2017): 480. https://doi.org/10.1186/s12859-017-1931-2. https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-017-1931-2 - ClusterTAD paper. Clustering to define TADs. Datasets: simulated Hi-C data with pre-defined TADs https://link.springer.com/article/10.1007%2Fs40484-015-0047-9, RenLab Hi-C and CTCF data http://chromosome.sdsc.edu/mouse/download.html. 
 
