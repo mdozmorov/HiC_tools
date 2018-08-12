@@ -7,7 +7,7 @@
 - `hiclib` - tools to qc, map, normalize, filter and analyze Hi-C data, https://bitbucket.org/mirnylab/hiclib
 
 - `HiC-Pro` - An optimized and flexible pipeline for Hi-C data processing, https://github.com/nservant/HiC-Pro
-    - Servant, Nicolas, Nelle Varoquaux, Bryan R. Lajoie, Eric Viara, Chong-Jian Chen, Jean-Philippe Vert, Edith Heard, Job Dekker, and Emmanuel Barillot. “HiC-Pro: An Optimized and Flexible Pipeline for Hi-C Data Processing.” Genome Biology 16 (December 1, 2015): 259. https://doi.org/10.1186/s13059-015-0831-x. - HiC pipeline, references to other pipelines, comparison. Normalization methods. Data format. Using genotyping information to phase contact maps.
+    - Servant, Nicolas, Nelle Varoquaux, Bryan R. Lajoie, Eric Viara, Chong-Jian Chen, Jean-Philippe Vert, Edith Heard, Job Dekker, and Emmanuel Barillot. “HiC-Pro: An Optimized and Flexible Pipeline for Hi-C Data Processing.” Genome Biology 16 (December 1, 2015): 259. https://doi.org/10.1186/s13059-015-0831-x. - HiC pipeline, references to other pipelines, comparison. From raw reads to normalized matrices. Normalization methods, fast and memory-efficient implementation of iterative correction normalization (ICE). Data format. Using genotyping information to phase contact maps.
 
 - `HiCUP` pipeline, alignment only, output - BAM files. http://www.bioinformatics.babraham.ac.uk/projects/hicup/
     - Wingett, Steven, Philip Ewels, Mayra Furlan-Magaril, Takashi Nagano, Stefan Schoenfelder, Peter Fraser, and Simon Andrews. “HiCUP: Pipeline for Mapping and Processing Hi-C Data.” F1000Research 4 (2015): 1310. https://doi.org/10.12688/f1000research.7334.1. - Details about Hi-C sequencing artefacts. Used in conjunction with other pipelines.
