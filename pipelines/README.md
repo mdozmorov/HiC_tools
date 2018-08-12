@@ -1,4 +1,4 @@
-## Multi-purpose Hi-C tools
+## Pipelines for Hi-C data processing
 
 - `distiller-nf` - a modular Hi-C mapping pipeline for reproducible data analysis, nextflow version. Alignment, filtering, aggregating Hi-C matrices. https://github.com/mirnylab/distiller-nf
 
