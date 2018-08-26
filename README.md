@@ -143,6 +143,10 @@ Issues and/or Pull requests to add other data are welcome!
     - Input: One or several SNPs, rsIDs or genomic coordinates.
     - Output: For one or two SNPs, on-screen information of their disease-related info, connection over TF-TF and chromatin interaction networks, and whether they interact in 3D and located within TADs. For multiple SNPs, same info downloadable as text files.
 
+- `3DSNP` - A database linking noncoding SNPs to 3D interacting genes. http://cbportal.org/3dsnp/
+    - Lu, Yiming, Cheng Quan, Hebing Chen, Xiaochen Bo, and Chenggang Zhang. “3DSNP: A Database for Linking Human Noncoding SNPs to Their Three-Dimensional Interacting Genes.” Nucleic Acids Research 45, no. D1 (January 4, 2017): D643–49. https://doi.org/10.1093/nar/gkw1022. - 3DSNP database integrating SNP epigenomic annotations with chromatin loops. Linear closest gene, 3D interacting gene, eQTL, 3D interacting SNP, chromatin states, TFBSs, conservation. For individual SNPs.
+
+
 
 ## Miscellaneous
 
