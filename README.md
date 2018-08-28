@@ -111,6 +111,9 @@ Issues and/or Pull requests to add other data are welcome!
 
 - `hickit` - TAD calling, phase imputation, 3D modeling and more for diploid single-cell Hi-C (Dip-C) and bulk Hi-C, https://github.com/lh3/hickit
 
+- `HiTAD` - hierarchical TAD identification, different resolutions, correlation with chromosomal compartments, replication timing, gene expression. Adaptive directionality index approach. Data sources, methods for comparing TAD boundaries, reproducibility. H3K4me3 enriched and H3K4me1 depleted at boundaries. TAD boundaries (but not sub-TADs) separate replication timing, A/B compartments, gene expression. https://github.com/XiaoTaoWang/TADLib,  https://pypi.python.org/pypi/TADLib
+    - Wang, Xiao-Tao, Wang Cui, and Cheng Peng. “HiTAD: Detecting the Structural and Functional Hierarchies of Topologically Associating Domains from Chromatin Interactions.” Nucleic Acids Research 45, no. 19 (November 2, 2017): e163. https://doi.org/10.1093/nar/gkx735.
+
 - `IC-Finder` - Segmentations of HiC maps into hierarchical interaction compartments, http://membres-timc.imag.fr/Daniel.Jost/DJ-TIMC/Software.html
     - Noelle Haddad, Cedric Vaillant, Daniel Jost. "IC-Finder: inferring robustly the hierarchical organization of chromatin folding." Nucleic Acids Res. 2017 Jun 2; 45(10). https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5449546/. TAD-identification procedure that is essentially identical to my idea, including inferring hierarchical structure of TADs based on hierarchical clustering. Article does not explicity discuss A/B compartments so it may still be novel for compartment detection. - TAD finding by combined hierarchical clustering. Correlation-based distance, weighted-mean linkage similarity. Variance criterion to define cluster boundaries. http://membres-timc.imag.fr/Daniel.Jost/DJ-TIMC/Software.html
 
@@ -146,6 +149,8 @@ Issues and/or Pull requests to add other data are welcome!
 - `3DSNP` - A database linking noncoding SNPs to 3D interacting genes. http://cbportal.org/3dsnp/
     - Lu, Yiming, Cheng Quan, Hebing Chen, Xiaochen Bo, and Chenggang Zhang. “3DSNP: A Database for Linking Human Noncoding SNPs to Their Three-Dimensional Interacting Genes.” Nucleic Acids Research 45, no. D1 (January 4, 2017): D643–49. https://doi.org/10.1093/nar/gkw1022. - 3DSNP database integrating SNP epigenomic annotations with chromatin loops. Linear closest gene, 3D interacting gene, eQTL, 3D interacting SNP, chromatin states, TFBSs, conservation. For individual SNPs.
 
+- HUGIn, tissue-specific Hi-C linear display of anchor position and around. Overlay gene expression and epigenomic data. Association of SNPs with genes based on Hi-C interactions. Tissue-specific. http://yunliweb.its.unc.edu/HUGIn/
+    - Martin, Joshua S, Zheng Xu, Alex P Reiner, Karen L Mohlke, Patrick Sullivan, Bing Ren, Ming Hu, and Yun Li. “HUGIn: Hi-C Unifying Genomic Interrogator.” BioRxiv, 2017, 117531.
 
 
 ## Miscellaneous
