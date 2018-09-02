@@ -95,6 +95,9 @@ Issues and/or Pull requests to add other data are welcome!
 
 ## TAD callers
 
+- `3D-NetMod` - hierarchical, nested, partially overlapping TAD detection using graph theory. Community detection method based on the maximization of network modularity, Louvain-like locally greedy algorithm, repeated several (20) times to avoid local maxima, then getting consensus. Tuning parameters are estimated over sequence search. Benchmarked against TADtree, directionality index, Arrowhead. ICE-normalized data brain data from Geschwind (human data) and Jiang (mouse data) studies. Computationally intensive. Python implementation https://bitbucket.org/creminslab/3dnetmod_method_v1.0_10_06_17
+    - Norton, Heidi K., Daniel J. Emerson, Harvey Huang, Jesi Kim, Katelyn R. Titus, Shi Gu, Danielle S. Bassett, and Jennifer E. Phillips-Cremins. “Detecting Hierarchical Genome Folding with Network Modularity.” Nature Methods 15, no. 2 (February 2018): 119–22. https://doi.org/10.1038/nmeth.4560.
+
 - `Armatus` - TAD detection at different resolutions, https://www.cs.cmu.edu/~ckingsf/software/armatus/, https://github.com/kingsfordgroup/armatus
     - Filippova, Darya, Rob Patro, Geet Duggal, and Carl Kingsford. “Identification of Alternative Topological Domains in Chromatin.” Algorithms for Molecular Biology 9, no. 1 (2014): 14. doi:10.1186/1748-7188-9-14.https://almob.biomedcentral.com/track/pdf/10.1186/1748-7188-9-14 - Dynamic programming method named “Armatus”. Methods - statistics, intuitive. Consider different resolutions, stability of the detected TADs, persistency across resolution. Only one parameter controlling the size of domains. Their TADs are different from Dixon's TADs. https://www.cs.cmu.edu/~ckingsf/software/armatus/, https://github.com/kingsfordgroup/armatus
 
