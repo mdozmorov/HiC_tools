@@ -11,7 +11,7 @@ Issues and/or Pull requests to add other data are welcome!
 * [Pipelines for Hi-C data processing](#pipelines)
 * [Normalization of Hi-C data](#normalization)
 * [Reproducibility and QC of Hi-C data](#reproducibility)
-* [Significant interaction callers](#interaction-callers)
+* [Significant interaction (peak) callers](#interaction-callers)
 * [TAD callers](#tad-callers)
 * [Prediction of 3D features](#prediction-of-3d-features)
 * [SNP-oriented Hi-C analysis](#snp-oriented)
@@ -89,6 +89,8 @@ Issues and/or Pull requests to add other data are welcome!
 
 - `GoTHIC` - R package for peak calling in individual HiC datasets, while accounting for noise. https://www.bioconductor.org/packages/release/bioc/html/GOTHiC.html
     - Mifsud, Borbala, Inigo Martincorena, Elodie Darbo, Robert Sugar, Stefan Schoenfelder, Peter Fraser, and Nicholas M. Luscombe. “GOTHiC, a Probabilistic Model to Resolve Complex Biases and to Identify Real Interactions in Hi-C Data.” Edited by Mark Isalan. PLOS ONE 12, no. 4 (April 5, 2017): e0174744. https://doi.org/10.1371/journal.pone.0174744. - The GOTHiC (genome organisation through HiC) algorithm uses a simple binomial distribution model to simultaneously remove coveralge-associated biases in Hi-C data and detect significant interactions by assuming that the global background interaction frequency of two loci. Use of the Benjamini–Hochberg multiple-testing correction to control for the false discovery rate. 
+
+- `HiCPeaks` - Python CPU-based implementation for BH-FDR and HICCUPS, two peak calling algorithms for Hi-C data, proposed by Rao et al 2014. Text-to-cooler Hi-C data converter, two scripts to call peaks, and one for visualization (creation of a .png file)
 
 - `HOMER` - Perl scripts for normalization, visualization, significant interaction detection, motif discovery. Does not correct for bias. http://homer.ucsd.edu/homer/interactions/
 
