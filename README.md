@@ -54,6 +54,11 @@ Issues and/or Pull requests to add other data are welcome!
 
 - `my5C`- web-based tools, well-documented analysis and visualization of 5S data, http://my5c.umassmed.edu/
 
+- `TADbit` - Python-based pipeline, from iterative mapping, filtering, normalization. Similarity metrics: distance-centric Spearman, first principal eigenvector. TAD detection. TAD boundaries alignment, within 20kb. 3D modeling. Supplementary material - key functions, TAD detection algorithm, boundary comparison. https://github.com/3DGenomes/tadbit
+    - Serra, François, Davide Baù, Mike Goodstadt, David Castillo, Guillaume J. Filion, and Marc A. Marti-Renom. “Automatic Analysis and 3D-Modelling of Hi-C Data Using TADbit Reveals Structural Features of the Fly Chromatin Colors.” PLoS Computational Biology 13, no. 7 (July 2017): e1005665. https://doi.org/10.1371/journal.pcbi.1005665.
+
+
+
 ## Normalization
 
 - `HiCNorm` - removing biases in Hi-C data via Poisson regression, http://www.people.fas.harvard.edu/~junliu/HiCNorm/
