@@ -1,10 +1,6 @@
 # A collection of tools and papers related to Hi-C data analysis
 
-Slowly growing as notes from my Zotero collection are getting organized.
-
-A related repository holds references to Hi-C data, https://github.com/mdozmorov/HiC_data
-
-Issues and/or Pull requests to add other data are welcome!
+Slowly growing as notes from my Zotero collection are getting organized. A related repository holds references to Hi-C data, https://github.com/mdozmorov/HiC_data. Issues and/or Pull requests to add other data are welcome!
 
 # Table of content
 
@@ -15,6 +11,7 @@ Issues and/or Pull requests to add other data are welcome!
 * [TAD callers](#tad-callers)
 * [Prediction of 3D features](#prediction-of-3d-features)
 * [SNP-oriented Hi-C analysis](#snp-oriented)
+* [Structural variant detection](#structural-variant-detection)
 * [Miscellaneous Hi-C tools](#miscellaneous)
 * [Papers](#papers)
   * [Methodological Reviews](#methodological-reviews)
@@ -163,6 +160,12 @@ Issues and/or Pull requests to add other data are welcome!
 
 - HUGIn, tissue-specific Hi-C linear display of anchor position and around. Overlay gene expression and epigenomic data. Association of SNPs with genes based on Hi-C interactions. Tissue-specific. http://yunliweb.its.unc.edu/HUGIn/
     - Martin, Joshua S, Zheng Xu, Alex P Reiner, Karen L Mohlke, Patrick Sullivan, Bing Ren, Ming Hu, and Yun Li. “HUGIn: Hi-C Unifying Genomic Interrogator.” BioRxiv, 2017, 117531.
+
+
+## Structural variant detection
+
+- SV identification in Hi-C data. https://github.com/dixonlab/hic_breakfinder
+    - Dixon, Jesse R., Jie Xu, Vishnu Dileep, Ye Zhan, Fan Song, Victoria T. Le, Galip Gürkan Yardımcı, et al. “Integrative Detection and Analysis of Structural Variation in Cancer Genomes.” Nature Genetics, September 10, 2018. https://doi.org/10.1038/s41588-018-0195-8. - Detection of structural variants (SV) by integrating optical mapping, Hi-C, and WGS. Custom pipeline using LUMPY, Delly, Control-FREEC software. New Hi-C data on 14 cancer cell lines and 21 previously published datasets. Integration of the detected SVs with genomic annotations, including replication timing. Supplementary data with SVs resolved by individual methods and integrative approaches.
 
 
 ## Miscellaneous
