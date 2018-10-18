@@ -5,6 +5,7 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 # Table of content
 
 * [Pipelines for Hi-C data processing](#pipelines)
+  * [Single-cell Hi-C](#Single-cell-Hi-C)
 * [Normalization of Hi-C data](#normalization)
 * [Reproducibility and QC of Hi-C data](#reproducibility)
 * [Significant interaction (peak) callers](#interaction-callers)
@@ -56,6 +57,10 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 - `TADbit` - Python-based pipeline, from iterative mapping, filtering, normalization. Similarity metrics: distance-centric Spearman, first principal eigenvector. TAD detection. TAD boundaries alignment, within 20kb. 3D modeling. Supplementary material - key functions, TAD detection algorithm, boundary comparison. https://github.com/3DGenomes/tadbit
     - Serra, François, Davide Baù, Mike Goodstadt, David Castillo, Guillaume J. Filion, and Marc A. Marti-Renom. “Automatic Analysis and 3D-Modelling of Hi-C Data Using TADbit Reveals Structural Features of the Fly Chromatin Colors.” PLoS Computational Biology 13, no. 7 (July 2017): e1005665. https://doi.org/10.1371/journal.pcbi.1005665.
 
+### Single-cell Hi-C
+
+- `nuc_processing` - Chromatin contact paired-read single-cell Hi-C processing module for Nuc3D and NucTools. https://github.com/TheLaueLab/nuc_processing.
+    - Stevens, Tim J., David Lando, Srinjan Basu, Liam P. Atkinson, Yang Cao, Steven F. Lee, Martin Leeb, et al. “3D Structures of Individual Mammalian Genomes Studied by Single-Cell Hi-C.” Nature, March 13, 2017. https://doi.org/10.1038/nature21429.
 
 
 ## Normalization
