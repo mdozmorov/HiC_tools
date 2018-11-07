@@ -176,7 +176,7 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 
 ## Visualization
 
-- `HiGlass` visualization server for Google maps-style navigation of Hi-C maps. Overlay genes, epigenomic tracks. http://higlass.io/
+- `HiGlass` visualization server for Google maps-style navigation of Hi-C maps. Overlay genes, epigenomic tracks. http://higlass.io/, https://github.com/higlass/higlass, and many HiGlass-related developmend from the author, https://github.com/pkerpedjiev
     - Kerpedjiev, Peter, Nezar Abdennur, Fritz Lekschas, Chuck McCallum, Kasper Dinkla, Hendrik Strobelt, Jacob M Luber, et al. “HiGlass: Web-Based Visual Comparison And Exploration Of Genome Interaction Maps.” BioRxiv, 2017, 121889.
 
 - `HiPiler` - exploration and comparison of loops and domains as snippets-heatmaps of data. https://github.com/flekschas/hipiler
