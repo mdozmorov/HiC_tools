@@ -176,6 +176,9 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 
 ## Visualization
 
+- `HiGlass` visualization server for Google maps-style navigation of Hi-C maps. Overlay genes, epigenomic tracks. http://higlass.io/
+    - Kerpedjiev, Peter, Nezar Abdennur, Fritz Lekschas, Chuck McCallum, Kasper Dinkla, Hendrik Strobelt, Jacob M Luber, et al. “HiGlass: Web-Based Visual Comparison And Exploration Of Genome Interaction Maps.” BioRxiv, 2017, 121889.
+
 - `HiPiler` - exploration and comparison of loops and domains as snippets-heatmaps of data. https://github.com/flekschas/hipiler
     - Lekschas, Fritz, Benjamin Bach, Peter Kerpedjiev, Nils Gehlenborg, and Hanspeter Pfister. “HiPiler: Visual Exploration of Large Genome Interaction Matrices with Interactive Small Multiples.” IEEE Transactions on Visualization and Computer Graphics 24, no. 1 (January 2018): 522–31. https://doi.org/10.1109/TVCG.2017.2745978.
 
