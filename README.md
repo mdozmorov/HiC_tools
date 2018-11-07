@@ -176,6 +176,9 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 
 ## Visualization
 
+- `HiPiler` - exploration and comparison of loops and domains as snippets-heatmaps of data. https://github.com/flekschas/hipiler
+    - Lekschas, Fritz, Benjamin Bach, Peter Kerpedjiev, Nils Gehlenborg, and Hanspeter Pfister. “HiPiler: Visual Exploration of Large Genome Interaction Matrices with Interactive Small Multiples.” IEEE Transactions on Visualization and Computer Graphics 24, no. 1 (January 2018): 522–31. https://doi.org/10.1109/TVCG.2017.2745978.
+
 - `pyGenomeTracks` - python module to plot beautiful and highly customizable genome browser tracks, https://github.com/deeptools/pyGenomeTracks
 
 ## Miscellaneous
