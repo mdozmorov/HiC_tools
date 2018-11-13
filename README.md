@@ -8,7 +8,7 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
   * [Single-cell Hi-C](#Single-cell-Hi-C)
 * [Normalization of Hi-C data](#normalization)
 * [Reproducibility and QC of Hi-C data](#reproducibility)
-* [Significant interaction (peak) callers](#interaction-callers)
+* [Significant interaction (peak) callers](#significant-interaction-peak-callers)
 * [TAD callers](#tad-callers)
 * [Prediction of 3D features](#prediction-of-3d-features)
 * [SNP-oriented Hi-C analysis](#snp-oriented)
@@ -93,7 +93,10 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
     - Yan, Koon-Kiu, Galip Gürkan Yardimci, Chengfei Yan, William S. Noble, and Mark Gerstein. “HiC-Spector: A Matrix Library for Spectral and Reproducibility Analysis of Hi-C Contact Maps.” Bioinformatics (Oxford, England) 33, no. 14 (July 15, 2017): 2199–2201. https://doi.org/10.1093/bioinformatics/btx152.
 
 
-## Interaction callers
+## Significant interaction (peak) callers
+
+- `CHiCAGO` is a Capture Hi-C data processing method that filters out contacts that are expected by chance given the linear proximity of the interacting fragments on the genome and takes into account the asymmetric biases introduced by the capture step used in the Capture Hi-C approach. Two-component background model (Delaporte distribution) - Brownian motion (Neg. Binom.) and technical noise (Poisson). Account for distance. https://bioconductor.org/packages/release/bioc/html/Chicago.html
+    - Cairns, Jonathan, Paula Freire-Pritchett, Steven W. Wingett, Csilla Várnai, Andrew Dimond, Vincent Plagnol, Daniel Zerbino, et al. “CHiCAGO: Robust Detection of DNA Looping Interactions in Capture Hi-C Data.” Genome Biology 17, no. 1 (2016): 127. https://doi.org/10.1186/s13059-016-0992-2.
 
 - `Fit-Hi-C` - Python tool for detection of significant chromatin interactions, https://noble.gs.washington.edu/proj/fit-hi-c/
     - Ay, Ferhat, Timothy L. Bailey, and William Stafford Noble. “Statistical Confidence Estimation for Hi-C Data Reveals Regulatory Chromatin Contacts.” Genome Research 24, no. 6 (June 2014): 999–1011. https://doi.org/10.1101/gr.160374.113. - Fit-Hi-C method, Splines to model distance dependence. Model mid-range interaction frequencies, decay with distance. Biases, methods for normalization. Two-step splines - use all dots for first fit, identify and remove outliers, second fit without outliers. Markers of boundaries - insulators, heterochromatin, pluripotent factors. CNVs are enriched in chromatin boundaries. Replication timing data how-to http://www.replicationdomain.com/. Validation Hi-C data. http://chromosome.sdsc.edu/mouse/hi-c/download.html
