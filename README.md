@@ -195,6 +195,9 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 - `HiCPlus` - increasing resolution of Hi-C data using convolutional neural network. Basically, smoothing parts of Hi-C image, then binning into smaller parts. Performs better than bilinear/biqubic smoothing. https://github.com/zhangyan32/HiCPlus
     - Zhang, Yan, Lin An, Ming Hu, Jijun Tang, and Feng Yue. “HiCPlus: Resolution Enhancement of Hi-C Interaction Heatmap,” March 1, 2017. https://doi.org/10.1101/112631.
 
+- mHi-C generative model for assigning multi-mapped reads and enriching Hi-C matrices. Detailed methods on the model. Improve TADs, significant interaction detection. https://github.com/keleslab/mHiC
+    - Zheng, Ye, Ferhat Ay, and Sunduz Keles. “Generative Modeling of Multi-Mapping Reads with MHi-C Advances Analysis of High Throughput Genome-Wide Conformation Capture Studies,” October 3, 2018. https://doi.org/10.1101/301705.
+
 - `peaktools` - tools for BEDPE-style peaks. https://github.com/sergpolly/peaktools
 
 
