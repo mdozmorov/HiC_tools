@@ -21,7 +21,7 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
   * [TAD detection](#tad-detection)
   * [TAD prediction](#tad-prediction)
   * [Spectral clustering](#spectral-clustering)
-
+* [URLs](#urls)
 
 ## Pipelines
 
@@ -255,4 +255,6 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 - Fotuhi Siahpirani, Alireza, Ferhat Ay, and Sushmita Roy. “A Multi-Task Graph-Clustering Approach for Chromosome Conformation Capture Data Sets Identifies Conserved Modules of Chromosomal Interactions.” Genome Biology 17, no. 1 (December 2016). https://doi.org/10.1186/s13059-016-0962-8 - Arboretum-Hi-C - a multitask spectral clustering method to identify differences in genomic architecture. Intro about the 3D genome organization, TAD differences and conservation. Assessment of different clustering approaches using different distance measures, as well as raw contacts. Judging clustering quality by enrichment in regulatory genomic signals (Histone marks, LADs, early vs. late replication timing, TFs like POLII, TAF, TBP, CTCF, P300, CMYC, cohesin components, LADs, replication timing, SINE, LINE, LTR) and by numerical methods (Davies-Bouldin index, silhouette score, others). Although spectral clustering on contact counts performed best, spectral + Spearman correlation was chosen. Comparing cell types identifies biologically relevant differences as quantified by enrichment. Peak counts or average signal within regions were used for enrichment. Data https://zenodo.org/record/49767, and Arboretum-HiC https://bitbucket.org/roygroup/arboretum-hic
 
 
+## URLs
 
+- 4DN portal blog, https://www.4dnucleome.org/outreach.html
