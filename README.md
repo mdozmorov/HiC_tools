@@ -261,3 +261,4 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 
 - `3d-genome-processing-tutorial` - A 3D genome data processing tutorial for ISMB/ECCB 2017. https://github.com/hms-dbmi/3d-genome-processing-tutorial
 
+- `hic-data-analysis-bootcamp` - Workshop on measuring, analyzing, and visualizing the 3D genome with Hi-C data, https://github.com/hms-dbmi/hic-data-analysis-bootcamp
