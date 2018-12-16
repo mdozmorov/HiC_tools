@@ -13,6 +13,7 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 * [Prediction of 3D features](#prediction-of-3d-features)
 * [SNP-oriented Hi-C analysis](#snp-oriented)
 * [Structural variant detection](#structural-variant-detection)
+* [De novo genome scaffolding](#de-novo-genome-scaffolding)
 * [Miscellaneous Hi-C tools](#miscellaneous)
 * [Papers](#papers)
   * [Methodological Reviews](#methodological-reviews)
@@ -190,6 +191,11 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
     - Lekschas, Fritz, Benjamin Bach, Peter Kerpedjiev, Nils Gehlenborg, and Hanspeter Pfister. “HiPiler: Visual Exploration of Large Genome Interaction Matrices with Interactive Small Multiples.” IEEE Transactions on Visualization and Computer Graphics 24, no. 1 (January 2018): 522–31. https://doi.org/10.1109/TVCG.2017.2745978. TechBlog: HiPiler simplifies chromatin structure analysis, http://blogs.nature.com/naturejobs/2017/09/11/techblog-hipiler-simplifies-chromatin-structure-analysis/
 
 - `pyGenomeTracks` - python module to plot beautiful and highly customizable genome browser tracks, https://github.com/deeptools/pyGenomeTracks
+
+
+## De novo genome scaffolding
+
+- Tools for de novo genome assembly from Hi-C reads: https://omictools.com/assembly-scaffolding-1-category
 
 ## Miscellaneous
 
