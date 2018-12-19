@@ -215,6 +215,8 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 
 ### Methodological Reviews
 
+- Chang, Pearl, Moloya Gohain, Ming-Ren Yen, and Pao-Yang Chen. “Computational Methods for Assessing Chromatin Hierarchy.” Computational and Structural Biotechnology Journal 16 (2018): 43–53. https://doi.org/10.1016/j.csbj.2018.02.003. - Review of higher-order (chromatin conformation capture) and primary order (DNAse, ATAC) technologies and analysis tools. Table 1 - technology summaries. Table 2 - tool summaries. Inter-chromosomal calls using Binarized contact maps. Visualization. Primary order technologies - details and peak calling.
+
 - Nicoletti, Chiara, Mattia Forcato, and Silvio Bicciato. “Computational Methods for Analyzing Genome-Wide Chromosome Conformation Capture Data.” Current Opinion in Biotechnology 54 (December 2018): 98–105. https://doi.org/10.1016/j.copbio.2018.01.023. - 3C-Hi-C tools review, Table 1 lists categorizes main tools, Figure 1 displays all steps in technology and analysis (alignment, resolution, normalization, including accounting for CNVs, A/B compartments, TAD detection, visualization). Concise description of all tools.
 
 - Waldispühl, Jérôme, Eric Zhang, Alexander Butyaev, Elena Nazarova, and Yan Cyr. “Storage, Visualization, and Navigation of 3D Genomics Data.” Methods, May 2018. https://doi.org/10.1016/j.ymeth.2018.05.008. - Review of tools for visualization of 3C-Hi-C data, challenges, analysis (Table 1). Data formats (hic, cool, BUTLR, ccmap). Database to quickly access 3D data. Details of each visualization tool in Section 4
