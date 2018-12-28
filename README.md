@@ -197,6 +197,11 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 
 - Tools for de novo genome assembly from Hi-C reads: https://omictools.com/assembly-scaffolding-1-category
 
+- `GRAAL` - Genome (Re)Assembly Assessing Likelihood - genome assembly from Hi-C data. Gaps in genome assembly that can be filled by scaffolding. Superior than Lachesis and dnaTri, which are sensitive to duplications, clustering they use to initially arrange the scaffolds, parameters, unknown reliability. A Bayesian approach, prior assumptions are that cis-contact probabilities follow a power-law decay and that counts in the interaction matrix are Poisson. Multiple genomic structures tested using MCMC (Multiple-Try Metropolis algorithm) to maximize the likelihood of data given a genomic structure. https://github.com/koszullab/GRAAL and the next version instaGRAAL that uses https://github.com/koszullab/instaGRAAL
+    - Marie-Nelly, Hervé, Martial Marbouty, Axel Cournac, Jean-François Flot, Gianni Liti, Dante Poggi Parodi, Sylvie Syan, et al. “High-Quality Genome (Re)Assembly Using Chromosomal Contact Data.” Nature Communications 5 (December 17, 2014): 5695. https://doi.org/10.1038/ncomms6695.
+
+
+
 ## Miscellaneous
 
 - `Boost-HiC` - infer fine-resolution contact frequencies in Hi-C data, performs well even on 0.1% of the raw data. TAD boundaries remain. Better than HiCPlus. Can be used for differential analysis (comparison) of two Hi-C maps. https://github.com/LeopoldC/Boost-HiC
