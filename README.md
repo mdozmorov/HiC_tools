@@ -197,6 +197,9 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 
 - Tools for de novo genome assembly from Hi-C reads: https://omictools.com/assembly-scaffolding-1-category
 
+- `dnaTri` - genome scaffolding via probabilistic modeling using two constrains of Hi-C data - distance-dependent decay and cis-trans ratio. Using known chromosome scaffolds and de novo assembly. Naive Bayes classifier to distinguish chromosome-specific vs. on different chromosomes contigs. Average linkage clustering to assemble contigs into 23 groups of chromosomes. Completed 65 previously unplaced contigs. Data, http://my5c.umassmed.edu/triangulation/, code https://github.com/NoamKaplan/dna-triangulation
+    - Kaplan, Noam, and Job Dekker. “High-Throughput Genome Scaffolding from in Vivo DNA Interaction Frequency.” Nature Biotechnology 31, no. 12 (December 2013): 1143–47. https://doi.org/10.1038/nbt.2768.
+
 - `GRAAL` - Genome (Re)Assembly Assessing Likelihood - genome assembly from Hi-C data. Gaps in genome assembly that can be filled by scaffolding. Superior than Lachesis and dnaTri, which are sensitive to duplications, clustering they use to initially arrange the scaffolds, parameters, unknown reliability. A Bayesian approach, prior assumptions are that cis-contact probabilities follow a power-law decay and that counts in the interaction matrix are Poisson. Multiple genomic structures tested using MCMC (Multiple-Try Metropolis algorithm) to maximize the likelihood of data given a genomic structure. https://github.com/koszullab/GRAAL and the next version instaGRAAL that uses https://github.com/koszullab/instaGRAAL
     - Marie-Nelly, Hervé, Martial Marbouty, Axel Cournac, Jean-François Flot, Gianni Liti, Dante Poggi Parodi, Sylvie Syan, et al. “High-Quality Genome (Re)Assembly Using Chromosomal Contact Data.” Nature Communications 5 (December 17, 2014): 5695. https://doi.org/10.1038/ncomms6695.
 
