@@ -14,6 +14,7 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 * [SNP-oriented Hi-C analysis](#snp-oriented)
 * [Structural variant detection](#structural-variant-detection)
 * [De novo genome scaffolding](#de-novo-genome-scaffolding)
+* [3D reconstruction](#3d-reconstruction)
 * [Miscellaneous Hi-C tools](#miscellaneous)
 * [Papers](#papers)
   * [Methodological Reviews](#methodological-reviews)
@@ -205,6 +206,13 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 
 - `Lachesis` - a three-step genome scaffolding tool: 1) graph clustering of scaffolds to chromosome groups, 2) ordering clustered scaffolds (minimum spanning tree, reassembling longest-to-shortest branches), 3) assigning orientation (exact position and the decay of interactions). Duplications and repeat regions may be incorrectly ordered/oriented. Tested on normal human, mouse, drosophila genomes, and on HeLa cancer genome. https://github.com/shendurelab/LACHESIS
     - Burton, Joshua N., Andrew Adey, Rupali P. Patwardhan, Ruolan Qiu, Jacob O. Kitzman, and Jay Shendure. “Chromosome-Scale Scaffolding of de Novo Genome Assemblies Based on Chromatin Interactions.” Nature Biotechnology 31, no. 12 (December 2013): 1119–25. https://doi.org/10.1038/nbt.2727.
+
+
+## 3D reconstruction
+
+- `ShRec3D` - shortest-path reconstruction in 3D. Genome reconstruction by translation a Hi-C matrix into a distance matrix, then multidimensional scaling. Uses binary contact maps. https://sites.google.com/site/julienmozziconacci/home/softwares
+    - Lesne, Annick, Julien Riposo, Paul Roger, Axel Cournac, and Julien Mozziconacci. “3D Genome Reconstruction from Chromosomal Contacts.” Nature Methods 11, no. 11 (November 2014): 1141–43. https://doi.org/10.1038/nmeth.3104.
+
 
 
 ## Miscellaneous
