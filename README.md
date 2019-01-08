@@ -220,6 +220,8 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 - `Boost-HiC` - infer fine-resolution contact frequencies in Hi-C data, performs well even on 0.1% of the raw data. TAD boundaries remain. Better than HiCPlus. Can be used for differential analysis (comparison) of two Hi-C maps. https://github.com/LeopoldC/Boost-HiC
     - Carron, Leopold, Jean-baptiste Morlot, Vincent Matthys, Annick Lesne, and Julien Mozziconacci. “Boost-HiC : Computational Enhancement of Long-Range Contacts in Chromosomal Contact Maps,” November 18, 2018. https://doi.org/10.1101/471607.
 
+- `hic2cool` - Lightweight converter between hic and cool contact matrices. https://github.com/4dn-dcic/hic2cool
+
 - `HiCPlus` - increasing resolution of Hi-C data using convolutional neural network. Basically, smoothing parts of Hi-C image, then binning into smaller parts. Performs better than bilinear/biqubic smoothing. https://github.com/zhangyan32/HiCPlus
     - Zhang, Yan, Lin An, Ming Hu, Jijun Tang, and Feng Yue. “HiCPlus: Resolution Enhancement of Hi-C Interaction Heatmap,” March 1, 2017. https://doi.org/10.1101/112631.
 
