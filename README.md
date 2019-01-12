@@ -13,6 +13,7 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 * [Prediction of 3D features](#prediction-of-3d-features)
 * [SNP-oriented Hi-C analysis](#snp-oriented)
 * [Structural variant detection](#structural-variant-detection)
+* [Visualization](#visualization)
 * [De novo genome scaffolding](#de-novo-genome-scaffolding)
 * [3D reconstruction](#3d-reconstruction)
 * [Miscellaneous Hi-C tools](#miscellaneous)
@@ -184,6 +185,9 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
     - Dixon, Jesse R., Jie Xu, Vishnu Dileep, Ye Zhan, Fan Song, Victoria T. Le, Galip Gürkan Yardımcı, et al. “Integrative Detection and Analysis of Structural Variation in Cancer Genomes.” Nature Genetics, September 10, 2018. https://doi.org/10.1038/s41588-018-0195-8. - Detection of structural variants (SV) by integrating optical mapping, Hi-C, and WGS. Custom pipeline using LUMPY, Delly, Control-FREEC software. New Hi-C data on 14 cancer cell lines and 21 previously published datasets. Integration of the detected SVs with genomic annotations, including replication timing. Supplementary data with SVs resolved by individual methods and integrative approaches.
 
 ## Visualization
+
+- `3D Genome Browser` - visualizing existing Hi-C and other chromatin conformation capture data. Alongside with genomic and epigenomic data. Own data can be submitted in BUTLR format. http://promoter.bx.psu.edu/hi-c/
+    - Wang, Yanli, Bo Zhang, Lijun Zhang, Lin An, Jie Xu, Daofeng Li, Mayank NK Choudhary, et al. “The 3D Genome Browser: A Web-Based Browser for Visualizing 3D Genome Organization and Long-Range Chromatin Interactions.” BioRxiv, 2017, 112268.
 
 - `HiGlass` visualization server for Google maps-style navigation of Hi-C maps. Overlay genes, epigenomic tracks. http://higlass.io/, https://github.com/higlass/higlass, and many HiGlass-related developmend from the author, https://github.com/pkerpedjiev
     - Kerpedjiev, Peter, Nezar Abdennur, Fritz Lekschas, Chuck McCallum, Kasper Dinkla, Hendrik Strobelt, Jacob M Luber, et al. “HiGlass: Web-Based Visual Comparison And Exploration Of Genome Interaction Maps.” BioRxiv, 2017, 121889.
