@@ -197,6 +197,8 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 
 - `pyGenomeTracks` - python module to plot beautiful and highly customizable genome browser tracks, https://github.com/deeptools/pyGenomeTracks
 
+- TADKit - 3D Genome Browser. Main web site, http://sgt.cnag.cat/3dg/tadkit/, and GitHub, https://github.com/3DGenomes/TADkit
+
 
 ## De novo genome scaffolding
 
