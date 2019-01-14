@@ -242,6 +242,8 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 
 ## Papers
 
+A four-cutter enzyme yields a resolution of ∼256 bp and a six-cutter a resolution of ∼4,096 bp.
+
 ### Methodological Reviews
 
 - Chang, Pearl, Moloya Gohain, Ming-Ren Yen, and Pao-Yang Chen. “Computational Methods for Assessing Chromatin Hierarchy.” Computational and Structural Biotechnology Journal 16 (2018): 43–53. https://doi.org/10.1016/j.csbj.2018.02.003. - Review of higher-order (chromatin conformation capture) and primary order (DNAse, ATAC) technologies and analysis tools. Table 1 - technology summaries. Table 2 - tool summaries. Inter-chromosomal calls using Binarized contact maps. Visualization. Primary order technologies - details and peak calling.
@@ -257,6 +259,8 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 - Ay, Ferhat, and William S. Noble. “Analysis Methods for Studying the 3D Architecture of the Genome.” Genome Biology 16 (September 2, 2015): 183. https://doi.org/10.1186/s13059-015-0745-7. - Hi-C technology and methods review. [Table 1](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0745-7#Tab1) - list of tools. Biases, normalization, matrix balancing. Extracting significant contacts, obs/exp ratio, parametric (powerlaw, neg binomial, double exponential), non-parametric (splines). 3D enrichment. References. TAD identification, directionality index. Outlook, importance of comparative analysis
 
 ### General Reviews
+
+- Yu, Miao, and Bing Ren. “The Three-Dimensional Organization of Mammalian Genomes.” Annual Review of Cell and Developmental Biology 33 (06 2017): 265–89. https://doi.org/10.1146/annurev-cellbio-100616-060531. - 3D genome structure review. The role of gene promoters, enhancers, and insulators in regulating gene expression. Imaging-based tools, all flavors of chromatin conformation capture technologies. 3D features - chromosome territories, topologically associated domains (TADs), association of TAD boundaries with with replication domains, CTCF binding, transcriptional activity, housekeeping genes, genome reorganization during mitosis. Use of 3D data to annotate noncoding GWAS SNPs. 3D genome structure change in disease.
 
 - Fraser, J., C. Ferrai, A. M. Chiariello, M. Schueler, T. Rito, G. Laudanno, M. Barbieri, et al. “Hierarchical Folding and Reorganization of Chromosomes Are Linked to Transcriptional Changes in Cellular Differentiation.” Molecular Systems Biology 11, no. 12 (December 23, 2015): 852–852. doi:10.15252/msb.20156492. http://msb.embopress.org/content/msb/11/12/852.full.pdf - 3D genome organization parts. Well-written and detailed. References. Technologies: FISH, 3C. 4C, 5C, Hi-C, GCC, TCC, ChIA-PET. Typical resolution - 40bp to 1Mb. LADs - conserved, but some are cell type-specific. Chromosome territories. Cell type-specific. inter-chromosomal interactions may be important to define cell-specific interactions. A/B compartments identified by PCA. Chromatin loops, marked by CTCF and Cohesin binding, sometimes, with Mediator. Transcription factories
 
