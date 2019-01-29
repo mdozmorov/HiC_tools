@@ -133,8 +133,8 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 - `HiCcompare` - joint normalization of two Hi-C datasets using loess regression through an MD plot (minus-distance). Data-driven normalization accounting for the between-dataset biases. Per-distance permutation testing of significant interactions. http://bioconductor.org/packages/release/bioc/html/HiCcompare.html
     - Stansfield, John C., Kellen G. Cresswell, Vladimir I. Vladimirov, and Mikhail G. Dozmorov. “HiCcompare: An R-Package for Joint Normalization and Comparison of HI-C Datasets.” BMC Bioinformatics 19, no. 1 (December 2018). https://doi.org/10.1186/s12859-018-2288-x.
 
-
-
+- `multiHiCcompare` - joint normalization of multiple Hi-C datasets using cyclic loess regression through pairs of MD plots (minus-distance). Data-driven normalization accounting for the between-dataset biases. Per-distance edgeR-based testing of significant interactions. http://bioconductor.org/packages/release/bioc/html/multiHiCcompare.html
+    - Stansfield, John C, Kellen G Cresswell, and Mikhail G Dozmorov. “MultiHiCcompare: Joint Normalization and Comparative Analysis of Complex Hi-C Experiments.” Edited by Inanc Birol. Bioinformatics, January 22, 2019. https://doi.org/10.1093/bioinformatics/btz048.
 
 
 ## TAD callers
