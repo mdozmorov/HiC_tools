@@ -121,6 +121,9 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 - `Chicdiff` - differential interaction detection in Capture Hi-C data. Signal normalization based on CHiCAGO framework, differential testing using DESeq2. Accounting for distance effect by the Independent Hypothesis Testing (IHW) method to learn p-value weights based on distance to maximize the number of rejected null hypotheses. https://github.com/RegulatoryGenomicsGroup/chicdiff
     - Cairns, Jonathan, William R. Orchard, Valeriya Malysheva, and Mikhail Spivakov. “Chicdiff: A Computational Pipeline for Detecting Differential Chromosomal Interactions in Capture Hi-C Data.” BioRxiv, January 1, 2019, 526269. https://doi.org/10.1101/526269.
 
+- `diffHiC` - Differential contacts using the full pipeline for Hi-C data. Explanation of the technology, binning. MA normalization, edgeR-based. Comparison with HOMER. https://bioconductor.org/packages/release/bioc/html/diffHic.html
+    - Lun, Aaron T. L., and Gordon K. Smyth. “DiffHic: A Bioconductor Package to Detect Differential Genomic Interactions in Hi-C Data.” BMC Bioinformatics 16 (2015): 258. https://doi.org/10.1186/s12859-015-0683-0.
+
 - `diffloop` - Differential analysis of chromatin loops (ChIA-PET). edgeR framework. https://bioconductor.org/packages/release/bioc/html/diffloop.html
     - Lareau, Caleb A., and Martin J. Aryee. “Diffloop: A Computational Framework for Identifying and Analyzing Differential DNA Loops from Sequencing Data.” Bioinformatics (Oxford, England), September 29, 2017. https://doi.org/10.1093/bioinformatics/btx623.
 
