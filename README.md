@@ -9,6 +9,7 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 * [Normalization of Hi-C data](#normalization)
 * [Reproducibility and QC of Hi-C data](#reproducibility)
 * [Significant interaction (peak) callers](#significant-interaction-peak-callers)
+* [Differential interactions](#differential-interactions)
 * [TAD callers](#tad-callers)
 * [Prediction of 3D features](#prediction-of-3d-features)
 * [SNP-oriented Hi-C analysis](#snp-oriented)
@@ -113,6 +114,12 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 - `HiCPeaks` - Python CPU-based implementation for BH-FDR and HICCUPS, two peak calling algorithms for Hi-C data, proposed by Rao et al 2014. Text-to-cooler Hi-C data converter, two scripts to call peaks, and one for visualization (creation of a .png file)
 
 - `HOMER` - Perl scripts for normalization, visualization, significant interaction detection, motif discovery. Does not correct for bias. http://homer.ucsd.edu/homer/interactions/
+
+
+## Differential interactions
+
+- `Chicdiff` - differential interaction detection in Capture Hi-C data. Signal normalization based on CHiCAGO framework, differential testing using DESeq2. Accounting for distance effect by the Independent Hypothesis Testing (IHW) method to learn p-value weights based on distance to maximize the number of rejected null hypotheses. https://github.com/RegulatoryGenomicsGroup/chicdiff
+    - Cairns, Jonathan, William R. Orchard, Valeriya Malysheva, and Mikhail Spivakov. “Chicdiff: A Computational Pipeline for Detecting Differential Chromosomal Interactions in Capture Hi-C Data.” BioRxiv, January 1, 2019, 526269. https://doi.org/10.1101/526269.
 
 
 ## TAD callers
