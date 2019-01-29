@@ -130,6 +130,12 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 - `FIND` - differential chromatin interaction detection comparing the local spatial dependency between interacting loci. Previous strategies - simple fold-change comparisons, binomial model (HOMER), count-based (edgeR). FIND exploits a spatial Poisson process model to detect differential chromatin interactions that show both a significant change in their interaction frequency and the interaction frequency of their adjacent bins. "Variogram" concept. For each point, compare densities between conditions using Fisher's test. Explored various multiple correction testing methods, used r^th ordered p-values (rOP) method. Benchmarking against edgeR in simulated settings - FIND outperforms at shorter distances, edgeR has more false positives at longer distances. Real Hi-C data normalized using KR and MA normalizations. R paclage https://bitbucket.org/nadhir/find/downloads/
     - Djekidel, Mohamed Nadhir, Yang Chen, and Michael Q. Zhang. “FIND: DifFerential Chromatin INteractions Detection Using a Spatial Poisson Process.” Genome Research, February 12, 2018. https://doi.org/10.1101/gr.212241.116.
 
+- `HiCcompare` - joint normalization of two Hi-C datasets using loess regression through an MD plot (minus-distance). Data-driven normalization accounting for the between-dataset biases. Per-distance permutation testing of significant interactions. http://bioconductor.org/packages/release/bioc/html/HiCcompare.html
+    - Stansfield, John C., Kellen G. Cresswell, Vladimir I. Vladimirov, and Mikhail G. Dozmorov. “HiCcompare: An R-Package for Joint Normalization and Comparison of HI-C Datasets.” BMC Bioinformatics 19, no. 1 (December 2018). https://doi.org/10.1186/s12859-018-2288-x.
+
+
+
+
 
 ## TAD callers
 
