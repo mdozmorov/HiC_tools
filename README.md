@@ -121,6 +121,9 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 - `Chicdiff` - differential interaction detection in Capture Hi-C data. Signal normalization based on CHiCAGO framework, differential testing using DESeq2. Accounting for distance effect by the Independent Hypothesis Testing (IHW) method to learn p-value weights based on distance to maximize the number of rejected null hypotheses. https://github.com/RegulatoryGenomicsGroup/chicdiff
     - Cairns, Jonathan, William R. Orchard, Valeriya Malysheva, and Mikhail Spivakov. “Chicdiff: A Computational Pipeline for Detecting Differential Chromosomal Interactions in Capture Hi-C Data.” BioRxiv, January 1, 2019, 526269. https://doi.org/10.1101/526269.
 
+- `FIND` - differential chromatin interaction detection comparing the local spatial dependency between interacting loci. Previous strategies - simple fold-change comparisons, binomial model (HOMER), count-based (edgeR). FIND exploits a spatial Poisson process model to detect differential chromatin interactions that show both a significant change in their interaction frequency and the interaction frequency of their adjacent bins. "Variogram" concept. For each point, compare densities between conditions using Fisher's test. Explored various multiple correction testing methods, used r^th ordered p-values (rOP) method. Benchmarking against edgeR in simulated settings - FIND outperforms at shorter distances, edgeR has more false positives at longer distances. Real Hi-C data normalized using KR and MA normalizations. R paclage https://bitbucket.org/nadhir/find/downloads/
+    - Djekidel, Mohamed Nadhir, Yang Chen, and Michael Q. Zhang. “FIND: DifFerential Chromatin INteractions Detection Using a Spatial Poisson Process.” Genome Research, February 12, 2018. https://doi.org/10.1101/gr.212241.116.
+
 
 ## TAD callers
 
