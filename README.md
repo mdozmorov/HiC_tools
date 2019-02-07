@@ -136,6 +136,10 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 - `multiHiCcompare` - joint normalization of multiple Hi-C datasets using cyclic loess regression through pairs of MD plots (minus-distance). Data-driven normalization accounting for the between-dataset biases. Per-distance edgeR-based testing of significant interactions. http://bioconductor.org/packages/release/bioc/html/multiHiCcompare.html
     - Stansfield, John C, Kellen G Cresswell, and Mikhail G Dozmorov. “MultiHiCcompare: Joint Normalization and Comparative Analysis of Complex Hi-C Experiments.” Edited by Inanc Birol. Bioinformatics, January 22, 2019. https://doi.org/10.1093/bioinformatics/btz048.
 
+- `Selfish` - comparative analysis of replicate Hi-C experiments via a self-similarity measure - local similarity borrowed from image comparison. Check reproducibility, detect differential interactions. Boolean representation of contact matrices for reproducibility quantification. Deconvoluting local interactions with a Gaussian filter (putting a Gaussian bell around a pixel), then comparing derivatives between contact maps for each radius. Simulated (Zhou method) and real comparison with FIND - better performance, especially on low fold-changes. Stronger enrichment of relevant epigenomic features. Matlab implementation https://github.com/ucrbioinfo/Selfish
+    - Roayaei Ardakany, Abbas, Ferhat Ay, and Stefano Lonardi. “Selfish: Discovery of Differential Chromatin Interactions via a Self-Similarity Measure.” BioRxiv, January 1, 2019, 540708. https://doi.org/10.1101/540708.
+
+
 
 ## TAD callers
 
