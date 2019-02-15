@@ -264,10 +264,13 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 - `Boost-HiC` - infer fine-resolution contact frequencies in Hi-C data, performs well even on 0.1% of the raw data. TAD boundaries remain. Better than HiCPlus. Can be used for differential analysis (comparison) of two Hi-C maps. https://github.com/LeopoldC/Boost-HiC
     - Carron, Leopold, Jean-baptiste Morlot, Vincent Matthys, Annick Lesne, and Julien Mozziconacci. “Boost-HiC : Computational Enhancement of Long-Range Contacts in Chromosomal Contact Maps,” November 18, 2018. https://doi.org/10.1101/471607.
 
+- `GOPHER` - probe design for Capture Hi-C. All, or selected, promoters, or around GWAS hits. Two other tools, CapSequm and HiCapTools. https://github.com/TheJacksonLaboratory/Gopher
+    - Hansen, Peter, Salaheddine Ali, Hannah Blau, Daniel Danis, Jochen Hecht, Uwe Kornak, Darío G. Lupiáñez, Stefan Mundlos, Robin Steinhaus, and Peter N. Robinson. “GOPHER: Generator Of Probes for Capture Hi-C Experiments at High Resolution.” BMC Genomics 20, no. 1 (December 2019). https://doi.org/10.1186/s12864-018-5376-4.
+
 - `hic2cool` - Lightweight converter between hic and cool contact matrices. https://github.com/4dn-dcic/hic2cool
 
 - `HiCPlus` - increasing resolution of Hi-C data using convolutional neural network. Basically, smoothing parts of Hi-C image, then binning into smaller parts. Performs better than bilinear/biqubic smoothing. https://github.com/zhangyan32/HiCPlus
-    - Zhang, Yan, Lin An, Ming Hu, Jijun Tang, and Feng Yue. “HiCPlus: Resolution Enhancement of Hi-C Interaction Heatmap,” March 1, 2017. https://doi.org/10.1101/112631.
+    - Zhang, Yan, Lin An, Ming Hu, Jijun Tang, and Feng Yue. “HiCPlus: Resolution Enhancement of Hi-C Inte
 
 - mHi-C generative model for assigning multi-mapped reads and enriching Hi-C matrices. Detailed methods on the model. Improve TADs, significant interaction detection. https://github.com/keleslab/mHiC
     - Zheng, Ye, Ferhat Ay, and Sunduz Keles. “Generative Modeling of Multi-Mapping Reads with MHi-C Advances Analysis of High Throughput Genome-Wide Conformation Capture Studies,” October 3, 2018. https://doi.org/10.1101/301705.
