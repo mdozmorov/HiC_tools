@@ -29,6 +29,9 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 
 ## Pipelines
 
+- A list of available pipelines, URLs. [pipelines_list.csv](pipelines_list.csv), [Source](https://link.springer.com/protocol/10.1007%2F978-1-4939-8766-5_16)
+- Available analysis options in each pipeline. [pipeline_comparison.csv](pipeline_comparison.csv), [Source](https://link.springer.com/protocol/10.1007%2F978-1-4939-8766-5_16)
+
 - `distiller-nf` - Java modular Hi-C mapping pipeline for reproducible data analysis, nextflow pipeline. Alignment, filtering, aggregating Hi-C matrices. https://github.com/mirnylab/distiller-nf
 
 - `Juicer` - Java full pipeline to convert raw reads into Hi-C maps, visualized in Juicebox. Call domains, loops, CTCF binding sites. `.hic` file format for storing multi-resolution Hi-C data. https://github.com/theaidenlab/juicebox/wiki/Download
