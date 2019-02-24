@@ -257,6 +257,9 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 
 ## 3D reconstruction
 
+- `GenomeFlow` - a complete set of tools for Hi-C data alignment, normalization, 2D visualization, 3D genome modeling and visualization. ClusterTAD for TAD identification. LorDG and 3DMax for 3D genome reconstruction. https://github.com/jianlin-cheng/GenomeFlow
+    - Trieu, Tuan, Oluwatosin Oluwadare, Julia Wopata, and Jianlin Cheng. “GenomeFlow: A Comprehensive Graphical Tool for Modeling and Analyzing 3D Genome Structure.” Bioinformatics (Oxford, England), September 12, 2018. https://doi.org/10.1093/bioinformatics/bty802.
+
 - `ShRec3D` - shortest-path reconstruction in 3D. Genome reconstruction by translation a Hi-C matrix into a distance matrix, then multidimensional scaling. Uses binary contact maps. https://sites.google.com/site/julienmozziconacci/home/softwares
     - Lesne, Annick, Julien Riposo, Paul Roger, Axel Cournac, and Julien Mozziconacci. “3D Genome Reconstruction from Chromosomal Contacts.” Nature Methods 11, no. 11 (November 2014): 1141–43. https://doi.org/10.1038/nmeth.3104.
 
