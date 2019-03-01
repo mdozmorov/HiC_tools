@@ -202,6 +202,9 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 - `3DEpiLoop` - prediction of 3D interactions from 1D epigenomic profiles using Random Forest trained on CTCF peaks (histone modifications are the most important predictors, and TFBSs). https://bitbucket.org/4dnucleome/3depiloop
     - Al Bkhetan, Ziad, and Dariusz Plewczynski. “Three-Dimensional Epigenome Statistical Model: Genome-Wide Chromatin Looping Prediction.” Scientific Reports 8, no. 1 (December 2018). https://doi.org/10.1038/s41598-018-23276-8.
 
+- `SNIPER` - 3D subcompartment (A1, A2, B1, B2, B3) identification from low-coverage Hi-C datasets. A neural network based on a denoising autoencoder (9 layers) and multi-layer perceptron. Sigmoidal activation of inputs, ReLU, softmax on outputs. Dropout, binary cross-entropy. exp(-1/C) transformation of Hi-C matrices. Applied to Gm12878 and 8 additional cell types to compare subcompartment changes. Compared with Rao2014 annotations, outperforms Gaussian HMM and MEGABASE. https://github.com/ma-compbio/SNIPER
+    - Xiong, Kyle, and Jian Ma. “Revealing Hi-C Subcompartments by Imputing High-Resolution Inter-Chromosomal Chromatin Interactions.” BioRxiv, January 1, 2018, 505503. https://doi.org/10.1101/505503.
+
 
 ## SNP-oriented
 
