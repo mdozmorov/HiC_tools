@@ -121,6 +121,9 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 
 - `HOMER` - Perl scripts for normalization, visualization, significant interaction detection, motif discovery. Does not correct for bias. http://homer.ucsd.edu/homer/interactions/
 
+- `HiCapTools` - Software package that can design sequence capture probes for targeted chromosome capture applications and analyse sequencing output to detect proximities involving targeted fragments. Two probes are designed for each feature while avoiding repeat elements and non-unique regions. The data analysis suite processes alignment files to report genomic proximities for each feature at restriction fragment level and is isoform-aware for gene features. Statistical significance of contact frequencies is evaluated using an empirically derived background distribution. 
+    - Anandashankar Anil, Rapolas Spalinskas, Örjan Åkerborg, Pelin Sahlén; HiCapTools: a software suite for probe design and proximity detection for targeted chromosome conformation capture applications, Bioinformatics, Volume 34, Issue 4, 15 February 2018, Pages 675–677, https://doi.org/10.1093/bioinformatics/btx625
+
 
 ## Differential interactions
 
