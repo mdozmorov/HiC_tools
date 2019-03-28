@@ -293,6 +293,9 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 
 - `peaktools` - tools for BEDPE-style peaks. https://github.com/sergpolly/peaktools
 
+- `scMerge` - R package for batch effect removal and normalizing of multipe scRNA-seq datasets. fastRUVIII batch removal method. Tested on 14 datasets, compared with scran, MNN, ComBat, Seurat, ZINB-WaVE using Silhouette, ARI - better separation of clusters, pseudotime reconstruction. https://github.com/SydneyBioX/scMerge/
+    - Lin, Yingxin, Shila Ghazanfar, Kevin Wang, Johann A. Gagnon-Bartsch, Kitty K. Lo, Xianbin Su, Ze-Guang Han, et al. “ScMerge: Integration of Multiple Single-Cell Transcriptomics Datasets Leveraging Stable Expression and Pseudo-Replication,” September 12, 2018. https://doi.org/10.1101/393280.
+
 
 ## Papers
 
