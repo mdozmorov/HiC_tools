@@ -13,7 +13,7 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 * [TAD callers](#tad-callers)
 * [Prediction of 3D features](#prediction-of-3d-features)
 * [SNP-oriented Hi-C analysis](#snp-oriented)
-* [Structural variant detection](#structural-variant-detection)
+* [CNV and Structural variant detection](#cnv-and-structural-variant-detection)
 * [Visualization](#visualization)
 * [De novo genome scaffolding](#de-novo-genome-scaffolding)
 * [3D reconstruction](#3d-reconstruction)
@@ -226,7 +226,10 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
     - Martin, Joshua S, Zheng Xu, Alex P Reiner, Karen L Mohlke, Patrick Sullivan, Bing Ren, Ming Hu, and Yun Li. “HUGIn: Hi-C Unifying Genomic Interrogator.” BioRxiv, 2017, 117531.
 
 
-## Structural variant detection
+## CNV and Structural variant detection
+
+- `HiCapp` - Iterative correction-based caICB method. Method to adjust for the copy number variants in Hi-C data. Loess-like idea - we converted the problem of removing the biases across chromosomes to the problem of minimizing the differences across count-distance curves of different chromosomes. Our method assumes equal representation of genomic locus pairs with similar genomic distances located on different chromosomes if there were no bias in the Hi-C maps. https://bitbucket.org/mthjwu/hicapp
+    - Wu, Hua-Jun, and Franziska Michor. “A Computational Strategy to Adjust for Copy Number in Tumor Hi-C Data.” Bioinformatics (Oxford, England) 32, no. 24 (December 15, 2016): 3695–3701. https://doi.org/10.1093/bioinformatics/btw540.
 
 - `hic_breakfinder` - SV identification in Hi-C data. https://github.com/dixonlab/hic_breakfinder
     - Dixon, Jesse R., Jie Xu, Vishnu Dileep, Ye Zhan, Fan Song, Victoria T. Le, Galip Gürkan Yardımcı, et al. “Integrative Detection and Analysis of Structural Variation in Cancer Genomes.” Nature Genetics, September 10, 2018. https://doi.org/10.1038/s41588-018-0195-8. - Detection of structural variants (SV) by integrating optical mapping, Hi-C, and WGS. Custom pipeline using LUMPY, Delly, Control-FREEC software. New Hi-C data on 14 cancer cell lines and 21 previously published datasets. Integration of the detected SVs with genomic annotations, including replication timing. Supplementary data with SVs resolved by individual methods and integrative approaches.
