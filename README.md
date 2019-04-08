@@ -231,6 +231,10 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 - `hic_breakfinder` - SV identification in Hi-C data. https://github.com/dixonlab/hic_breakfinder
     - Dixon, Jesse R., Jie Xu, Vishnu Dileep, Ye Zhan, Fan Song, Victoria T. Le, Galip Gürkan Yardımcı, et al. “Integrative Detection and Analysis of Structural Variation in Cancer Genomes.” Nature Genetics, September 10, 2018. https://doi.org/10.1038/s41588-018-0195-8. - Detection of structural variants (SV) by integrating optical mapping, Hi-C, and WGS. Custom pipeline using LUMPY, Delly, Control-FREEC software. New Hi-C data on 14 cancer cell lines and 21 previously published datasets. Integration of the detected SVs with genomic annotations, including replication timing. Supplementary data with SVs resolved by individual methods and integrative approaches.
 
+- `HiCnv` - CNV, translocation calling from Hi-C data. CNV calling using HMM on per-restriction site quantified data and 1D-normalized accounting for low GC-content (<0.2), mappability (<0.5). Translocation calling on inter-chromosomal matrices, binned. CNV calling: https://github.com/ay-lab/HiCnv, Translocation calling: https://github.com/ay-lab/HiCtrans, Hi-C simulation: https://github.com/ay-lab/AveSim 
+    - Chakraborty, Abhijit, and Ferhat Ay. “Identification of Copy Number Variations and Translocations in Cancer Cells from Hi-C Data.” Edited by Christina Curtis. Bioinformatics 34, no. 2 (January 15, 2018): 338–45. https://doi.org/10.1093/bioinformatics/btx664.
+
+
 ## Visualization
 
 - `3D Genome Browser` - visualizing existing Hi-C and other chromatin conformation capture data. Alongside with genomic and epigenomic data. Own data can be submitted in BUTLR format. http://promoter.bx.psu.edu/hi-c/
