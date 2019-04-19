@@ -283,6 +283,9 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 
 ## 3D reconstruction
 
+- `CSynth.org` - 3D genome browser visualization, GPU-based. Takes in text-based data in pair, BED, matrix, WIG, XYZ formats. 3D structure modeling, overlay of colored genomic annotations. http://csynth.org/
+    - Todd, Stephen, Peter Todd, Simon J McGowan, James R Hughes, Yasutaka Kakui, Frederic Fol Leymarie, William Latham, and Stephen Taylor. “CSynth: A Dynamic Modelling and Visualisation Tool for 3D Chromatin Structure.” BioRxiv, January 3, 2019. https://doi.org/10.1101/499806.
+
 - `GenomeFlow` - a complete set of tools for Hi-C data alignment, normalization, 2D visualization, 3D genome modeling and visualization. ClusterTAD for TAD identification. LorDG and 3DMax for 3D genome reconstruction. https://github.com/jianlin-cheng/GenomeFlow
     - Trieu, Tuan, Oluwatosin Oluwadare, Julia Wopata, and Jianlin Cheng. “GenomeFlow: A Comprehensive Graphical Tool for Modeling and Analyzing 3D Genome Structure.” Bioinformatics (Oxford, England), September 12, 2018. https://doi.org/10.1093/bioinformatics/bty802.
 
