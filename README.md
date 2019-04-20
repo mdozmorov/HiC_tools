@@ -133,6 +133,9 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 - `HiCapTools` - Software package that can design sequence capture probes for targeted chromosome capture applications and analyse sequencing output to detect proximities involving targeted fragments. Two probes are designed for each feature while avoiding repeat elements and non-unique regions. The data analysis suite processes alignment files to report genomic proximities for each feature at restriction fragment level and is isoform-aware for gene features. Statistical significance of contact frequencies is evaluated using an empirically derived background distribution. https://github.com/sahlenlab/HiCapTools
     - Anandashankar Anil, Rapolas Spalinskas, Örjan Åkerborg, Pelin Sahlén; HiCapTools: a software suite for probe design and proximity detection for targeted chromosome conformation capture applications, Bioinformatics, Volume 34, Issue 4, 15 February 2018, Pages 675–677, https://doi.org/10.1093/bioinformatics/btx625
 
+- `X-SCNN` - prediction of significant Hi-C interactions at highly improved resolution using TFBSs, histone marks, DNAse data (WIG format). A Siamese Convolutional Neural Network (SCNN) - two subnetworks with shared parameters predicting true interactions. HiCCUPS calls as true interactions, the same number of no interactions (balanced dataset). Keras with TensorFlow backend. https://github.com/ernstlab/X-SCNN.
+    - Jaroszewicz, Artur, and Jason Ernst. “An Integrative Approach for Fine-Mapping Chromatin Interactions.” Preprint. Bioinformatics, April 11, 2019. https://doi.org/10.1101/605576.
+
 
 ## Differential interactions
 
