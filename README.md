@@ -274,6 +274,9 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 
 - Tools for de novo genome assembly from Hi-C reads: https://omictools.com/assembly-scaffolding-1-category
 
+- `bin3C` - resolving metagenome-assembled genomes from Hi-C data. Metagenomic assembly using SPAdes (http://cab.spbu.ru/software/spades/). Tested using simulated (Sim3C and MetaART) and real-life data. Performance metrics: adjusted mutual information, weighted Bcubed. Contact matrix where bins are contigs. Infomap method for clustering the whole-contig graph. Compared with ProxiMeta (Phase Genomics). https://github.com/cerebis/bin3C
+    - DeMaere, Matthew Z., and Aaron E. Darling. “Bin3C: Exploiting Hi-C Sequencing Data to Accurately Resolve Metagenome-Assembled Genomes.” Genome Biology 20, no. 1 (December 2019). https://doi.org/10.1186/s13059-019-1643-1.
+
 - `dnaTri` - genome scaffolding via probabilistic modeling using two constrains of Hi-C data - distance-dependent decay and cis-trans ratio. Using known chromosome scaffolds and de novo assembly. Naive Bayes classifier to distinguish chromosome-specific vs. on different chromosomes contigs. Average linkage clustering to assemble contigs into 23 groups of chromosomes. Completed 65 previously unplaced contigs. Data, http://my5c.umassmed.edu/triangulation/, code https://github.com/NoamKaplan/dna-triangulation
     - Kaplan, Noam, and Job Dekker. “High-Throughput Genome Scaffolding from in Vivo DNA Interaction Frequency.” Nature Biotechnology 31, no. 12 (December 2013): 1143–47. https://doi.org/10.1038/nbt.2768.
 
