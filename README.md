@@ -38,6 +38,8 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 - `cooler` file format for storing Hi-C matrices, sparse, hierarchical, multi-resolution. `cooler` Python package for data loading, aggregation, merging, normalization (balancing), viewing, exporting data. Together with "pairs" text-based format (https://github.com/4dn-dcic/pairix/blob/master/pairs_format_specification.md), and hic, cooler is accepted by the 4D Nucleome consortium DAC.https://github.com/mirnylab/cooler,https://cooler.readthedocs.io/en/latest/
     - Abdennur, Nezar, and Leonid Mirny. “Cooler: Scalable Storage for Hi-C Data and Other Genomically-Labeled Arrays.” BioRxiv, February 22, 2019. https://doi.org/10.1101/557660.
 
+- `cword` - perl cworld module and collection of utility/analysis scripts for C data (3C, 4C, 5C, Hi-C). https://github.com/dekkerlab/cworld-dekker
+
 - `distiller-nf` - Java modular Hi-C mapping pipeline for reproducible data analysis, nextflow pipeline. Alignment, filtering, aggregating Hi-C matrices. https://github.com/mirnylab/distiller-nf
 
 - `Juicer` - Java full pipeline to convert raw reads into Hi-C maps, visualized in Juicebox. Call domains, loops, CTCF binding sites. `.hic` file format for storing multi-resolution Hi-C data. https://github.com/theaidenlab/juicebox/wiki/Download
