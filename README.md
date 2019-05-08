@@ -274,6 +274,9 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 - `HiPiler` - exploration and comparison of loops and domains as snippets-heatmaps of data. https://github.com/flekschas/hipiler
     - Lekschas, Fritz, Benjamin Bach, Peter Kerpedjiev, Nils Gehlenborg, and Hanspeter Pfister. “HiPiler: Visual Exploration of Large Genome Interaction Matrices with Interactive Small Multiples.” IEEE Transactions on Visualization and Computer Graphics 24, no. 1 (January 2018): 522–31. https://doi.org/10.1109/TVCG.2017.2745978. TechBlog: HiPiler simplifies chromatin structure analysis, http://blogs.nature.com/naturejobs/2017/09/11/techblog-hipiler-simplifies-chromatin-structure-analysis/
 
+- NAT - the 4D Nucleome Analysis Toolbox, for Hi-C data (text, cool format) normalization (ICE, Toeplitz, CNV-Toeplitz), TAD calling (Directionality index, Armatus, custom), karyotype abnormalities visualization on inter-chromosomal matrices, timecourse visualization. Matlab.https://github.com/laseaman/4D_Nucleome_Analysis_Toolbox
+    - Seaman, Laura, and Indika Rajapakse. “4D Nucleome Analysis Toolbox: Analysis of Hi-C Data with Abnormal Karyotype and Time Series Capabilities.” Bioinformatics (Oxford, England) 34, no. 1 (01 2018): 104–6. https://doi.org/10.1093/bioinformatics/btx484.
+
 - `pyGenomeTracks` - python module to plot beautiful and highly customizable genome browser tracks, https://github.com/deeptools/pyGenomeTracks
 
 - TADKit - 3D Genome Browser. Main web site, http://sgt.cnag.cat/3dg/tadkit/, and GitHub, https://github.com/3DGenomes/TADkit
