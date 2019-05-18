@@ -268,6 +268,13 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 
 - `GENOVA` - GENome Organisation Visual Analytics, an R package for rich visual analysis of Hi-C data. Input - HiC-Pro processed files, BED, text formats. Single or two experiment analysis. Integration of external annotations, A/B compartments, cis-/trans-interactions, TADs and loops, genes, insluation score heatmap, differences. https://github.com/robinweide/GENOVA
 
+- `HiCExplorer` - set of programs to process, normalize, analyze and visualize Hi-C data, Python. https://hicexplorer.readthedocs.io/en/latest/, https://github.com/deeptools/HiCExplorer/. 
+- ChoroGenome browser - genes vs. TAD boundaries. http://chorogenome.ie-freiburg.mpg.de/, and the underlying HiCBrowser https://github.com/deeptools/HiCBrowser/
+    - Ramírez, Fidel, Vivek Bhardwaj, Laura Arrigoni, Kin Chung Lam, Björn A. Grüning, José Villaveces, Bianca Habermann, Asifa Akhtar, and Thomas Manke. “High-Resolution TADs Reveal DNA Sequences Underlying Genome Organization in Flies.” Nature Communications 9, no. 1 (December 2018). https://doi.org/10.1038/s41467-017-02525-w.
+- `Galaxy HiCExplorer` - a web server for Hi-C data preprocessing, QC, visualization. Web interface,   https://hicexplorer.usegalaxy.eu/, Docker container, https://github.com/deeptools/docker-galaxy-hicexplorer
+    - Wolff, Joachim, Vivek Bhardwaj, Stephan Nothjunge, Gautier Richard, Gina Renschler, Ralf Gilsbach, Thomas Manke, Rolf Backofen, Fidel Ramírez, and Björn A. Grüning. “Galaxy HiCExplorer: A Web Server for Reproducible Hi-C Data Analysis, Quality Control and Visualization.” Nucleic Acids Research 46, no. W1 (July 2, 2018): W11–16. https://doi.org/10.1093/nar/gky504.
+
+
 - `HiGlass` visualization server for Google maps-style navigation of Hi-C maps. Overlay genes, epigenomic tracks. http://higlass.io/, https://github.com/higlass/higlass, and many HiGlass-related developmend from the author, https://github.com/pkerpedjiev
     - Kerpedjiev, Peter, Nezar Abdennur, Fritz Lekschas, Chuck McCallum, Kasper Dinkla, Hendrik Strobelt, Jacob M Luber, et al. “HiGlass: Web-Based Visual Comparison And Exploration Of Genome Interaction Maps.” BioRxiv, 2017, 121889.
 
