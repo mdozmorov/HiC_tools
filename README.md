@@ -53,6 +53,8 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 
 - `hiclib` - Python tools to qc, map, normalize, filter and analyze Hi-C data, https://bitbucket.org/mirnylab/hiclib
 
+- `HiCpipe` - an efficient Hi-C data processing pipeline. It is based on Juicer and HiC-pro which combines the advatages of these two processing pipelines. HiCpipe is much faster than Juicer and HiC-pro and can output multile features of Hi-C maps. https://github.com/ChenFengling/HiCpipe
+
 - `HiC-bench` - complete pipeline for Hi-C data analysis. https://github.com/NYU-BFX/hic-bench
     - Lazaris, Charalampos, Stephen Kelly, Panagiotis Ntziachristos, Iannis Aifantis, and Aristotelis Tsirigos. “HiC-Bench: Comprehensive and Reproducible Hi-C Data Analysis Designed for Parameter Exploration and Benchmarking.” BMC Genomics 18, no. 1 (December 2017). https://doi.org/10.1186/s12864-016-3387-6.
 
