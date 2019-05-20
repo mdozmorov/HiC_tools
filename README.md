@@ -249,6 +249,8 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 
 ## CNV and Structural variant detection
 
+- [hicpipe](https://github.com/ChenFengling/HiCpipe) and, alternatively, [HiCnorm](http://www.people.fas.harvard.edu/~junliu/HiCNorm/) normalization preserves CNVs in Hi-C data. From Zhang et al., “Local and Global Chromatin Interactions Are Altered by Large Genomic Deletions Associated with Human Brain Development.” https://doi.org/10.1038/s41467-018-07766-x
+
 - `hic_breakfinder` - SV identification in Hi-C data. https://github.com/dixonlab/hic_breakfinder
     - Dixon, Jesse R., Jie Xu, Vishnu Dileep, Ye Zhan, Fan Song, Victoria T. Le, Galip Gürkan Yardımcı, et al. “Integrative Detection and Analysis of Structural Variation in Cancer Genomes.” Nature Genetics, September 10, 2018. https://doi.org/10.1038/s41588-018-0195-8. - Detection of structural variants (SV) by integrating optical mapping, Hi-C, and WGS. Custom pipeline using LUMPY, Delly, Control-FREEC software. New Hi-C data on 14 cancer cell lines and 21 previously published datasets. Integration of the detected SVs with genomic annotations, including replication timing. Supplementary data with SVs resolved by individual methods and integrative approaches.
 
