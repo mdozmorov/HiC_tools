@@ -336,6 +336,9 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 
 - `hic2cool` - Lightweight converter between hic and cool contact matrices. https://github.com/4dn-dcic/hic2cool
 
+- `HiCluster` - scHi-C clustering based on imputation using linear convolution and random walk. scHi-C challenges. Outperforms PCA, HiCrep. TAD-like structures can be detected in imputed data. Simulations, introducing noise, sparsity. https://github.com/zhoujt1994/scHiCluster
+    - Zhou, Jingtian, Jianzhu Ma, Yusi Chen, Chuankai Cheng, Bokan Bao, Jian Peng, Terrence Sejnowski, Jesse Dixon, and Joseph Ecker. “HiCluster: A Robust Single-Cell Hi-C Clustering Method Based on Convolution and Random Walk.” Preprint. Bioinformatics, December 27, 2018. https://doi.org/10.1101/506717.
+
 - `HiCPlus` - increasing resolution of Hi-C data using convolutional neural network. Basically, smoothing parts of Hi-C image, then binning into smaller parts. Performs better than bilinear/biqubic smoothing. https://github.com/zhangyan32/HiCPlus
     - Zhang, Yan, Lin An, Ming Hu, Jijun Tang, and Feng Yue. “HiCPlus: Resolution Enhancement of Hi-C Inte
 
