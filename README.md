@@ -75,6 +75,9 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 - `HiTC` - R package for High Throughput Chromosome Conformation Capture analysis, https://bioconductor.org/packages/release/bioc/html/HiTC.html
     - Servant, Nicolas, Bryan R. Lajoie, Elphège P. Nora, Luca Giorgetti, Chong-Jian Chen, Edith Heard, Job Dekker, and Emmanuel Barillot. “HiTC: Exploration of High-Throughput ‘C’ Experiments.” Bioinformatics (Oxford, England) 28, no. 21 (November 1, 2012): 2843–44. https://doi.org/10.1093/bioinformatics/bts521. - HiTC paper. Processed data import from TXT/BED into GRanges. Quality control, visualization. Normalization, 45-degree rotation and visualization of triangle TADs. Adding annotation at the bottom. PCA to detect A/B compartments. https://bioconductor.org/packages/release/bioc/html/HiTC.html and https://www.bioconductor.org/packages/devel/bioc/vignettes/HiTC/inst/doc/HiTC.pdf 
 
+- `mHi-C` - recovering alignment of multi-mapped reads in Hi-C data. Generative model to estimate probabilities for each bin-pair originating from a given origin. Reproducibility of contact matrices (stratum-adjusted correlation), reproducibility and number of significant interactions is improved. Novel interactions. Enrichment of TAD boundaries in LINE and SINE repetitive elements. Multi-mapping not sensitive to trimming. Read filtering strategy (Figure 1, supplementary figures are very visual). https://github.com/keleslab/mHiC
+    - Zheng, Ye, Ferhat Ay, and Sunduz Keles. “Generative Modeling of Multi-Mapping Reads with MHi-C Advances Analysis of High Throughput Genome-Wide Conformation Capture Studies,” October 3, 2018. https://doi.org/10.1101/301705.
+
 - `my5C`- web-based tools, well-documented analysis and visualization of 5S data, http://my5c.umassmed.edu/
 
 - `TADbit` - Python-based pipeline, from iterative mapping, filtering, normalization. Similarity metrics: distance-centric Spearman, first principal eigenvector. TAD detection. TAD boundaries alignment, within 20kb. 3D modeling. Supplementary material - key functions, TAD detection algorithm, boundary comparison. https://github.com/3DGenomes/tadbit
@@ -353,9 +356,6 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
     - Hansen, Peter, Salaheddine Ali, Hannah Blau, Daniel Danis, Jochen Hecht, Uwe Kornak, Darío G. Lupiáñez, Stefan Mundlos, Robin Steinhaus, and Peter N. Robinson. “GOPHER: Generator Of Probes for Capture Hi-C Experiments at High Resolution.” BMC Genomics 20, no. 1 (December 2019). https://doi.org/10.1186/s12864-018-5376-4.
 
 - `hic2cool` - Lightweight converter between hic and cool contact matrices. https://github.com/4dn-dcic/hic2cool
-
-- `mHi-C` - recovering alignment of multi-mapped reads in Hi-C data. Generative model to estimate probabilities for each bin-pair originating from a given origin. Reproducibility of contact matrices (stratum-adjusted correlation), reproducibility and number of significant interactions is improved. Novel interactions. Enrichment of TAD boundaries in LINE and SINE repetitive elements. Multi-mapping not sensitive to trimming. Read filtering strategy (Figure 1, supplementary figures are very visual). https://github.com/keleslab/mHiC
-    - Zheng, Ye, Ferhat Ay, and Sunduz Keles. “Generative Modeling of Multi-Mapping Reads with MHi-C Advances Analysis of High Throughput Genome-Wide Conformation Capture Studies,” October 3, 2018. https://doi.org/10.1101/301705.
 
 - `peaktools` - tools for BEDPE-style peaks. https://github.com/sergpolly/peaktools
 
