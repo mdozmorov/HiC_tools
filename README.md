@@ -18,6 +18,7 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 * [Visualization](#visualization)
 * [De novo genome scaffolding](#de-novo-genome-scaffolding)
 * [3D reconstruction](#3d-reconstruction)
+* [Resolution improvement](#resolution-improvement)
 * [Miscellaneous Hi-C tools](#miscellaneous)
 * [Papers](#papers)
   * [Methodological Reviews](#methodological-reviews)
@@ -334,11 +335,16 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
     - Lesne, Annick, Julien Riposo, Paul Roger, Axel Cournac, and Julien Mozziconacci. “3D Genome Reconstruction from Chromosomal Contacts.” Nature Methods 11, no. 11 (November 2014): 1141–43. https://doi.org/10.1038/nmeth.3104.
 
 
-
-## Miscellaneous
+## Resolution improvement
 
 - `Boost-HiC` - infer fine-resolution contact frequencies in Hi-C data, performs well even on 0.1% of the raw data. TAD boundaries remain. Better than HiCPlus. Can be used for differential analysis (comparison) of two Hi-C maps. https://github.com/LeopoldC/Boost-HiC
     - Carron, Leopold, Jean-baptiste Morlot, Vincent Matthys, Annick Lesne, and Julien Mozziconacci. “Boost-HiC : Computational Enhancement of Long-Range Contacts in Chromosomal Contact Maps,” November 18, 2018. https://doi.org/10.1101/471607.
+
+- `HiCPlus` - increasing resolution of Hi-C data using convolutional neural network. Basically, smoothing parts of Hi-C image, then binning into smaller parts. Performs better than bilinear/biqubic smoothing. https://github.com/zhangyan32/HiCPlus
+    - Zhang, Yan, Lin An, Ming Hu, Jijun Tang, and Feng Yue. “HiCPlus: Resolution Enhancement of Hi-C Inte
+
+
+## Miscellaneous
 
 - `GOPHER` - probe design for Capture Hi-C. All, or selected, promoters, or around GWAS hits. Two other tools, CapSequm and HiCapTools. https://github.com/TheJacksonLaboratory/Gopher
     - Hansen, Peter, Salaheddine Ali, Hannah Blau, Daniel Danis, Jochen Hecht, Uwe Kornak, Darío G. Lupiáñez, Stefan Mundlos, Robin Steinhaus, and Peter N. Robinson. “GOPHER: Generator Of Probes for Capture Hi-C Experiments at High Resolution.” BMC Genomics 20, no. 1 (December 2019). https://doi.org/10.1186/s12864-018-5376-4.
@@ -347,9 +353,6 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 
 - `HiCluster` - scHi-C clustering based on imputation using linear convolution and random walk. scHi-C challenges. Outperforms PCA, HiCrep. TAD-like structures can be detected in imputed data. Simulations, introducing noise, sparsity. https://github.com/zhoujt1994/scHiCluster
     - Zhou, Jingtian, Jianzhu Ma, Yusi Chen, Chuankai Cheng, Bokan Bao, Jian Peng, Terrence Sejnowski, Jesse Dixon, and Joseph Ecker. “HiCluster: A Robust Single-Cell Hi-C Clustering Method Based on Convolution and Random Walk.” Preprint. Bioinformatics, December 27, 2018. https://doi.org/10.1101/506717.
-
-- `HiCPlus` - increasing resolution of Hi-C data using convolutional neural network. Basically, smoothing parts of Hi-C image, then binning into smaller parts. Performs better than bilinear/biqubic smoothing. https://github.com/zhangyan32/HiCPlus
-    - Zhang, Yan, Lin An, Ming Hu, Jijun Tang, and Feng Yue. “HiCPlus: Resolution Enhancement of Hi-C Inte
 
 - `mHi-C` - recovering alignment of multi-mapped reads in Hi-C data. Generative model to estimate probabilities for each bin-pair originating from a given origin. Reproducibility of contact matrices (stratum-adjusted correlation), reproducibility and number of significant interactions is improved. Novel interactions. Enrichment of TAD boundaries in LINE and SINE repetitive elements. Multi-mapping not sensitive to trimming. Read filtering strategy (Figure 1, supplementary figures are very visual). https://github.com/keleslab/mHiC
     - Zheng, Ye, Ferhat Ay, and Sunduz Keles. “Generative Modeling of Multi-Mapping Reads with MHi-C Advances Analysis of High Throughput Genome-Wide Conformation Capture Studies,” October 3, 2018. https://doi.org/10.1101/301705.
