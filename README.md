@@ -262,6 +262,9 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 - `SNIPER` - 3D subcompartment (A1, A2, B1, B2, B3) identification from low-coverage Hi-C datasets. A neural network based on a denoising autoencoder (9 layers) and multi-layer perceptron. Sigmoidal activation of inputs, ReLU, softmax on outputs. Dropout, binary cross-entropy. exp(-1/C) transformation of Hi-C matrices. Applied to Gm12878 and 8 additional cell types to compare subcompartment changes. Compared with Rao2014 annotations, outperforms Gaussian HMM and MEGABASE. https://github.com/ma-compbio/SNIPER
     - Xiong, Kyle, and Jian Ma. “Revealing Hi-C Subcompartments by Imputing High-Resolution Inter-Chromosomal Chromatin Interactions.” BioRxiv, January 1, 2018, 505503. https://doi.org/10.1101/505503.
 
+- `TADBoundaryDectector` - TAD boundary prediction from sequence only using deep learning models. 12 architectures tested, with three convolutional and an LSTM layer performed best. Methods, Implementation in Keras-TensorFlow. Model evaluation using different criteria, 96% accuracy reported. Deep learning outperform feature-based models, among which Boosted trees, Random Forest, elastic net logistic regression are best performers. Data augmentation (aka feature engineering) by randomly shifting TAD boundary regions by som base pairs of length (0-100). Tested on Drozophila data. https://github.com/lincshunter/TADBoundaryDectector
+    - Henderson, John, Vi Ly, Shawn Olichwier, Pranik Chainani, Yu Liu, and Benjamin Soibam. “Accurate Prediction of Boundaries of High Resolution Topologically Associated Domains (TADs) in Fruit Flies Using Deep Learning.” Nucleic Acids Research, May 3, 2019. https://doi.org/10.1093/nar/gkz315.
+
 
 ## SNP-oriented
 
