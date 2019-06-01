@@ -7,6 +7,7 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 * [Pipelines for Hi-C data processing](#pipelines)
   * [Resolution improvement](#resolution-improvement)
   * [Single-cell Hi-C](#Single-cell-Hi-C)
+  * [Capture-C](#capture-c)
 * [Normalization of Hi-C data](#normalization)
   * [CNV-aware normalization](#cnv-aware-normalization)
 * [Reproducibility and QC of Hi-C data](#reproducibility)
@@ -99,6 +100,13 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 
 - `nuc_processing` - Chromatin contact paired-read single-cell Hi-C processing module for Nuc3D and NucTools. https://github.com/TheLaueLab/nuc_processing.
     - Stevens, Tim J., David Lando, Srinjan Basu, Liam P. Atkinson, Yang Cao, Steven F. Lee, Martin Leeb, et al. “3D Structures of Individual Mammalian Genomes Studied by Single-Cell Hi-C.” Nature, March 13, 2017. https://doi.org/10.1038/nature21429.
+
+### Capture-C
+
+- http://apps.molbiol.ox.ac.uk/CaptureC/cgi-bin/CapSequm.cgi - oligo design by Hughes lab. 
+
+- `capC-MAP` - Capture-C analysis pipeline. Python and C++, run through a configuration file. Outputs bedGraph. Compared with HiC-Pro, better detects PCR duplicates, identifies more interactions. Normalization tuned for Capture-C data.https://github.com/cbrackley/capC-MAP, https://capc-map.readthedocs.io/
+    - Buckle, Adam, Nick Gilbert, Davide Marenduzzo, and Chris A Brackley. “CapC-MAP: A Software Package for Analysis of Capture-C Data.” Preprint. Genomics, October 30, 2018. https://doi.org/10.1101/456160.
 
 
 ## Normalization
