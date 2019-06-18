@@ -460,6 +460,8 @@ A four-cutter enzyme yields a resolution of ∼256 bp and a six-cutter a resolut
 
 - Nagano, Takashi, Yaniv Lubling, Tim J. Stevens, Stefan Schoenfelder, Eitan Yaffe, Wendy Dean, Ernest D. Laue, Amos Tanay, and Peter Fraser. “Single-Cell Hi-C Reveals Cell-to-Cell Variability in Chromosome Structure.” Nature 502, no. 7469 (October 3, 2013): 59–64. https://doi.org/10.1038/nature12593. - Single-cell Hi-C, protocol. 10 cells analyzed individually and as an ensemble. Large domains are stable, within-domain interactions are stochastic. Active marks correlate with enrichment of trans-chromosomal contacts. Data: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE48262
 
+- Ramani, Vijay, Xinxian Deng, Ruolan Qiu, Kevin L. Gunderson, Frank J. Steemers, Christine M. Disteche, William S. Noble, Zhijun Duan, and Jay Shendure. “Massively Multiplex Single-Cell Hi-C.” Nature Methods 14, no. 3 (2017): 263–66. https://doi.org/10.1038/nmeth.4155. - single-cell combinatorial indexed Hi-C protocol, exploratory data analysis, PCA, QC and filtering steps. Some experiments contained mixture of human and mouse cells. >10,000 cells. Six data libraries, described in the Methods. https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE84920
+
 - Ulianov, Sergey V., Kikue Tachibana-Konwalski, and Sergey V. Razin. “Single-Cell Hi-C Bridges Microscopy and Genome-Wide Sequencing Approaches to Study 3D Chromatin Organization.” BioEssays: News and Reviews in Molecular, Cellular and Developmental Biology 39, no. 10 (2017). https://doi.org/10.1002/bies.201700104. - scRNA-seq, review of the technology and six papers that generated scHi-C data.
 
 
