@@ -166,6 +166,9 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 - `cLoops` - DBSCAN-based algorithm for the detection of chromatin loops in ChIA-PET, Hi-C, HiChIP, Trac-looping data. Local permutation-based estimation of statistical significance, several tests for enrichment over background. Outperforms diffHiC, Fit-Hi-C, GOTHiC, HiCCUPS, HOMER. https://github.com/YaqiangCao/cLoops
     - Cao, Yaqiang, Xingwei Chen, Daosheng Ai, Zhaoxiong Chen, Guoyu Chen, Joseph McDermott, Yi Huang, and Jing-Dong J. Han. “Accurate Loop Calling for 3D Genomic Data with CLoops,” November 8, 2018. https://doi.org/10.1101/465849.
 
+- `coolpup.py` - Pile-up (aggregation, averaging) analysis of Hi-C data (.cool format) for visualizing and identifying chromatin loops from several sparse datasets, e.g., single-cell. Visualization using plotpup.py script. Scripts for paper: https://github.com/Phlya/coolpuppy_paper/tree/master/Nagano, tool: https://github.com/Phlya/coolpuppy
+    - Flyamer, Ilya M., Robert S. Illingworth, and Wendy A. Bickmore. “Coolpup.Py - a Versatile Tool to Perform Pile-up Analysis of Hi-C Data.” BioRxiv, January 1, 2019, 586537. https://doi.org/10.1101/586537.
+
 - `FIREcaller` - an R package to detect frequently interacting regions (FIREs, <200Kb interactions). Within-sample (HiCNormCis) and cross-sample (quantile) normalization, converting FIRE counts to Z-scores, taking significant ones. Schmitt data https://yunliweb.its.unc.edu/FIREcaller/
     - Crowley, Cheynna, Yuchen Yang, Yunjiang Qiu, Benxia Hu, Hyejung Won, Bing Ren, Ming Hu, and Yun Li. “FIREcaller: An R Package for Detecting Frequently Interacting Regions from Hi-C Data.” Preprint. Bioinformatics, April 29, 2019. https://doi.org/10.1101/619288.
 
@@ -308,8 +311,6 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 
 - `3D Genome Browser` - visualizing existing Hi-C and other chromatin conformation capture data. Alongside with genomic and epigenomic data. Own data can be submitted in BUTLR format. http://promoter.bx.psu.edu/hi-c/
     - Wang, Yanli, Bo Zhang, Lijun Zhang, Lin An, Jie Xu, Daofeng Li, Mayank NK Choudhary, et al. “The 3D Genome Browser: A Web-Based Browser for Visualizing 3D Genome Organization and Long-Range Chromatin Interactions.” BioRxiv, 2017, 112268.
-
-- Flyamer, Ilya M., Robert S. Illingworth, and Wendy A. Bickmore. “Coolpup.Py - a Versatile Tool to Perform Pile-up Analysis of Hi-C Data.” BioRxiv, January 1, 2019, 586537. https://doi.org/10.1101/586537. - Pile-up analysis of Hi-C data for visualizing and identifying chromatin loops, exploring Hi-C data transformation. Works on .cool files. https://github.com/Phlya/coolpuppy
 
 - `CSynth` - 3D genome interactive modeling on GPU, and visualization. http://csynth.org/
     - Todd, Stephen, Peter Todd, Simon J McGowan, James R Hughes, Yasutaka Kakui, Frederic Fol Leymarie, William Latham, and Stephen Taylor. “CSynth: A Dynamic Modelling and Visualisation Tool for 3D Chromatin Structure.” BioRxiv, January 1, 2019, 499806. https://doi.org/10.1101/499806.
