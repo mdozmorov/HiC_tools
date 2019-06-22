@@ -91,6 +91,7 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 - `ICE` - Iterative Correction and Eigenvalue decomposition, normalization of HiC data. 
     - Imakaev, Maxim, Geoffrey Fudenberg, Rachel Patton McCord, Natalia Naumova, Anton Goloborodko, Bryan R. Lajoie, Job Dekker, and Leonid A. Mirny. “Iterative Correction of Hi-C Data Reveals Hallmarks of Chromosome Organization.” Nature Methods 9, no. 10 (October 2012): 999–1003. https://doi.org/10.1038/nmeth.2148. - ICE - Iterative Correction and Eigenvalue decomposition, normalization of HiC data. Assumption - all loci should have equal visibility. Deconvolution into eigenvectors/values. hiclib https://bitbucket.org/mirnylab/hiclib. Good description of the algorithm by Lior Pachter https://liorpachter.wordpress.com/2013/11/17/imakaev_explained/
 
+- `pairtools` - tools for low-level processing of mapped Hi-C paired reads. https://github.com/mirnylab/pairtools. Documentation, https://pairtools.readthedocs.io/en/latest/index.html
 
 
 ### Single-cell Hi-C
