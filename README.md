@@ -317,6 +317,9 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 - `HiCnv` - CNV, translocation calling from Hi-C data. CNV calling using HMM on per-restriction site quantified data and 1D-normalized accounting for low GC-content (<0.2), mappability (<0.5). Translocation calling on inter-chromosomal matrices, binned. CNV calling: https://github.com/ay-lab/HiCnv, Translocation calling: https://github.com/ay-lab/HiCtrans, Hi-C simulation: https://github.com/ay-lab/AveSim 
     - Chakraborty, Abhijit, and Ferhat Ay. “Identification of Copy Number Variations and Translocations in Cancer Cells from Hi-C Data.” Edited by Christina Curtis. Bioinformatics 34, no. 2 (January 15, 2018): 338–45. https://doi.org/10.1093/bioinformatics/btx664.
 
+- `HiNT` - CNV and translocation detection from \~10-20% ambigious chimeric reads in Hi-C data. Three tools: HiNT-Pre - preprocessing of Hi-C data; HiNT-CNV and HiNT-TL - CNV and translocation detection, respectively (accept HiC-Pro output). Tested on K562 (cancer) and Gm12878 (normal) data. Removal of known biases using a GAM with Poisson function. Outperforms Delly, Meerkat, hic_breakfinder, HiCtrans. Relatively little overlap with CNVs from WGS (BIC-seq2). Gold-standard - FISH data from Dixon et al., “Integrative Detection and Analysis of Structural Variation in Cancer Genomes.” https://github.com/parklab/HiNT
+    - Wang, Su, Soohyun Lee, Chong Chu, Dhawal Jain, Geoff Nelson, Jennifer M. Walsh, Burak H. Alver, and Peter J. Park. “HiNT: A Computational Method for Detecting Copy Number Variations and Translocations from Hi-C Data.” Preprint. Bioinformatics, June 3, 2019. https://doi.org/10.1101/657080.
+
 
 ## Visualization
 
