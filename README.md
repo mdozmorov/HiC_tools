@@ -380,6 +380,9 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 
 ## 3D reconstruction
 
+- 3D genome reconstruction review. Intro into equilibrium/fractal globule models. Classification of reconstruction methods: distance-, contact-. and probability-based. [Table 1](https://biologicalproceduresonline.biomedcentral.com/articles/10.1186/s12575-019-0094-0#Tab1) summarizes many tools, methods, and references.
+    - Oluwadare, Oluwatosin, Max Highsmith, and Jianlin Cheng. “An Overview of Methods for Reconstructing 3-D Chromosome and Genome Structures from Hi-C Data.” Biological Procedures Online 21, no. 1 (December 2019): 7. https://doi.org/10.1186/s12575-019-0094-0.
+
 - `CSynth.org` - 3D genome browser visualization, GPU-based. Takes in text-based data in pair, BED, matrix, WIG, XYZ formats. 3D structure modeling, overlay of colored genomic annotations. http://csynth.org/
     - Todd, Stephen, Peter Todd, Simon J McGowan, James R Hughes, Yasutaka Kakui, Frederic Fol Leymarie, William Latham, and Stephen Taylor. “CSynth: A Dynamic Modelling and Visualisation Tool for 3D Chromatin Structure.” BioRxiv, January 3, 2019. https://doi.org/10.1101/499806.
 
