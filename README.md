@@ -8,6 +8,7 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
   * [Mirnylab tools](#mirnylab-tools)
   * [Single-cell Hi-C](#Single-cell-Hi-C)
   * [Capture-C](#capture-c)
+  * [4C](#4c)
 * [Resolution improvement](#resolution-improvement)
 * [Normalization of Hi-C data](#normalization)
   * [CNV-aware normalization](#cnv-aware-normalization)
@@ -112,6 +113,10 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 - `capC-MAP` - Capture-C analysis pipeline. Python and C++, run through a configuration file. Outputs bedGraph. Compared with HiC-Pro, better detects PCR duplicates, identifies more interactions. Normalization tuned for Capture-C data.https://github.com/cbrackley/capC-MAP, https://capc-map.readthedocs.io/
     - Buckle, Adam, Nick Gilbert, Davide Marenduzzo, and Chris A Brackley. “CapC-MAP: A Software Package for Analysis of Capture-C Data.” Preprint. Genomics, October 30, 2018. https://doi.org/10.1101/456160.
 
+### 4C
+
+- `4Cseqpipe` processing pipeline and a genome-wide 4C primer database,  http://compgenomics.weizmann.ac.il/tanay/?page_id=367/
+    - Werken, Harmen J. G. van de, Gilad Landan, Sjoerd J. B. Holwerda, Michael Hoichman, Petra Klous, Ran Chachik, Erik Splinter, et al. “Robust 4C-Seq Data Analysis to Screen for Regulatory DNA Interactions.” Nature Methods 9, no. 10 (October 2012): 969–72. https://doi.org/10.1038/nmeth.2173. - 4C technology paper. Two different 4bp cutters to increase resolution. Investigation of beta-globin locus, interchromosomal interactions.
 
 ## Resolution improvement
 
