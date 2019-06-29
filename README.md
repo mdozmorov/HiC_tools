@@ -241,6 +241,8 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 
 ## TAD callers
 
+- [Brief description of 22 TAD calling methods](https://static-content.springer.com/esm/art%3A10.1186%2Fs13059-018-1596-9/MediaObjects/13059_2018_1596_MOESM1_ESM.pdf). Source: [Zufferey et al., “Comparison of Computational Methods for the Identification of Topologically Associating Domains.”](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-018-1596-9#Bib1)
+
 - `3D-NetMod` - hierarchical, nested, partially overlapping TAD detection using graph theory. Community detection method based on the maximization of network modularity, Louvain-like locally greedy algorithm, repeated several (20) times to avoid local maxima, then getting consensus. Tuning parameters are estimated over sequence search. Benchmarked against TADtree, directionality index, Arrowhead. ICE-normalized data brain data from Geschwind (human data) and Jiang (mouse data) studies. Computationally intensive. Python implementation https://bitbucket.org/creminslab/3dnetmod_method_v1.0_10_06_17
     - Norton, Heidi K., Daniel J. Emerson, Harvey Huang, Jesi Kim, Katelyn R. Titus, Shi Gu, Danielle S. Bassett, and Jennifer E. Phillips-Cremins. “Detecting Hierarchical Genome Folding with Network Modularity.” Nature Methods 15, no. 2 (February 2018): 119–22. https://doi.org/10.1038/nmeth.4560.
 
