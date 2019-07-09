@@ -137,7 +137,7 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 - `Binless` - a resolution-agnostic normalization method that adapts to the quality and quantity of available data, to detect significant interactions and differences. Negative binomial count regression framework, adapted for ICE normalization. Fused lasso to smooth neighboring signal. TADbit for data processing, details of read filtering. https://github.com/3DGenomes/binless
     - Spill, Yannick G., David Castillo, Enrique Vidal, and Marc A. Marti-Renom. “Binless Normalization of Hi-C Data Provides Significant Interaction and Difference Detection Independent of Resolution.” Nature Communications 10, no. 1 (26 2019): 1938. https://doi.org/10.1038/s41467-019-09907-2.
 
-- `HiCNorm` - removing biases in Hi-C data via Poisson regression, http://www.people.fas.harvard.edu/~junliu/HiCNorm/
+- `HiCNorm` - removing known biases in Hi-C data (GC content, mappability, fragment length) via Poisson regression, http://www.people.fas.harvard.edu/~junliu/HiCNorm/
     - Hu, Ming, Ke Deng, Siddarth Selvaraj, Zhaohui Qin, Bing Ren, and Jun S. Liu. “HiCNorm: Removing Biases in Hi-C Data via Poisson Regression.” Bioinformatics (Oxford, England) 28, no. 23 (December 1, 2012): 3131–33. https://doi.org/10.1093/bioinformatics/bts570. - Poisson normalization. Also tested negative binomial.
 
 - `HiFive` - handling and normalization or pre-aligned Hi-C and 5C data, https://www.taylorlab.org/software/hifive/
