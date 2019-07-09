@@ -38,6 +38,9 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 - Available analysis options in each pipeline. [pipeline_comparison.csv](pipeline_comparison.csv), [Source](https://link.springer.com/protocol/10.1007%2F978-1-4939-8766-5_16)
 - [Table summarizing functionality of Hi-C data analysis tools](https://www.sciencedirect.com/science/article/pii/S1672022918304339?via%3Dihub#t0005)
 
+- `bigSCale` - scalable analytical framework to analyze large scRNA-seq datasets, UMIs or counts. Pre-clustering, convolution into iCells, final clustering, differential expression, biomarkers. Correlation metric for scRNA-seq data based on converting expression to Z-scores of differential expression. Robust to dropouts. Matlab implementation https://github.com/iaconogi/bigSCale, and data, 1847 human neuronal progenitor cells, https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE102934
+    - Iacono, Giovanni, Elisabetta Mereu, Amy Guillaumet-Adkins, Roser Corominas, Ivon Cuscó, Gustavo Rodríguez-Esteban, Marta Gut, Luis Alberto Pérez-Jurado, Ivo Gut, and Holger Heyn. “BigSCale: An Analytical Framework for Big-Scale Single-Cell Data.” Genome Research 28, no. 6 (June 2018): 878–90. https://doi.org/10.1101/gr.230771.117.
+
 - `cword` - perl cworld module and collection of utility/analysis scripts for C data (3C, 4C, 5C, Hi-C). https://github.com/dekkerlab/cworld-dekker
 
 - `Juicer` - Java full pipeline to convert raw reads into Hi-C maps, visualized in Juicebox. Call domains, loops, CTCF binding sites. `.hic` file format for storing multi-resolution Hi-C data. https://github.com/theaidenlab/juicebox/wiki/Download
