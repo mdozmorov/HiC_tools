@@ -1,12 +1,11 @@
 # A collection of tools and papers related to Hi-C data analysis
 
-Slowly growing as notes from my Zotero collection are getting organized. A related repository holds references to Hi-C data, https://github.com/mdozmorov/HiC_data. Issues and/or Pull requests to add other data are welcome!
+A (continuously updated) collection of references to Hi-C tools. Related repositories: https://github.com/mdozmorov/HiC_data, https://github.com/mdozmorov/scHiC_notes. Issues and/or Pull requests to add other data are welcome!
 
 # Table of content
 
 * [Pipelines for Hi-C data processing](#pipelines)
   * [Mirnylab tools](#mirnylab-tools)
-  * [Single-cell Hi-C](#Single-cell-Hi-C)
   * [Capture-C](#capture-c)
   * [4C](#4c)
 * [Resolution improvement](#resolution-improvement)
@@ -29,7 +28,6 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
   * [TAD detection](#tad-detection)
   * [TAD prediction](#tad-prediction)
   * [Spectral clustering](#spectral-clustering)
-  * [scHi-C](#schi-c)
 * [URLs](#urls)
 
 ## Pipelines
@@ -37,9 +35,6 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 - A list of available pipelines, URLs. [pipelines_list.csv](pipelines_list.csv), [Source](https://link.springer.com/protocol/10.1007%2F978-1-4939-8766-5_16)
 - Available analysis options in each pipeline. [pipeline_comparison.csv](pipeline_comparison.csv), [Source](https://link.springer.com/protocol/10.1007%2F978-1-4939-8766-5_16)
 - [Table summarizing functionality of Hi-C data analysis tools](https://www.sciencedirect.com/science/article/pii/S1672022918304339?via%3Dihub#t0005)
-
-- `bigSCale` - scalable analytical framework to analyze large scRNA-seq datasets, UMIs or counts. Pre-clustering, convolution into iCells, final clustering, differential expression, biomarkers. Correlation metric for scRNA-seq data based on converting expression to Z-scores of differential expression. Robust to dropouts. Matlab implementation https://github.com/iaconogi/bigSCale, and data, 1847 human neuronal progenitor cells, https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE102934
-    - Iacono, Giovanni, Elisabetta Mereu, Amy Guillaumet-Adkins, Roser Corominas, Ivon Cuscó, Gustavo Rodríguez-Esteban, Marta Gut, Luis Alberto Pérez-Jurado, Ivo Gut, and Holger Heyn. “BigSCale: An Analytical Framework for Big-Scale Single-Cell Data.” Genome Research 28, no. 6 (June 2018): 878–90. https://doi.org/10.1101/gr.230771.117.
 
 - `cword` - perl cworld module and collection of utility/analysis scripts for C data (3C, 4C, 5C, Hi-C). https://github.com/dekkerlab/cworld-dekker
 
@@ -96,15 +91,6 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
     - Imakaev, Maxim, Geoffrey Fudenberg, Rachel Patton McCord, Natalia Naumova, Anton Goloborodko, Bryan R. Lajoie, Job Dekker, and Leonid A. Mirny. “Iterative Correction of Hi-C Data Reveals Hallmarks of Chromosome Organization.” Nature Methods 9, no. 10 (October 2012): 999–1003. https://doi.org/10.1038/nmeth.2148. - ICE - Iterative Correction and Eigenvalue decomposition, normalization of HiC data. Assumption - all loci should have equal visibility. Deconvolution into eigenvectors/values. hiclib https://bitbucket.org/mirnylab/hiclib. Good description of the algorithm by Lior Pachter https://liorpachter.wordpress.com/2013/11/17/imakaev_explained/
 
 - `pairtools` - tools for low-level processing of mapped Hi-C paired reads. https://github.com/mirnylab/pairtools. Documentation, https://pairtools.readthedocs.io/en/latest/index.html
-
-
-### Single-cell Hi-C
-
-- `HiCluster` - scHi-C clustering based on imputation using linear convolution and random walk. scHi-C challenges. Outperforms PCA, HiCrep. TAD-like structures can be detected in imputed data. Simulations, introducing noise, sparsity. https://github.com/zhoujt1994/scHiCluster
-    - Zhou, Jingtian, Jianzhu Ma, Yusi Chen, Chuankai Cheng, Bokan Bao, Jian Peng, Terrence Sejnowski, Jesse Dixon, and Joseph Ecker. “HiCluster: A Robust Single-Cell Hi-C Clustering Method Based on Convolution and Random Walk.” Preprint. Bioinformatics, December 27, 2018. https://doi.org/10.1101/506717.
-
-- `nuc_processing` - Chromatin contact paired-read single-cell Hi-C processing module for Nuc3D and NucTools. https://github.com/TheLaueLab/nuc_processing.
-    - Stevens, Tim J., David Lando, Srinjan Basu, Liam P. Atkinson, Yang Cao, Steven F. Lee, Martin Leeb, et al. “3D Structures of Individual Mammalian Genomes Studied by Single-Cell Hi-C.” Nature, March 13, 2017. https://doi.org/10.1038/nature21429.
 
 ### Capture-C
 
@@ -476,18 +462,6 @@ A four-cutter enzyme yields a resolution of ∼256 bp and a six-cutter a resolut
 - Chen, Jie, Alfred O. Hero, and Indika Rajapakse. “Spectral Identification of Topological Domains.” Bioinformatics (Oxford, England) 32, no. 14 (15 2016): 2151–58. https://doi.org/10.1093/bioinformatics/btw221. - Spectral algorithm to define TADs. Laplacian graph segmentation using Fiedler vector iteratively. Toeplitz normalization to remove distance effect. Spectral TADs do not overlap with Dixon's, but better overlap with CTCF.
 
 - Fotuhi Siahpirani, Alireza, Ferhat Ay, and Sushmita Roy. “A Multi-Task Graph-Clustering Approach for Chromosome Conformation Capture Data Sets Identifies Conserved Modules of Chromosomal Interactions.” Genome Biology 17, no. 1 (December 2016). https://doi.org/10.1186/s13059-016-0962-8 - Arboretum-Hi-C - a multitask spectral clustering method to identify differences in genomic architecture. Intro about the 3D genome organization, TAD differences and conservation. Assessment of different clustering approaches using different distance measures, as well as raw contacts. Judging clustering quality by enrichment in regulatory genomic signals (Histone marks, LADs, early vs. late replication timing, TFs like POLII, TAF, TBP, CTCF, P300, CMYC, cohesin components, LADs, replication timing, SINE, LINE, LTR) and by numerical methods (Davies-Bouldin index, silhouette score, others). Although spectral clustering on contact counts performed best, spectral + Spearman correlation was chosen. Comparing cell types identifies biologically relevant differences as quantified by enrichment. Peak counts or average signal within regions were used for enrichment. Data https://zenodo.org/record/49767, and Arboretum-HiC https://bitbucket.org/roygroup/arboretum-hic
-
-### scHi-C
-
-- Flyamer, Ilya M., Johanna Gassler, Maxim Imakaev, Hugo B. Brandão, Sergey V. Ulianov, Nezar Abdennur, Sergey V. Razin, Leonid A. Mirny, and Kikuë Tachibana-Konwalski. “Single-Nucleus Hi-C Reveals Unique Chromatin Reorganization at Oocyte-to-Zygote Transition.” Nature 544, no. 7648 (06 2017): 110–14. https://doi.org/10.1038/nature21711. - snHi-C method, single-nucleus Hi-C that provides >10-fold more contacts per cell than the previous method. Omitted biotin incorporation and enrichment for ligated fragments steps. Applied to mouse oocyte-to-zygote transition, separately to maternal and paternal genomes (different patterns of chromatin reorganization, A/B compartments present in paternal nuclei only). Single cells have variable chromatin structure, but global patterns emerge when averaging. Changes in slope of the distance-dependent decay. TADs and loops may be generated by different mechanisms than compartments. Decrease in loop, TAD, and compartment strength during maturation. hiclib data processing, lavaburst for TAD identification. Data, pooled sparse contact matrices (individual samples available under their own GSM accessions): https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE80006
-
-- Nagano, Takashi, Yaniv Lubling, Tim J. Stevens, Stefan Schoenfelder, Eitan Yaffe, Wendy Dean, Ernest D. Laue, Amos Tanay, and Peter Fraser. “Single-Cell Hi-C Reveals Cell-to-Cell Variability in Chromosome Structure.” Nature 502, no. 7469 (October 3, 2013): 59–64. https://doi.org/10.1038/nature12593. - Single-cell Hi-C, protocol. 10 cells analyzed individually and as an ensemble. Large domains are stable, within-domain interactions are stochastic. Active marks correlate with enrichment of trans-chromosomal contacts. Data: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE48262
-
-- Ramani, Vijay, Xinxian Deng, Ruolan Qiu, Kevin L. Gunderson, Frank J. Steemers, Christine M. Disteche, William S. Noble, Zhijun Duan, and Jay Shendure. “Massively Multiplex Single-Cell Hi-C.” Nature Methods 14, no. 3 (2017): 263–66. https://doi.org/10.1038/nmeth.4155. - single-cell combinatorial indexed Hi-C protocol, exploratory data analysis, PCA, QC and filtering steps. Some experiments contained mixture of human and mouse cells. >10,000 cells. Six data libraries, described in the Methods. https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE84920
-
-- Stevens, Tim J., David Lando, Srinjan Basu, Liam P. Atkinson, Yang Cao, Steven F. Lee, Martin Leeb, et al. “3D Structures of Individual Mammalian Genomes Studied by Single-Cell Hi-C.” Nature, March 13, 2017. https://doi.org/10.1038/nature21429. - 100kb five single-cell HiC. TADs are dynamic, A/B compartments, LADs, enhancers/promoters are consistent. 3D clustering of active histone marks, highly expressed genes. Co-expression of genes within TAD boundaries. Supplementary material has processing pipeline description, https://github.com/TheLaueLab/nuc_processing. Videos at http://www.nature.com/nature/journal/v544/n7648/full/nature21429.html#supplementary-information
-
-- Ulianov, Sergey V., Kikue Tachibana-Konwalski, and Sergey V. Razin. “Single-Cell Hi-C Bridges Microscopy and Genome-Wide Sequencing Approaches to Study 3D Chromatin Organization.” BioEssays: News and Reviews in Molecular, Cellular and Developmental Biology 39, no. 10 (2017). https://doi.org/10.1002/bies.201700104. - scRNA-seq, review of the technology and six papers that generated scHi-C data.
 
 
 ## URLs
