@@ -27,6 +27,7 @@ A (continuously updated) collection of references to Hi-C tools. Related reposit
   * [Normalization](#normalization)
   * [TAD detection](#tad-detection)
   * [TAD prediction](#tad-prediction)
+  * [TAD dynamics](#tad-dynamics)
   * [Spectral clustering](#spectral-clustering)
 * [URLs](#urls)
 
@@ -455,6 +456,10 @@ A four-cutter enzyme yields a resolution of ∼256 bp and a six-cutter a resolut
 ### TAD prediction
 
 - Bednarz, Paweł, and Bartek Wilczyński. “Supervised Learning Method for Predicting Chromatin Boundary Associated Insulator Elements.” Journal of Bioinformatics and Computational Biology 12, no. 06 (December 2014): 1442006. doi:10.1142/S0219720014420062. http://www.worldscientific.com/doi/pdf/10.1142/S0219720014420062 - Predicting TAD boundaries using training data, and making new predictions. Bayesian network (BNFinder method), random forest vs. basic k-means clustering, ChromHMM, cdBEST. Using sequence k-mers and ChIP-seq data from modENCODE for prediction - CTCF ChIP-seq performs best. Used Boruta package for feature selection. Bayesian network performs best. To read on their BNFinder method
+
+### TAD dynamics
+
+- Zheng, H., and Xie, W. (2019). The role of 3D genome organization in development and cell differentiation. Nat. Rev. Mol. Cell Biol. https://www.nature.com/articles/s41580-019-0132-4 - 3D structure of the genome and its changes during gametogenesis, embryonic development, lineage commitment, differentiation. Changes in developmental disorders and diseases. Chromatin compartments and TADs. Chromatin changes during X chromosome inactivation. Promoter-enhancer interactions established during development are accompanied by gene expression changes. Polycomb-mediated interactions may repress developmental genes. References to many studies.
 
 ### Spectral clustering
 
