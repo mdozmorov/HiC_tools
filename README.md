@@ -331,6 +331,8 @@ A (continuously updated) collection of references to Hi-C tools. Related reposit
 - `CSynth` - 3D genome interactive modeling on GPU, and visualization. http://csynth.org/
     - Todd, Stephen, Peter Todd, Simon J McGowan, James R Hughes, Yasutaka Kakui, Frederic Fol Leymarie, William Latham, and Stephen Taylor. “CSynth: A Dynamic Modelling and Visualisation Tool for 3D Chromatin Structure.” BioRxiv, January 1, 2019, 499806. https://doi.org/10.1101/499806.
 
+- `DNARchitect` - a Shiny App for visualizing genomic data (HiC, mRNA, ChIP, ATAC etc) in bed, bedgraph, and bedpe formats. Web version, http://shiny.immgen.org/DNARchitect/, GitHub, https://github.com/alosdiallo/DNA_Rchitect
+
 - `GENOVA` - GENome Organisation Visual Analytics, an R package for rich visual analysis of Hi-C data. Input - HiC-Pro processed files, BED, text formats. Single or two experiment analysis. Integration of external annotations, A/B compartments, cis-/trans-interactions, TADs and loops, genes, insluation score heatmap, differences. https://github.com/robinweide/GENOVA
 
 - `HiCExplorer` - set of programs to process, normalize, analyze and visualize Hi-C data, Python. https://hicexplorer.readthedocs.io/en/latest/, https://github.com/deeptools/HiCExplorer/. 
