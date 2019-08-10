@@ -208,6 +208,9 @@ A (continuously updated) collection of references to Hi-C tools. Related reposit
 
 ## Differential interactions
 
+- `AP` - aggregation preference - parameter, to quantify TAD heterogeneity. Call significant interactions within a TAD, cluster with DBSCAN, calculate weighted interaction density within each cluster, average. AP measures are reproducible. Comparison of TADs in Gm12878 and IMR90 - stable TADs change their aggregation preference, these changes correlate with LINEs, Lamin B1 signal. Can detect structural changes (block split) in TADs. https://github.com/XiaoTaoWang/TADLib
+    - Wang, X.-T., Dong, P.-F., Zhang, H.-Y., and Peng, C. (2015). Structural heterogeneity and functional diversity of topologically associating domains in mammalian genomes. Nucleic Acids Research 43, 7237–7246.
+    
 - `Chicdiff` - differential interaction detection in Capture Hi-C data. Signal normalization based on CHiCAGO framework, differential testing using DESeq2. Accounting for distance effect by the Independent Hypothesis Testing (IHW) method to learn p-value weights based on distance to maximize the number of rejected null hypotheses. https://github.com/RegulatoryGenomicsGroup/chicdiff
     - Cairns, Jonathan, William R. Orchard, Valeriya Malysheva, and Mikhail Spivakov. “Chicdiff: A Computational Pipeline for Detecting Differential Chromosomal Interactions in Capture Hi-C Data.” BioRxiv, January 1, 2019, 526269. https://doi.org/10.1101/526269.
 
