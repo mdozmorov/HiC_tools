@@ -131,6 +131,9 @@ A (continuously updated) collection of references to Hi-C tools. Related reposit
 - `HiCNorm` - removing known biases in Hi-C data (GC content, mappability, fragment length) via Poisson regression, http://www.people.fas.harvard.edu/~junliu/HiCNorm/
     - Hu, Ming, Ke Deng, Siddarth Selvaraj, Zhaohui Qin, Bing Ren, and Jun S. Liu. “HiCNorm: Removing Biases in Hi-C Data via Poisson Regression.” Bioinformatics (Oxford, England) 28, no. 23 (December 1, 2012): 3131–33. https://doi.org/10.1093/bioinformatics/bts570. - Poisson normalization. Also tested negative binomial.
 
+- `HiCorr` - visibility normalization using trans interactions only, to better emphasize promoter-enhancer interactions, combines advantages of implicit and explicit bias correction methods. https://github.com/JinLabBioinfo/HiCorr
+    - Lu, Leina, Xiaoxiao Liu, Wei-Kai Huang, Paola Giusti-Rodriguez, Jian Cui, Shanshan Zhang, Wanying Xu, et al. “Robust Hi-C Chromatin Loop Maps in Human Neurogenesis and Brain Tissues at High-Resolution.” Preprint. Genomics, August 22, 2019. https://doi.org/10.1101/744540.
+
 - `HiFive` - handling and normalization or pre-aligned Hi-C and 5C data, https://www.taylorlab.org/software/hifive/
     - Sauria, Michael EG, Jennifer E. Phillips-Cremins, Victor G. Corces, and James Taylor. “HiFive: A Tool Suite for Easy and Efficient HiC and 5C Data Analysis.” Genome Biology 16, no. 1 (December 2015). https://doi.org/10.1186/s13059-015-0806-y. - HiFive - post-processing of aligned Hi-C and 5C data, three normalization approaches: "Binning" - model-based Yaffe & Tanay's method, "Express" - matrix-balancing approach, "Probability" - multiplicative probability model. Judging normalization quality by correlation between matrices. 
 
