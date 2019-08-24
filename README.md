@@ -27,6 +27,7 @@ A (continuously updated) collection of references to Hi-C tools. Related reposit
   * [Normalization](#normalization)
   * [TAD detection](#tad-detection)
   * [TAD prediction](#tad-prediction)
+  * [TAD dynamics](#tad-dynamics)
   * [Spectral clustering](#spectral-clustering)
 * [URLs](#urls)
 
@@ -210,6 +211,9 @@ A (continuously updated) collection of references to Hi-C tools. Related reposit
 
 ## Differential interactions
 
+- `AP` - aggregation preference - parameter, to quantify TAD heterogeneity. Call significant interactions within a TAD, cluster with DBSCAN, calculate weighted interaction density within each cluster, average. AP measures are reproducible. Comparison of TADs in Gm12878 and IMR90 - stable TADs change their aggregation preference, these changes correlate with LINEs, Lamin B1 signal. Can detect structural changes (block split) in TADs. https://github.com/XiaoTaoWang/TADLib
+    - Wang, X.-T., Dong, P.-F., Zhang, H.-Y., and Peng, C. (2015). Structural heterogeneity and functional diversity of topologically associating domains in mammalian genomes. Nucleic Acids Research 43, 7237–7246.
+    
 - `Chicdiff` - differential interaction detection in Capture Hi-C data. Signal normalization based on CHiCAGO framework, differential testing using DESeq2. Accounting for distance effect by the Independent Hypothesis Testing (IHW) method to learn p-value weights based on distance to maximize the number of rejected null hypotheses. https://github.com/RegulatoryGenomicsGroup/chicdiff
     - Cairns, Jonathan, William R. Orchard, Valeriya Malysheva, and Mikhail Spivakov. “Chicdiff: A Computational Pipeline for Detecting Differential Chromosomal Interactions in Capture Hi-C Data.” BioRxiv, January 1, 2019, 526269. https://doi.org/10.1101/526269.
 
@@ -332,6 +336,8 @@ A (continuously updated) collection of references to Hi-C tools. Related reposit
 
 - `CSynth` - 3D genome interactive modeling on GPU, and visualization. http://csynth.org/
     - Todd, Stephen, Peter Todd, Simon J McGowan, James R Hughes, Yasutaka Kakui, Frederic Fol Leymarie, William Latham, and Stephen Taylor. “CSynth: A Dynamic Modelling and Visualisation Tool for 3D Chromatin Structure.” BioRxiv, January 1, 2019, 499806. https://doi.org/10.1101/499806.
+
+- `DNARchitect` - a Shiny App for visualizing genomic data (HiC, mRNA, ChIP, ATAC etc) in bed, bedgraph, and bedpe formats. Web version, http://shiny.immgen.org/DNARchitect/, GitHub, https://github.com/alosdiallo/DNA_Rchitect
 
 - `GENOVA` - GENome Organisation Visual Analytics, an R package for rich visual analysis of Hi-C data. Input - HiC-Pro processed files, BED, text formats. Single or two experiment analysis. Integration of external annotations, A/B compartments, cis-/trans-interactions, TADs and loops, genes, insluation score heatmap, differences. https://github.com/robinweide/GENOVA
 
@@ -458,6 +464,10 @@ A four-cutter enzyme yields a resolution of ∼256 bp and a six-cutter a resolut
 ### TAD prediction
 
 - Bednarz, Paweł, and Bartek Wilczyński. “Supervised Learning Method for Predicting Chromatin Boundary Associated Insulator Elements.” Journal of Bioinformatics and Computational Biology 12, no. 06 (December 2014): 1442006. doi:10.1142/S0219720014420062. http://www.worldscientific.com/doi/pdf/10.1142/S0219720014420062 - Predicting TAD boundaries using training data, and making new predictions. Bayesian network (BNFinder method), random forest vs. basic k-means clustering, ChromHMM, cdBEST. Using sequence k-mers and ChIP-seq data from modENCODE for prediction - CTCF ChIP-seq performs best. Used Boruta package for feature selection. Bayesian network performs best. To read on their BNFinder method
+
+### TAD dynamics
+
+- Zheng, H., and Xie, W. (2019). The role of 3D genome organization in development and cell differentiation. Nat. Rev. Mol. Cell Biol. https://www.nature.com/articles/s41580-019-0132-4 - 3D structure of the genome and its changes during gametogenesis, embryonic development, lineage commitment, differentiation. Changes in developmental disorders and diseases. Chromatin compartments and TADs. Chromatin changes during X chromosome inactivation. Promoter-enhancer interactions established during development are accompanied by gene expression changes. Polycomb-mediated interactions may repress developmental genes. References to many studies.
 
 ### Spectral clustering
 
