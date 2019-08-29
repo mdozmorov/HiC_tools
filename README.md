@@ -183,6 +183,9 @@ A (continuously updated) collection of references to Hi-C tools. Related reposit
 - `coolpup.py` - Pile-up (aggregation, averaging) analysis of Hi-C data (.cool format) for visualizing and identifying chromatin loops from several sparse datasets, e.g., single-cell. Visualization using plotpup.py script. Scripts for paper: https://github.com/Phlya/coolpuppy_paper/tree/master/Nagano, tool: https://github.com/Phlya/coolpuppy
     - Flyamer, Ilya M., Robert S. Illingworth, and Wendy A. Bickmore. “Coolpup.Py - a Versatile Tool to Perform Pile-up Analysis of Hi-C Data.” BioRxiv, January 1, 2019, 586537. https://doi.org/10.1101/586537.
 
+- `FastHiC` - hidden Markov random field (HMRF)-based peak caller, fast and well performing. https://yunliweb.its.unc.edu/fasthic/
+    - Xu, Zheng, Guosheng Zhang, Cong Wu, Yun Li, and Ming Hu. “FastHiC: A Fast and Accurate Algorithm to Detect Long-Range Chromosomal Interactions from Hi-C Data.” Bioinformatics (Oxford, England) 32, no. 17 (01 2016): 2692–95. https://doi.org/10.1093/bioinformatics/btw240.
+
 - `FIREcaller` - an R package to detect frequently interacting regions (FIREs, <200Kb interactions). Within-sample (HiCNormCis) and cross-sample (quantile) normalization, converting FIRE counts to Z-scores, taking significant ones. Schmitt data https://yunliweb.its.unc.edu/FIREcaller/
     - Crowley, Cheynna, Yuchen Yang, Yunjiang Qiu, Benxia Hu, Hyejung Won, Bing Ren, Ming Hu, and Yun Li. “FIREcaller: An R Package for Detecting Frequently Interacting Regions from Hi-C Data.” Preprint. Bioinformatics, April 29, 2019. https://doi.org/10.1101/619288.
 
