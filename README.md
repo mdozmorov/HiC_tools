@@ -7,6 +7,7 @@ A (continuously updated) collection of references to Hi-C tools. Related reposit
 * [Pipelines for Hi-C data processing](#pipelines)
   * [Mirnylab tools](#mirnylab-tools)
   * [Capture-C](#capture-c)
+  * [HiChIP](#hichip)
   * [4C](#4c)
 * [Resolution improvement](#resolution-improvement)
 * [Normalization of Hi-C data](#normalization)
@@ -104,6 +105,11 @@ A (continuously updated) collection of references to Hi-C tools. Related reposit
 
 - `capC-MAP` - Capture-C analysis pipeline. Python and C++, run through a configuration file. Outputs bedGraph. Compared with HiC-Pro, better detects PCR duplicates, identifies more interactions. Normalization tuned for Capture-C data.https://github.com/cbrackley/capC-MAP, https://capc-map.readthedocs.io/
     - Buckle, Adam, Nick Gilbert, Davide Marenduzzo, and Chris A Brackley. “CapC-MAP: A Software Package for Analysis of Capture-C Data.” Preprint. Genomics, October 30, 2018. https://doi.org/10.1101/456160.
+
+### HiChIP
+
+- `HiChIP-Peak` - HiChIP peak caller, focus on peaks at re-ligation sites. Peak filtering, then negative binomial model. Differential peak analysis similar to DiffBind. https://github.com/ChenfuShi/HiChIP_peaks
+    - Shi, Chenfu, Magnus Rattray, and Gisela Orozco. “HiChIP-Peaks: A HiChIP Peak Calling Algorithm.” Preprint. Bioinformatics, June 27, 2019. https://doi.org/10.1101/682781.
 
 ### 4C
 
