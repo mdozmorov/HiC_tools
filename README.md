@@ -220,6 +220,10 @@ A (continuously updated) collection of references to Hi-C tools. Related reposit
 
 ## Differential interactions
 
+- Check https://bitbucket.org/mforcato/hictoolscompare.git, they have tools for TAD comparison, and simulated matrices.
+
+- TADbit paper [@Serra:2017aa]. Supplementary material http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005665#sec020 + key functions, TAD detection algorithm, border comparison. https://github.com/3DGenomes/tadbit
+
 - `AP` - aggregation preference - parameter, to quantify TAD heterogeneity. Call significant interactions within a TAD, cluster with DBSCAN, calculate weighted interaction density within each cluster, average. AP measures are reproducible. Comparison of TADs in Gm12878 and IMR90 - stable TADs change their aggregation preference, these changes correlate with LINEs, Lamin B1 signal. Can detect structural changes (block split) in TADs. https://github.com/XiaoTaoWang/TADLib
     - Wang, X.-T., Dong, P.-F., Zhang, H.-Y., and Peng, C. (2015). Structural heterogeneity and functional diversity of topologically associating domains in mammalian genomes. Nucleic Acids Research 43, 7237–7246.
     
@@ -232,7 +236,7 @@ A (continuously updated) collection of references to Hi-C tools. Related reposit
 - `diffloop` - Differential analysis of chromatin loops (ChIA-PET). edgeR framework. https://bioconductor.org/packages/release/bioc/html/diffloop.html
     - Lareau, Caleb A., and Martin J. Aryee. “Diffloop: A Computational Framework for Identifying and Analyzing Differential DNA Loops from Sequencing Data.” Bioinformatics (Oxford, England), September 29, 2017. https://doi.org/10.1093/bioinformatics/btx623.
 
-- DiffTAD - differential contact frequency in TADs between two conditions. Two tests - permutation-based comparing observed vs. expected median interactions, and parametric test considering the sign of the differences within TADs. Both tests account for distance stratum. https://bitbucket.org/rzaborowski/differential-analysis
+- DiffTAD - differential contact frequency in TADs between two conditions. Two - permutation-based comparing observed vs. expected median interactions, and parametric test considering the sign of the differences within TADs. Both tests account for distance stratum. https://bitbucket.org/rzaborowski/differential-analysis
     - Zaborowski, Rafal, and Bartek Wilczynski. “DiffTAD: Detecting Differential Contact Frequency in Topologically Associating Domains Hi-C Experiments between Conditions.” BioRxiv, January 1, 2016, 093625. https://doi.org/10.1101/093625.
 
 - `FIND` - differential chromatin interaction detection comparing the local spatial dependency between interacting loci. Previous strategies - simple fold-change comparisons, binomial model (HOMER), count-based (edgeR). FIND exploits a spatial Poisson process model to detect differential chromatin interactions that show both a significant change in their interaction frequency and the interaction frequency of their adjacent bins. "Variogram" concept. For each point, compare densities between conditions using Fisher's test. Explored various multiple correction testing methods, used r^th ordered p-values (rOP) method. Benchmarking against edgeR in simulated settings - FIND outperforms at shorter distances, edgeR has more false positives at longer distances. Real Hi-C data normalized using KR and MA normalizations. R paclage https://bitbucket.org/nadhir/find/downloads/
@@ -366,6 +370,8 @@ A (continuously updated) collection of references to Hi-C tools. Related reposit
 
 - `HiCPlotter` - Hi-C visualization tool, allows for integrating various data tracks. https://github.com/kcakdemir/HiCPlotter
     - Akdemir, Kadir Caner, and Lynda Chin. “HiCPlotter Integrates Genomic Data with Interaction Matrices.” Genome Biology 16 (2015): 198. https://doi.org/10.1186/s13059-015-0767-1.
+
+- `HiTC` - plotting of rotated halves of chromosome interaction matrix, with annotations. https://bioconductor.org/packages/release/bioc/html/HiTC.html
 
 - `NAT` - the 4D Nucleome Analysis Toolbox, for Hi-C data (text, cool format) normalization (ICE, Toeplitz, CNV-Toeplitz), TAD calling (Directionality index, Armatus, custom), karyotype abnormalities visualization on inter-chromosomal matrices, timecourse visualization. Matlab.https://github.com/laseaman/4D_Nucleome_Analysis_Toolbox
     - Seaman, Laura, and Indika Rajapakse. “4D Nucleome Analysis Toolbox: Analysis of Hi-C Data with Abnormal Karyotype and Time Series Capabilities.” Bioinformatics (Oxford, England) 34, no. 1 (01 2018): 104–6. https://doi.org/10.1093/bioinformatics/btx484.
