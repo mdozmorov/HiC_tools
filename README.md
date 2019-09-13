@@ -118,16 +118,17 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 
 ## Resolution improvement
 
-- `Boost-HiC` - infer fine-resolution contact frequencies in Hi-C data, performs well even on 0.1% of the raw data. TAD boundaries remain. Better than HiCPlus. Can be used for differential analysis (comparison) of two Hi-C maps. https://github.com/LeopoldC/Boost-HiC
-    - Carron, Leopold, Jean-baptiste Morlot, Vincent Matthys, Annick Lesne, and Julien Mozziconacci. “Boost-HiC : Computational Enhancement of Long-Range Contacts in Chromosomal Contact Maps,” November 18, 2018. https://doi.org/10.1101/471607.
-
 - `HiCNN` - a computational method for resolution enhancement. A modification of HiCPlus approach, using very deep (54 layers, five types of layers) convolutional neural network. A Hi-C matrix of regular resolution is transformed into high-resolution but very sparse matrix, HiCNN predicts the missing values. Pearson and MSE evaluation metrics, overlap of Fit-Hi-C-detected significant interactions - performs similar or slightly better than HiCPlus. PyTorch implementation. http://dna.cs.miami.edu/HiCNN/
     - Liu, Tong, and Zheng Wang. “HiCNN: A Very Deep Convolutional Neural Network to Better Enhance the Resolution of Hi-C Data.” Edited by John Hancock. Bioinformatics, April 9, 2019, btz251. https://doi.org/10.1093/bioinformatics/btz251.
 
-- `HiCPlus` - increasing resolution of Hi-C data using convolutional neural network. Basically, smoothing parts of Hi-C image, then binning into smaller parts. Performs better than bilinear/biqubic smoothing. https://github.com/zhangyan32/HiCPlus
-    - Zhang, Yan, Lin An, Ming Hu, Jijun Tang, and Feng Yue. “HiCPlus: Resolution Enhancement of Hi-C Inte
+- `Boost-HiC` - infer fine-resolution contact frequencies in Hi-C data, performs well even on 0.1% of the raw data. TAD boundaries remain. Better than HiCPlus. Can be used for differential analysis (comparison) of two Hi-C maps. https://github.com/LeopoldC/Boost-HiC
+    - Carron, Leopold, Jean-baptiste Morlot, Vincent Matthys, Annick Lesne, and Julien Mozziconacci. “Boost-HiC : Computational Enhancement of Long-Range Contacts in Chromosomal Contact Maps,” November 18, 2018. https://doi.org/10.1101/471607.
 
 - `HIFI` - Hi-C Interaction Frequency Inference for restriction fragment-resolution analysis of Hi-C data. Sparsity is resolved by using dependencies between neighboring restriction fragments, with Markov Random Fields performing the best. Better resolves TADs and sub-TADs, significant interactions. CTCF, RAD21, SMC3, ZNF143 are enriched around TAD boundaries. Matrices normalized for fragment-specific biases. https://github.com/BlanchetteLab/HIFI
+    - Cameron, Christopher JF, Josée Dostie, and Mathieu Blanchette. “Estimating DNA-DNA Interaction Frequency from Hi-C Data at Restriction-Fragment Resolution.” Preprint. Bioinformatics, July 25, 2018. https://doi.org/10.1101/377523.
+
+- `HiCPlus` - increasing resolution of Hi-C data using convolutional neural network. Basically, smoothing parts of Hi-C image, then binning into smaller parts. Performs better than bilinear/biqubic smoothing. https://github.com/zhangyan32/HiCPlus
+    - Zhang, Yan, Lin An, Ming Hu, Jijun Tang, and Feng Yue. “HiCPlus: Resolution Enhancement of Hi-C Interaction Heatmap,” March 1, 2017. https://doi.org/10.1038/s41467-018-03113-2.
 
 
 ## Normalization
