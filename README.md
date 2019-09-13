@@ -118,6 +118,10 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 
 ## Resolution improvement
 
+
+- `DeepHiC` - a generative adversarial network (GAN) for enhancing Hi-C data. Does not change the bin size, enhances the content of Hi-C data. Reconstructs the content from \~1% of the original data. Outperforms BoostHiC, HiCPlus, HiCNN. Online tool: http://sysomics.com/deephic/, code: https://github.com/omegahh/DeepHiC
+    - Hong, Hao, Shuai Jiang, Hao Li, Cheng Quan, Chenghui Zhao, Ruijiang Li, Wanying Li, et al. “DeepHiC: A Generative Adversarial Network for Enhancing Hi-C Data Resolution.” Preprint. Bioinformatics, July 29, 2019. https://doi.org/10.1101/718148.
+
 - `HiCNN` - a computational method for resolution enhancement. A modification of HiCPlus approach, using very deep (54 layers, five types of layers) convolutional neural network. A Hi-C matrix of regular resolution is transformed into high-resolution but very sparse matrix, HiCNN predicts the missing values. Pearson and MSE evaluation metrics, overlap of Fit-Hi-C-detected significant interactions - performs similar or slightly better than HiCPlus. PyTorch implementation. http://dna.cs.miami.edu/HiCNN/
     - Liu, Tong, and Zheng Wang. “HiCNN: A Very Deep Convolutional Neural Network to Better Enhance the Resolution of Hi-C Data.” Edited by John Hancock. Bioinformatics, April 9, 2019, btz251. https://doi.org/10.1093/bioinformatics/btz251.
 
