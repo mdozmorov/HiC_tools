@@ -98,7 +98,8 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 
 ### Capture-C
 
-- http://apps.molbiol.ox.ac.uk/CaptureC/cgi-bin/CapSequm.cgi - oligo design by Hughes lab. 
+- `CCseqBasic` - Capture-C analysis pipeline by Hughes lab, https://github.com/Hughes-Genome-Group/CCseqBasicS
+- `CapSequm` - oligo design tool by Hughes lab, http://apps.molbiol.ox.ac.uk/CaptureC/cgi-bin/CapSequm.cgi
 
 - `GOPHER` - probe design for Capture Hi-C. All, or selected, promoters, or around GWAS hits. Two other tools, CapSequm and HiCapTools. https://github.com/TheJacksonLaboratory/Gopher
     - Hansen, Peter, Salaheddine Ali, Hannah Blau, Daniel Danis, Jochen Hecht, Uwe Kornak, Darío G. Lupiáñez, Stefan Mundlos, Robin Steinhaus, and Peter N. Robinson. “GOPHER: Generator Of Probes for Capture Hi-C Experiments at High Resolution.” BMC Genomics 20, no. 1 (December 2019). https://doi.org/10.1186/s12864-018-5376-4.
