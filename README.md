@@ -120,7 +120,12 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 
 ### CUT&RUN
 
+- CUT&RUN technology, chromatin profiling strategy, antibody-targeted controlled cleavage by micrococcal nuclease. Cost-efficient, low input requirements, easier.
+    - Skene, Peter J, and Steven Henikoff. “An Efficient Targeted Nuclease Strategy for High-Resolution Mapping of DNA Binding Sites.” Genes and Chromosomes, n.d., 35. https://elifesciences.org/articles/21856
+
 - `CUT&RUNTools` - a pipeline to fully process CUT&RUN data and identify protein binding and genomic footprinting from antibody-targeted primary cleavage data. Implemented in R, Python, Bach, runs under the SLURM job submission. At the core, creates a cut matrix of from enzyme cleavage data. Compared with Atactk and Centipede. https://bitbucket.org/qzhudfci/cutruntools/src/master/
+    - Zhu, Qian. “CUT&RUNTools: A Flexible Pipeline for CUT&RUN Processing and Footprint Analysis,” 2019, 12. https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1802-4
+
 
 ## Resolution improvement
 
