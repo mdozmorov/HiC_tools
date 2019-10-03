@@ -399,7 +399,7 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 
 - TADKit - 3D Genome Browser. Main web site, http://sgt.cnag.cat/3dg/tadkit/, and GitHub, https://github.com/3DGenomes/TADkit
 
-- `HiC-3DViewer` - HiC-3DViewer is an interactive web-based tool designed to provide an intuitive environment for investigators to facilitate the 3D exploratory analysis of Hi-C data. It based on Flask, it can be run directly or as a docker container.
+- `HiC-3DViewer` - HiC-3DViewer is an interactive web-based tool designed to provide an intuitive environment for investigators to facilitate the 3D exploratory analysis of Hi-C data. It based on Flask, it can be run directly or as a docker container. Bitbucket: https://bitbucket.org/nadhir/hic3dviewer/src/master/.
     - Mohamed Nadhir, Djekidel, Wang, Mengjie, Michael Q. Zhang, Juntao Gao. “HiC-3DViewer: a new tool to visualize Hi-C data in 3D space.” Quantitative Biology (2017) 5: 183. https://doi.org/10.1007/s40484-017-0091-8.
 
 ## De novo genome scaffolding
