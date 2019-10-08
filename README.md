@@ -256,7 +256,7 @@ Tools in each section are being resorted newest on top (previously, alphabetical
     - Zaborowski, Rafal, and Bartek Wilczynski. “DiffTAD: Detecting Differential Contact Frequency in Topologically Associating Domains Hi-C Experiments between Conditions.” BioRxiv, January 1, 2016, 093625. https://doi.org/10.1101/093625.
 
 - `FIND` - differential chromatin interaction detection comparing the local spatial dependency between interacting loci. Previous strategies - simple fold-change comparisons, binomial model (HOMER), count-based (edgeR). FIND exploits a spatial Poisson process model to detect differential chromatin interactions that show both a significant change in their interaction frequency and the interaction frequency of their adjacent bins. "Variogram" concept. For each point, compare densities between conditions using Fisher's test. Explored various multiple correction testing methods, used r^th ordered p-values (rOP) method. Benchmarking against edgeR in simulated settings - FIND outperforms at shorter distances, edgeR has more false positives at longer distances. Real Hi-C data normalized using KR and MA normalizations. R paclage https://bitbucket.org/nadhir/find/downloads/
-    - Djekidel, Mohamed Nadhir, Yang Chen, and Michael Q. Zhang. “FIND: DifFerential Chromatin INteractions Detection Using a Spatial Poisson Process.” Genome Research, February 12, 2018. https://doi.org/10.1101/gr.212241.116.
+    - Mohamed Nadhir, Djekidel, Yang Chen, and Michael Q. Zhang. “FIND: DifFerential Chromatin INteractions Detection Using a Spatial Poisson Process.” Genome Research, February 12, 2018. https://doi.org/10.1101/gr.212241.116.
 
 - `HiCcompare` - joint normalization of two Hi-C datasets using loess regression through an MD plot (minus-distance). Data-driven normalization accounting for the between-dataset biases. Per-distance permutation testing of significant interactions. http://bioconductor.org/packages/release/bioc/html/HiCcompare.html
     - Stansfield, John C., Kellen G. Cresswell, Vladimir I. Vladimirov, and Mikhail G. Dozmorov. “HiCcompare: An R-Package for Joint Normalization and Comparison of HI-C Datasets.” BMC Bioinformatics 19, no. 1 (December 2018). https://doi.org/10.1186/s12859-018-2288-x.
@@ -402,6 +402,8 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 
 - TADKit - 3D Genome Browser. Main web site, http://sgt.cnag.cat/3dg/tadkit/, and GitHub, https://github.com/3DGenomes/TADkit
 
+- `HiC-3DViewer` - HiC-3DViewer is an interactive web-based tool designed to provide an intuitive environment for investigators to facilitate the 3D exploratory analysis of Hi-C data. It based on Flask, it can be run directly or as a docker container. Bitbucket: https://bitbucket.org/nadhir/hic3dviewer/src/master/.
+    - Mohamed Nadhir, Djekidel, Wang, Mengjie, Michael Q. Zhang, Juntao Gao. “HiC-3DViewer: a new tool to visualize Hi-C data in 3D space.” Quantitative Biology (2017) 5: 183. https://doi.org/10.1007/s40484-017-0091-8.
 
 ## De novo genome scaffolding
 
