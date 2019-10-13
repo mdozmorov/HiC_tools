@@ -179,6 +179,9 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 
 ## Reproducibility
 
+- `“IDR2D` - Irreproducible Discovery Rate that identifies replicable interactions in ChIP-PET, HiChIP, and Hi-C data. Includes the original 1D IDR version (https://github.com/nboley/idr). Resolves multiple pairwise interactions.  https://github.com/gifford-lab/idr2d
+    - Krismer, Konstantin, Yuchun Guo, and David K Gifford. “IDR2D Identifies Reproducible Genomic Interactions.” Preprint. Bioinformatics, July 3, 2019. https://doi.org/10.1101/691295.
+
 - `3DChromatin_ReplicateQC` - Comparison of four Hi-C reproducibility assessment tools, `HiCRep`, `GenomeDISCO`, `HiC-Spector`, `QuASAR-Rep`. Tested the effects of noise, sparsity, resolution. Spearman doesn't work well. All tools performed similarly, worsening expectedly. QuASAR has QC tool measuring the level of noise. https://github.com/kundajelab/3DChromatin_ReplicateQC
     - Yardimci, Galip, Hakan Ozadam, Michael E.G. Sauria, Oana Ursu, Koon-Kiu Yan, Tao Yang, Abhijit Chakraborty, et al. “Measuring the Reproducibility and Quality of Hi-C Data,” September 14, 2017. doi:10.1101/188755. 
 
