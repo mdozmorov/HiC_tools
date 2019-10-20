@@ -111,6 +111,9 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 
 ### HiChIP
 
+- `CID` - Chromatin Interaction Discovery, call chromatin interactions from ChIA-PET. Outperforms ChIA-PET2, MANGO pipelines, call more peaks than HICCUPS, hichipper. Java implementation, https://groups.csail.mit.edu/cgs/gem/cid/
+    - Guo, Yuchun, Konstantin Krismer, Michael Closser, Hynek Wichterle, and David K Gifford. “High Resolution Discovery of Chromatin Interactions.” Nucleic Acids Research, February 14, 2019. https://doi.org/10.1093/nar/gkz051.
+
 - `HiChIP-Peak` - HiChIP peak caller, focus on peaks at re-ligation sites. Peak filtering, then negative binomial model. Differential peak analysis similar to DiffBind. https://github.com/ChenfuShi/HiChIP_peaks
     - Shi, Chenfu, Magnus Rattray, and Gisela Orozco. “HiChIP-Peaks: A HiChIP Peak Calling Algorithm.” Preprint. Bioinformatics, June 27, 2019. https://doi.org/10.1101/682781.
 
