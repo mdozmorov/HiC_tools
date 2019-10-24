@@ -395,7 +395,7 @@ Tools in each section are being resorted newest on top (previously, alphabetical
     - Python bindings to and Jupyter Notebook+Lab integration for the HiGlass viewer. https://github.com/higlass/higlass-python
 
 - `HiPiler` - exploration and comparison of loops and domains as snippets-heatmaps of data. https://github.com/flekschas/hipiler
-    - Lekschas, Fritz, Benjamin Bach, Peter Kerpedjiev, Nils Gehlenborg, and Hanspeter Pfister. “HiPiler: Visual Exploration of Large Genome Interaction Matrices with Interactive Small Multiples.” IEEE Transactions on Visualization and Computer Graphics 24, no. 1 (January 2018): 522–31. https://doi.org/10.1109/TVCG.2017.2745978. TechBlog: HiPiler simplifies chromatin structure analysis, http://blogs.nature.com/naturejobs/2017/09/11/techblog-hipiler-simplifies-chromatin-structure-analysis/
+    - Lekschas, Fritz, Benjamin Bach, Peter Kerpedjiev, Nils Gehlenborg, and Hanspeter Pfister. “HiPiler: Visual Exploration of Large Genome Interaction Matrices with Interactive Small Multiples.” IEEE Transactions on Visualization and Computer Graphics 24, no. 1 (January 2018): 522–31. https://doi.org/10.1109/TVCG.2017.2745978. TechBlog: HiPiler simplifies chromatin structure analysis, http://blogs.nature.com/naturejobs/2017/09/11/techblog-hipiler-simplifies-chromatin-structure-analysis/. PATTERN-DRIVEN NAVIGATION IN 2D MULTISCALE VISUALIZATIONS WITH SCALABLE INSETS, http://scalable-insets.lekschas.de
 
 - `HiCPlotter` - Hi-C visualization tool, allows for integrating various data tracks. https://github.com/kcakdemir/HiCPlotter
     - Akdemir, Kadir Caner, and Lynda Chin. “HiCPlotter Integrates Genomic Data with Interaction Matrices.” Genome Biology 16 (2015): 198. https://doi.org/10.1186/s13059-015-0767-1.
