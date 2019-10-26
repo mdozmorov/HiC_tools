@@ -367,6 +367,9 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 - `HiNT` - CNV and translocation detection from \~10-20% ambigious chimeric reads in Hi-C data. Three tools: HiNT-Pre - preprocessing of Hi-C data; HiNT-CNV and HiNT-TL - CNV and translocation detection, respectively (accept HiC-Pro output). Tested on K562 (cancer) and Gm12878 (normal) data. Removal of known biases using a GAM with Poisson function. Outperforms Delly, Meerkat, hic_breakfinder, HiCtrans. Relatively little overlap with CNVs from WGS (BIC-seq2). Gold-standard - FISH data from Dixon et al., “Integrative Detection and Analysis of Structural Variation in Cancer Genomes.” https://github.com/parklab/HiNT
     - Wang, Su, Soohyun Lee, Chong Chu, Dhawal Jain, Geoff Nelson, Jennifer M. Walsh, Burak H. Alver, and Peter J. Park. “HiNT: A Computational Method for Detecting Copy Number Variations and Translocations from Hi-C Data.” Preprint. Bioinformatics, June 3, 2019. https://doi.org/10.1101/657080.
 
+- `TAD fusion score` - quantifying the effect of deletions on Hi-C interactions. Intro about TAD fusion effect on genome structure. TAD fusion score - the expected total number of changes in pairwise genomic interactions as a result of the deletion. TAD fusion events are negatively selected for. https://github.com/HormozdiariLab/TAD-fusion-score
+    - Huynh, Linh, and Fereydoun Hormozdiari. “Contribution of Structural Variation to Genome Structure: TAD Fusion Discovery and Ranking.” BioRxiv, March 9, 2018. https://doi.org/10.1101/279356.
+
 
 ## Visualization
 
