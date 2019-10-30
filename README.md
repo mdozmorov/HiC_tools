@@ -119,6 +119,9 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 
 ### 4C
 
+- `peakC` - an R package for non-parametric peak calling in 4C/Capture-c/PCHiC data. https://github.com/deWitLab/peakC
+    - Geeven, Geert, Hans Teunissen, Wouter de Laat, and Elzo de Wit. “PeakC: A Flexible, Non-Parametric Peak Calling Package for 4C and Capture-C Data.” Nucleic Acids Research 46, no. 15 (September 6, 2018): e91–e91. https://doi.org/10.1093/nar/gky443.
+
 - `4Cseqpipe` processing pipeline and a genome-wide 4C primer database,  http://compgenomics.weizmann.ac.il/tanay/?page_id=367/
     - Werken, Harmen J. G. van de, Gilad Landan, Sjoerd J. B. Holwerda, Michael Hoichman, Petra Klous, Ran Chachik, Erik Splinter, et al. “Robust 4C-Seq Data Analysis to Screen for Regulatory DNA Interactions.” Nature Methods 9, no. 10 (October 2012): 969–72. https://doi.org/10.1038/nmeth.2173. - 4C technology paper. Two different 4bp cutters to increase resolution. Investigation of beta-globin locus, interchromosomal interactions.
 
