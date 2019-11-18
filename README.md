@@ -246,7 +246,7 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 
 ## Differential interactions
 
-- Check https://bitbucket.org/mforcato/hictoolscompare.git, they have tools for TAD comparison, and simulated matrices.
+- Tools for TAD comparison, and simulated matrices. https://bitbucket.org/mforcato/hictoolscompare.git
 
 - TADbit paper [@Serra:2017aa]. Supplementary material http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005665#sec020 + key functions, TAD detection algorithm, border comparison. https://github.com/3DGenomes/tadbit
 
@@ -378,6 +378,10 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 
 - Hi-C data visualization review. Good introduction into the 3D genome organization, 115 key references. [Table 2. Hi-C visualization tools](https://dev.biologists.org/highwire/markup/1255595/expansion?width=1000&height=500&iframe=true&postprocessors=highwire_tables%2Chighwire_reclass%2Chighwire_figures%2Chighwire_math%2Chighwire_inline_linked_media%2Chighwire_embed)
     - Ing-Simmons, Elizabeth, and Juan M. Vaquerizas. “Visualising Three-Dimensional Genome Organisation in Two Dimensions.” Development 146, no. 19 (October 1, 2019): dev177162. https://doi.org/10.1242/dev.177162.
+
+- `HiCBricks` - data format and visualization package. hdf5-based data storage format to handle large Hi-C matrices. Visualization of one or two Hi-C matrices, adding annotations. Installation/usage issues as of 2019-11-17.  https://bioconductor.org/packages/release/bioc/html/HiCBricks.html,  https://github.com/koustav-pal/HiCBricks
+    - Pal, Koustav, Ilario Tagliaferri, Carmen M Livi, and Francesco Ferrari. “HiCBricks: Building Blocks for Efficient Handling of Large Hi-C Datasets.” Edited by Inanc Birol. Bioinformatics, November 7, 2019, btz808. https://doi.org/10.1093/bioinformatics/btz808.
+
 
 - `3D Genome Browser` - visualizing existing Hi-C and other chromatin conformation capture data. Alongside with genomic and epigenomic data. Own data can be submitted in BUTLR format. http://promoter.bx.psu.edu/hi-c/
     - Wang, Yanli, Bo Zhang, Lijun Zhang, Lin An, Jie Xu, Daofeng Li, Mayank NK Choudhary, et al. “The 3D Genome Browser: A Web-Based Browser for Visualizing 3D Genome Organization and Long-Range Chromatin Interactions.” BioRxiv, 2017, 112268.
