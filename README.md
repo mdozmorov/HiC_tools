@@ -470,7 +470,12 @@ A four-cutter enzyme yields a resolution of ∼256 bp and a six-cutter a resolut
 
 ### Technology
 
-- Golloshi, Rosela, Jacob Sanders, and Rachel Patton McCord. “Iteratively Improving Hi-C Experiments One Step at a Time.” Preprint. Genomics, March 22, 2018. https://doi.org/10.1101/287201. - Optimization steps for Hi-C wet-lab protocol. Pitfalls and their effect on the downstream quality. Recommendations for each step.
+- Optimization steps for Hi-C wet-lab protocol. Pitfalls and their effect on the downstream quality. Recommendations for each step. 
+    - Golloshi, Rosela, Jacob Sanders, and Rachel Patton McCord. “Iteratively Improving Hi-C Experiments One Step at a Time.” Preprint. Genomics, March 22, 2018. https://doi.org/10.1101/287201. 
+
+- Micro-C technology - mononucleosome resolution mapping in yeast. Micrococcal nuclease to fragment chromatin. Yeast does not have TADs, but Micro-C revealed self-associating domains (chromatin interaction domains, CIDs) driven by the number of genes. Enrichment of histone modifications. Data:  https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE68016
+    - Hsieh, Tsung-Han S., Assaf Weiner, Bryan Lajoie, Job Dekker, Nir Friedman, and Oliver J. Rando. “Mapping Nucleosome Resolution Chromosome Folding in Yeast by Micro-C.” Cell 162, no. 1 (July 2015): 108–19. https://doi.org/10.1016/j.cell.2015.05.048.
+
 
 ### Methodological Reviews
 
