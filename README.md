@@ -24,6 +24,7 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 * [De novo genome scaffolding](#de-novo-genome-scaffolding)
 * [3D reconstruction](#3d-reconstruction)
 * [Papers](#papers)
+  * [Technology](#technology)
   * [Methodological Reviews](#methodological-reviews)
   * [General Reviews](#general-reviews)
   * [Normalization](#normalization)
@@ -466,6 +467,10 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 ## Papers
 
 A four-cutter enzyme yields a resolution of ∼256 bp and a six-cutter a resolution of ∼4,096 bp.
+
+### Technology
+
+- Golloshi, Rosela, Jacob Sanders, and Rachel Patton McCord. “Iteratively Improving Hi-C Experiments One Step at a Time.” Preprint. Genomics, March 22, 2018. https://doi.org/10.1101/287201. - Optimization steps for Hi-C wet-lab protocol. Pitfalls and their effect on the downstream quality. Recommendations for each step.
 
 ### Methodological Reviews
 
