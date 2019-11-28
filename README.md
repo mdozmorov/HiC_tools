@@ -470,6 +470,8 @@ A four-cutter enzyme yields a resolution of ∼256 bp and a six-cutter a resolut
 
 ### Technology
 
+- 4D Nucleome Protocols - Collection of genomic technologies currently in use or being developed in the 4DN network - links to wet-lab protocols and papers. https://www.4dnucleome.org/protocols.html
+
 - Optimization steps for Hi-C wet-lab protocol. Pitfalls and their effect on the downstream quality. Recommendations for each step. 
     - Golloshi, Rosela, Jacob Sanders, and Rachel Patton McCord. “Iteratively Improving Hi-C Experiments One Step at a Time.” Preprint. Genomics, March 22, 2018. https://doi.org/10.1101/287201. 
 
