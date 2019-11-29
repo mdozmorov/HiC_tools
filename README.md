@@ -477,6 +477,9 @@ A four-cutter enzyme yields a resolution of ∼256 bp and a six-cutter a resolut
 - Optimization steps for Hi-C wet-lab protocol. Pitfalls and their effect on the downstream quality. Recommendations for each step. 
     - Golloshi, Rosela, Jacob Sanders, and Rachel Patton McCord. “Iteratively Improving Hi-C Experiments One Step at a Time.” Preprint. Genomics, March 22, 2018. https://doi.org/10.1101/287201. 
 
+- Micro-C (MNase digestion Hi-C) technology and basic analysis. human embryonic stem cells H1-ESC and differentiated human foreskin fibroblasts (HFFc6). Captures standard Hi-C features, with many additional interaction peaks ("dots"). Enrichment of classical marks of TAD boundaries (Fig 3C) - RAD21, TAF1, PHF8, CTCF, TBP, POL2RA, YY1, and more.
+    - Krietenstein, Nils, Sameer Abraham, Sergey Venev, Nezar Abdennur, Johan Gibcus, Tsung-Han Hsieh, Krishna Mohan Parsi, et al. “Ultrastructural Details of Mammalian Chromosome Architecture.” Preprint. Genomics, May 17, 2019. https://doi.org/10.1101/639922.
+
 - Micro-C technology - mononucleosome resolution mapping in yeast. Micrococcal nuclease to fragment chromatin. Yeast does not have TADs, but Micro-C revealed self-associating domains (chromatin interaction domains, CIDs) driven by the number of genes. Enrichment of histone modifications. Data:  https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE68016
     - Hsieh, Tsung-Han S., Assaf Weiner, Bryan Lajoie, Job Dekker, Nir Friedman, and Oliver J. Rando. “Mapping Nucleosome Resolution Chromosome Folding in Yeast by Micro-C.” Cell 162, no. 1 (July 2015): 108–19. https://doi.org/10.1016/j.cell.2015.05.048.
 
