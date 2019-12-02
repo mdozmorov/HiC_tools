@@ -45,6 +45,8 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 
 - 4D Nucleome Hi-C Processing Pipeline, set of scripts wrapped in a Docker image. Relies on [Mirnylab tools](#mirnylab-tools) and [Juicer Tools](https://github.com/aidenlab/juicer/wiki/Pre). Overview: https://data.4dnucleome.org/resources/data-analysis/hi_c-processing-pipeline, GitHub: https://github.com/4dn-dcic/docker-4dn-hic
 
+- ENCODE project Data Production and Processing Standard of the Hi-C Mapping Center, https://www.encodeproject.org/documents/75926e4b-77aa-4959-8ca7-87efcba39d79/@@download/attachment/comp_doc_7july2018_final.pdf
+
 - `cword` - perl cworld module and collection of utility/analysis scripts for C data (3C, 4C, 5C, Hi-C). https://github.com/dekkerlab/cworld-dekker
 
 - `Juicer` - Java full pipeline to convert raw reads into Hi-C maps, visualized in Juicebox. Call domains, loops, CTCF binding sites. `.hic` file format for storing multi-resolution Hi-C data. https://github.com/theaidenlab/juicebox/wiki/Download
