@@ -196,6 +196,9 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 - `3DChromatin_ReplicateQC` - Comparison of four Hi-C reproducibility assessment tools, `HiCRep`, `GenomeDISCO`, `HiC-Spector`, `QuASAR-Rep`. Tested the effects of noise, sparsity, resolution. Spearman doesn't work well. All tools performed similarly, worsening expectedly. QuASAR has QC tool measuring the level of noise. https://github.com/kundajelab/3DChromatin_ReplicateQC
     - Yardimci, Galip, Hakan Ozadam, Michael E.G. Sauria, Oana Ursu, Koon-Kiu Yan, Tao Yang, Abhijit Chakraborty, et al. “Measuring the Reproducibility and Quality of Hi-C Data,” September 14, 2017. doi:10.1101/188755. 
 
+- `HiCRep` - Similarity assessment using generalized Cochran-Mantel-Haenzel statistics M2. Spearman/Pearson don't work. 2-step procedure: Smooth the matrix, then CMH statistics. Basically, splitting data by distance chunks, Pearson on each chunk, summarize. Simple and well-thought stats. Methods: Hi-C datasets with replicates, including 11 ENCODE datasets. R package https://github.com/MonkeyLB/hicrep, Python implementation https://github.com/cmdoret/hicreppy
+    - Yang, Tao, Feipeng Zhang, Galip Gurkan Yardimci, Ross C Hardison, William Stafford Noble, Feng Yue, and Qunhua Li. “HiCRep: Assessing the Reproducibility of Hi-C Data Using a Stratum-Adjusted Correlation Coefficient.” BioRxiv, 2017, 101386.
+
 - `QuASAR` - Hi-C quality and reproducibility measure using spatial consistency between local and regional signals. Finds the maximum useful resolution by comparing quality and replicate scores of replicates. Part of HiFive pipeline,https://github.com/bxlab/hifive
     - Sauria, Michael EG, and James Taylor. “QuASAR: Quality Assessment of Spatial Arrangement Reproducibility in Hi-C Data.” BioRxiv, November 14, 2017. https://doi.org/10.1101/204438.
 
