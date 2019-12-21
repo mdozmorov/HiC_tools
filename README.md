@@ -482,6 +482,9 @@ A four-cutter enzyme yields a resolution of ∼256 bp and a six-cutter a resolut
 - Optimization steps for Hi-C wet-lab protocol. Pitfalls and their effect on the downstream quality. Recommendations for each step. 
     - Golloshi, Rosela, Jacob Sanders, and Rachel Patton McCord. “Iteratively Improving Hi-C Experiments One Step at a Time.” Preprint. Genomics, March 22, 2018. https://doi.org/10.1101/287201. 
 
+- Review of chromatin conformation capture technologies, from image-based methods (FISH), through proximity ligation (3/4/5C, Hi-C, TCC, ChIA-PET, scHi-C), to ligation-free methods (GAM, SPRITE, ChIA-Drop). Details of each technology (Table 1, Figures), comparison of them (Table 2).
+    - Kempfer, Rieke, and Ana Pombo. “Methods for Mapping 3D Chromosome Architecture.” Nature Reviews Genetics, December 17, 2019. https://doi.org/10.1038/s41576-019-0195-2.
+
 - Micro-C (MNase digestion Hi-C) technology and basic analysis. human embryonic stem cells H1-ESC and differentiated human foreskin fibroblasts (HFFc6). Captures standard Hi-C features, with many additional interaction peaks ("dots"). Enrichment of classical marks of TAD boundaries (Fig 3C) - RAD21, TAF1, PHF8, CTCF, TBP, POL2RA, YY1, and more.
     - Krietenstein, Nils, Sameer Abraham, Sergey Venev, Nezar Abdennur, Johan Gibcus, Tsung-Han Hsieh, Krishna Mohan Parsi, et al. “Ultrastructural Details of Mammalian Chromosome Architecture.” Preprint. Genomics, May 17, 2019. https://doi.org/10.1101/639922.
 
