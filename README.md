@@ -484,6 +484,9 @@ A four-cutter enzyme yields a resolution of ∼256 bp and a six-cutter a resolut
 - Optimization steps for Hi-C wet-lab protocol. Pitfalls and their effect on the downstream quality. Recommendations for each step. 
     - Golloshi, Rosela, Jacob Sanders, and Rachel Patton McCord. “Iteratively Improving Hi-C Experiments One Step at a Time.” Preprint. Genomics, March 22, 2018. https://doi.org/10.1101/287201. 
 
+- Methyl-HiC - in situ Hi-C and WGBS. Comparable Hi-C matrices, TADs. 20% fewer CpGs overall, more CpGs in open chromatin. Proximal CpGs correlate irrespectively of loop anchors, weaker for inter-chromosomal interactions. Application to single-cell, mouse ESCs under different conditions. Relevant clustering, cluster-specific genes. Methods for wet-lab and computational processing. Bulk (replicates) and single-cell Methyl-HiC data at https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE119171. Scripts in https://bitbucket.org/dnaase/bisulfitehic/src/master/, Bhmem pipeline to map bisulfite-converted reads, Juicer pipeline for processing, VC normalization, HiCRep at 1Mb matrix similarity.
+    - Li, Guoqiang, Yaping Liu, Yanxiao Zhang, Naoki Kubo, Miao Yu, Rongxin Fang, Manolis Kellis, and Bing Ren. “Joint Profiling of DNA Methylation and Chromatin Architecture in Single Cells.” Nature Methods, August 5, 2019. https://doi.org/10.1038/s41592-019-0502-z.
+
 - Review of chromatin conformation capture technologies, from image-based methods (FISH), through proximity ligation (3/4/5C, Hi-C, TCC, ChIA-PET, scHi-C), to ligation-free methods (GAM, SPRITE, ChIA-Drop). Details of each technology (Table 1, Figures), comparison of them (Table 2).
     - Kempfer, Rieke, and Ana Pombo. “Methods for Mapping 3D Chromosome Architecture.” Nature Reviews Genetics, December 17, 2019. https://doi.org/10.1038/s41576-019-0195-2.
 
