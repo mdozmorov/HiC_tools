@@ -211,6 +211,9 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 
 ## Significant interaction (peak) callers
 
+- `FitHiC2` - protocol to install/run FitHiC Python3 tool/scripts. Fit of non-increasing cubic splines to distance-interaction frequency decay to identify significant interactions in individual matrices. Accounts for biases derived from KR (ICE, or other) normalization (HiCKRy). Works with fixed-bin- or restriction cut site resolution data. Overview of FitHiC algorithm, accounting for biases. Flexible input options, from HiC-Pro, Juicer, and other tools, validPairs file format. Post-processing to prioritize highly significant interactions supported by the nearby loci, and filter noisy detections. HTML report, flexible BED-derived output format, conversion to formats for WashU epigenome and UCSC browsers. Installable using conda, pip, GitHub. Comparable methods - HiCCUPS, HOMER, GOTHiC, HiC-DC, brief description of each. Tested on three datasets. GitHub: https://github.com/ay-lab/fithic, Executable on Code Ocean: https://codeocean.com/capsule/4528858/tree/v3, Data: https://zenodo.org/record/3380589
+    - Kaul, Arya, Sourya Bhattacharyya, and Ferhat Ay. “Identifying Statistically Significant Chromatin Contacts from Hi-C Data with FitHiC2.” Nature Protocols, January 24, 2020. https://doi.org/10.1038/s41596-019-0273-0.
+
 - `FIREcaller` - an R package to detect frequently interacting regions (FIREs, <200Kb interactions). Within-sample (HiCNormCis) and cross-sample (quantile) normalization, converting FIRE counts to Z-scores, taking significant ones. Schmitt data https://yunliweb.its.unc.edu/FIREcaller/
     - Crowley, Cheynna, Yuchen Yang, Yunjiang Qiu, Benxia Hu, Hyejung Won, Bing Ren, Ming Hu, and Yun Li. “FIREcaller: An R Package for Detecting Frequently Interacting Regions from Hi-C Data.” Preprint. Bioinformatics, April 29, 2019. https://doi.org/10.1101/619288.
 
