@@ -499,6 +499,9 @@ A four-cutter enzyme yields a resolution of ∼256 bp and a six-cutter a resolut
 - Micro-C technology - mononucleosome resolution mapping in yeast. Micrococcal nuclease to fragment chromatin. Yeast does not have TADs, but Micro-C revealed self-associating domains (chromatin interaction domains, CIDs) driven by the number of genes. Enrichment of histone modifications. Data:  https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE68016
     - Hsieh, Tsung-Han S., Assaf Weiner, Bryan Lajoie, Job Dekker, Nir Friedman, and Oliver J. Rando. “Mapping Nucleosome Resolution Chromosome Folding in Yeast by Micro-C.” Cell 162, no. 1 (July 2015): 108–19. https://doi.org/10.1016/j.cell.2015.05.048.
 
+- HIPMap - high-throughput imaging and analysis pipeline to map the location of gene loci within the 3D space. FISH in a 384-well plate format, automated imaging.
+    - Shachar, Sigal, Gianluca Pegoraro, and Tom Misteli. “HIPMap: A High-Throughput Imaging Method for Mapping Spatial Gene Positions.” Cold Spring Harbor Symposia on Quantitative Biology 80 (2015): 73–81. https://doi.org/10.1101/sqb.2015.80.027417.
+
 
 ### Methodological Reviews
 
