@@ -438,6 +438,10 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 - `HiC-3DViewer` - HiC-3DViewer is an interactive web-based tool designed to provide an intuitive environment for investigators to facilitate the 3D exploratory analysis of Hi-C data. It based on Flask, it can be run directly or as a docker container. Bitbucket: https://bitbucket.org/nadhir/hic3dviewer/src/master/.
     - Mohamed Nadhir, Djekidel, Wang, Mengjie, Michael Q. Zhang, Juntao Gao. “HiC-3DViewer: a new tool to visualize Hi-C data in 3D space.” Quantitative Biology (2017) 5: 183. https://doi.org/10.1007/s40484-017-0091-8.
 
+- `NuChart` - gene-centric network of genes interacting in 3D. Integration of epigenomic features. Statistical network analysis. ftp://fileserver.itb.cnr.it/nuchart/
+    - Merelli, Ivan, Pietro Liò, and Luciano Milanesi. “NuChart: An R Package to Study Gene Spatial Neighbourhoods with Multi-Omics Annotations.” PloS One 8, no. 9 (2013): e75146. https://doi.org/10.1371/journal.pone.0075146.
+
+
 ## De novo genome scaffolding
 
 - Tools for de novo genome assembly from Hi-C reads: https://omictools.com/assembly-scaffolding-1-category
