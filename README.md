@@ -472,6 +472,9 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 - 3D genome reconstruction review. Intro into equilibrium/fractal globule models. Classification of reconstruction methods: distance-, contact-. and probability-based. [Table 1](https://biologicalproceduresonline.biomedcentral.com/articles/10.1186/s12575-019-0094-0#Tab1) summarizes many tools, methods, and references.
     - Oluwadare, Oluwatosin, Max Highsmith, and Jianlin Cheng. “An Overview of Methods for Reconstructing 3-D Chromosome and Genome Structures from Hi-C Data.” Biological Procedures Online 21, no. 1 (December 2019): 7. https://doi.org/10.1186/s12575-019-0094-0.
 
+- `StoH-C` - 3D genome reconstruction using tSNE. Python scripts for 3D embedding and visualization (plot-ly, matplotlib, Chart Studio). Visually tested on fission yeast genome as compared with MDS-reconstructed genome (wild type, G1-arrested, rad21 mutation, clr4 deletion). https://github.com/kimmackay/StoHi-C
+    - MacKay, Kimberly, and Anthony Kusalik. “StoHi-C: Using t-Distributed Stochastic Neighbor Embedding (t-SNE) to Predict 3D Genome Structure from Hi-C Data.” Preprint. Bioinformatics, January 29, 2020. https://doi.org/10.1101/2020.01.28.923615.
+
 - `Hierarchical3DGenome` - high-resolution (5kb) reconstruction of the 3D structure of the genome. Using LorDG (https://github.com/BDM-Lab/LorDG), first, assemble the 3D model at the level of TADs, then inside individual TADs. Gm12878 cell line, Arrowhead for TAD calling, KR and ICE normalization, benchmarking against miniMDS, five tests including comparison with FISH. https://github.com/BDM-Lab/Hierarchical3DGenome
     - Trieu, Tuan, Oluwatosin Oluwadare, and Jianlin Cheng. “Hierarchical Reconstruction of High-Resolution 3D Models of Large Chromosomes.” Scientific Reports 9, no. 1 (March 21, 2019): 4971. https://doi.org/10.1038/s41598-019-41369-w.
 
