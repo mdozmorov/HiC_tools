@@ -472,11 +472,11 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 - 3D genome reconstruction review. Intro into equilibrium/fractal globule models. Classification of reconstruction methods: distance-, contact-. and probability-based. [Table 1](https://biologicalproceduresonline.biomedcentral.com/articles/10.1186/s12575-019-0094-0#Tab1) summarizes many tools, methods, and references.
     - Oluwadare, Oluwatosin, Max Highsmith, and Jianlin Cheng. “An Overview of Methods for Reconstructing 3-D Chromosome and Genome Structures from Hi-C Data.” Biological Procedures Online 21, no. 1 (December 2019): 7. https://doi.org/10.1186/s12575-019-0094-0.
 
-- `CSynth.org` - 3D genome browser visualization, GPU-based. Takes in text-based data in pair, BED, matrix, WIG, XYZ formats. 3D structure modeling, overlay of colored genomic annotations. http://csynth.org/
-    - Todd, Stephen, Peter Todd, Simon J McGowan, James R Hughes, Yasutaka Kakui, Frederic Fol Leymarie, William Latham, and Stephen Taylor. “CSynth: A Dynamic Modelling and Visualisation Tool for 3D Chromatin Structure.” BioRxiv, January 3, 2019. https://doi.org/10.1101/499806.
-
 - `Hierarchical3DGenome` - high-resolution (5kb) reconstruction of the 3D structure of the genome. Using LorDG (https://github.com/BDM-Lab/LorDG), first, assemble the 3D model at the level of TADs, then inside individual TADs. Gm12878 cell line, Arrowhead for TAD calling, KR and ICE normalization, benchmarking against miniMDS, five tests including comparison with FISH. https://github.com/BDM-Lab/Hierarchical3DGenome
     - Trieu, Tuan, Oluwatosin Oluwadare, and Jianlin Cheng. “Hierarchical Reconstruction of High-Resolution 3D Models of Large Chromosomes.” Scientific Reports 9, no. 1 (March 21, 2019): 4971. https://doi.org/10.1038/s41598-019-41369-w.
+
+- `CSynth.org` - 3D genome browser visualization, GPU-based. Takes in text-based data in pair, BED, matrix, WIG, XYZ formats. 3D structure modeling, overlay of colored genomic annotations. http://csynth.org/
+    - Todd, Stephen, Peter Todd, Simon J McGowan, James R Hughes, Yasutaka Kakui, Frederic Fol Leymarie, William Latham, and Stephen Taylor. “CSynth: A Dynamic Modelling and Visualisation Tool for 3D Chromatin Structure.” BioRxiv, January 3, 2019. https://doi.org/10.1101/499806.
 
 - `GenomeFlow` - a complete set of tools for Hi-C data alignment, normalization, 2D visualization, 3D genome modeling and visualization. ClusterTAD for TAD identification. LorDG and 3DMax for 3D genome reconstruction. https://github.com/jianlin-cheng/GenomeFlow
     - Trieu, Tuan, Oluwatosin Oluwadare, Julia Wopata, and Jianlin Cheng. “GenomeFlow: A Comprehensive Graphical Tool for Modeling and Analyzing 3D Genome Structure.” Bioinformatics (Oxford, England), September 12, 2018. https://doi.org/10.1093/bioinformatics/bty802.
