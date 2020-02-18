@@ -1,0 +1,10 @@
+﻿HiCUP[37],,,,,,,,,,,,,
+Language,"Unix, Perl","R, Python",R,"Perl, R",Java,R,"Python, Perl, R",Python,Python,R,"Perl, R",Python,"Perl, Java, R"
+Mapping,✓,✓,,✓,✓,✓,✓,✓,✓,✓,,✓,
+Filtering,✓,✓,,✓,✓,✓,✓,✓,✓,✓,,✓,✓
+Quality control,✓,✓,✓,✓,✓,✓,✓,✓,✓,✓,,✓,✓
+Contact map,,✓,✓,✓,✓,✓,,✓,✓,✓,✓,✓,✓
+Specific interactions,,,,,✓,✓,✓,,,✓,,,✓
+Allele-specific analysis,✓,✓,,,✓,,,,,,,,
+Visualization,,,✓,✓,,✓,,✓,✓,✓,,✓,✓
+A/B compartmentalization,,,,,✓,,,✓,,✓,,✓,✓
