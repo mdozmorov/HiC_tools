@@ -21,6 +21,7 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
   * [TAD detection](#tad-detection)
   * [TAD prediction](#tad-prediction)
   * [Spectral clustering](#spectral-clustering)
+  * [Multi-way interactions](#multi-way-interactions)
 * [URLs](#urls)
 
 ## Pipelines
@@ -254,6 +255,11 @@ Slowly growing as notes from my Zotero collection are getting organized. A relat
 - Chen, Jie, Alfred O. Hero, and Indika Rajapakse. “Spectral Identification of Topological Domains.” Bioinformatics (Oxford, England) 32, no. 14 (15 2016): 2151–58. https://doi.org/10.1093/bioinformatics/btw221. - Spectral algorithm to define TADs. Laplacian graph segmentation using Fiedler vector iteratively. Toeplitz normalization to remove distance effect. Spectral TADs do not overlap with Dixon's, but better overlap with CTCF.
 
 - Fotuhi Siahpirani, Alireza, Ferhat Ay, and Sushmita Roy. “A Multi-Task Graph-Clustering Approach for Chromosome Conformation Capture Data Sets Identifies Conserved Modules of Chromosomal Interactions.” Genome Biology 17, no. 1 (December 2016). https://doi.org/10.1186/s13059-016-0962-8 - Arboretum-Hi-C - a multitask spectral clustering method to identify differences in genomic architecture. Intro about the 3D genome organization, TAD differences and conservation. Assessment of different clustering approaches using different distance measures, as well as raw contacts. Judging clustering quality by enrichment in regulatory genomic signals (Histone marks, LADs, early vs. late replication timing, TFs like POLII, TAF, TBP, CTCF, P300, CMYC, cohesin components, LADs, replication timing, SINE, LINE, LTR) and by numerical methods (Davies-Bouldin index, silhouette score, others). Although spectral clustering on contact counts performed best, spectral + Spearman correlation was chosen. Comparing cell types identifies biologically relevant differences as quantified by enrichment. Peak counts or average signal within regions were used for enrichment. Data https://zenodo.org/record/49767, and Arboretum-HiC https://bitbucket.org/roygroup/arboretum-hic
+
+### Multi-way interactions
+
+- `MC-4C` - Multi-way interactions technology, uses Nanopore MinION sequencing. Selective amplification of concatemers with primers specific to a fragment of interest (the "viewpoint" analogy). Rigorous filtering strategy, interactions allowing to distinguish reads coming from individual alleles. Applied to mouse beta-globin (fetal liver where hemoglobin genes are expressed, and brain, where they are silent) and protocadherin-alpha (same tissues, vice versa ) loci. Superenhancers can form hubs, target multiple genes. WAPL deletion in HAP1 (leukemia) cells stimulates collision of CTCF-anchored domain loops to form rsette-like structures. MC-4C processing pipeline: https://github.com/UMCUGenetics/pymc4c/, Visualization of the analyzed data http://www.multicontactchromatin.nl/, raw data: https://www.ebi.ac.uk/ena/data/view/PRJEB23327, processed data matrices https://data.mendeley.com/datasets/wbk8hk87r2/1
+    - Allahyar, Amin, Carlo Vermeulen, Britta A. M. Bouwman, Peter H. L. Krijger, Marjon J. A. M. Verstegen, Geert Geeven, Melissa van Kranenburg, et al. “Enhancer Hubs and Loop Collisions Identified from Single-Allele Topologies.” Nature Genetics 50, no. 8 (August 2018): 1151–60. https://doi.org/10.1038/s41588-018-0161-5.
 
 
 ## URLs
