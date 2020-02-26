@@ -11,6 +11,7 @@ Tools in each section are being resorted newest on top (previously, alphabetical
   * [4C](#4c)
   * [CUT&RUN](#cut-run)
 * [Resolution improvement](#resolution-improvement)
+  * [Simulation](#simulation)
 * [Normalization of Hi-C data](#normalization)
   * [CNV-aware normalization](#cnv-aware-normalization)
 * [Reproducibility and QC of Hi-C data](#reproducibility)
@@ -160,6 +161,11 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 
 - `HiCPlus` - increasing resolution of Hi-C data using convolutional neural network. Basically, smoothing parts of Hi-C image, then binning into smaller parts. Performs better than bilinear/biqubic smoothing. https://github.com/zhangyan32/HiCPlus
     - Zhang, Yan, Lin An, Ming Hu, Jijun Tang, and Feng Yue. “HiCPlus: Resolution Enhancement of Hi-C Interaction Heatmap,” March 1, 2017. https://doi.org/10.1038/s41467-018-03113-2.
+
+### Simulation
+
+- `FreeHi-C` - Hi-C data simulation based on properties of experimental Hi-C data. Preserves A/B compartments, TADs, correlation between replicated (HiCRep), significant interactions, improves power to detect differential interactions. Robust to sequencing depth changes. Tested on replicates of GM12878, A549 human cancer cells, malaria P.falciparum. Compared with poorly performing Sim3C. All simulated data are at https://zenodo.org/record/3345896. Python3 implementation https://github.com/keleslab/FreeHiC
+    - Zheng, Ye, and Sündüz Keleş. “FreeHi-C Simulates High-Fidelity Hi-C Data for Benchmarking and Data Augmentation.” Nature Methods 17, no. 1 (January 2020): 37–40. https://doi.org/10.1038/s41592-019-0624-3.
 
 
 ## Normalization
