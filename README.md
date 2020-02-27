@@ -504,6 +504,12 @@ A four-cutter enzyme yields a resolution of ∼256 bp and a six-cutter a resolut
 
 ### Technology
 
+- Chromosome conformation capture technologies, 4C, 5C, Hi-C, ChIP-loop, ChIA-PET. From microscopy observations (constrained movement of genomic loci, LADs, preferential stability of chromosome conformation and its independence from transcription), to technology details (Figure 1). Examples of alpha- and beta-globin locus studies by different technologies, X chromosome inactivation, HOXA-d gene clusters. Future vision of single-cell, single-allele investigation of chromatin interactions.
+    - Wit, E. de, and W. de Laat. “A Decade of 3C Technologies: Insights into Nuclear Organization.” Genes & Development 26, no. 1 (January 1, 2012): 11–24. https://doi.org/10.1101/gad.179804.111.
+
+- Review of technologies for studying the 3D structure of the genome. From microscopy to 3C technologies revealing CTCF and cohesin as the key proteins for establishing chromatin loops.TADs are unlikely over large distances >>1Mb. Details of 3C, 4C, 5C, Hi-C, ChIP-PET, and other derivatives. A/B compartments and their subdivision. TADs, their conservation, ~35-50% still seem to change. CTCF (directionality of binding important) and cohesin. Diseases and the 3D genome, examples. Key steps in data analysis and interpretation, software, visualization. Hi-C data specifics - chimeric reads, mapping, data representation as fixed or enzyme-sized bins, normalization, detection of A/B compartments and TAD boundaries, significant interactions. Hi-C analysis tools: HiC-Pro, HiCUP, HOMER, Juicer. Tools for 3D modeling.
+    - Denker, Annette, and Wouter de Laat. “The Second Decade of 3C Technologies: Detailed Insights into Nuclear Organization.” Genes & Development 30, no. 12 (June 15, 2016): 1357–82. https://doi.org/10.1101/gad.281964.116.
+
 - 4D Nucleome Protocols - Collection of genomic technologies currently in use or being developed in the 4DN network - links to wet-lab protocols and papers. https://www.4dnucleome.org/protocols.html
 
 - Optimization steps for Hi-C wet-lab protocol. Pitfalls and their effect on the downstream quality. Recommendations for each step. 
@@ -527,6 +533,11 @@ A four-cutter enzyme yields a resolution of ∼256 bp and a six-cutter a resolut
 - HIPMap - high-throughput imaging and analysis pipeline to map the location of gene loci within the 3D space. FISH in a 384-well plate format, automated imaging.
     - Shachar, Sigal, Gianluca Pegoraro, and Tom Misteli. “HIPMap: A High-Throughput Imaging Method for Mapping Spatial Gene Positions.” Cold Spring Harbor Symposia on Quantitative Biology 80 (2015): 73–81. https://doi.org/10.1101/sqb.2015.80.027417.
 
+- HiC method description, 1Mb, Gm06990. Small chromosomes, but 18, interact. Compartment A associated with open chromatin. 1Mb, 100kb resolution
+    - Lieberman-Aiden, Erez, Nynke L. van Berkum, Louise Williams, Maxim Imakaev, Tobias Ragoczy, Agnes Telling, Ido Amit, et al. “Comprehensive Mapping of Long-Range Interactions Reveals Folding Principles of the Human Genome.” Science (New York, N.Y.) 326, no. 5950 (October 9, 2009): 289–93. https://doi.org/10.1126/science.1181369.
+
+- 3C technology, matrix of interaction frequencies, application to reveal spatial information, applied to yeast (S cerevisiae) genome. Interphase and metaphase chromosomes show different patterns of interactions. Distance-dependent decay of interaction frequencies. Basic observations on chromosome size, inter-chromosomal interactions.
+    - Dekker, Job, Karsten Rippe, Martijn Dekker, and Nancy Kleckner. “Capturing Chromosome Conformation.” Science (New York, N.Y.) 295, no. 5558 (February 15, 2002): 1306–11. https://doi.org/10.1126/science.1067799.
 
 ### Methodological Reviews
 
