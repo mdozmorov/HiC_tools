@@ -261,6 +261,9 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 
 ### Capture-C peaks
 
+- `Peaky` - Bayesian sparse variable selection approach. The model proposes that for any given bait, the expected CHi-C signal at each prey fragment is expressed as a sum of contributions from a set of fragments directly contacting that bait. https://github.com/cqgd/pky
+    - Eijsbouts, Christiaan Q, Oliver S Burren, Paul J Newcombe, and Chris Wallace. “Fine Mapping Chromatin Contacts in Capture Hi-C Data.” BMC Genomics 20, no. 1 (December 2019). https://doi.org/10.1186/s12864-018-5314-5.
+
 - `ChiCMaxima` - a pipeline for detection and visualization of chromatin loops in Capture Hi-C data. Loess smoothing combined with a background model to detect significant interactions Comparison with GOTHiC and CHiCAGO. https://github.com/yousra291987/ChiCMaxima
     - Ben Zouari, Yousra, Anne M Molitor, Natalia Sikorska, Vera Pancaldi, and Tom Sexton. “ChiCMaxima: A Robust and Simple Pipeline for Detection and Visualization of Chromatin Looping in Capture Hi-C,” October 16, 2018. https://doi.org/10.1101/445023.
 
