@@ -111,6 +111,9 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 
 ### Capture-C
 
+- `CaptureCompendium` http://userweb.molbiol.ox.ac.uk/public/telenius/CaptureCompendium/ - all-in-one toolkit for the design, analysis and presentation of 3C experiments, combines oligonucleotide design (Capsequm2 http://apps.molbiol.ox.ac.uk/CaptureC/cgi-bin/CapSequm.cgi), sequence mapping and extraction (CCseqBasic https://github.com/Hughes-Genome-Group/CCseqBasicS), statistical data presentation and distribution (CaptureCompare with peaky integration https://github.com/Hughes-Genome-Group/CaptureCompare, Tri-C, CaptureSee https://capturesee.molbiol.ox.ac.uk/). Allows for multi-way interactions (Tri-C). Overview of previous tools doing parts.
+    - Telenius, Jelena M., Damien J. Downes, Martin Sergeant, A. Marieke Oudelaar, Simon McGowan, Jon Kerry, Lars L.P. Hanssen, et al. “CaptureCompendium: A Comprehensive Toolkit for 3C Analysis.” Preprint. Bioinformatics, February 18, 2020. https://doi.org/10.1101/2020.02.17.952572.
+
 - `CCseqBasic` - Capture-C analysis pipeline by Hughes lab, https://github.com/Hughes-Genome-Group/CCseqBasicS
 - `CapSequm` - oligo design tool by Hughes lab, http://apps.molbiol.ox.ac.uk/CaptureC/cgi-bin/CapSequm.cgi
 
@@ -260,9 +263,6 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 - `HOMER` - Perl scripts for normalization, visualization, significant interaction detection, motif discovery. Does not correct for bias. http://homer.ucsd.edu/homer/interactions/
 
 ### Capture-C peaks
-
-- `CaptureCompendium` http://userweb.molbiol.ox.ac.uk/public/telenius/CaptureCompendium/ - all-in-one toolkit for the design, analysis and presentation of 3C experiments, combines oligonucleotide design (Capsequm2 http://apps.molbiol.ox.ac.uk/CaptureC/cgi-bin/CapSequm.cgi), sequence mapping and extraction (CCseqBasic https://github.com/Hughes-Genome-Group/CCseqBasicS), statistical data presentation and distribution (CaptureCompare with peaky integration https://github.com/Hughes-Genome-Group/CaptureCompare, Tri-C, CaptureSee https://capturesee.molbiol.ox.ac.uk/). Allows for multi-way interactions (Tri-C). Overview of previous tools doing parts.
-    - Telenius, Jelena M., Damien J. Downes, Martin Sergeant, A. Marieke Oudelaar, Simon McGowan, Jon Kerry, Lars L.P. Hanssen, et al. “CaptureCompendium: A Comprehensive Toolkit for 3C Analysis.” Preprint. Bioinformatics, February 18, 2020. https://doi.org/10.1101/2020.02.17.952572.
 
 - `Peaky` - Bayesian sparse variable selection approach. The model proposes that for any given bait, the expected CHi-C signal at each prey fragment is expressed as a sum of contributions from a set of fragments directly contacting that bait. https://github.com/cqgd/pky
     - Eijsbouts, Christiaan Q, Oliver S Burren, Paul J Newcombe, and Chris Wallace. “Fine Mapping Chromatin Contacts in Capture Hi-C Data.” BMC Genomics 20, no. 1 (December 2019). https://doi.org/10.1186/s12864-018-5314-5.
