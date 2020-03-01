@@ -16,6 +16,7 @@ Tools in each section are being resorted newest on top (previously, alphabetical
   * [CNV-aware normalization](#cnv-aware-normalization)
 * [Reproducibility and QC of Hi-C data](#reproducibility)
 * [Significant interaction (peak) callers](#significant-interaction-peak-callers)
+  * [Capture-C peaks](#capture-c-peaks)
 * [Differential interactions](#differential-interactions)
 * [TAD callers](#tad-callers)
 * [Prediction of 3D features](#prediction-of-3d-features)
@@ -239,20 +240,11 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 - `FitHiChIP` - significant peak caller in HiChIP and PLAC-seq data. Accounts for assay-specific biases as well as for the distance effect. 3D differential loops detection. Methods. https://github.com/ay-lab/FitHiChIP
     - Bhattacharyya, Sourya, Vivek Chandra, Pandurangan Vijayanand, and Ferhat Ay. “FitHiChIP: Identification of Significant Chromatin Contacts from HiChIP Data,” September 10, 2018. https://doi.org/10.1101/412833.
 
-- `ChiCMaxima` - a pipeline for detection and visualization of chromatin loops in Capture Hi-C data. Loess smoothing combined with a background model to detect significant interactions Comparison with GOTHiC and CHiCAGO. https://github.com/yousra291987/ChiCMaxima
-    - Ben Zouari, Yousra, Anne M Molitor, Natalia Sikorska, Vera Pancaldi, and Tom Sexton. “ChiCMaxima: A Robust and Simple Pipeline for Detection and Visualization of Chromatin Looping in Capture Hi-C,” October 16, 2018. https://doi.org/10.1101/445023.
-
-- `HiCapTools` - Software package that can design sequence capture probes for targeted chromosome capture applications and analyse sequencing output to detect proximities involving targeted fragments. Two probes are designed for each feature while avoiding repeat elements and non-unique regions. The data analysis suite processes alignment files to report genomic proximities for each feature at restriction fragment level and is isoform-aware for gene features. Statistical significance of contact frequencies is evaluated using an empirically derived background distribution. https://github.com/sahlenlab/HiCapTools
-    - Anandashankar Anil, Rapolas Spalinskas, Örjan Åkerborg, Pelin Sahlén; HiCapTools: a software suite for probe design and proximity detection for targeted chromosome conformation capture applications, Bioinformatics, Volume 34, Issue 4, 15 February 2018, Pages 675–677, https://doi.org/10.1093/bioinformatics/btx625
-
 - `HiC-DC` - significant interaction detection using zero-inflated negative binomial model and accounting for biases like GC content, mappability. Compared with Fit-Hi-C, more conservative. Robust to sequencing depth. Detects significant, biologically relevant interactions at all length scales, including sub-TADs. BWA-MEM alignment (Python script), then processing in R. https://bitbucket.org/leslielab/hic-dc/src/master/
     - Carty, Mark, Lee Zamparo, Merve Sahin, Alvaro González, Raphael Pelossof, Olivier Elemento, and Christina S. Leslie. “An Integrated Model for Detecting Significant Chromatin Interactions from High-Resolution Hi-C Data.” Nature Communications 8, no. 1 (August 2017): 15454. https://doi.org/10.1038/ncomms15454.
 
 - `GoTHIC` - R package for peak calling in individual HiC datasets, while accounting for noise. https://www.bioconductor.org/packages/release/bioc/html/GOTHiC.html
     - Mifsud, Borbala, Inigo Martincorena, Elodie Darbo, Robert Sugar, Stefan Schoenfelder, Peter Fraser, and Nicholas M. Luscombe. “GOTHiC, a Probabilistic Model to Resolve Complex Biases and to Identify Real Interactions in Hi-C Data.” Edited by Mark Isalan. PLOS ONE 12, no. 4 (April 5, 2017): e0174744. https://doi.org/10.1371/journal.pone.0174744. - The GOTHiC (genome organisation through HiC) algorithm uses a simple binomial distribution model to simultaneously remove coveralge-associated biases in Hi-C data and detect significant interactions by assuming that the global background interaction frequency of two loci. Use of the Benjamini–Hochberg multiple-testing correction to control for the false discovery rate. 
-
-- `CHiCAGO` is a Capture Hi-C data processing method that filters out contacts that are expected by chance given the linear proximity of the interacting fragments on the genome and takes into account the asymmetric biases introduced by the capture step used in the Capture Hi-C approach. Two-component background model (Delaporte distribution) - Brownian motion (Neg. Binom.) and technical noise (Poisson). Account for distance. https://bioconductor.org/packages/release/bioc/html/Chicago.html
-    - Cairns, Jonathan, Paula Freire-Pritchett, Steven W. Wingett, Csilla Várnai, Andrew Dimond, Vincent Plagnol, Daniel Zerbino, et al. “CHiCAGO: Robust Detection of DNA Looping Interactions in Capture Hi-C Data.” Genome Biology 17, no. 1 (2016): 127. https://doi.org/10.1186/s13059-016-0992-2.
 
 - `HMRFBayesHiC` - a hidden Markov random field-based Bayesian peak caller to identify long-range chromatin interactions from Hi-C data. Borrowing information from neighboring loci. Previous peak calling methods, Fit-Hi-C. Interactions between enhancers and promoters as a benchmark. https://yunliweb.its.unc.edu/HMRFBayesHiC/
     - Xu, Zheng, Guosheng Zhang, Fulai Jin, Mengjie Chen, Terrence S. Furey, Patrick F. Sullivan, Zhaohui Qin, Ming Hu, and Yun Li. “A Hidden Markov Random Field-Based Bayesian Method for the Detection of Long-Range Chromosomal Interactions in Hi-C Data.” Bioinformatics (Oxford, England) 32, no. 5 (01 2016): 650–56. https://doi.org/10.1093/bioinformatics/btv650.
@@ -266,6 +258,18 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 - `HiCPeaks` - Python CPU-based implementation for BH-FDR and HICCUPS, two peak calling algorithms for Hi-C data, proposed by Rao et al 2014. Text-to-cooler Hi-C data converter, two scripts to call peaks, and one for visualization (creation of a .png file)
 
 - `HOMER` - Perl scripts for normalization, visualization, significant interaction detection, motif discovery. Does not correct for bias. http://homer.ucsd.edu/homer/interactions/
+
+### Capture-C peaks
+
+- `ChiCMaxima` - a pipeline for detection and visualization of chromatin loops in Capture Hi-C data. Loess smoothing combined with a background model to detect significant interactions Comparison with GOTHiC and CHiCAGO. https://github.com/yousra291987/ChiCMaxima
+    - Ben Zouari, Yousra, Anne M Molitor, Natalia Sikorska, Vera Pancaldi, and Tom Sexton. “ChiCMaxima: A Robust and Simple Pipeline for Detection and Visualization of Chromatin Looping in Capture Hi-C,” October 16, 2018. https://doi.org/10.1101/445023.
+
+- `HiCapTools` - Software package that can design sequence capture probes for targeted chromosome capture applications and analyse sequencing output to detect proximities involving targeted fragments. Two probes are designed for each feature while avoiding repeat elements and non-unique regions. The data analysis suite processes alignment files to report genomic proximities for each feature at restriction fragment level and is isoform-aware for gene features. Statistical significance of contact frequencies is evaluated using an empirically derived background distribution. https://github.com/sahlenlab/HiCapTools
+    - Anandashankar Anil, Rapolas Spalinskas, Örjan Åkerborg, Pelin Sahlén; HiCapTools: a software suite for probe design and proximity detection for targeted chromosome conformation capture applications, Bioinformatics, Volume 34, Issue 4, 15 February 2018, Pages 675–677, https://doi.org/10.1093/bioinformatics/btx625
+
+- `CHiCAGO` is a Capture Hi-C data processing method that filters out contacts that are expected by chance given the linear proximity of the interacting fragments on the genome and takes into account the asymmetric biases introduced by the capture step used in the Capture Hi-C approach. Two-component background model (Delaporte distribution) - Brownian motion (Neg. Binom.) and technical noise (Poisson). Account for distance. https://bioconductor.org/packages/release/bioc/html/Chicago.html
+    - Cairns, Jonathan, Paula Freire-Pritchett, Steven W. Wingett, Csilla Várnai, Andrew Dimond, Vincent Plagnol, Daniel Zerbino, et al. “CHiCAGO: Robust Detection of DNA Looping Interactions in Capture Hi-C Data.” Genome Biology 17, no. 1 (2016): 127. https://doi.org/10.1186/s13059-016-0992-2.
+
 
 
 ## Differential interactions
