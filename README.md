@@ -628,6 +628,9 @@ A four-cutter enzyme yields a resolution of ∼256 bp and a six-cutter a resolut
 
 ### Multi-way interactions
 
+- Multi-contact 3C (MC-3C, based on conventional 3C, C-walk, and multi-contact 4C approaches) technology reveals distinct chromosome territories with very little mixing, never entanglement, same with chromosomal compartment domains (A-A, B-B interactions predominant, A-B - minimal to none). Analysis of C-walks - connected paths of pairwise interactions. Compared with C-walks generated from Hi-C data. Permutation analysis of significance of insulated, mixed, and intermediate domains. PacBio sequencing, processing with SMRT Analysis package and a custom pipeline https://github.com/dekkerlab/MC-3C_scripts
+    - Tavares-Cadete, Filipe, Davood Norouzi, Bastiaan Dekker, Yu Liu, and Job Dekker. “Multi-Contact 3C Data Reveal That the Human Genome Is Largely Unentangled.” Preprint. Genomics, March 4, 2020. https://doi.org/10.1101/2020.03.03.975425.
+
 - MC-4C multi-way contacts technology and computational protocols. ~2 weeks, ~$600/sample, best for <120kb regions. Computational protocol using https://github.com/deLaatLab/mc4c_py, test data included
     - Vermeulen, Carlo, Amin Allahyar, Britta A. M. Bouwman, Peter H. L. Krijger, Marjon J. A. M. Verstegen, Geert Geeven, Christian Valdes-Quezada, et al. “Multi-Contact 4C: Long-Molecule Sequencing of Complex Proximity Ligation Products to Uncover Local Cooperative and Competitive Chromatin Topologies.” Nature Protocols 15, no. 2 (February 2020): 364–97. https://doi.org/10.1038/s41596-019-0242-7.
 
