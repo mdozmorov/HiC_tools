@@ -98,6 +98,8 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 - `cooler` file format for storing Hi-C matrices, sparse, hierarchical, multi-resolution. `cooler` Python package for data loading, aggregation, merging, normalization (balancing), viewing, exporting data. Together with "pairs" text-based format (https://github.com/4dn-dcic/pairix/blob/master/pairs_format_specification.md), and hic, cooler is accepted by the 4D Nucleome consortium DAC.https://github.com/mirnylab/cooler,https://cooler.readthedocs.io/en/latest/
     - Abdennur, Nezar, and Leonid Mirny. “Cooler: Scalable Storage for Hi-C Data and Other Genomically-Labeled Arrays.” BioRxiv, February 22, 2019. https://doi.org/10.1101/557660.
 
+- `cooltools` - tools to work with .cool files, https://cooltools.readthedocs.io/en/latest/, https://github.com/mirnylab/cooltools
+
 - `distiller-nf` - Java modular Hi-C mapping pipeline for reproducible data analysis, nextflow pipeline. Alignment, filtering, aggregating Hi-C matrices. https://github.com/mirnylab/distiller-nf
 
 - `hiclib` - Python tools to qc, map, normalize, filter and analyze Hi-C data, https://bitbucket.org/mirnylab/hiclib
