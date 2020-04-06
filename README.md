@@ -648,6 +648,9 @@ A four-cutter enzyme yields a resolution of ∼256 bp and a six-cutter a resolut
 - `C-walks` multi-way technology, genome-wide. TADs organize chromosomal territories. Active and inactive TAD properties. Methods: Good mathematical description of insulation score calculations. Filter TADs smaller than 250kb. Inter-chromosomal contacts are rare, ~7-10%. Concatemers (more than two contacts) are unlikely.
     - Olivares-Chauvet, Pedro, Zohar Mukamel, Aviezer Lifshitz, Omer Schwartzman, Noa Oded Elkayam, Yaniv Lubling, Gintaras Deikus, Robert P. Sebra, and Amos Tanay. “Capturing Pairwise and Multi-Way Chromosomal Conformations Using Chromosomal Walks.” Nature 540, no. 7632 (November 30, 2016): 296–300. https://doi.org/10.1038/nature20158.
 
+- `TM3C` - Tethered multiple 3C technology to probe multi-point contacts. NHEK, KBM7 cells, detected Philadelphia chromosome, investigated triple contacts in the IGF2-H19 locus at 40kb, detected typical genomic structures (chromosomal compartments, distance-decay, TADs), reconstructed 3D genome at 1Mb resolution. A two-phase mapping strategy that separately maps chimeric subsequences within a single read (Methods). Multiple 4-cutter restriction enzymes
+    - Ay, Ferhat, Thanh H Vu, Michael J Zeitz, Nelle Varoquaux, Jan E Carette, Jean-Philippe Vert, Andrew R Hoffman, and William S Noble. “Identifying Multi-Locus Chromatin Contacts in Human Cells Using Tethered Multiple 3C.” BMC Genomics 16, no. 1 (2015): 121. https://doi.org/10.1186/s12864-015-1236-7.
+
 
 ## URLs
 
