@@ -651,6 +651,8 @@ A four-cutter enzyme yields a resolution of ∼256 bp and a six-cutter a resolut
 - `TM3C` - Tethered multiple 3C technology to probe multi-point contacts. NHEK, KBM7 cells, detected Philadelphia chromosome, investigated triple contacts in the IGF2-H19 locus at 40kb, detected typical genomic structures (chromosomal compartments, distance-decay, TADs), reconstructed 3D genome at 1Mb resolution. A two-phase mapping strategy that separately maps chimeric subsequences within a single read (Methods). Multiple 4-cutter restriction enzymes
     - Ay, Ferhat, Thanh H Vu, Michael J Zeitz, Nelle Varoquaux, Jan E Carette, Jean-Philippe Vert, Andrew R Hoffman, and William S Noble. “Identifying Multi-Locus Chromatin Contacts in Human Cells Using Tethered Multiple 3C.” BMC Genomics 16, no. 1 (2015): 121. https://doi.org/10.1186/s12864-015-1236-7.
 
+- `INGRID` - chromatin conformation capture technology using in-gel replication of interacting DNA segments. Detects multi-way interactions. Protocol, demonstration of beta-globin gene locus.
+    - Gavrilov, Alexey A., Helena V. Chetverina, Elina S. Chermnykh, Sergey V. Razin, and Alexander B. Chetverin. “Quantitative Analysis of Genomic Element Interactions by Molecular Colony Technique.” Nucleic Acids Research 42, no. 5 (March 1, 2014): e36–e36. https://doi.org/10.1093/nar/gkt1322.
 
 ## URLs
 
