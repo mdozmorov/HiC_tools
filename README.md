@@ -52,7 +52,7 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 
 - `cword` - perl cworld module and collection of utility/analysis scripts for C data (3C, 4C, 5C, Hi-C). https://github.com/dekkerlab/cworld-dekker
 
-- `FAN-C` - Python pipeline for Hi-C processing. Input - raw FASTQ (aligned using BWA or Bowtie2, artifact filtering) or pre-aligned BAMs. KR or ICE normalization. Analysis and V=visualization (contact distance decay, A/B compartment detection, TAD/loop detection, Average TADs, triangular heatmaps, comparison of two heatmaps).  Automatic or modular. Compatible with .cool and .hic formats. https://github.com/vaquerizaslab/fanc, [Tweet](https://twitter.com/vaquerizas_lab/status/1225011187668209664?s=20)
+- `FAN-C` - Python pipeline for Hi-C processing. Input - raw FASTQ (aligned using BWA or Bowtie2, artifact filtering) or pre-aligned BAMs. KR or ICE normalization. Analysis and Visualization (contact distance decay, A/B compartment detection, TAD/loop detection, Average TADs, triangular heatmaps, comparison of two heatmaps).  Automatic or modular. Compatible with .cool and .hic formats. https://github.com/vaquerizaslab/fanc, [Tweet](https://twitter.com/vaquerizas_lab/status/1225011187668209664?s=20)
     - Kruse, Kai, Clemens B Hug, and Juan M Vaquerizas. “FAN-C: A Feature-Rich Framework for the Analysis and Visualisation of C Data.” Preprint. Genomics, February 4, 2020. https://doi.org/10.1101/2020.02.03.932517.
 
 - `Juicer` - Java full pipeline to convert raw reads into Hi-C maps, visualized in Juicebox. Call domains, loops, CTCF binding sites. `.hic` file format for storing multi-resolution Hi-C data. https://github.com/theaidenlab/juicebox/wiki/Download
@@ -458,6 +458,7 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 - `NAT` - the 4D Nucleome Analysis Toolbox, for Hi-C data (text, cool format) normalization (ICE, Toeplitz, CNV-Toeplitz), TAD calling (Directionality index, Armatus, custom), karyotype abnormalities visualization on inter-chromosomal matrices, timecourse visualization. Matlab.https://github.com/laseaman/4D_Nucleome_Analysis_Toolbox
     - Seaman, Laura, and Indika Rajapakse. “4D Nucleome Analysis Toolbox: Analysis of Hi-C Data with Abnormal Karyotype and Time Series Capabilities.” Bioinformatics (Oxford, England) 34, no. 1 (01 2018): 104–6. https://doi.org/10.1093/bioinformatics/btx484.
 
+- `CoolBox` - Jupyter notebook based genomic data visulization toolkit utilizing pyGenomeTracks. https://github.com/GangCaoLab/CoolBox
 - `pyGenomeTracks` - python module to plot beautiful and highly customizable genome browser tracks, https://github.com/deeptools/pyGenomeTracks
 
 - TADKit - 3D Genome Browser. Main web site, http://sgt.cnag.cat/3dg/tadkit/, and GitHub, https://github.com/3DGenomes/TADkit
