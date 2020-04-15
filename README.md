@@ -555,6 +555,9 @@ A four-cutter enzyme yields a resolution of ∼256 bp and a six-cutter a resolut
 
 #### Micro-C
 
+- Micro-C (MNase digestion Hi-C) data analysis. Nucleosome-level (\~100-200bp) resolution Hi-C, captures all structures in regular Hi-C data. Stripes/flames structures correspond to enhancer-promoter interactions, colocalize with PolII, CTCF.  TADs are further split into "micro TADs", insulation score. Active boundaries colocalize with CpG islands, promoters, tRNA genes. Inactive boundaries are in repeats. micro TADs subdivided into five subgroups.Two-start zig-zag model tetra-nucleosome stacks. Mouse stem cell, 38 biological replicates. [Twitter](https://twitter.com/Stanley_TH/status/1242843692081111040?s=20)
+    - Hsieh, Tsung-Han S., Claudia Cattoglio, Elena Slobodyanyuk, Anders S. Hansen, Oliver J. Rando, Robert Tjian, and Xavier Darzacq. “Resolving the 3D Landscape of Transcription-Linked Mammalian Chromatin Folding.” Molecular Cell, March 2020, S1097276520301507. https://doi.org/10.1016/j.molcel.2020.03.002.
+
 - Micro-C (MNase digestion Hi-C) technology and basic analysis. human embryonic stem cells H1-ESC and differentiated human foreskin fibroblasts (HFFc6). Captures standard Hi-C features, with many additional interaction peaks ("dots"). Enrichment of classical marks of TAD boundaries (Fig 3C) - RAD21, TAF1, PHF8, CTCF, TBP, POL2RA, YY1, and more.
     - Krietenstein, Nils, Sameer Abraham, Sergey Venev, Nezar Abdennur, Johan Gibcus, Tsung-Han Hsieh, Krishna Mohan Parsi, et al. “Ultrastructural Details of Mammalian Chromosome Architecture.” Preprint. Genomics, May 17, 2019. https://doi.org/10.1101/639922.
 
