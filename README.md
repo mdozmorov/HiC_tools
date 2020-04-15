@@ -27,6 +27,7 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 * [3D reconstruction](#3d-reconstruction)
 * [Papers](#papers)
   * [Technology](#technology)
+    * [Micro-C](#micro-c)
   * [Methodological Reviews](#methodological-reviews)
   * [General Reviews](#general-reviews)
   * [Normalization](#normalization)
@@ -543,12 +544,6 @@ A four-cutter enzyme yields a resolution of ∼256 bp and a six-cutter a resolut
 - Review of chromatin conformation capture technologies, from image-based methods (FISH), through proximity ligation (3/4/5C, Hi-C, TCC, ChIA-PET, scHi-C), to ligation-free methods (GAM, SPRITE, ChIA-Drop). Details of each technology (Table 1, Figures), comparison of them (Table 2).
     - Kempfer, Rieke, and Ana Pombo. “Methods for Mapping 3D Chromosome Architecture.” Nature Reviews Genetics, December 17, 2019. https://doi.org/10.1038/s41576-019-0195-2.
 
-- Micro-C (MNase digestion Hi-C) technology and basic analysis. human embryonic stem cells H1-ESC and differentiated human foreskin fibroblasts (HFFc6). Captures standard Hi-C features, with many additional interaction peaks ("dots"). Enrichment of classical marks of TAD boundaries (Fig 3C) - RAD21, TAF1, PHF8, CTCF, TBP, POL2RA, YY1, and more.
-    - Krietenstein, Nils, Sameer Abraham, Sergey Venev, Nezar Abdennur, Johan Gibcus, Tsung-Han Hsieh, Krishna Mohan Parsi, et al. “Ultrastructural Details of Mammalian Chromosome Architecture.” Preprint. Genomics, May 17, 2019. https://doi.org/10.1101/639922.
-
-- Micro-C technology - mononucleosome resolution mapping in yeast. Micrococcal nuclease to fragment chromatin. Yeast does not have TADs, but Micro-C revealed self-associating domains (chromatin interaction domains, CIDs) driven by the number of genes. Enrichment of histone modifications. Data:  https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE68016
-    - Hsieh, Tsung-Han S., Assaf Weiner, Bryan Lajoie, Job Dekker, Nir Friedman, and Oliver J. Rando. “Mapping Nucleosome Resolution Chromosome Folding in Yeast by Micro-C.” Cell 162, no. 1 (July 2015): 108–19. https://doi.org/10.1016/j.cell.2015.05.048.
-
 - HIPMap - high-throughput imaging and analysis pipeline to map the location of gene loci within the 3D space. FISH in a 384-well plate format, automated imaging.
     - Shachar, Sigal, Gianluca Pegoraro, and Tom Misteli. “HIPMap: A High-Throughput Imaging Method for Mapping Spatial Gene Positions.” Cold Spring Harbor Symposia on Quantitative Biology 80 (2015): 73–81. https://doi.org/10.1101/sqb.2015.80.027417.
 
@@ -557,6 +552,15 @@ A four-cutter enzyme yields a resolution of ∼256 bp and a six-cutter a resolut
 
 - 3C technology, matrix of interaction frequencies, application to reveal spatial information, applied to yeast (S cerevisiae) genome. Interphase and metaphase chromosomes show different patterns of interactions. Distance-dependent decay of interaction frequencies. Basic observations on chromosome size, inter-chromosomal interactions.
     - Dekker, Job, Karsten Rippe, Martijn Dekker, and Nancy Kleckner. “Capturing Chromosome Conformation.” Science (New York, N.Y.) 295, no. 5558 (February 15, 2002): 1306–11. https://doi.org/10.1126/science.1067799.
+
+#### Micro-C
+
+- Micro-C (MNase digestion Hi-C) technology and basic analysis. human embryonic stem cells H1-ESC and differentiated human foreskin fibroblasts (HFFc6). Captures standard Hi-C features, with many additional interaction peaks ("dots"). Enrichment of classical marks of TAD boundaries (Fig 3C) - RAD21, TAF1, PHF8, CTCF, TBP, POL2RA, YY1, and more.
+    - Krietenstein, Nils, Sameer Abraham, Sergey Venev, Nezar Abdennur, Johan Gibcus, Tsung-Han Hsieh, Krishna Mohan Parsi, et al. “Ultrastructural Details of Mammalian Chromosome Architecture.” Preprint. Genomics, May 17, 2019. https://doi.org/10.1101/639922.
+
+- Micro-C technology - mononucleosome resolution mapping in yeast. Micrococcal nuclease to fragment chromatin. Yeast does not have TADs, but Micro-C revealed self-associating domains (chromatin interaction domains, CIDs) driven by the number of genes. Enrichment of histone modifications. Data:  https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE68016
+    - Hsieh, Tsung-Han S., Assaf Weiner, Bryan Lajoie, Job Dekker, Nir Friedman, and Oliver J. Rando. “Mapping Nucleosome Resolution Chromosome Folding in Yeast by Micro-C.” Cell 162, no. 1 (July 2015): 108–19. https://doi.org/10.1016/j.cell.2015.05.048.
+
 
 ### Methodological Reviews
 
