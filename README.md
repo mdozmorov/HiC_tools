@@ -519,6 +519,8 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 
 ## Papers
 
+- [3D Genome, from technology to visualization](https://zhonglab.gitbook.io/3dgenome/preface) - a GitBook by Xingzhao Wen and Sheng Zhong covering biological and computational aspects of 3D genomics and RNA-genome interactions
+
 A four-cutter enzyme yields a resolution of ∼256 bp and a six-cutter a resolution of ∼4,096 bp.
 
 ### Technology
