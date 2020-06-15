@@ -159,6 +159,9 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 - `DeepHiC` - a generative adversarial network (GAN) for enhancing Hi-C data. Does not change the bin size, enhances the content of Hi-C data. Reconstructs the content from \~1% of the original data. Outperforms BoostHiC, HiCPlus, HiCNN. Online tool: http://sysomics.com/deephic/, code: https://github.com/omegahh/DeepHiC
     - Hong, Hao, Shuai Jiang, Hao Li, Cheng Quan, Chenghui Zhao, Ruijiang Li, Wanying Li, et al. “DeepHiC: A Generative Adversarial Network for Enhancing Hi-C Data Resolution.” Preprint. Bioinformatics, July 29, 2019. https://doi.org/10.1101/718148.
 
+- [hicGAN](https://github.com/kimmo1019/hicGAN) - improving resolution (saturation) of Hi-C data using Generative Adversarial Networks. Generator - five inner residual blocks to fight vanishing gradient (each block has two convolutional layers and batch normalization) and an outer skip connection. The discriminator has three convolutional blocks. Evaluation metrics: MSE, signal-to-noise ratio, structure similarity index, chromatin loop score. Compared against HiCPlus. Python, Tensorflow implementation
+    - Liu, Qiao, Hairong Lv, and Rui Jiang. “[HicGAN Infers Super Resolution Hi-C Data with Generative Adversarial Networks](https://doi.org/10.1093/bioinformatics/btz317).” Bioinformatics 35, no. 14 (July 15, 2019): i99–107
+
 - `HiCNN` - a computational method for resolution enhancement. A modification of HiCPlus approach, using very deep (54 layers, five types of layers) convolutional neural network. A Hi-C matrix of regular resolution is transformed into high-resolution but very sparse matrix, HiCNN predicts the missing values. Pearson and MSE evaluation metrics, overlap of Fit-Hi-C-detected significant interactions - performs similar or slightly better than HiCPlus. PyTorch implementation. http://dna.cs.miami.edu/HiCNN/
     - Liu, Tong, and Zheng Wang. “HiCNN: A Very Deep Convolutional Neural Network to Better Enhance the Resolution of Hi-C Data.” Edited by John Hancock. Bioinformatics, April 9, 2019, btz251. https://doi.org/10.1093/bioinformatics/btz251.
 
@@ -168,7 +171,7 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 - `HIFI` - Hi-C Interaction Frequency Inference for restriction fragment-resolution analysis of Hi-C data. Sparsity is resolved by using dependencies between neighboring restriction fragments, with Markov Random Fields performing the best. Better resolves TADs and sub-TADs, significant interactions. CTCF, RAD21, SMC3, ZNF143 are enriched around TAD boundaries. Matrices normalized for fragment-specific biases. https://github.com/BlanchetteLab/HIFI
     - Cameron, Christopher JF, Josée Dostie, and Mathieu Blanchette. “Estimating DNA-DNA Interaction Frequency from Hi-C Data at Restriction-Fragment Resolution.” Preprint. Bioinformatics, July 25, 2018. https://doi.org/10.1101/377523.
 
-- `HiCPlus` - increasing resolution of Hi-C data using convolutional neural network. Basically, smoothing parts of Hi-C image, then binning into smaller parts. Performs better than bilinear/biqubic smoothing. https://github.com/zhangyan32/HiCPlus
+- `HiCPlus` - increasing resolution of Hi-C data using convolutional neural network, mean squared error as a loss function. Basically, smoothing parts of Hi-C image, then binning into smaller parts. Performs better than bilinear/biqubic smoothing. https://github.com/zhangyan32/HiCPlus
     - Zhang, Yan, Lin An, Ming Hu, Jijun Tang, and Feng Yue. “HiCPlus: Resolution Enhancement of Hi-C Interaction Heatmap,” March 1, 2017. https://doi.org/10.1038/s41467-018-03113-2.
 
 ### Simulation
