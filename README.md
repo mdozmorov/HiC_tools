@@ -153,6 +153,8 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 
 ## Resolution improvement
 
+- [HiCSR](https://github.com/PSI-Lab/HiCSR) - enhancement of Hi-C contact maps using a Generative Adversarial Network trained to optimize a custom loss function (weighted adversarial loss, pixel-wise L1 loss, and a feature reconstruction loss). Increase in resolution refers to recovering additional Hi-C contacts, "saturating" downsampled and noisy Hi-C matrices, not increasing the number of pixels. Representation learning with autoencoder with several convolutional layers and skip connections, then using it for generator to create new matrices with discriminator telling them fake or real. Compared with HiCPlus, HiCNN, hicGAN, DeepHiC. Reproducibility is better using four metrics. Python3 PyTorch implementation https://github.com/PSI-Lab/HiCSR
+    - Dimmick, Michael C., Leo J. Lee, and Brendan J. Frey. “HiCSR: A Hi-C Super-Resolution Framework for Producing Highly Realistic Contact Maps.” Preprint. Genomics, February 25, 2020. https://doi.org/10.1101/2020.02.24.961714.
 
 - `DeepHiC` - a generative adversarial network (GAN) for enhancing Hi-C data. Does not change the bin size, enhances the content of Hi-C data. Reconstructs the content from \~1% of the original data. Outperforms BoostHiC, HiCPlus, HiCNN. Online tool: http://sysomics.com/deephic/, code: https://github.com/omegahh/DeepHiC
     - Hong, Hao, Shuai Jiang, Hao Li, Cheng Quan, Chenghui Zhao, Ruijiang Li, Wanying Li, et al. “DeepHiC: A Generative Adversarial Network for Enhancing Hi-C Data Resolution.” Preprint. Bioinformatics, July 29, 2019. https://doi.org/10.1101/718148.
