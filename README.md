@@ -24,7 +24,7 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 * [CNV and Structural variant detection](#cnv-and-structural-variant-detection)
 * [Visualization](#visualization)
 * [De novo genome scaffolding](#de-novo-genome-scaffolding)
-* [3D reconstruction](#3d-reconstruction)
+* [3D modeling](#3d-modeling)
 * [Papers](#papers)
   * [Technology](#technology)
     * [Micro-C](#micro-c)
@@ -91,8 +91,6 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 
 - `nf-core-hic` - Analysis of Chromosome Conformation Capture data (Hi-C and more), Nextflow pipeline. https://github.com/nservant/nf-core-hic
 
-- `TADbit` - Python-based pipeline, from iterative mapping, filtering, normalization. Similarity metrics: distance-centric Spearman, first principal eigenvector. TAD detection. TAD boundaries alignment, within 20kb. 3D modeling. Supplementary material - key functions, TAD detection algorithm, boundary comparison. https://github.com/3DGenomes/tadbit
-    - Serra, François, Davide Baù, Mike Goodstadt, David Castillo, Guillaume J. Filion, and Marc A. Marti-Renom. “Automatic Analysis and 3D-Modelling of Hi-C Data Using TADbit Reveals Structural Features of the Fly Chromatin Colors.” PLoS Computational Biology 13, no. 7 (July 2017): e1005665. https://doi.org/10.1371/journal.pcbi.1005665.
 
 ### Mirnylab tools
 
@@ -501,7 +499,7 @@ Tools in each section are being resorted newest on top (previously, alphabetical
     - Burton, Joshua N., Andrew Adey, Rupali P. Patwardhan, Ruolan Qiu, Jacob O. Kitzman, and Jay Shendure. “Chromosome-Scale Scaffolding of de Novo Genome Assemblies Based on Chromatin Interactions.” Nature Biotechnology 31, no. 12 (December 2013): 1119–25. https://doi.org/10.1038/nbt.2727.
 
 
-## 3D reconstruction
+## 3D modeling
 
 - 3D genome reconstruction review. Intro into equilibrium/fractal globule models. Classification of reconstruction methods: distance-, contact-. and probability-based. [Table 1](https://biologicalproceduresonline.biomedcentral.com/articles/10.1186/s12575-019-0094-0#Tab1) summarizes many tools, methods, and references.
     - Oluwadare, Oluwatosin, Max Highsmith, and Jianlin Cheng. “An Overview of Methods for Reconstructing 3-D Chromosome and Genome Structures from Hi-C Data.” Biological Procedures Online 21, no. 1 (December 2019): 7. https://doi.org/10.1186/s12575-019-0094-0.
@@ -517,6 +515,9 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 
 - `GenomeFlow` - a complete set of tools for Hi-C data alignment, normalization, 2D visualization, 3D genome modeling and visualization. ClusterTAD for TAD identification. LorDG and 3DMax for 3D genome reconstruction. https://github.com/jianlin-cheng/GenomeFlow
     - Trieu, Tuan, Oluwatosin Oluwadare, Julia Wopata, and Jianlin Cheng. “GenomeFlow: A Comprehensive Graphical Tool for Modeling and Analyzing 3D Genome Structure.” Bioinformatics (Oxford, England), September 12, 2018. https://doi.org/10.1093/bioinformatics/bty802.
+
+- `TADbit` - Python-based pipeline, from iterative mapping, filtering, normalization. Similarity metrics: distance-centric Spearman, first principal eigenvector. TAD detection. TAD boundaries alignment, within 20kb. 3D modeling. Supplementary material - key functions, TAD detection algorithm, boundary comparison. https://github.com/3DGenomes/tadbit
+    - Serra, François, Davide Baù, Mike Goodstadt, David Castillo, Guillaume J. Filion, and Marc A. Marti-Renom. “Automatic Analysis and 3D-Modelling of Hi-C Data Using TADbit Reveals Structural Features of the Fly Chromatin Colors.” PLoS Computational Biology 13, no. 7 (July 2017): e1005665. https://doi.org/10.1371/journal.pcbi.1005665.
 
 - `ShRec3D` - shortest-path reconstruction in 3D. Genome reconstruction by translation a Hi-C matrix into a distance matrix, then multidimensional scaling. Uses binary contact maps. https://sites.google.com/site/julienmozziconacci/home/softwares
     - Lesne, Annick, Julien Riposo, Paul Roger, Axel Cournac, and Julien Mozziconacci. “3D Genome Reconstruction from Chromosomal Contacts.” Nature Methods 11, no. 11 (November 2014): 1141–43. https://doi.org/10.1038/nmeth.3104.
