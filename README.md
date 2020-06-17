@@ -40,12 +40,12 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 
 ## Pipelines
 
-- A list of available pipelines, URLs. [pipelines_list.csv](pipelines_list.csv), [Source](https://link.springer.com/protocol/10.1007%2F978-1-4939-8766-5_16)
-- Available analysis options in each pipeline. [pipeline_comparison.csv](pipeline_comparison.csv), [Source](https://link.springer.com/protocol/10.1007%2F978-1-4939-8766-5_16)
-- [Table summarizing functionality of Hi-C data analysis tools](https://www.sciencedirect.com/science/article/pii/S1672022918304339?via%3Dihub#t0005)
+- A list of available pipelines, URLs. [pipelines_list.csv](pipelines_list.csv), from Miura et al., “[Practical Analysis of Hi-C Data](https://link.springer.com/protocol/10.1007%2F978-1-4939-8766-5_16)”
+- Available analysis options in each pipeline. [pipeline_comparison.csv](pipeline_comparison.csv), from Miura et al., “[Practical Analysis of Hi-C Data](https://link.springer.com/protocol/10.1007%2F978-1-4939-8766-5_16)”
+- [Table summarizing functionality of Hi-C data analysis tools](https://www.sciencedirect.com/science/article/pii/S1672022918304339?via%3Dihub#t0005), from Calandrelli et al., “[GITAR: An Open Source Tool for Analysis and Visualization of Hi-C Data](https://www.sciencedirect.com/science/article/pii/S1672022918304339)”
 - Review of Hi-C, Capture-C, and Capture-C technologies, their computational preprocessing. Experimental protocols, similarities and differences, types of reads (figures), details of alignment, read orientation, elimination of artefacts, quality metrics. Brief overview of preprocessing tools. Example preprocessing of three types of data. Java tool for preprocessing all types of data, Diachromatic (Differential Analysis of Chromatin Interactions by Capture),  https://github.com/TheJacksonLaboratory/diachromatic, GOPHER (Generator Of Probes for capture Hi-C Experiments at high Resolution) for genome cutting, probe design,  https://github.com/TheJacksonLaboratory/Gopher
-    - Hansen, Peter, Michael Gargano, Jochen Hecht, Jonas Ibn-Salem, Guy Karlebach, Johannes T. Roehr, and Peter N. Robinson. “Computational Processing and Quality Control of Hi-C, Capture Hi-C and Capture-C Data.” Genes 10, no. 7 (July 18, 2019): 548. https://doi.org/10.3390/genes10070548.
-- Workshop on measuring, analyzing, and visualizing the 3D genome with Hi-C data. Presentations (PDFs, PPTX) and Jupyter notebooks. Cooler, HiCGlass, HiPlier. https://github.com/hms-dbmi/hic-data-analysis-bootcamp
+    - Hansen, Peter, Michael Gargano, Jochen Hecht, Jonas Ibn-Salem, Guy Karlebach, Johannes T. Roehr, and Peter N. Robinson. “[Computational Processing and Quality Control of Hi-C, Capture Hi-C and Capture-C Data](https://doi.org/10.3390/genes10070548).” Genes 10, no. 7 (July 18, 2019): 548. 
+- [Workshop on measuring, analyzing, and visualizing the 3D genome with Hi-C data](https://github.com/hms-dbmi/hic-data-analysis-bootcamp). Presentations (PDFs, PPTX) and Jupyter notebooks. Cooler, HiCGlass, HiPlier. https://github.com/hms-dbmi/hic-data-analysis-bootcamp
 
 - 4D Nucleome Hi-C Processing Pipeline, set of scripts wrapped in a Docker image. Relies on [Mirnylab tools](#mirnylab-tools) and [Juicer Tools](https://github.com/aidenlab/juicer/wiki/Pre). Overview: https://data.4dnucleome.org/resources/data-analysis/hi_c-processing-pipeline, GitHub: https://github.com/4dn-dcic/docker-4dn-hic
 
