@@ -501,6 +501,9 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 
 ## 3D modeling
 
+- [TADdyn](https://github.com/3DGenomes/TADbit/tree/TADdyn) - studying time-dependent dynamics of chromatin domains during natural and induced cell processes by simulating smooth 3D transitions of chromosome structure. A part of TADBit, developed by Marti-Renom group. Tested on in situ Hi-C time course experiment, reprogramming of mutine B cells to pluripotent cells, changes of 21 genomic loci. https://github.com/3DGenomes/TADbit/tree/TADdyn, [Data and video}(http://sgt.cnag.cat/3dg/datasets/)
+    - Di Stefano, Marco, Ralph Stadhouders, Irene Farabella, David Castillo, François Serra, Thomas Graf, and Marc A. Marti-Renom. “[Transcriptional Activation during Cell Reprogramming Correlates with the Formation of 3D Open Chromatin Hubs](https://doi.org/10.1038/s41467-020-16396-1).” Nature Communications 11, no. 1 (December 2020)
+
 - 3D genome reconstruction review. Intro into equilibrium/fractal globule models. Classification of reconstruction methods: distance-, contact-. and probability-based. [Table 1](https://biologicalproceduresonline.biomedcentral.com/articles/10.1186/s12575-019-0094-0#Tab1) summarizes many tools, methods, and references.
     - Oluwadare, Oluwatosin, Max Highsmith, and Jianlin Cheng. “An Overview of Methods for Reconstructing 3-D Chromosome and Genome Structures from Hi-C Data.” Biological Procedures Online 21, no. 1 (December 2019): 7. https://doi.org/10.1186/s12575-019-0094-0.
 
