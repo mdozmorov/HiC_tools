@@ -15,7 +15,7 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 * [Normalization of Hi-C data](#normalization)
   * [CNV-aware normalization](#cnv-aware-normalization)
 * [Reproducibility and QC of Hi-C data](#reproducibility)
-* [Significant interaction (peak) callers](#significant-interaction-peak-callers)
+* [Loop/peak callers](#loop-peak-callers)
   * [Capture-C peaks](#capture-c-peaks)
 * [Differential interactions](#differential-interactions)
 * [TAD callers](#tad-callers)
@@ -229,7 +229,10 @@ Tools in each section are being resorted newest on top (previously, alphabetical
     - Sauerwald, Natalie, and Carl Kingsford. “Quantifying the Similarity of Topological Domains across Normal and Cancer Human Cell Types.” Bioinformatics (Oxford, England) 34, no. 13 (July 1, 2018): i475–83. https://doi.org/10.1093/bioinformatics/bty265.
 
 
-## Significant interaction (peak) callers
+## Loop/peak callers
+
+- [SIP](https://github.com/PouletAxel/SIP) - loop caller using image analysis. Regional maxima-based, peaks called in a sliding window. Distance-normalized Hi-C matrices, image adjusted using Gaussian blur, contrast enhancement, White Top-Hat correction, identified peaks then filtered by peak enrichment, empitical FDR, loop decay. Comparison with HiCCUPS and cLoops callers. Robust to noise, sequencing depth, much faster, good agreement, improved detection rate. SIPMeta - average metaplots of loops on bias-corrected images for better representation. Java implementation, works with .hic and .cool files https://github.com/PouletAxel/SIP
+    - Rowley, M. Jordan, Axel Poulet, Michael H. Nichols, Brianna J. Bixler, Adrian L. Sanborn, Elizabeth A. Brouhard, Karen Hermetz, et al. “[Analysis of Hi-C Data Using SIP Effectively Identifies Loops in Organisms from C. Elegans to Mammals](https://doi.org/10.1101/gr.257832.119).” Genome Research 30, no. 3 (March 2020)
 
 - `Mustache` - loop detection from Hi-C and Micro-C maps. Scale-space theory, detection of blob-shaped objects in a multi-scale representation of contact maps, Gaussian kernels with increasing scales. Differences of adjacent Gaussians guide the search for local maxima. Series of filtering steps to minimize false positives. Corrected for multiple testing p-values of blobs. Applied to Gm12878 and K562 Hi-C data, and HFFc6 cell line Micro-C data, 5kb resolution. Compared with HiCCUPS, detects similar and more loops flanked by convergent CTCF, RAD21, SMC3, loops confirmed by ChIA-PET and HiChIP data. Python3 tool, Conda/Docker wrapped, handles .hic/.cool files. https://github.com/ay-lab/mustache, [Tweet](https://twitter.com/ferhatay/status/1232716714346872832?s=20)
     - Ardakany, Abbas Roayaei, Halil Tuvan Gezer, Stefano Lonardi, and Ferhat Ay. “Mustache: Multi-Scale Detection of Chromatin Loops from Hi-C and Micro-C Maps Using Scale-Space Representation.” Preprint. Bioinformatics, February 26, 2020. https://doi.org/10.1101/2020.02.24.963579.
