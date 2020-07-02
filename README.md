@@ -160,6 +160,9 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 
 ## Normalization
 
+- [HiCorr](https://github.com/JinLabBioinfo/HiCorr) - method for correcting known (mappability, CG content) and unknown (visibility) biases in Hi-C maps (multiplicative effects, Methods). Easy Hi-C protocol allowing for low-input (\~100K cells) Hi-C (in vivo HindIII digestion, in situ proximity ligation, DpnII digestion after lysis and reverse crosslink, Methods). HiCorr outputs ratio matrixes representing enrichment of Hi-C signal, hence loops can be easily extracted. Recovers 65% of HICCUPS loops and more. Chromatin loops are better marks of cell identity than compartments, and outperform eQTLs in defining neurological GWAS target genes. Human iPSCs, neural progenitors (NPCs), neurons, fetal cerebellum, adult temporal cortex, data from other studies. https://github.com/JinLabBioinfo/HiCorr
+    - Lu, Leina, Xiaoxiao Liu, Wei-Kai Huang, Paola Giusti-Rodríguez, Jian Cui, Shanshan Zhang, Wanying Xu, et al. “[Robust Hi-C Maps of Enhancer-Promoter Interactions Reveal the Function of Non-Coding Genome in Neural Development and Diseases](https://doi.org/10.1016/j.molcel.2020.06.007).” Molecular Cell, June 2020
+
 - `Binless` - a resolution-agnostic normalization method that adapts to the quality and quantity of available data, to detect significant interactions and differences. Negative binomial count regression framework, adapted for ICE normalization. Fused lasso to smooth neighboring signal. TADbit for data processing, details of read filtering. https://github.com/3DGenomes/binless
     - Spill, Yannick G., David Castillo, Enrique Vidal, and Marc A. Marti-Renom. “Binless Normalization of Hi-C Data Provides Significant Interaction and Difference Detection Independent of Resolution.” Nature Communications 10, no. 1 (26 2019): 1938. https://doi.org/10.1038/s41467-019-09907-2.
 
