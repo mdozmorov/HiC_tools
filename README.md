@@ -217,6 +217,9 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 
 ## Loop callers
 
+- [Chromosight](https://github.com/koszullab/chromosight) - loop and pattern detection (borders, FIREs, hairpins and centromeres) in Hi-C maps. Takes in a single, whole-genome contact map, text-based bedGraph2d and binary cool formats, ICE-normalizes. Sliding window, pattern detection using Pearson correlation with the template, then series of filters. Output - text-based. Outperforms HiCexplorer, HICCUPS, HOMER, cooltools, in the order of decreasing F1. Tested on synthetic Hi-C data mimicking S. cerevisiae genome, benchmark data at https://zenodo.org/record/3742095, Python3 code at https://github.com/koszullab/chromosight
+    - Matthey-Doret, Cyril, Lyam Baudry, Axel Breuer, Rémi Montagne, Nadège Guiglielmoni, Vittore Scolari, Etienne Jean, et al. “[Computer Vision for Pattern Detection in Chromosome Contact Maps](https://doi.org/10.1101/2020.03.08.981910).” Preprint. Bioinformatics, March 8, 2020. 
+
 - [SIP](https://github.com/PouletAxel/SIP) - loop caller using image analysis. Regional maxima-based, peaks called in a sliding window. Distance-normalized Hi-C matrices, image adjusted using Gaussian blur, contrast enhancement, White Top-Hat correction, identified peaks then filtered by peak enrichment, empitical FDR, loop decay. Comparison with HiCCUPS and cLoops callers. Robust to noise, sequencing depth, much faster, good agreement, improved detection rate. SIPMeta - average metaplots of loops on bias-corrected images for better representation. Java implementation, works with .hic and .cool files https://github.com/PouletAxel/SIP
     - Rowley, M. Jordan, Axel Poulet, Michael H. Nichols, Brianna J. Bixler, Adrian L. Sanborn, Elizabeth A. Brouhard, Karen Hermetz, et al. “[Analysis of Hi-C Data Using SIP Effectively Identifies Loops in Organisms from C. Elegans to Mammals](https://doi.org/10.1101/gr.257832.119).” Genome Research 30, no. 3 (March 2020)
 
@@ -314,8 +317,6 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 ## TAD callers
 
 - [Brief description of 22 TAD calling methods](https://static-content.springer.com/esm/art%3A10.1186%2Fs13059-018-1596-9/MediaObjects/13059_2018_1596_MOESM1_ESM.pdf). Source: [Zufferey et al., “Comparison of Computational Methods for the Identification of Topologically Associating Domains.”](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-018-1596-9#Bib1)
-
-- `Chromosight` - Detect chromatin loops, borders, hairpins and centromeres in Hi-C contact maps. Input - text-based bedGraph2d and binary cool formats. Output - text-based. Python3, data examples provided. https://github.com/koszullab/chromosight
 
 - `BHi-Cect` - identification of the full hierarchy of chromosomal interactions (TADs). Spectral clustering starting from the whole chromosome, detecting nested BHi-Cect Partition Trees (BPTs), partitioned in non-contiguous and intervowen enclaves, inspired by fractal globule idea. Variation of information to test the agreement between two clustering results, overlap-based metrics to test correspondence with TADs. Correspondence analysis of enclaves association with TF content. Gene enrichment. Different enclaves show different epigenomic and gene expression signatures, bottom enclaves are most crisply defined. Resolution affects what enclave size can be detected. https://github.com/princeps091-binf/BHi-Cect
     - Kumar, Vipin, Simon Leclerc, and Yuichi Taniguchi. “BHi-Cect: A Top-down Algorithm for Identifying the Multi-Scale Hierarchical Structure of Chromosomes,” n.d., 15.
