@@ -114,6 +114,9 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 
 ### 4C
 
+- [pipe4C](https://github.com/deLaatLab/pipe4C) - 4C-seq processing pipeline, R-based, https://github.com/deLaatLab/pipe4C
+    - Krijger, Peter H.L., Geert Geeven, Valerio Bianchi, Catharina R.E. Hilvering, and Wouter de Laat. “[4C-Seq from Beginning to End: A Detailed Protocol for Sample Preparation and Data Analysis](https://doi.org/10.1016/j.ymeth.2019.07.014).” Methods 170 (January 2020)
+
 - `peakC` - an R package for non-parametric peak calling in 4C/Capture-c/PCHiC data. https://github.com/deWitLab/peakC
     - Geeven, Geert, Hans Teunissen, Wouter de Laat, and Elzo de Wit. “PeakC: A Flexible, Non-Parametric Peak Calling Package for 4C and Capture-C Data.” Nucleic Acids Research 46, no. 15 (September 6, 2018): e91–e91. https://doi.org/10.1093/nar/gky443.
 
