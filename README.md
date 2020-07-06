@@ -551,6 +551,9 @@ A four-cutter enzyme yields a resolution of ∼256 bp and a six-cutter a resolut
 - Review of chromatin conformation capture technologies, from image-based methods (FISH), through proximity ligation (3/4/5C, Hi-C, TCC, ChIA-PET, scHi-C), to ligation-free methods (GAM, SPRITE, ChIA-Drop). Details of each technology (Table 1, Figures), comparison of them (Table 2).
     - Kempfer, Rieke, and Ana Pombo. “Methods for Mapping 3D Chromosome Architecture.” Nature Reviews Genetics, December 17, 2019. https://doi.org/10.1038/s41576-019-0195-2.
 
+- DLO Hi-C technology (digestion-ligation-only Hi-C). Uses two rounds of digestion and ligation, without biotin and pull-down. Allows for early evaluation of Hi-C quality. Cost-effective, high signal-to-noise-ratio, good overlap with . Tested on THP-1 (human monocytes) and K562 cells. Data processed with ChIA-PET Tool, normalized with ICE. Data https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE89663
+    - Lin, Da, Ping Hong, Siheng Zhang, Weize Xu, Muhammad Jamal, Keji Yan, Yingying Lei, et al. “[Digestion-Ligation-Only Hi-C Is an Efficient and Cost-Effective Method for Chromosome Conformation Capture](https://doi.org/10.1038/s41588-018-0111-2).” Nature Genetics 50, no. 5 (May 2018)
+
 - HIPMap - high-throughput imaging and analysis pipeline to map the location of gene loci within the 3D space. FISH in a 384-well plate format, automated imaging.
     - Shachar, Sigal, Gianluca Pegoraro, and Tom Misteli. “HIPMap: A High-Throughput Imaging Method for Mapping Spatial Gene Positions.” Cold Spring Harbor Symposia on Quantitative Biology 80 (2015): 73–81. https://doi.org/10.1101/sqb.2015.80.027417.
 
