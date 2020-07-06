@@ -536,6 +536,9 @@ A four-cutter enzyme yields a resolution of ∼256 bp and a six-cutter a resolut
 
 - 4D Nucleome Protocols - Collection of genomic technologies currently in use or being developed in the 4DN network - links to wet-lab protocols and papers. https://www.4dnucleome.org/protocols.html
 
+- 4C technology, wet-lab protocol, and data analysis and visualization. R-based processing pipeline pipe4C, configuration parameters, https://github.com/deLaatLab/pipe4C
+    - Krijger, Peter H.L., Geert Geeven, Valerio Bianchi, Catharina R.E. Hilvering, and Wouter de Laat. “[4C-Seq from Beginning to End: A Detailed Protocol for Sample Preparation and Data Analysis](https://doi.org/10.1016/j.ymeth.2019.07.014).” Methods 170 (January 2020)
+
 - Optimization steps for Hi-C wet-lab protocol. Pitfalls and their effect on the downstream quality. Recommendations for each step. 
     - Golloshi, Rosela, Jacob Sanders, and Rachel Patton McCord. “Iteratively Improving Hi-C Experiments One Step at a Time.” Preprint. Genomics, March 22, 2018. https://doi.org/10.1101/287201. 
 
