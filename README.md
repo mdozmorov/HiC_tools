@@ -474,6 +474,8 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 
 - Tools for de novo genome assembly from Hi-C reads: https://omictools.com/assembly-scaffolding-1-category
 
+
+
 - `3D-DNA` Hi-C genome assembler and its application/validation. Methods are in the supplemental. https://github.com/theaidenlab/3D-DNA
     - Dudchenko, Olga, Sanjit S. Batra, Arina D. Omer, Sarah K. Nyquist, Marie Hoeger, Neva C. Durand, Muhammad S. Shamim, et al. “De Novo Assembly of the Aedes Aegypti Genome Using Hi-C Yields Chromosome-Length Scaffolds.” Science (New York, N.Y.) 356, no. 6333 (07 2017): 92–95. https://doi.org/10.1126/science.aal3327.
 
@@ -483,7 +485,10 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 - `dnaTri` - genome scaffolding via probabilistic modeling using two constrains of Hi-C data - distance-dependent decay and cis-trans ratio. Using known chromosome scaffolds and de novo assembly. Naive Bayes classifier to distinguish chromosome-specific vs. on different chromosomes contigs. Average linkage clustering to assemble contigs into 23 groups of chromosomes. Completed 65 previously unplaced contigs. Data, http://my5c.umassmed.edu/triangulation/, code https://github.com/NoamKaplan/dna-triangulation
     - Kaplan, Noam, and Job Dekker. “High-Throughput Genome Scaffolding from in Vivo DNA Interaction Frequency.” Nature Biotechnology 31, no. 12 (December 2013): 1143–47. https://doi.org/10.1038/nbt.2768.
 
-- `GRAAL` - Genome (Re)Assembly Assessing Likelihood - genome assembly from Hi-C data. Gaps in genome assembly that can be filled by scaffolding. Superior than Lachesis and dnaTri, which are sensitive to duplications, clustering they use to initially arrange the scaffolds, parameters, unknown reliability. A Bayesian approach, prior assumptions are that cis-contact probabilities follow a power-law decay and that counts in the interaction matrix are Poisson. Multiple genomic structures tested using MCMC (Multiple-Try Metropolis algorithm) to maximize the likelihood of data given a genomic structure. https://github.com/koszullab/GRAAL and the next version instaGRAAL that uses https://github.com/koszullab/instaGRAAL
+- [instaGRAAL](https://github.com/koszullab/instaGRAAL) - reimplementation of GRAAL genome assembler (chromosome level) for large genomes. Similar MCMC approach, implemented on NVIDIA GPU. Tested, among others, on segments of the human genome. https://github.com/koszullab/instaGRAAL
+    - Baudry, Lyam, Nadège Guiglielmoni, Hervé Marie-Nelly, Alexandre Cormier, Martial Marbouty, Komlan Avia, Yann Loe Mie, et al. “[InstaGRAAL: Chromosome-Level Quality Scaffolding of Genomes Using a Proximity Ligation-Based Scaffolder](https://doi.org/10.1186/s13059-020-02041-z).” Genome Biology 21, no. 1 (December 2020)
+
+- `GRAAL` - Genome (Re)Assembly Assessing Likelihood - genome assembly from Hi-C data. Gaps in genome assembly that can be filled by scaffolding. Superior than Lachesis and dnaTri, which are sensitive to duplications, clustering they use to initially arrange the scaffolds, parameters, unknown reliability. A Bayesian approach, prior assumptions are that cis-contact probabilities follow a power-law decay and that counts in the interaction matrix are Poisson. Multiple genomic structures tested using MCMC (Multiple-Try Metropolis algorithm) to maximize the likelihood of data given a genomic structure. https://github.com/koszullab/GRAAL 
     - Marie-Nelly, Hervé, Martial Marbouty, Axel Cournac, Jean-François Flot, Gianni Liti, Dante Poggi Parodi, Sylvie Syan, et al. “High-Quality Genome (Re)Assembly Using Chromosomal Contact Data.” Nature Communications 5 (December 17, 2014): 5695. https://doi.org/10.1038/ncomms6695.
 
 - `HiCAssembler` - Hi-C scaffolding tool combining assembly using Hi-C data with scaffolds from regular sequencing (short or long sequencing). Uses strategies from LACHESIS and 3D-DNA. Visual adjustment of scaffolding errors. Automatic and manual misassembly correction.  https://github.com/maxplanck-ie/HiCAssembler
