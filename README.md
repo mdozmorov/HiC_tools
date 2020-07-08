@@ -46,7 +46,7 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 - [HiC-Pro](https://github.com/nservant/HiC-Pro) - Python and command line-based optimized and flexible pipeline for Hi-C data processing, https://github.com/nservant/HiC-Pro
     - Servant, Nicolas, Nelle Varoquaux, Bryan R. Lajoie, Eric Viara, Chong-Jian Chen, Jean-Philippe Vert, Edith Heard, Job Dekker, and Emmanuel Barillot. “[HiC-Pro: An Optimized and Flexible Pipeline for Hi-C Data Processing.](https://doi.org/10.1186/s13059-015-0831-x)” Genome Biology 16 (December 1, 2015) - HiC pipeline, references to other pipelines, comparison. From raw reads to normalized matrices. Normalization methods, fast and memory-efficient implementation of iterative correction normalization (ICE). Data format. Using genotyping information to phase contact maps.
 
-- [HiCExplorer](https://github.com/deeptools/HiCExplorer/) - set of programs to process, normalize, analyze and visualize Hi-C data, Python. https://hicexplorer.readthedocs.io/en/latest/, https://github.com/deeptools/HiCExplorer/
+- [HiCExplorer](https://github.com/deeptools/HiCExplorer/) - set of programs to process, normalize, analyze and visualize Hi-C data, Python, .cool format, conversion utilit. https://hicexplorer.readthedocs.io/en/latest/, https://github.com/deeptools/HiCExplorer/
     - Ramírez, Fidel, Vivek Bhardwaj, Laura Arrigoni, Kin Chung Lam, Björn A. Grüning, José Villaveces, Bianca Habermann, Asifa Akhtar, and Thomas Manke. “[High-Resolution TADs Reveal DNA Sequences Underlying Genome Organization in Flies](https://doi.org/10.1038/s41467-017-02525-w).” Nature Communications 9, no. 1 (December 2018)
 
 - [Galaxy HiCExplorer](https://hicexplorer.usegalaxy.eu/) - a web server for Hi-C data preprocessing, QC, visualization. Web interface, https://hicexplorer.usegalaxy.eu/, Docker container, https://github.com/deeptools/docker-galaxy-hicexplorer
@@ -219,6 +219,9 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 
 
 ## Loop callers
+
+- [HiCExplorer's hicDetectLoops](https://hicexplorer.readthedocs.io/en/latest/content/tools/hicDetectLoops.html#hicdetectloops) for loop detection. Review and critique of HiCCUPS, HOMER, GOTHIC, cLoops, FastHiC. Distance-dependent of chromatin interactions with a continuous negative binomial distribution, detection of the interaction counts with p-values smaller than a threshold, then filtering. https://github.com/deeptools/HiCExplorer/
+    - Wolff, Joachim, Rolf Backofen, and Björn Grüning. “[Loop Detection Using Hi-C Data with HiCExplorer](https://doi.org/10.1101/2020.03.05.979096).” Preprint. Bioinformatics, March 6, 2020. 
 
 - [Chromosight](https://github.com/koszullab/chromosight) - loop and pattern detection (borders, FIREs, hairpins and centromeres) in Hi-C maps. Takes in a single, whole-genome contact map, text-based bedGraph2d and binary cool formats, ICE-normalizes. Sliding window, pattern detection using Pearson correlation with the template, then series of filters. Output - text-based. Outperforms HiCexplorer, HICCUPS, HOMER, cooltools, in the order of decreasing F1. Tested on synthetic Hi-C data mimicking S. cerevisiae genome, benchmark data at https://zenodo.org/record/3742095, Python3 code at https://github.com/koszullab/chromosight
     - Matthey-Doret, Cyril, Lyam Baudry, Axel Breuer, Rémi Montagne, Nadège Guiglielmoni, Vittore Scolari, Etienne Jean, et al. “[Computer Vision for Pattern Detection in Chromosome Contact Maps](https://doi.org/10.1101/2020.03.08.981910).” Preprint. Bioinformatics, March 8, 2020. 
