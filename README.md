@@ -289,6 +289,9 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 
 - Tools for TAD comparison, and simulated matrices. https://bitbucket.org/mforcato/hictoolscompare.git
 
+- [Serpentine](https://github.com/koszullab/serpentine) - differential analysis of two Hi-C maps using 2D serpentine-binning method. A serpentine is a subset of connected pixels defined by thresholds in control and experimental contact maps. Serpentines are then compared using Mean-Deviation plot. Help to alleviate the effect of sparsity. Uses HiCcompare functionality. Normalization does not help. Python package, currently processes full 1500x1500 matrices. https://github.com/koszullab/serpentine
+    - Baudry, Lyam, Gaël A Millot, Agnes Thierry, Romain Koszul, and Vittore F Scolari. “[Serpentine: A Flexible 2D Binning Method for Differential Hi-C Analysis](https://doi.org/10.1093/bioinformatics/btaa249).” Edited by Alfonso Valencia. Bioinformatics 36, no. 12 (June 1, 2020)
+
 - TADbit paper [@Serra:2017aa]. Supplementary material http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005665#sec020 + key functions, TAD detection algorithm, border comparison. https://github.com/3DGenomes/tadbit
 
 - `AP` - aggregation preference - parameter, to quantify TAD heterogeneity. Call significant interactions within a TAD, cluster with DBSCAN, calculate weighted interaction density within each cluster, average. AP measures are reproducible. Comparison of TADs in Gm12878 and IMR90 - stable TADs change their aggregation preference, these changes correlate with LINEs, Lamin B1 signal. Can detect structural changes (block split) in TADs. https://github.com/XiaoTaoWang/TADLib
