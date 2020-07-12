@@ -546,7 +546,10 @@ A four-cutter enzyme yields a resolution of ∼256 bp and a six-cutter a resolut
 
 - 4D Nucleome Protocols - Collection of genomic technologies currently in use or being developed in the 4DN network - links to wet-lab protocols and papers. https://www.4dnucleome.org/protocols.html
 
-- 4C technology, wet-lab protocol, and data analysis and visualization. R-based processing pipeline pipe4C, configuration parameters, https://github.com/deLaatLab/pipe4C
+- `scsHi-C` - sister-chromatid-sensitive Hi-C to explore interactions between the sister chromatids. Distinguishing cis from trans sister contacts based on 4-thio-thymidine (4sT) labeling. Paired organization of sister chromatins in interphase and complete separation in mitosis. TADs that are exhibit tight pairing are heterochromatin marked by H3K27me3. Chromatids are predominantly linked at TAD boundaries, within TADs - more flexible. Investigation of looping mechanism - NIPBL-depletion, Sororin degradation. Jupyter notebooks for each analysis https://github.com/gerlichlab/scshic_analysis
+    - Mitter, Michael, Catherina Gasser, Zsuzsanna Takacs, Christoph C. H. Langer, Wen Tang, Gregor Jessberger, Charlie T. Beales, et al. “[Sister-Chromatid-Sensitive Hi-C Reveals the Conformation of Replicated Human Chromosomes](https://doi.org/10.1101/2020.03.10.978148).” Preprint. Cell Biology, March 11, 2020. 
+
+- `4C technology`, wet-lab protocol, and data analysis and visualization. R-based processing pipeline pipe4C, configuration parameters, https://github.com/deLaatLab/pipe4C
     - Krijger, Peter H.L., Geert Geeven, Valerio Bianchi, Catharina R.E. Hilvering, and Wouter de Laat. “[4C-Seq from Beginning to End: A Detailed Protocol for Sample Preparation and Data Analysis](https://doi.org/10.1016/j.ymeth.2019.07.014).” Methods 170 (January 2020)
 
 - Optimization steps for Hi-C wet-lab protocol. Pitfalls and their effect on the downstream quality. Recommendations for each step. 
