@@ -150,6 +150,9 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 
 ### Simulation
 
+- [FreeHi-C v.2.0]((https://github.com/keleslab/FreeHiC)) - simulation of realistic Hi-C matrices with user- or data-driven spike-ins. Spike-ins are introduced on read-level and converted to interaction frequency level. Benchmark of `HiCcompare`, `multiHiCcompare`, `diffHiC`, and `Selfish`. Assessment of FDR, power, significance order, PRC and AUROC, genomic properties. GM12878 and A549 replicates of experimental Hi-C data. Three simulation settings with varying background distribution of interaction frequencies, spike-in proportions, sequencing depth. Figure 5 - summary of performances for all methods and comparison types. Subjective top performers: `multiHiCcompare`, `HiCcompare`, `diffHiC`, `Selfish`.
+    - Zheng, Ye, Peigen Zhou, and Sündüz Keleş. “[FreeHi-C Spike-in Simulations for Benchmarking Differential Chromatin Interaction Detection](https://doi.org/10.1016/j.ymeth.2020.07.001).” Methods, July 2020
+
 - [FreeHi-C](https://github.com/keleslab/FreeHiC) - Hi-C data simulation based on properties of experimental Hi-C data. Preserves A/B compartments, TADs, correlation between replicated (HiCRep), significant interactions, improves power to detect differential interactions. Robust to sequencing depth changes. Tested on replicates of GM12878, A549 human cancer cells, malaria P.falciparum. Compared with poorly performing Sim3C. All simulated data are at https://zenodo.org/record/3345896. Python3 implementation https://github.com/keleslab/FreeHiC
     - Zheng, Ye, and Sündüz Keleş. “[FreeHi-C Simulates High-Fidelity Hi-C Data for Benchmarking and Data Augmentation](https://doi.org/10.1038/s41592-019-0624-3).” Nature Methods 17, no. 1 (January 2020)
 
