@@ -1,6 +1,7 @@
 # A collection of tools and papers related to Hi-C data analysis
 
-Tools in each section are being resorted newest on top (previously, alphabetically). Related repositories: https://github.com/mdozmorov/HiC_data, https://github.com/mdozmorov/scHiC_notes. Issues and/or Pull requests to add other data are welcome!
+
+Tools in each section are being resorted newest on top. Related repositories: [HiC_data](https://github.com/mdozmorov/HiC_data), [scHiC_notes](https://github.com/mdozmorov/scHiC_notes). Issues and/or Pull requests to add other data are welcome!
 
 # Table of content
 
@@ -387,10 +388,8 @@ Tools in each section are being resorted newest on top (previously, alphabetical
 
 ## SNP-oriented
 
-- [iRegNet3D] - Integrated Regulatory Network 3D (iRegNet3D) is a high-resolution regulatory network comprised of interfaces of all known transcription factor (TF)-TF, TF-DNA interaction interfaces, as well as chromatin-chromatin interactions and topologically associating domain (TAD) information from different cell lines.  
-    - Goal: SNP interpretation
-    - Input: One or several SNPs, rsIDs or genomic coordinates.
-    - Output: For one or two SNPs, on-screen information of their disease-related info, connection over TF-TF and chromatin interaction networks, and whether they interact in 3D and located within TADs. For multiple SNPs, same info downloadable as text files.
+- [iRegNet3D](http://iregnet3d.yulab.org/index/) - Integrated Regulatory Network 3D (iRegNet3D) is a high-resolution regulatory network comprised of interfaces of all known transcription factor (TF)-TF, TF-DNA interaction interfaces, as well as chromatin-chromatin interactions and topologically associating domain (TAD) information from different cell lines. Goal: SNP interpretation. Input: One or several SNPs, rsIDs or genomic coordinates. Output: For one or two SNPs, on-screen information of their disease-related info, connection over TF-TF and chromatin interaction networks, and whether they interact in 3D and located within TADs. For multiple SNPs, same info downloadable as text files. http://iregnet3d.yulab.org/index/
+    - Liang, Siqi, Nathaniel D. Tippens, Yaoda Zhou, Matthew Mort, Peter D. Stenson, David N. Cooper, and Haiyuan Yu. “[IRegNet3D: Three-Dimensional Integrated Regulatory Network for the Genomic Analysis of Coding and Non-Coding Disease Mutations](https://doi.org/10.1186/s13059-016-1138-2).” Genome Biology 18, no. 1 (December 2017)
 
 - [3DSNP](http://cbportal.org/3dsnp/) -  3DSNP database integrating SNP epigenomic annotations with chromatin loops. Linear closest gene, 3D interacting gene, eQTL, 3D interacting SNP, chromatin states, TFBSs, conservation. For individual SNPs. http://cbportal.org/3dsnp/
     - Lu, Yiming, Cheng Quan, Hebing Chen, Xiaochen Bo, and Chenggang Zhang. “[3DSNP: A Database for Linking Human Noncoding SNPs to Their Three-Dimensional Interacting Genes](https://doi.org/10.1093/nar/gkw1022).” Nucleic Acids Research 45, no. D1 (January 4, 2017)
