@@ -362,6 +362,7 @@ This collection is a result of my interest in chromatin conformation capture tec
 - [HiCseg](https://cran.r-project.org/web/packages/HiCseg/index.html) - TAD detection by maximization of likelihood based block-wise segmentation model. 2D segmentation rephrased as 1D segmentation - not contours, but borders. Statistical framework, solved with dynamic programming. Dixon data as gold standard. [Hausdorff distance](https://en.wikipedia.org/wiki/Hausdorff_distance) to compare segmentation quality. Parameters (from TopDom paper): nb_change_max = 500, distrib = 'G' and model = 'Dplus'. https://cran.r-project.org/web/packages/HiCseg/index.html
     - Lévy-Leduc, Celine, M. Delattre, T. Mary-Huard, and S. Robin. “[Two-Dimensional Segmentation for Analyzing Hi-C Data](https://doi.org/10.1093/bioinformatics/btu443).” Bioinformatics (Oxford, England) 30, no. 17 (September 1, 2014)
 
+- [domaincaller](https://github.com/XiaoTaoWang/domaincaller) - A Python implementation of the original DI domain caller, https://github.com/XiaoTaoWang/domaincaller
 
 ### Differential TAD analysis
 
