@@ -1,6 +1,6 @@
 # Hi-C data analysis tools and papers
 
-This collection is a result of my interest in chromatin conformation capture technologies, 3D genome, tools, data, and [programming](https://dozmorovlab.github.io/software.html). Tools in each section are sorted newest on top. Summaries are from reading papers. Related repositories: [HiC_data](https://github.com/mdozmorov/HiC_data), [scHiC_notes](https://github.com/mdozmorov/scHiC_notes). Please, open an [issue](https://github.com/mdozmorov/HiC_tools/issues) or a [pull request](https://github.com/mdozmorov/HiC_tools/pulls) to add other information or tools.
+Tools are sorted by publication date, newest on top. Unpublished tools are listed at the end of each section. Related repositories: [HiC_data](https://github.com/mdozmorov/HiC_data), [scHiC_notes](https://github.com/mdozmorov/scHiC_notes). Please, open an [issue](https://github.com/mdozmorov/HiC_tools/issues) or a [pull request](https://github.com/mdozmorov/HiC_tools/pulls) to add other information, tools, or user experience.
 
 # Table of content
 
