@@ -1,40 +1,46 @@
 # Hi-C data analysis tools and papers
 
-Tools are sorted by publication date, newest on top. Unpublished tools are listed at the end of each section. Related repositories: [HiC_data](https://github.com/mdozmorov/HiC_data), [scHiC_notes](https://github.com/mdozmorov/scHiC_notes). Please, open an [issue](https://github.com/mdozmorov/HiC_tools/issues) or a [pull request](https://github.com/mdozmorov/HiC_tools/pulls) to add other information, tools, or user experience.
+Tools are sorted by publication date, newest on top. Unpublished tools are listed at the end of each section. Please, [contribute and get in touch](CONTRIBUTING.md)! See [MDmisc notes](https://github.com/mdozmorov/MDmisc_notes) for other programming and genomics-related notes.
 
 # Table of content
 
-* [Pipelines for Hi-C data processing](#pipelines)
-  * [Capture-C](#capture-c)
-  * [HiChIP](#hichip)
-  * [4C](#4c)
-* [Resolution improvement](#resolution-improvement)
-  * [Simulation](#simulation)
-* [Normalization of Hi-C data](#normalization)
-  * [CNV-aware normalization](#cnv-aware-normalization)
-* [Reproducibility and QC of Hi-C data](#reproducibility)
-* [Loop callers](#loop-callers)
-  * [Capture-C peaks](#capture-c-peaks)
-* [Differential interactions](#differential-interactions)
-* [TAD callers](#tad-callers)
-  * [Differential TAD analysis](#differential-tad-analysis)
-* [Prediction of 3D features](#prediction-of-3d-features)
-* [SNP-oriented Hi-C analysis](#snp-oriented)
-* [CNV and Structural variant detection](#cnv-and-structural-variant-detection)
-* [Visualization](#visualization)
-* [De novo genome scaffolding](#de-novo-genome-scaffolding)
-* [3D modeling](#3d-modeling)
-* [Papers](#papers)
-  * [Methodological Reviews](#methodological-reviews)
-  * [General Reviews](#general-reviews)
-  * [Technology](#technology)
-    * [Micro-C](#micro-c)
-    * [Multi-way interactions](#multi-way-interactions)
-  * [Normalization](#normalization)
-  * [TAD detection](#tad-detection)
-  * [Hi-C prediction](#hi-c-prediction)
-  * [Spectral clustering](#spectral-clustering)
-* [URLs](#urls)
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [Pipelines](#pipelines)
+  - [Capture-C](#capture-c)
+  - [HiChIP](#hichip)
+  - [4C](#4c)
+- [Resolution improvement](#resolution-improvement)
+  - [Simulation](#simulation)
+- [Normalization](#normalization)
+  - [CNV-aware normalization](#cnv-aware-normalization)
+- [Reproducibility](#reproducibility)
+- [Loop callers](#loop-callers)
+  - [Capture-C peaks](#capture-c-peaks)
+- [Differential interactions](#differential-interactions)
+- [TAD callers](#tad-callers)
+  - [Differential TAD analysis](#differential-tad-analysis)
+- [Prediction of 3D features](#prediction-of-3d-features)
+- [SNP-oriented](#snp-oriented)
+- [CNV and Structural variant detection](#cnv-and-structural-variant-detection)
+- [Visualization](#visualization)
+- [De novo genome scaffolding](#de-novo-genome-scaffolding)
+- [3D modeling](#3d-modeling)
+- [Papers](#papers)
+  - [Methodological Reviews](#methodological-reviews)
+  - [General Reviews](#general-reviews)
+  - [Technology](#technology)
+    - [Micro-C](#micro-c)
+    - [Multi-way interactions](#multi-way-interactions)
+  - [Normalization](#normalization-1)
+  - [TAD detection](#tad-detection)
+  - [Hi-C prediction](#hi-c-prediction)
+  - [Spectral clustering](#spectral-clustering)
+- [URLs](#urls)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Pipelines
 
