@@ -499,6 +499,8 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 - [Lachesis](https://github.com/shendurelab/LACHESIS) - a three-step genome scaffolding tool: 1) graph clustering of scaffolds to chromosome groups, 2) ordering clustered scaffolds (minimum spanning tree, reassembling longest-to-shortest branches), 3) assigning orientation (exact position and the decay of interactions). Duplications and repeat regions may be incorrectly ordered/oriented. Tested on a normal human, mouse, drosophila genomes, and on the HeLa cancer genome. https://github.com/shendurelab/LACHESIS
     - Burton, Joshua N., Andrew Adey, Rupali P. Patwardhan, Ruolan Qiu, Jacob O. Kitzman, and Jay Shendure. “[Chromosome-Scale Scaffolding of de Novo Genome Assemblies Based on Chromatin Interactions](https://doi.org/10.1038/nbt.2727).” Nature Biotechnology 31, no. 12 (December 2013)
 
+- [Genome-Assembly-Cookbook](https://github.com/theaidenlab/Genome-Assembly-Cookbook) - Genome assembly from Hi-C data, pipeline and instructions from the Aiden Lab. [Download PDF](https://www.dropbox.com/s/dk5gmptvtl1f5hf/manual_180319.docx?dl=0), [another PDF](https://aidenlab.org/assembly/manual_180322.pdf)
+
 
 ## 3D modeling
 
