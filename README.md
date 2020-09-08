@@ -287,6 +287,9 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 
 ## Differential interactions
 
+- [DiffGR](https://github.com/wmalab/DiffGR) - differentially interacting genomic regions. Stratum-adjusted correlation coefficient (SCC) (HiCrep-inspired) to measure similarity of local TAD regions. Focus on within-TAD interactions. Simulated data at various levels of sparsity, noise, HiCseg for TAD calling. 2D mean filter for smoothing, KR normalization. Permutation test to estimate the significance of SCC changes. FDR depends on the proportion of altered TADs. R implementation 
+    - Liu, Huiling, and Wenxiu Ma. “[DiffGR: Detecting Differentially Interacting Genomic Regions from Hi-C Contact Maps](https://doi.org/10.1101/2020.08.29.273698),” bioRxiv, August 31, 2020
+
 - [Serpentine](https://github.com/koszullab/serpentine) - differential analysis of two Hi-C maps using the 2D serpentine-binning method. Serpentine is a subset of connected pixels defined by thresholds in control and experimental contact maps. Serpentines are then compared using the Mean-Deviation plot. Help to alleviate the effect of sparsity. Uses HiCcompare functionality. Normalization does not help. Python package, currently processes full 1500x1500 matrices. https://github.com/koszullab/serpentine
     - Baudry, Lyam, Gaël A Millot, Agnes Thierry, Romain Koszul, and Vittore F Scolari. “[Serpentine: A Flexible 2D Binning Method for Differential Hi-C Analysis](https://doi.org/10.1093/bioinformatics/btaa249).” Edited by Alfonso Valencia. Bioinformatics 36, no. 12 (June 1, 2020)
 
