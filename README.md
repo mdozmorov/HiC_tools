@@ -132,6 +132,9 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 
 ## Resolution improvement
 
+- [HiCRes](https://github.com/ClaireMarchal/HiCRes) - resolution estimation, based on the linear dependence of 20th percentile of coverage and the window size used to access coverage. Includes preseq for estimating and predicting library complexity, bowtie2 and HiCUP for estimating Hi-C-specific QC metrics. Relatively insensitive to enzyme of choice. Implemented as Docker/Singularity images. Requires significant computational resources, like 5 hours on 40 CPU cluster. 
+    - Marchal, Claire, Nivedita Singh, Ximena Corso-Díaz, and Anand Swaroop. “[HiCRes: A Computational Method to Estimate and Predict the Resolution of HiC Libraries](https://doi.org/10.1101/2020.09.22.307967).” Preprint. Bioinformatics, September 22, 2020
+
 - [HiCSR](https://github.com/PSI-Lab/HiCSR) - enhancement of Hi-C contact maps using a Generative Adversarial Network trained to optimize a custom loss function (weighted adversarial loss, pixel-wise L1 loss, and a feature reconstruction loss). An increase in resolution refers to recovering additional Hi-C contacts, "saturating" downsampled and noisy Hi-C matrices, not increasing the number of pixels. Representation learning with autoencoder with several convolutional layers and skip connections, then using it for the generator to create new matrices with discriminator telling them fake or real. Compared with HiCPlus, HiCNN, hicGAN, DeepHiC. Reproducibility is better using four metrics. Python3 PyTorch implementation https://github.com/PSI-Lab/HiCSR
     - Dimmick, Michael C., Leo J. Lee, and Brendan J. Frey. “[HiCSR: A Hi-C Super-Resolution Framework for Producing Highly Realistic Contact Maps](https://doi.org/10.1101/2020.02.24.961714).” Preprint. Genomics, February 25, 2020. 
 
