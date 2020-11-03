@@ -223,6 +223,9 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 
 ## Loop callers
 
+- [FIREcaller](https://yunliweb.its.unc.edu/FIREcaller/download.php) - an R package to call frequently interacting regions from Hi-C data, as well as clustered super-FIREs. Normalization using HiCNormCis to regress out systematic biases. Converts normalized cis-interactions into Z-scores, calculates one-sided p-values and classifies bins as FIRE/nonFIRE. Also outputs continuous FIREscore (-ln(p-value)). FIREs are tissue-specific, can distinguish samples. Associated with H3K27ac and H3K4me3 signal.
+    - Crowley, Cheynna, Yuchen Yang, Yunjiang Qiu, Benxia Hu, Jakub Lipi, Hyejung Won, Bing Ren, Ming Hu, and Yun Li. “[FIREcaller: Detecting Frequently Interacting Regions from Hi-C Data](https://doi.org/10.1101/619288),” October 26, 2020, 11.
+
 - [HiCExplorer's hicDetectLoops](https://hicexplorer.readthedocs.io/en/latest/content/tools/hicDetectLoops.html#hicdetectloops) for loop detection. Review and critique of HiCCUPS, HOMER, GOTHIC, cLoops, FastHiC. Distance-dependent of chromatin interactions with a continuous negative binomial distribution, detection of the interaction counts with p-values smaller than a threshold, then filtering. https://github.com/deeptools/HiCExplorer/
     - Wolff, Joachim, Rolf Backofen, and Björn Grüning. “[Loop Detection Using Hi-C Data with HiCExplorer](https://doi.org/10.1101/2020.03.05.979096).” Preprint. Bioinformatics, March 6, 2020
 
