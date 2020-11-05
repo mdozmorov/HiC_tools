@@ -293,6 +293,9 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 
 ## Differential interactions
 
+- [HICDCPlus](https://bitbucket.org/leslielab/hicdcplus/src/master/) - an R package for Hi-C/Hi-ChIP interaction calling (directly from raw data, negative binomial regression accounting for genomic distance,GC content, mappability, restriction enzyme-based bin size) and differential analysis (DESeq2). Includes TAD (TopDom) and A/B compartment callers. Input - HiC-Pro or Juicer. Output compatible with visualization in Juicebox and HiCExplorer. Compared with diffHiC, multiHiCcompare, Selfish, provides better results. 
+    - Sahin, Merve, Wilfred Wong, Yingqian Zhan, Kinsey Van Deynze, Richard Koche, and Christina S Leslie. “[HiC-DC+: Systematic 3D Interaction Calls and Differential Analysis for Hi-C and HiChIP](https://doi.org/10.1101/2020.10.11.335273).” Preprint. Bioinformatics, October 11, 2020. 
+
 - [DiffGR](https://github.com/wmalab/DiffGR) - differentially interacting genomic regions. Stratum-adjusted correlation coefficient (SCC) (HiCrep-inspired) to measure similarity of local TAD regions. Focus on within-TAD interactions. Simulated data at various levels of sparsity, noise, HiCseg for TAD calling. 2D mean filter for smoothing, KR normalization. Permutation test to estimate the significance of SCC changes. FDR depends on the proportion of altered TADs. R implementation 
     - Liu, Huiling, and Wenxiu Ma. “[DiffGR: Detecting Differentially Interacting Genomic Regions from Hi-C Contact Maps](https://doi.org/10.1101/2020.08.29.273698),” bioRxiv, August 31, 2020
 
