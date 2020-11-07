@@ -119,6 +119,9 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 - [HiChIP-Peak](https://github.com/ChenfuShi/HiChIP_peaks) - HiChIP peak caller, focus on peaks at re-ligation sites. Peak filtering, then negative binomial model. Differential peak analysis similar to DiffBind. https://github.com/ChenfuShi/HiChIP_peaks
     - Shi, Chenfu, Magnus Rattray, and Gisela Orozco. “[HiChIP-Peaks: A HiChIP Peak Calling Algorithm](https://doi.org/10.1101/682781).” Preprint. Bioinformatics, June 27, 2019. 
 
+- [MAPS](https://github.com/ijuric/MAPS) - Model-based Analysis of PLAC-seq and HiChIP. A zero-truncated Poisson regression framework to explicitly remove systematic biases, normalize, call long-distance interactions. Compared with hichipper, identifies more long-range, biologically relevant interactions. Works with Arima's HiChIP data 
+    - Juric, Ivan, Miao Yu, Armen Abnousi, Ramya Raviram, Rongxin Fang, Yuan Zhao, Yanxiao Zhang, et al. “[MAPS: Model-Based Analysis of Long-Range Chromatin Interactions from PLAC-Seq and HiChIP Experiments](https://doi.org/10.1371/journal.pcbi.1006982),” April 15, 2019, 24.
+
 ### 4C
 
 - [pipe4C](https://github.com/deLaatLab/pipe4C) - 4C-seq processing pipeline, R-based, https://github.com/deLaatLab/pipe4C
