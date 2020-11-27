@@ -206,6 +206,9 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 
 ## Reproducibility
 
+- [HiCrep.py](https://github.com/dejunlin/hicrep) - a fast Python implementation of stratum-adjusted correlation coefficient metric for measuring similarity between Hi-C datasets (HiCrep method, originally in R). Can be used for MDS. Evaluated on 90 datasets from 4D Nucleome. More than 20 times faster on a single CPU. Results are the same as R implementation.
+    - Lin, Dejun, Justin Sanders, and William Staﬀord Noble. “[HiCRep.Py: Fast Comparison of Hi-C Contact Matrices in Python](https://doi.org/10.1101/2020.10.27.357756)”
+
 - [IDR2D](https://github.com/gifford-lab/idr2d) - Irreproducible Discovery Rate that identifies replicable interactions in ChIP-PET, HiChIP, and Hi-C data. Includes the original 1D IDR version (https://github.com/nboley/idr). Resolves multiple pairwise interactions.  
     - Krismer, Konstantin, Yuchun Guo, and David K Gifford. “[IDR2D Identifies Reproducible Genomic Interactions](https://doi.org/10.1101/691295).” Preprint. Bioinformatics, July 3, 2019.
 
