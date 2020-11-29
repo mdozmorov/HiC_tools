@@ -593,6 +593,11 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 
 ### Technology
 
+- Chromatin conformation capture technologies, from 3C to imaging. 3D structures (nucleolus, nuclear speckles, polycomb bodies, chromosome territories, A/B compartments, TADs, loops), their roles in gene expression (sometimes, conflicting), replication timing, DNA repair. Agreement (and disagreement) examples between 3C methods and FISH. Description of libation-based (3C - Hi-C) and ligation-free (GAM, SPRITE, DamC) technologies. Multiway interactions, primarily occur within TADs. TAD formation, loop extrusion mechanisms. Association between replication timing and A/B compartments. Effect of mechanical forces on chromosome folding.
+    - McCord, Rachel Patton, Noam Kaplan, and Luca Giorgetti. “[Chromosome Conformation Capture and Beyond: Toward an Integrative View of Chromosome Structure and Function](https://doi.org/10.1016/j.molcel.2019.12.021).” Molecular Cell, January 2020
+
+![](/img/3C_technologies.png)
+
 - Review of Hi-C, Capture-C, and Capture-C technologies, their computational preprocessing. Experimental protocols, similarities and differences, types of reads (figures), details of alignment, read orientation, elimination of artifacts, quality metrics. A brief overview of preprocessing tools. Example preprocessing of three types of data. Java tool for preprocessing all types of data, [Diachromatic](https://github.com/TheJacksonLaboratory/diachromatic) (Differential Analysis of Chromatin Interactions by Capture), [GOPHER](https://github.com/TheJacksonLaboratory/Gopher) (Generator Of Probes for capture Hi-C Experiments at high Resolution) for genome cutting, probe design
     - Hansen, Peter, Michael Gargano, Jochen Hecht, Jonas Ibn-Salem, Guy Karlebach, Johannes T. Roehr, and Peter N. Robinson. “[Computational Processing and Quality Control of Hi-C, Capture Hi-C and Capture-C Data](https://doi.org/10.3390/genes10070548).” Genes 10, no. 7 (July 18, 2019): 548. 
 
