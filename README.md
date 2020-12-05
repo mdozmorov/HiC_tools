@@ -531,6 +531,8 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 
 ## 3D modeling
 
+- [4DMax](https://github.com/Max-Highsmith/4DMax) - 3D modeling over time, predicts dynamic chromosome conformation using time course Hi-C data. In contrast to TADdyn, models entire chromosomes, uses gradient descent optimization of a spatial restraint-based maximum-likelihood function. In contrast to TADdyn that focuses on approx. 2Mb retions, 4DMax models whole chromosomes. Tested on simulate Hi-C progression over 6 time points, and 10-day time course of induced stem cell pluripotency in mice. Preserves and predicts A/B compartments, TADs. Output - video of chromosome dynamics
+
 - [TADdyn](https://github.com/3DGenomes/TADbit/tree/TADdyn) - studying time-dependent dynamics of chromatin domains during natural and induced cell processes by simulating smooth 3D transitions of chromosome structure. A part of TADBit, developed by the Marti-Renom group. Tested on in situ Hi-C time course experiment, reprogramming of murine B cells to pluripotent cells, changes of 21 genomic loci. https://github.com/3DGenomes/TADbit/tree/TADdyn, [Data and video}(http://sgt.cnag.cat/3dg/datasets/)
     - Di Stefano, Marco, Ralph Stadhouders, Irene Farabella, David Castillo, François Serra, Thomas Graf, and Marc A. Marti-Renom. “[Transcriptional Activation during Cell Reprogramming Correlates with the Formation of 3D Open Chromatin Hubs](https://doi.org/10.1038/s41467-020-16396-1).” Nature Communications 11, no. 1 (December 2020)
 
