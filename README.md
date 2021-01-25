@@ -22,6 +22,7 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 - [Loop callers](#loop-callers)
   - [Capture-C peaks](#capture-c-peaks)
 - [Differential interactions](#differential-interactions)
+  - [Differential abundance](#differential-abundance)
 - [TAD callers](#tad-callers)
   - [Differential TAD analysis](#differential-tad-analysis)
 - [Prediction of 3D features](#prediction-of-3d-features)
@@ -332,6 +333,11 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
     
 - [diffHiC](https://bioconductor.org/packages/diffHic/) - Differential contacts using the full pipeline for Hi-C data. Explanation of the technology, binning. MA normalization, edgeR-based. Comparison with HOMER. https://bioconductor.org/packages/diffHic/
     - Lun, Aaron T. L., and Gordon K. Smyth. “[DiffHic: A Bioconductor Package to Detect Differential Genomic Interactions in Hi-C Data](https://doi.org/10.1186/s12859-015-0683-0).” BMC Bioinformatics 16 (2015)
+
+### Differential abundance
+
+- [Milo](https://github.com/MarioniLab/miloR) - an R package for differential abundance testing on scRNA-seq data between two groups or multiple conditions. Building a graph on the first 40 components of PCA, defining neighborhoods using a graph sampling algorithm. Each neighborhood (partially overlapping, in contrast to discrete clustering) contains cells from different conditions - differential abundance is tested using a negative binomial GLM. Tested on simulated datasets (dyntoy), a time course of mouse thymic epithelial cells development, liver cirrhosis analysis. Replicated datasets needed, batch corrected. Competitors: [DA-seq](https://github.com/KlugerLab/DAseq), [Cydar](https://bioconductor.org/packages/cydar/). [Code to reproduce results for the paper](https://github.com/MarioniLab/milo_analysis_2020)
+    - Dann, Emma, Neil C. Henderson, Sarah A. Teichmann, Michael D. Morgan, and John C. Marioni. “[Milo: Differential Abundance Testing on Single-Cell Data Using k-NN Graphs](https://doi.org/10.1101/2020.11.23.393769).” BioRxiv, January 1, 2020
 
 ## TAD callers
 
