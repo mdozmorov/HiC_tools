@@ -229,6 +229,12 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 - [localtadsim](https://github.com/Kingsford-Group/localtadsim) - Analysis of TAD similarity using a variation of information (VI) metric as a local distance measure. 23 human Hi-C datasets, Hi-C Pro processed into 100kb matrices, Armatus to call TADs. Defining structurally similar and variable regions. Comparison with previous studies of genomic similarity. Cancer-normal comparison - regions containing pan-cancer genes are structurally conserved in normal-normal pairs, not in cancer-cancer. https://github.com/Kingsford-Group/localtadsim
     - Sauerwald, Natalie, and Carl Kingsford. “[Quantifying the Similarity of Topological Domains across Normal and Cancer Human Cell Types](https://doi.org/10.1093/bioinformatics/bty265).” Bioinformatics (Oxford, England) 34, no. 13 (July 1, 2018)
 
+## AB compartments
+
+- [dcHiC](https://github.com/ay-lab/dchic) - differential A/B compartment analysis of Hi-C data. Uses Multiple Factor Analysis (MFA), and extension of PCA which combines Hi-C maps before performing generalized PCA. Analogous to weighted PCA in which every dataset is normalized for its biases (Methods). Multivariate distance measure to estimate statistical significance of compartment differences. Applied to mouse neuronal differentiation, mouse hematopoietic system, human  cell Hi-C data. Gene enrichment analysis shows biologically relevant signal. Input - sparse matrix, hic, cool files. 
+    - Wang, Jeffrey, Abhijit Chakraborty, and Ferhat Ay. “[DcHiC: Differential Compartment Analysis of Hi-C Datasets](https://doi.org/10.1101/2021.02.02.429297).” BioRxiv, January 1, 2021
+
+
 ## Loop callers
 
 - [FIREcaller](https://yunliweb.its.unc.edu/FIREcaller/download.php) - an R package to call frequently interacting regions from Hi-C data, as well as clustered super-FIREs. Normalization using HiCNormCis to regress out systematic biases. Converts normalized cis-interactions into Z-scores, calculates one-sided p-values and classifies bins as FIRE/nonFIRE. Also outputs continuous FIREscore (-ln(p-value)). FIREs are tissue-specific, can distinguish samples. Associated with H3K27ac and H3K4me3 signal.
