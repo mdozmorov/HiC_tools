@@ -19,6 +19,7 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 - [Normalization](#normalization)
   - [CNV-aware normalization](#cnv-aware-normalization)
 - [Reproducibility](#reproducibility)
+- [AB compartments](#ab-compartments)
 - [Loop callers](#loop-callers)
   - [Capture-C peaks](#capture-c-peaks)
 - [Differential interactions](#differential-interactions)
@@ -234,6 +235,7 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 - [dcHiC](https://github.com/ay-lab/dchic) - differential A/B compartment analysis of Hi-C data. Uses Multiple Factor Analysis (MFA), and extension of PCA which combines Hi-C maps before performing generalized PCA. Analogous to weighted PCA in which every dataset is normalized for its biases (Methods). Multivariate distance measure to estimate statistical significance of compartment differences. Applied to mouse neuronal differentiation, mouse hematopoietic system, human  cell Hi-C data. Gene enrichment analysis shows biologically relevant signal. Input - sparse matrix, hic, cool files. 
     - Wang, Jeffrey, Abhijit Chakraborty, and Ferhat Ay. “[DcHiC: Differential Compartment Analysis of Hi-C Datasets](https://doi.org/10.1101/2021.02.02.429297).” BioRxiv, January 1, 2021
 
+- [Eigenvector](https://github.com/aidenlab/juicer/wiki/Eigenvector) - Juicer's native tool. The eigenvector can be used to delineate compartments in Hi-C data at coarse resolution; the sign of the eigenvector typically indicates the compartment. The eigenvector is the first principal component of the Pearson's matrix.
 
 ## Loop callers
 
