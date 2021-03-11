@@ -41,7 +41,6 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
     - [Multi-way interactions](#multi-way-interactions)
   - [Normalization](#normalization-1)
   - [TAD detection](#tad-detection)
-  - [Hi-C prediction](#hi-c-prediction)
   - [Spectral clustering](#spectral-clustering)
 - [URLs](#urls)
 
@@ -428,14 +427,23 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 
 ## Prediction of 3D features
 
+- [3DPredictor](https://github.com/labdevgen/3DPredictor) - Prediction of enhnancer-promoter interactions from gene expression, CTCF binding and orientation, distance between interacting loci. Also predict changes in 3D genome organization - genomic rearrangements. Benchmarking of TargetFinder, its performance is overestimated. Class balance slightly improves performance. Two random chromosomes for validation, the rest - for training (10-90% split). Gradient boosting for prediction, significantly better than Random Forest. Multiple performance metrics. Model trained in one cell type can predict in another. Predict quantitative level of interactions. Other tools - EP2Vec, CTCF-MP, HiC-Reg. [GitHub](https://github.com/labdevgen/3DPredictor), [Web tool](https://genedev.bionet.nsc.ru/Web_3DPredictor/)
+    - Belokopytova, Polina S., Miroslav A. Nuriddinov, Evgeniy A. Mozheiko, Daniil Fishman, and Veniamin Fishman. "Quantitative prediction of enhancer–promoter interactions." Genome research 30, no. 1 (2020): 72-84.
+
+- [HiC-Reg](https://github.com/Roy-lab/HiC-Reg) - Predicting Hi-C contact counts from one-dimensional regulatory signals (Histone marks, CTCF, RAD21, Tbp, DNAse). Random Forest regression. Feature encoding - distance between two regions, pair-concat, window, multi-cell. Works across chromosomes (some chromosomes are worse than others) and cell lines (Gm12878, K562, Huvec, Hmec, Nhek, can be used to predict interactions on new cell lines). Selection of the most important features using multi-task group LASSO (distance, CTCF, Tbp, H4K20me1, DNAse, others). Predicted contacts correspond well to the original contacts (distance-stratified Pearson correlation), define TADs similar to the originals (Jaccard), define significant contacts (Fit-Hi-C) more enriched in CTCF binding. Validated on HBA1 and PAPPA gene promoters. Hi-C normalization doesn't have much effect. https://github.com/Roy-lab/HiC-Reg
+    - Zhang, Shilu, Deborah Chasman, Sara Knaack, and Sushmita Roy. “[In Silico Prediction of High-Resolution Hi-C Interaction Matrices](https://doi.org/10.1038/s41467-019-13423-8).” Nature Communications 10, no. 1 (December 2019)
+
+- [TADBoundaryDectector](https://github.com/lincshunter/TADBoundaryDectector) - TAD boundary prediction from sequence only using deep learning models. 12 architectures tested, with three convolutional and an LSTM layer performed best. Methods, Implementation in Keras-TensorFlow. Model evaluation using different criteria, 96% accuracy reported. Deep learning outperforms feature-based models, among which Boosted Trees, Random Forest, elastic net logistic regression are the best performers. Data augmentation (aka feature engineering) by randomly shifting TAD boundary regions by som base pairs of length (0-100). Tested on Drosophila data. https://github.com/lincshunter/TADBoundaryDectector
+    - Henderson, John, Vi Ly, Shawn Olichwier, Pranik Chainani, Yu Liu, and Benjamin Soibam. “[Accurate Prediction of Boundaries of High Resolution Topologically Associated Domains (TADs) in Fruit Flies Using Deep Learning](https://doi.org/10.1093/nar/gkz315).” Nucleic Acids Research, May 3, 2019. 
+
 - [3DEpiLoop](https://bitbucket.org/4dnucleome/3depiloop) - prediction of 3D interactions from 1D epigenomic profiles using Random Forest trained on CTCF peaks (histone modifications are the most important predictors and TFBSs). https://bitbucket.org/4dnucleome/3depiloop
     - Al Bkhetan, Ziad, and Dariusz Plewczynski. “[Three-Dimensional Epigenome Statistical Model: Genome-Wide Chromatin Looping Prediction](https://doi.org/10.1038/s41598-018-23276-8).” Scientific Reports 8, no. 1 (December 2018). 
 
 - [SNIPER](https://github.com/ma-compbio/SNIPER) - 3D subcompartment (A1, A2, B1, B2, B3) identification from low-coverage Hi-C datasets. A neural network based on a denoising autoencoder (9 layers) and a multi-layer perceptron. Sigmoidal activation of inputs, ReLU, softmax on outputs. Dropout, binary cross-entropy. exp(-1/C) transformation of Hi-C matrices. Applied to Gm12878 and 8 additional cell types to compare subcompartment changes. Compared with Rao2014 annotations, outperforms Gaussian HMM and MEGABASE. 
     - Xiong, Kyle, and Jian Ma. “[Revealing Hi-C Subcompartments by Imputing High-Resolution Inter-Chromosomal Chromatin Interactions](https://doi.org/10.1101/505503).” BioRxiv, January 1, 2018
 
-- [TADBoundaryDectector](https://github.com/lincshunter/TADBoundaryDectector) - TAD boundary prediction from sequence only using deep learning models. 12 architectures tested, with three convolutional and an LSTM layer performed best. Methods, Implementation in Keras-TensorFlow. Model evaluation using different criteria, 96% accuracy reported. Deep learning outperforms feature-based models, among which Boosted Trees, Random Forest, elastic net logistic regression are the best performers. Data augmentation (aka feature engineering) by randomly shifting TAD boundary regions by som base pairs of length (0-100). Tested on Drosophila data. https://github.com/lincshunter/TADBoundaryDectector
-    - Henderson, John, Vi Ly, Shawn Olichwier, Pranik Chainani, Yu Liu, and Benjamin Soibam. “[Accurate Prediction of Boundaries of High Resolution Topologically Associated Domains (TADs) in Fruit Flies Using Deep Learning](https://doi.org/10.1093/nar/gkz315).” Nucleic Acids Research, May 3, 2019. 
+- Predicting TAD boundaries using training data and making new predictions. Bayesian network (BNFinder method), random forest vs. basic k-means clustering, ChromHMM, cdBEST. Using sequence k-mers and ChIP-seq data from modENCODE for prediction - CTCF ChIP-seq performs best. Used Boruta package for feature selection. The Bayesian network performs best. To read on their BNFinder method
+    - Bednarz, Paweł, and Bartek Wilczyński. “[Supervised Learning Method for Predicting Chromatin Boundary Associated Insulator Elements](http://www.worldscientific.com/doi/pdf/10.1142/S0219720014420062).” Journal of Bioinformatics and Computational Biology 12, no. 06 (December 2014)
 
 
 ## SNP-oriented
@@ -748,14 +756,6 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 - Crane, Emily, Qian Bian, Rachel Patton McCord, Bryan R. Lajoie, Bayly S. Wheeler, Edward J. Ralston, Satoru Uzawa, Job Dekker, and Barbara J. Meyer. “[Condensin-Driven Remodelling of X Chromosome Topology during Dosage Compensation](https://doi.org/10.1038/nature14450).” Nature 523, no. 7559 (July 9, 2015). - Insulation Score to define TADs - sliding square along the diagonal, aggregating signal within it. This aggregated score is normalized and binned into TADs, boundaries. See [Methods and implementation](https://github.com/dekkerlab/crane-nature-2015). [matrix2insulation.pl](https://github.com/dekkerlab/cworld-dekker/tree/master/scripts/perl/matrix2insulation.pl), Parameters: -is 480000 -ids 320000 -im iqrMean -nt 0 -ss 160000 -yb 1.5 -nt 0 -bmoe 0. 
 
 - "Hierarchical Regulatory Domain Inference from Hi-C Data" - presentation by Bartek Wilczyński about TAD detection, existing algorithms, new SHERPA and OPPA methods. [Video](https://simons.berkeley.edu/talks/bartek-wilczynski-03-10-16), [PDF](https://simons.berkeley.edu/sites/default/files/docs/4588/2016-03-10-simons-institute-wilczynski.pdf), [Web site](http://regulomics.mimuw.edu.pl/wp/), [GitHub](https://github.com/regulomics/) - SHERPA and OPPA code there.
-
-### Hi-C prediction
-
-- [HiC-Reg](https://github.com/Roy-lab/HiC-Reg) - Predicting Hi-C contact counts from one-dimensional regulatory signals (Histone marks, CTCF, RAD21, Tbp, DNAse). Random Forest regression. Feature encoding - distance between two regions, pair-concat, window, multi-cell. Works across chromosomes (some chromosomes are worse than others) and cell lines (Gm12878, K562, Huvec, Hmec, Nhek, can be used to predict interactions on new cell lines). Selection of the most important features using multi-task group LASSO (distance, CTCF, Tbp, H4K20me1, DNAse, others). Predicted contacts correspond well to the original contacts (distance-stratified Pearson correlation), define TADs similar to the originals (Jaccard), define significant contacts (Fit-Hi-C) more enriched in CTCF binding. Validated on HBA1 and PAPPA gene promoters. Hi-C normalization doesn't have much effect. https://github.com/Roy-lab/HiC-Reg
-    - Zhang, Shilu, Deborah Chasman, Sara Knaack, and Sushmita Roy. “[In Silico Prediction of High-Resolution Hi-C Interaction Matrices](https://doi.org/10.1038/s41467-019-13423-8).” Nature Communications 10, no. 1 (December 2019)
-
-- Predicting TAD boundaries using training data and making new predictions. Bayesian network (BNFinder method), random forest vs. basic k-means clustering, ChromHMM, cdBEST. Using sequence k-mers and ChIP-seq data from modENCODE for prediction - CTCF ChIP-seq performs best. Used Boruta package for feature selection. The Bayesian network performs best. To read on their BNFinder method
-    - Bednarz, Paweł, and Bartek Wilczyński. “[Supervised Learning Method for Predicting Chromatin Boundary Associated Insulator Elements](http://www.worldscientific.com/doi/pdf/10.1142/S0219720014420062).” Journal of Bioinformatics and Computational Biology 12, no. 06 (December 2014)
 
 ### Spectral clustering
 
