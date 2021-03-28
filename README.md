@@ -503,10 +503,10 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 
 - [GENOVA](https://github.com/robinweide/GENOVA)- GENome Organisation Visual Analytics, an R package for rich visual analysis of Hi-C data. Input - HiC-Pro processed files, BED, text formats. Single or two experiment analysis. Integration of external annotations, A/B compartments, cis-/trans-interactions, TADs and loops, genes, insulation score heatmap, differences. 
 
-- [HiGlass](https://github.com/higlass/higlass) - visualization server for Google maps-style navigation of Hi-C maps. Overlay genes, epigenomic tracks. http://higlass.io/, https://github.com/higlass/higlass, and many HiGlass-related developments from the author, https://github.com/pkerpedjiev
-    - Kerpedjiev, Peter, Nezar Abdennur, Fritz Lekschas, Chuck McCallum, Kasper Dinkla, Hendrik Strobelt, Jacob M Luber, et al. “[HiGlass: Web-Based Visual Comparison And Exploration Of Genome Interaction Maps](https://www.biorxiv.org/content/10.1101/121889v1).” BioRxiv, 2017, 121889.
+- [HiGlass](http://higlass.io/) - visualization server for Google maps-style navigation of Hi-C maps. Overlay genes, epigenomic tracks. "Composable linked views" synchronizing exploration of multiple Hi-C datasets linked by location/zoom. [GitHub](https://github.com/higlass/higlass), [documentation](https://docs.higlass.io/), [links and resources](https://higlass.io/about)
+    - Kerpedjiev, Peter, Nezar Abdennur, Fritz Lekschas, Chuck McCallum, Kasper Dinkla, Hendrik Strobelt, Jacob M. Luber, et al. “[HiGlass: Web-Based Visual Exploration and Analysis of Genome Interaction Maps](https://doi.org/10.1186/s13059-018-1486-1).” Genome Biology, (December 2018).
 
-- [HiPiler](https://github.com/flekschas/hipiler) - exploration and comparison of loops and domains as snippets-heatmaps of data. https://github.com/flekschas/hipiler
+- [HiPiler](https://github.com/flekschas/hipiler) - exploration and comparison of loops and domains as snippets-heatmaps of data.
     - Lekschas, Fritz, Benjamin Bach, Peter Kerpedjiev, Nils Gehlenborg, and Hanspeter Pfister. “[HiPiler: Visual Exploration of Large Genome Interaction Matrices with Interactive Small Multiples](https://doi.org/10.1109/TVCG.2017.2745978).” IEEE Transactions on Visualization and Computer Graphics 24, no. 1 (January 2018). TechBlog: [HiPiler simplifies chromatin structure analysis](http://blogs.nature.com/naturejobs/2017/09/11/techblog-hipiler-simplifies-chromatin-structure-analysis/)
 
 - [HiCPlotter](https://github.com/kcakdemir/HiCPlotter) - Hi-C visualization tool, allows for integrating various data tracks. https://github.com/kcakdemir/HiCPlotter
