@@ -25,7 +25,7 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 - [Differential interactions](#differential-interactions)
   - [Differential abundance](#differential-abundance)
 - [TAD callers](#tad-callers)
-  - [Differential TAD analysis](#differential-tad-analysis)
+  - [Differential/timecourse TAD analysis](#differential-timecourse-tad-analysis)
 - [Prediction of 3D features](#prediction-of-3d-features)
 - [SNP-oriented](#snp-oriented)
 - [CNV and Structural variant detection](#cnv-and-structural-variant-detection)
@@ -407,7 +407,7 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 
 - [domaincaller](https://github.com/XiaoTaoWang/domaincaller) - A Python implementation of the original DI domain caller, https://github.com/XiaoTaoWang/domaincaller
 
-### Differential TAD analysis
+### Differential/timecourse TAD analysis
 
 - [TADcompare](https://bioconductor.org/packages/TADCompare/) - R package for differential and time-course TAD boundary analysis. Uses [SpectralTAD](https://bioconductor.org/packages/SpectralTAD/) score - spectral decomposition of Hi-C matrices - to statistically detect five types of differential TAD boundaries: merge, split, complex, shifted, strength change. In the time-course analysis, detects six types of boundary score changes: highly common, early appearing, late appearing, early disappearing, late disappearing, and dynamic TAD boundaries. Returns genomic coordinated and types of TAD boundary changes in BED format. https://bioconductor.org/packages/TADCompare/
     - Cresswell, Kellen G., and Mikhail G. Dozmorov. “[TADCompare: An R Package for Differential and Temporal Analysis of Topologically Associated Domains](https://doi.org/10.3389/fgene.2020.00158).” Frontiers in Genetics 11 (March 10, 2020)
@@ -565,7 +565,7 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 
 - [4DMax](https://github.com/Max-Highsmith/4DMax) - 3D modeling over time, predicts dynamic chromosome conformation using time course Hi-C data. In contrast to TADdyn, models entire chromosomes, uses gradient descent optimization of a spatial restraint-based maximum-likelihood function. In contrast to TADdyn that focuses on approx. 2Mb retions, 4DMax models whole chromosomes. Tested on simulate Hi-C progression over 6 time points, and 10-day time course of induced stem cell pluripotency in mice. Preserves and predicts A/B compartments, TADs. Output - video of chromosome dynamics
 
-- [TADdyn](https://github.com/3DGenomes/TADbit/tree/TADdyn) - studying time-dependent dynamics of chromatin domains during natural and induced cell processes by simulating smooth 3D transitions of chromosome structure. A part of TADBit, developed by the Marti-Renom group. Tested on in situ Hi-C time course experiment, reprogramming of murine B cells to pluripotent cells, changes of 21 genomic loci. https://github.com/3DGenomes/TADbit/tree/TADdyn, [Data and video}(http://sgt.cnag.cat/3dg/datasets/)
+- [TADdyn](https://github.com/3DGenomes/TADbit/tree/TADdyn) - studying time-dependent dynamics of chromatin domains during natural and induced cell processes by simulating smooth 3D transitions of chromosome structure. A part of TADBit, developed by the Marti-Renom group. Tested on in situ Hi-C time course experiment, reprogramming of murine B cells to pluripotent cells, changes of 21 genomic loci. [Data and video](http://sgt.cnag.cat/3dg/datasets/)
     - Di Stefano, Marco, Ralph Stadhouders, Irene Farabella, David Castillo, François Serra, Thomas Graf, and Marc A. Marti-Renom. “[Transcriptional Activation during Cell Reprogramming Correlates with the Formation of 3D Open Chromatin Hubs](https://doi.org/10.1038/s41467-020-16396-1).” Nature Communications 11, no. 1 (December 2020)
 
 - [StoH-C](https://github.com/kimmackay/StoHi-C) - 3D genome reconstruction using tSNE. Python scripts for 3D embedding and visualization (plot-ly, matplotlib, Chart Studio). Visually tested on fission yeast genome as compared with MDS-reconstructed genome (wild type, G1-arrested, rad21 mutation, clr4 deletion). https://github.com/kimmackay/StoHi-C
