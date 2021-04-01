@@ -238,6 +238,9 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 
 ## Loop callers
 
+- [HiC-ACT](https://yunliweb.its.unc.edu/hicACT/) - improved chromatin loop detection considering spatial dependency (especially at high 5-10kb resolution). Aggregated Cauchy Test (ACT) based approach accounting for possible correlations between adjacent loci pairs from high-resolution Hi-C data. Combine a set of p-values, T statistics following Cauchy distribution under arbitrary dependence structure. Need the local smoothing bandwidth size. Post-processing of results from loop callers that assume independence among loci. Input - bin-pair identifiers and the corresponding p-values. Tested on GM12878 and mESC data. The improvement in power is most pronounced in low-depth (downsampled) data. Fast, implemented in R. [GitHub](https://github.com/tmlagler/hicACT)
+    - Lagler, Taylor M., Armen Abnousi, Ming Hu, Yuchen Yang, and Yun Li. “[HiC-ACT: Improved Detection of Chromatin Interactions from Hi-C Data via Aggregated Cauchy Test](https://doi.org/10.1016/j.ajhg.2021.01.009).” The American Journal of Human Genetics, (February 2021)
+
 - [FIREcaller](https://yunliweb.its.unc.edu/FIREcaller/download.php) - an R package to call frequently interacting regions from Hi-C data, as well as clustered super-FIREs. Normalization using HiCNormCis to regress out systematic biases. Converts normalized cis-interactions into Z-scores, calculates one-sided p-values and classifies bins as FIRE/nonFIRE. Also outputs continuous FIREscore (-ln(p-value)). FIREs are tissue-specific, can distinguish samples. Associated with H3K27ac and H3K4me3 signal.
     - Crowley, Cheynna, Yuchen Yang, Yunjiang Qiu, Benxia Hu, Jakub Lipi, Hyejung Won, Bing Ren, Ming Hu, and Yun Li. “[FIREcaller: Detecting Frequently Interacting Regions from Hi-C Data](https://doi.org/10.1101/619288),” October 26, 2020, 11.
 
