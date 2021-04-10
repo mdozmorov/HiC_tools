@@ -317,6 +317,9 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 
 ## Differential interactions
 
+- [BART3D](https://github.com/zanglab/bart3d) - transcriptional regulators associated with differential chromatin interactions from Hi-C data. Input: HiC-Pro matrices, .hic Juicer files, .cool files. Output - ranked lists of transcriptional regulators. Distance-based normalization to average of individual matrices. Difference detection by a paired t-test of normalized interactions within 200kb (Figure 1A). Differential interactions are mapped to the union of DNAseI hypersensitive sites, then standard [BART](http://bartweb.uvasomrc.io/) algorithm. Python implementation.
+    - Wang, Zhenjia, Yifan Zhang, and Chongzhi Zang. “[BART3D: Inferring Transcriptional Regulators Associated with Differential Chromatin InteracTions from Hi-C Data](https://doi.org/10.1093/bioinformatics/btab173),” Bioinformatics, 15 March 2021
+
 - [HICDCPlus](https://bitbucket.org/leslielab/hicdcplus/src/master/) - an R package for Hi-C/Hi-ChIP interaction calling (directly from raw data, negative binomial regression accounting for genomic distance,GC content, mappability, restriction enzyme-based bin size) and differential analysis (DESeq2). Includes TAD (TopDom) and A/B compartment callers. Input - HiC-Pro or Juicer. Output compatible with visualization in Juicebox and HiCExplorer. Compared with diffHiC, multiHiCcompare, Selfish, provides better results. 
     - Sahin, Merve, Wilfred Wong, Yingqian Zhan, Kinsey Van Deynze, Richard Koche, and Christina S Leslie. “[HiC-DC+: Systematic 3D Interaction Calls and Differential Analysis for Hi-C and HiChIP](https://doi.org/10.1101/2020.10.11.335273).” Preprint. Bioinformatics, October 11, 2020. 
 
