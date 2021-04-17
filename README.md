@@ -43,6 +43,7 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
   - [TAD detection](#tad-detection)
   - [Spectral clustering](#spectral-clustering)
 - [URLs](#urls)
+  - [Courses](#courses)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -793,6 +794,10 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 ## URLs
 
 - [4D Nucleome Protocols](https://www.4dnucleome.org/protocols.html) - Collection of genomic technologies currently in use or being developed in the 4DN network - links to wet-lab protocols and papers. [4DN portal blog](https://www.4dnucleome.org/outreach.html)
+
+### Courses
+
+- [3DGenomes/3DAROC](https://github.com/3DGenomes/3DAROC) - list of notebooks for 4 days course on Hi-C data handling and 3D modeling of chromatin. Jupiter notebooks, using `pytadbit`. Instructors: Marc Marti-Renom, Francois Serra , David Castillo.
 
 - [3d-genome-processing-tutorial](https://github.com/hms-dbmi/3d-genome-processing-tutorial) - A 3D genome data processing tutorial for ISMB/ECCB 2017. https://github.com/hms-dbmi/3d-genome-processing-tutorial
 
