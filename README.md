@@ -507,6 +507,9 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 
 ## Visualization
 
+- [CoolBox](https://github.com/GangCaoLab/CoolBox) - a pyGenomeTracks-based Hi-C data visualization in Jupyter and command line, matplotlib plotting system. Works with .hic and .m/cool input, plus .bed, .pairs etc. [Documentation and examples](https://gangcaolab.github.io/CoolBox/gallery.html)
+    - Xu, Weize, Quan Zhong, Da Lin, Guoliang Li, and Gang Cao. “[CoolBox: A Flexible Toolkit for Visual Analysis of Genomics Data](https://doi.org/10.1101/2021.04.15.439923).” Preprint. Bioinformatics, April 16, 2021
+
 - Hi-C data visualization review. Good introduction into the 3D genome organization, 115 key references. [Table 2. Hi-C visualization tools](https://dev.biologists.org/highwire/markup/1255595/expansion?width=1000&height=500&iframe=true&postprocessors=highwire_tables%2Chighwire_reclass%2Chighwire_figures%2Chighwire_math%2Chighwire_inline_linked_media%2Chighwire_embed)
     - Ing-Simmons, Elizabeth, and Juan M. Vaquerizas. “[Visualising Three-Dimensional Genome Organisation in Two Dimensions](https://doi.org/10.1242/dev.177162).” Development 146, no. 19 (October 1, 2019)
 
