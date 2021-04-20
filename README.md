@@ -245,6 +245,10 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 
 ## Loop callers
 
+- [LASCA](https://github.com/ArtemLuzhin/LASCA_pipeline) - loop/significant contact caller that uses Weibull distribution-based modeling to each diagonal. DBSCAN to cluster adjacent significant pixels. Works with Hi-C data from any species, tested on human, C. Elegans, S. Cerevisiae. Filters according Aggregate Peak Analysis patterns may be used to refine calls. Compared with HiCCUPS, MUSTACHE, demonstrates good overlap. Also identifies non-CTCF-driven loops. Input - .cool files. [Python code](https://github.com/ArtemLuzhin/LASCA_pipeline)
+    - Luzhin, Artem V., Arkadiy K. Golov, Alexey A. Gavrilov, Artem K. Velichko, Sergey V. Ulianov, Sergey V. Razin, and Omar L. Kantidze. “[LASCA: Loop and Significant Contact Annotation Pipeline](https://doi.org/10.1038/s41598-021-85970-4).” Scientific Reports, (December 2021)
+
+
 - [HiC-ACT](https://yunliweb.its.unc.edu/hicACT/) - improved chromatin loop detection considering spatial dependency (especially at high 5-10kb resolution). Aggregated Cauchy Test (ACT) based approach accounting for possible correlations between adjacent loci pairs from high-resolution Hi-C data. Combine a set of p-values, T statistics following Cauchy distribution under arbitrary dependence structure. Need the local smoothing bandwidth size. Post-processing of results from loop callers that assume independence among loci. Input - bin-pair identifiers and the corresponding p-values. Tested on GM12878 and mESC data. The improvement in power is most pronounced in low-depth (downsampled) data. Fast, implemented in R. [GitHub](https://github.com/tmlagler/hicACT)
     - Lagler, Taylor M., Armen Abnousi, Ming Hu, Yuchen Yang, and Yun Li. “[HiC-ACT: Improved Detection of Chromatin Interactions from Hi-C Data via Aggregated Cauchy Test](https://doi.org/10.1016/j.ajhg.2021.01.009).” The American Journal of Human Genetics, (February 2021)
 
