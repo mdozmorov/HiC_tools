@@ -25,6 +25,7 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 - [Differential interactions](#differential-interactions)
   - [Differential abundance](#differential-abundance)
 - [TAD callers](#tad-callers)
+  - [Architectural stripes](#architectural-stripes)
   - [Differential/timecourse TAD analysis](#differential-timecourse-tad-analysis)
 - [Prediction of 3D features](#prediction-of-3d-features)
 - [SNP-oriented](#snp-oriented)
@@ -426,6 +427,12 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
     - Lévy-Leduc, Celine, M. Delattre, T. Mary-Huard, and S. Robin. “[Two-Dimensional Segmentation for Analyzing Hi-C Data](https://doi.org/10.1093/bioinformatics/btu443).” Bioinformatics (Oxford, England) 30, no. 17 (September 1, 2014)
 
 - [domaincaller](https://github.com/XiaoTaoWang/domaincaller) - A Python implementation of the original DI domain caller, https://github.com/XiaoTaoWang/domaincaller
+
+### Architectural stripes
+
+- [Stripenn](https://github.com/vahedilab/stripenn) - a computer vision-based method for architectural stripes detection using Canny edge detection.Scores stripes by median p-value and stripiness based on the continuity of interaction signal. Input - .cool files, optionally normalized. Output - coordinates and scores of the predicted stripes. Applicable to Hi-C, HiChIP, Micro-C data. Introduction to the biology of architectural stripes, review of previous methods (Zebra from Vian et al. 2018, domainClassifyR, CHESS for comparing 3D domains and stripes). Analysis of stripes from B and T lymphocytes identifies stripe anchors enriched in the transcriptionally active compartments, architectural proteins mediating loop extrusion. Strips are strongly conserved, correspond to TAD boundaries, subtle changes are associated with transcriptional output. Python, three functions (compute, score seeimage).
+    - Yoon, Sora, and Golnaz Vahedi. “[Stripenn Detects Architectural Stripes from Chromatin Conformation Data Using Computer Vision](https://doi.org/10.1101/2021.04.16.440239).” Preprint. Bioinformatics, April 18, 2021
+
 
 ### Differential/timecourse TAD analysis
 
