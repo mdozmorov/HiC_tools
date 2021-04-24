@@ -109,6 +109,9 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 
 ### Capture-C
 
+- [CHiCANE](https://CRAN.R-project.org/package=chicane) - an R-based data processing and interaction calling toolkit for the analysis and interpretation of Capture Hi-C data (Arima, Dovetail). Data preprocessing with HiCUP (recommended), but BAMs from other pipelines are supported. Flexible regression modeling of the number of reads linking bait and target fragments, include distance. (Truncated) Negative binomial, Poisson distributions, zeros may be included, other covariates. Functionality to assess model fit. Similar tools - GOTHiC. CHiCAGO, ChiCMaxima. Protocol explaining each step.
+    - Holgersen, Erle M. “[Identifying High-Confidence Capture Hi-C Interactions Using CHiCANE](10.1038/s41596-021-00498-1).” NATURE PROTOCOLS (April 2021)
+
 - [CaptureCompendium](http://userweb.molbiol.ox.ac.uk/public/telenius/CaptureCompendium/) - all-in-one toolkit for the design, analysis and presentation of 3C experiments, combines oligonucleotide design [Capsequm2](http://apps.molbiol.ox.ac.uk/CaptureC/cgi-bin/CapSequm.cgi), sequence mapping and extraction [CCseqBasic](https://github.com/Hughes-Genome-Group/CCseqBasicS), statistical data presentation and distribution [CaptureCompare](https://github.com/Hughes-Genome-Group/CaptureCompare) with [Peaky](https://github.com/cqgd/pky) integration, [CaptureSee](https://capturesee.molbiol.ox.ac.uk/). Allows for multi-way interactions (Tri-C). Overview of previous tools doing parts. http://userweb.molbiol.ox.ac.uk/public/telenius/CaptureCompendium/
     - Telenius, Jelena M., Damien J. Downes, Martin Sergeant, A. Marieke Oudelaar, Simon McGowan, Jon Kerry, Lars L.P. Hanssen, et al. “[CaptureCompendium: A Comprehensive Toolkit for 3C Analysis](https://doi.org/10.1101/2020.02.17.952572).” Preprint. Bioinformatics, February 18, 2020. 
 
