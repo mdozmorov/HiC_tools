@@ -11,6 +11,7 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 
 
 - [Pipelines](#pipelines)
+  - [QC, quality control](#qc-quality-control)
   - [Capture-C](#capture-c)
   - [HiChIP](#hichip)
   - [4C](#4c)
@@ -106,6 +107,11 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
     - [hiclib](https://bitbucket.org/mirnylab/hiclib) - Python tools to QC, map, normalize, filter and analyze Hi-C data, https://bitbucket.org/mirnylab/hiclib
     - [hic2cool](https://github.com/4dn-dcic/hic2cool) - Lightweight converter between hic and cool contact matrices. https://github.com/4dn-dcic/hic2cool
     - [pairtools](https://github.com/mirnylab/pairtools) - tools for low-level processing of mapped Hi-C paired reads. https://github.com/mirnylab/pairtools. [Documentation](https://pairtools.readthedocs.io/en/latest/index.html)
+
+### QC, quality control
+
+- [qc3C](https://github.com/cerebis/qc3C) - Hi-C quality assessment method based on non-naturally occurring k-mers containing ligation artifacts (the proportion of "signal"). Details of various types for read-pairs, valid and invalid configurations. Tested on simulated and experimental data. Works of FASTQ or BAM files. Output - the breakdown of valid and invalid pairs (numbers, stacked barplots). Compatible with MultiQC. Conda, Docker, Singluarity installations. [Scripts for the paper](https://zenodo.org/record/4554522)
+    - DeMaere, Matthew Z., and Aaron E. Darling. “[Qc3C: Reference-Free Quality Control for Hi-C Sequencing Data](https://doi.org/10.1101/2021.02.24.432586).” Preprint. Bioinformatics, February 25, 2021.
 
 ### Capture-C
 
