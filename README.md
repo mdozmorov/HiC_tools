@@ -777,6 +777,9 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 
 #### Multi-way interactions
 
+- [MATCHA](https://github.com/ma-compbio/MATCHA) - a computational framework for the analysis of multi-way chromatin interactions (hyperedges). Graph embedding fed into Hyper-SAGNN (self-attention based graph neural network for hypergraphs). Applied to SPRITE and ChIA-Drop data, Gm12878 at 1Mb and 100kb resolution.
+    - Zhang, Ruochi, and Jian Ma. “[MATCHA: Probing Multi-Way Chromatin Interaction with Hypergraph Representation Learning](https://doi.org/10.1016/j.cels.2020.04.004).” Cell Systems, (May 2020)
+
 - **Multi-contact 3C** (MC-3C, based on conventional 3C, C-walk, and multi-contact 4C approaches) technology reveals distinct chromosome territories with very little mixing, never entanglement, same with chromosomal compartment domains (A-A, B-B interactions predominant, A-B - minimal to none). Analysis of C-walks - connected paths of pairwise interactions. Compared with C-walks generated from Hi-C data. Permutation analysis of the significance of insulated, mixed, and intermediate domains. PacBio sequencing, processing with SMRT Analysis package and a [custom pipeline](https://github.com/dekkerlab/MC-3C_scripts)
     - Tavares-Cadete, Filipe, Davood Norouzi, Bastiaan Dekker, Yu Liu, and Job Dekker. “[Multi-Contact 3C Data Reveal That the Human Genome Is Largely Unentangled](https://doi.org/10.1101/2020.03.03.975425).” Preprint. Genomics, March 4, 2020. 
 
