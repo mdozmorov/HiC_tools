@@ -298,6 +298,9 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 - [coolpup.py](https://github.com/Phlya/coolpuppy) - Pile-up (aggregation, averaging) analysis of Hi-C data (.cool format) for visualizing and identifying chromatin loops from several sparse datasets, e.g., single-cell. Visualization using plotpup.py script. Scripts for the paper: https://github.com/Phlya/coolpuppy_paper/tree/master/Nagano, tool: https://github.com/Phlya/coolpuppy
     - Flyamer, Ilya M., Robert S. Illingworth, and Wendy A. Bickmore. “[Coolpup.Py - a Versatile Tool to Perform Pile-up Analysis of Hi-C Data](https://doi.org/10.1101/586537).” BioRxiv, January 1, 2019
 
+- [cLoops2](https://github.com/YaqiangCao/cLoops2) - improved pipeline for analysing Hi-TrAC/TrAC data. Peak/loop calling, differentially enriched loops, annotation, resolution estimation, similarity, aggregation/visualization. Improved blockDBSCAN clustering algorithm. Outperforms MACS2, SICER, HOMER, SEACR
+    - Cao, Yaqiang, Shuai Liu, Gang Ren, Qingsong Tang, and Keji Zhao. “[CLoops2: A Full-Stack Comprehensive Analytical Tool for Chromatin Interactions](https://doi.org/10.1101/2021.07.20.453068).” BioRxiv, 2021.
+
 - [cLoops](https://github.com/YaqiangCao/cLoops) - DBSCAN-based algorithm for the detection of chromatin loops in ChIA-PET, Hi-C, HiChIP, Trac-looping data. Local permutation-based estimation of statistical significance, several tests for enrichment over the background. Outperforms diffHiC, Fit-Hi-C, GOTHiC, HiCCUPS, HOMER. https://github.com/YaqiangCao/cLoops
     - Cao, Yaqiang, Xingwei Chen, Daosheng Ai, Zhaoxiong Chen, Guoyu Chen, Joseph McDermott, Yi Huang, and Jing-Dong J. Han. “[Accurate Loop Calling for 3D Genomic Data with CLoops](https://doi.org/10.1101/465849),” November 8, 2018. 
 
