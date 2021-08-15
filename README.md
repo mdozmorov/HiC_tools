@@ -35,6 +35,7 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 - [De novo genome scaffolding](#de-novo-genome-scaffolding)
 - [3D modeling](#3d-modeling)
 - [Deconvolution](#deconvolution)
+- [Haplotype separation](#haplotype-separation)
 - [Papers](#papers)
   - [Methodological Reviews](#methodological-reviews)
   - [General Reviews](#general-reviews)
@@ -657,6 +658,11 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 
 - [THUNDER](https://github.com/brycerowland/thundeR) - cell-type deconvolution of Hi-C data. NMF, uses informative interactions within and between chromosomes (top 1000 features by Fano factor), reformatted into matrix form by concatenation. Needs number of cell types k. Tested on in silico mixture of cell types. Outperforms TOAST, CIBERSORT. R implementation.
     - Rowland, Bryce and Huh, Ruth and Hou, Zoey and Hu, Ming and Shen, Yin and Li, Yun “[THUNDER: A Reference-Free Deconvolution Method to Infer Cell Type Proportions from Bulk Hi-C Data](https://doi.org/10.1101/2020.11.12.379941)” bioRxiv, November 12, 2020
+
+## Haplotype separation
+
+- [HaploHiC](https://github.com/Nobel-Justin/HaploHiC) - Hi-C phasing using SNPs/InDels, placement of unphased reads inferred from the nearby phased reads. 
+    - Lindsly, Stephen, Wenlong Jia, Haiming Chen, Sijia Liu, Scott Ronquist, Can Chen, Xingzhao Wen, et al. “[Functional Organization of the Maternal and Paternal Human 4D Nucleome](https://doi.org/10.1101/2020.03.15.992164),” bioRxiv, June 17, 2021. Supplementary note 2 - algorithm details.
 
 ## Papers
 
