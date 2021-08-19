@@ -489,6 +489,9 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 
 ## Prediction of 3D features
 
+- [ChINN](https://github.com/caofan/chinn) - chromatin interaction neural network, predicting chromatin interactions from DNA sequence. Trained on CTCF- and RNA PolII-mediated loops, as well as on Hi-C data. Gradient boosting trained on functional annotation, distance, or both as predictors. ChINN - CNN trained on sequence. Convergent CTCF orientation is an important predictor, other motifs complement predictive power. Applied to 6 new chronic lymphocytic leukemia samples, patient-specific interactions, vaildated by Hi-C and 4C.
+    - Cao, Fan, Yu Zhang, Yichao Cai, Sambhavi Animesh, Ying Zhang, Semih Can Akincilar, Yan Ping Loh, et al. “[Chromatin Interaction Neural Network (ChINN): A Machine Learning-Based Method for Predicting Chromatin Interactions from DNA Sequences](https://doi.org/10.1186/s13059-021-02453-5).” Genome Biology, (December 2021)
+
 - [compartmap](https://bioconductor.org/packages/compartmap/) - A/B compartment reconstruction from bulk and scRNA-seq/scATAC-seq. Steps: preprocessing and summarizing the single-cell assay data; eBayes shrinkage of summarized features towards a global or local target; computing the shrinkage correlation estimate of summarized features; computing domains via SVD (Methods). Also detects genomic rearrangements. Applied to K562 data. [Bioconductor](https://bioconductor.org/packages/compartmap/), [GitHub](https://github.com/biobenkj/compartmap), [Tweet](https://twitter.com/biobenkj/status/1395014386545201152?s=20)
     - Johnson, Benjamin K, Jean-Philippe Fortin, Kasper D Hansen, Hui Shen, and Triche Jr. “[Compartmap Enables Inference of Higher-Order Chromatin Structure in Individual Cells from ScRNA-Seq and ScATAC-Seq](https://doi.org/10.1101/2021.05.17.444465),” preprint, May 18, 2021
 
