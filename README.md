@@ -489,6 +489,9 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 
 ## Prediction of 3D features
 
+- [CCIP](https://github.com/GaoLabXDU/CCIP) (CTCF-mediated Chromatin Interaction Prediction) - predicting CTCF-mediated convergent and tandem loops with transitivity. Transitivity definition from the network of multiple CTCF-interacting regions, convergent and tandem. Incorporating the GCP (graph connecting probability) score, together with CTCF, RAD21, directional CTCF motif one-hot encoding into random forest. GCP is the most important predictive feature. Compared with Lollipop and CTCF-MP.
+    - Wang, Weibing, Lin Gao, Yusen Ye, and Yong Gao. “[CCIP: Predicting CTCF-Mediated Chromatin Loops with Transitivity](https://doi.org/10.1093/bioinformatics/btab534).” Bioinformatics, 20 July 2021.
+
 - [ChINN](https://github.com/caofan/chinn) - chromatin interaction neural network, predicting chromatin interactions from DNA sequence. Trained on CTCF- and RNA PolII-mediated loops, as well as on Hi-C data. Gradient boosting trained on functional annotation, distance, or both as predictors. ChINN - CNN trained on sequence. Convergent CTCF orientation is an important predictor, other motifs complement predictive power. Applied to 6 new chronic lymphocytic leukemia samples, patient-specific interactions, vaildated by Hi-C and 4C.
     - Cao, Fan, Yu Zhang, Yichao Cai, Sambhavi Animesh, Ying Zhang, Semih Can Akincilar, Yan Ping Loh, et al. “[Chromatin Interaction Neural Network (ChINN): A Machine Learning-Based Method for Predicting Chromatin Interactions from DNA Sequences](https://doi.org/10.1186/s13059-021-02453-5).” Genome Biology, (December 2021)
 
