@@ -599,7 +599,7 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 - [HiTC](https://bioconductor.org/packages/HiTC/) - R package for High Throughput Chromosome Conformation Capture analysis, Processed data import from TXT/BED into GRanges. Quality control, visualization. Normalization, 45-degree rotation and visualization of triangle TADs. Adding annotation at the bottom. PCA to detect A/B compartments. https://bioconductor.org/packages/HiTC/
     - Servant, Nicolas, Bryan R. Lajoie, Elphège P. Nora, Luca Giorgetti, Chong-Jian Chen, Edith Heard, Job Dekker, and Emmanuel Barillot. “[HiTC: Exploration of High-Throughput ‘C’ Experiments](https://doi.org/10.1093/bioinformatics/bts521).” Bioinformatics (Oxford, England) 28, no. 21 (November 1, 2012)
 
-- [BentoBox](https://github.com/PhanstielLab/BentoBox) - R-based multi-omics data visualization (Hi-C, genes, signal). [Documentation](https://phanstiellab.github.io/BentoBox/)
+- [plotgardener](https://github.com/PhanstielLab/plotgardener) - R-based multi-omics data visualization (Hi-C, genes, signal). [Documentation](https://phanstiellab.github.io/plotgardener/)
 
 - [CoolBox](https://github.com/GangCaoLab/CoolBox) - Jupyter notebook based genomic data visulization toolkit utilizing pyGenomeTracks. https://github.com/GangCaoLab/CoolBox
 
