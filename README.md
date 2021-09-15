@@ -554,6 +554,9 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 
 ## Visualization
 
+- [plotgardener](https://github.com/PhanstielLab/plotgardener) - R/Bioconductor package for multi-panel genomic and non-genomic data visualization. 45 functions for plotting and annotating multiple genomic data formats: genome sequences, gene/transcript annotations, chromosome ideograms, signal tracks, GWAS Manhattan plots, genomic ranges (e.g. peaks, reads, contact domains, etc), paired ranges (e.g. paired-end reads, chromatin loops, structural rearrangements, QTLs, etc), and 3D chromatin contact frequencies. Auto-recognizes .bam, .bigWig, .hic formats, converts genomic data into standard R objects (e.g., data.frame, tibble, GInteractions). Includes 29 genomes, more through Bioconductor integration. [Documentation](https://phanstiellab.github.io/plotgardener/), [Tweet 1](https://twitter.com/dphansti/status/1436417383732813829?s=20), [Tweet 2](https://twitter.com/mikelove/status/1437388358754443274?s=20)
+    - Kramer, Nicole E, Eric S Davis, Craig D Wenger, Erika M Deoudes, Sarah M Parker, Michael I Love, and Douglas H Phanstiel. “[Plotgardener: Cultivating Precise Multi-Panel Figures in R](https://doi.org/10.1101/2021.09.08.459338).” Preprint. Bioinformatics, September 10, 2021. 
+
 - [CoolBox](https://github.com/GangCaoLab/CoolBox) - a pyGenomeTracks-based Hi-C data visualization in Jupyter and command line, matplotlib plotting system. Works with .hic and .m/cool input, plus .bed, .pairs etc. [Documentation and examples](https://gangcaolab.github.io/CoolBox/gallery.html)
     - Xu, Weize, Quan Zhong, Da Lin, Guoliang Li, and Gang Cao. “[CoolBox: A Flexible Toolkit for Visual Analysis of Genomics Data](https://doi.org/10.1101/2021.04.15.439923).” Preprint. Bioinformatics, April 16, 2021
 
@@ -598,10 +601,6 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 
 - [HiTC](https://bioconductor.org/packages/HiTC/) - R package for High Throughput Chromosome Conformation Capture analysis, Processed data import from TXT/BED into GRanges. Quality control, visualization. Normalization, 45-degree rotation and visualization of triangle TADs. Adding annotation at the bottom. PCA to detect A/B compartments. https://bioconductor.org/packages/HiTC/
     - Servant, Nicolas, Bryan R. Lajoie, Elphège P. Nora, Luca Giorgetti, Chong-Jian Chen, Edith Heard, Job Dekker, and Emmanuel Barillot. “[HiTC: Exploration of High-Throughput ‘C’ Experiments](https://doi.org/10.1093/bioinformatics/bts521).” Bioinformatics (Oxford, England) 28, no. 21 (November 1, 2012)
-
-- [plotgardener](https://github.com/PhanstielLab/plotgardener) - R-based multi-omics data visualization (Hi-C, genes, signal). [Documentation](https://phanstiellab.github.io/plotgardener/)
-
-- [CoolBox](https://github.com/GangCaoLab/CoolBox) - Jupyter notebook based genomic data visulization toolkit utilizing pyGenomeTracks. https://github.com/GangCaoLab/CoolBox
 
 - [pyGenomeTracks](https://github.com/deeptools/pyGenomeTracks) - python module to plot beautiful and highly customizable genome browser tracks, https://github.com/deeptools/pyGenomeTracks
 
