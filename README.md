@@ -92,6 +92,8 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 
 - [ENCODE project Data Production and Processing Standard of the Hi-C Mapping Center, PDF](https://www.encodeproject.org/documents/75926e4b-77aa-4959-8ca7-87efcba39d79/@@download/attachment/comp_doc_7july2018_final.pdf)
 
+- [Arima mapping pipeline](https://github.com/ArimaGenomics/mapping_pipeline) - Mapping pipeline for data generated using Arima-HiC
+
 - [cword](https://github.com/dekkerlab/cworld-dekker) - perl cworld module and collection of utility/analysis scripts for C data (3C, 4C, 5C, Hi-C). https://github.com/dekkerlab/cworld-dekker
 
 - [my5C](http://my5c.umassmed.edu/) - web-based tools, well-documented analysis and visualization of 5S data, http://my5c.umassmed.edu/
