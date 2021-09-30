@@ -635,6 +635,8 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 
 - [Genome-Assembly-Cookbook](https://github.com/theaidenlab/Genome-Assembly-Cookbook) - Genome assembly from Hi-C data, pipeline and instructions from the Aiden Lab. [Download PDF](https://www.dropbox.com/s/dk5gmptvtl1f5hf/manual_180319.docx?dl=0), [another PDF](https://aidenlab.org/assembly/manual_180322.pdf)
 
+- [YaHS](https://github.com/c-zhou/yahs) - yet another Hi-C scaffolding tool. It relies on a new algothrim for contig joining detection which considers the topological distribution of Hi-C signals aiming to distingush real interaction signals from mapping nosies. Implemented in C, very fast.
+
 
 ## 3D modeling
 
