@@ -116,6 +116,8 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 - [qc3C](https://github.com/cerebis/qc3C) - Hi-C quality assessment method based on non-naturally occurring k-mers containing ligation artifacts (the proportion of "signal"). Details of various types for read-pairs, valid and invalid configurations. Tested on simulated and experimental data. Works of FASTQ or BAM files. Output - the breakdown of valid and invalid pairs (numbers, stacked barplots). Compatible with MultiQC. Conda, Docker, Singluarity installations. [Scripts for the paper](https://zenodo.org/record/4554522)
     - DeMaere, Matthew Z., and Aaron E. Darling. “[Qc3C: Reference-Free Quality Control for Hi-C Sequencing Data](https://doi.org/10.1101/2021.02.24.432586).” Preprint. Bioinformatics, February 25, 2021.
 
+- [HiCSampler](https://github.com/jrowleylab/hicsampler) - a Python script for subsetting .hic files
+
 ### Capture-C
 
 - [CHiCANE](https://CRAN.R-project.org/package=chicane) - an R-based data processing and interaction calling toolkit for the analysis and interpretation of Capture Hi-C data (Arima, Dovetail). Data preprocessing with HiCUP (recommended), but BAMs from other pipelines are supported. Flexible regression modeling of the number of reads linking bait and target fragments, include distance. (Truncated) Negative binomial, Poisson distributions, zeros may be included, other covariates. Functionality to assess model fit. Similar tools - GOTHiC. CHiCAGO, ChiCMaxima. Protocol explaining each step.
