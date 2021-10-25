@@ -118,6 +118,8 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 
 - [HiCSampler](https://github.com/jrowleylab/hicsampler) - a Python script for subsetting .hic files
 
+- [HiCNoiseMeasurer](https://github.com/JRowleyLab/HiCNoiseMeasurer) - a Python script to measure noise in .hic files using the auto-correlation function
+
 ### Capture-C
 
 - [CHiCANE](https://CRAN.R-project.org/package=chicane) - an R-based data processing and interaction calling toolkit for the analysis and interpretation of Capture Hi-C data (Arima, Dovetail). Data preprocessing with HiCUP (recommended), but BAMs from other pipelines are supported. Flexible regression modeling of the number of reads linking bait and target fragments, include distance. (Truncated) Negative binomial, Poisson distributions, zeros may be included, other covariates. Functionality to assess model fit. Similar tools - GOTHiC. CHiCAGO, ChiCMaxima. Protocol explaining each step.
