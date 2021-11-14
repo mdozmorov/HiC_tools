@@ -136,6 +136,9 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 
 #### Capture-C peaks
 
+- [CHiCAGO](https://bioconductor.org/packages/Chicago/) protocol for Capture Hi-C analysis. Introduction into 3C-based technologies, as compared with Hi-C, Statistical model for background noise estimation, normalization, weighted p-value correction. Comparison with other tools (HiCapTools, CHiCMaxima, CHiCANE), downstream analysis with Peaky, Chicdiff. Preprocessing with HiCUP, input files (Table 1), how to create auxillary files and set parameters for different restriction enzymes (R, Python scripts), QC, visualization. [CHiCAGO R package](https://bioconductor.org/packages/Chicago/), [chicagoTools](https://bitbucket.org/chicagoTeam/chicago/src/master/), [PCHiCdata R package](https://bitbucket.org/chicagoTeam/chicago/src/master/PCHiCdata/inst/extdata/). See below for [CHiCAGO paper](https://doi.org/10.1186/s13059-016-0992-2).
+    - Freire-Pritchett, Paula, Helen Ray-Jones, Monica Della Rosa, Chris Q. Eijsbouts, William R. Orchard, Steven W. Wingett, Chris Wallace, Jonathan Cairns, Mikhail Spivakov, and Valeriya Malysheva. “[Detecting Chromosomal Interactions in Capture Hi-C Data with CHiCAGO and Companion Tools](https://doi.org/10.1038/s41596-021-00567-5).” Nature Protocols, August 9, 2021. 
+
 - [Peaky](https://github.com/cqgd/pky) - Bayesian sparse variable selection approach. The model proposes that for any given bait, the expected CHi-C signal at each prey fragment is expressed as a sum of contributions from a set of fragments directly contacting that bait. https://github.com/cqgd/pky
     - Eijsbouts, Christiaan Q, Oliver S Burren, Paul J Newcombe, and Chris Wallace. “[Fine Mapping Chromatin Contacts in Capture Hi-C Data](https://doi.org/10.1186/s12864-018-5314-5).” BMC Genomics 20, no. 1 (December 2019). 
 
