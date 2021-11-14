@@ -13,6 +13,7 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 - [Pipelines](#pipelines)
   - [QC, quality control](#qc-quality-control)
   - [Capture-C](#capture-c)
+    - [Capture-C peaks](#capture-c-peaks)
   - [HiChIP](#hichip)
   - [4C](#4c)
 - [Resolution improvement](#resolution-improvement)
@@ -21,8 +22,7 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
   - [CNV-aware normalization](#cnv-aware-normalization)
 - [Reproducibility](#reproducibility)
 - [AB compartments](#ab-compartments)
-- [Loop callers](#loop-callers)
-  - [Capture-C peaks](#capture-c-peaks)
+- [Peak/Loop callers](#peak-loop-callers)
 - [Differential interactions](#differential-interactions)
   - [Differential abundance](#differential-abundance)
 - [TAD callers](#tad-callers)
@@ -133,6 +133,20 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 
 - [capC-MAP](https://github.com/cbrackley/capC-MAP) - Capture-C analysis pipeline. Python and C++, run through a configuration file. Outputs bedGraph. Compared with HiC-Pro, better detects PCR duplicates, identifies more interactions. Normalization tuned for Capture-C data. https://github.com/cbrackley/capC-MAP, https://capc-map.readthedocs.io/
     - Buckle, Adam, Nick Gilbert, Davide Marenduzzo, and Chris A Brackley. “[CapC-MAP: A Software Package for Analysis of Capture-C Data](https://doi.org/10.1101/456160).” Preprint. Genomics, October 30, 2018. 
+
+#### Capture-C peaks
+
+- [Peaky](https://github.com/cqgd/pky) - Bayesian sparse variable selection approach. The model proposes that for any given bait, the expected CHi-C signal at each prey fragment is expressed as a sum of contributions from a set of fragments directly contacting that bait. https://github.com/cqgd/pky
+    - Eijsbouts, Christiaan Q, Oliver S Burren, Paul J Newcombe, and Chris Wallace. “[Fine Mapping Chromatin Contacts in Capture Hi-C Data](https://doi.org/10.1186/s12864-018-5314-5).” BMC Genomics 20, no. 1 (December 2019). 
+
+- [ChiCMaxima](https://github.com/yousra291987/ChiCMaxima) - a pipeline for detection and visualization of chromatin loops in Capture Hi-C data. Loess smoothing combined with a background model to detect significant interactions Comparison with GOTHiC and CHiCAGO. https://github.com/yousra291987/ChiCMaxima
+    - Ben Zouari, Yousra, Anne M Molitor, Natalia Sikorska, Vera Pancaldi, and Tom Sexton. “[ChiCMaxima: A Robust and Simple Pipeline for Detection and Visualization of Chromatin Looping in Capture Hi-C](https://doi.org/10.1101/445023),” October 16, 2018. 
+
+- [HiCapTools](https://github.com/sahlenlab/HiCapTools) - A software package that can design sequence capture probes for targeted chromosome capture applications and analyze sequencing output to detect proximities involving targeted fragments. Two probes are designed for each feature while avoiding repeat elements and non-unique regions. The data analysis suite processes alignment files to report genomic proximities for each feature at restriction fragment level and is isoform-aware for gene features. Statistical significance of contact frequencies is evaluated using an empirically derived background distribution. https://github.com/sahlenlab/HiCapTools
+    - Anandashankar Anil, Rapolas Spalinskas, Örjan Åkerborg, Pelin Sahlén; "[HiCapTools: a software suite for probe design and proximity detection for targeted chromosome conformation capture applications](https://doi.org/10.1093/bioinformatics/btx625).", Bioinformatics, Volume 34, Issue 4, 15 February 2018
+
+- [CHiCAGO](https://bioconductor.org/packages/Chicago/) is a Capture Hi-C data processing method that filters out contacts that are expected by chance given the linear proximity of the interacting fragments on the genome and takes into account the asymmetric biases introduced by the capture step used in the Capture Hi-C approach. Two-component background model (Delaporte distribution) - Brownian motion (Neg. Binom.) and technical noise (Poisson). Account for distance. https://bioconductor.org/packages/Chicago/, [Tweet by Mikhail Spivakov](https://twitter.com/mikhailspivakov/status/1254879775971258368?s=20): Running Chicago with data generated w/ a 4-cutter such as DpnII? Default settings were tuned on 6-cutter data (HindIII) & not optimal for this. Our suggested settings for DpnII are: MaxLBrowndist = 75000, binsize = 1500, minFragLen=75, maxFragLen=1200.
+    - Cairns, Jonathan, Paula Freire-Pritchett, Steven W. Wingett, Csilla Várnai, Andrew Dimond, Vincent Plagnol, Daniel Zerbino, et al. “[CHiCAGO: Robust Detection of DNA Looping Interactions in Capture Hi-C Data.](https://doi.org/10.1186/s13059-016-0992-2)” Genome Biology 17, no. 1 (2016): 127.
 
 ### HiChIP
 
@@ -277,7 +291,10 @@ from breast, prostate, and pancreatic tissue samples
 
 - [Eigenvector](https://github.com/aidenlab/juicer/wiki/Eigenvector) - Juicer's native tool. The eigenvector can be used to delineate compartments in Hi-C data at coarse resolution; the sign of the eigenvector typically indicates the compartment. The eigenvector is the first principal component of the Pearson's matrix.
 
-## Loop callers
+## Peak/Loop callers
+
+- [ZipHi-C](https://github.com/igosungithub/HMRFHiC) - a Bayesian framework based on a Hidden Markov Random Field model to detect significant interactions and experimental biases in Hi-C data. Predecessors - HMRFBayesHi-C, FastHiC. Borrows information from neighboring loci. Tested on simulated and experimental data, less false positives than FastHi-C, Juicer, HiCExplorer. Detailed stats methods.
+    - Osuntoki, Itunu G., Andrew P. Harrison, Hongsheng Dai, Yanchun Bao, and Nicolae Radu Zabet. "[ZipHiC: a novel Bayesian framework to identify enriched interactions and experimental biases in Hi-C data](https://doi.org/10.1101/2021.10.19.463680)." bioRxiv (October 20, 2021).
 
 - [NeoLoopFinder](https://github.com/XiaoTaoWang/NeoLoopFinder) - detecting chromatin interactions induced by all kinds of structural variants (SVs). Input - a Hi-C contact matrix and a list of SV breakpoints. Output - genome-wide CNV profile, CNV segments, local assembly around SVs (graph-based algorithm), corrected Hi-C matrix for newly assembled regions and normalized for CNV effect and allelic effect, chromatin loops in rearranged regions (Peakachu), enhancer-hijacking events (needs H3K27ac data). CNVs are detected by HMM-based segmentation module. Includes visualization module. Neo-loop detection in 50 cancer Hi-C datasets from cell lines and patient samples (17 cancer types). Cancer-specific neoloops, associated genes, epigenomic enrichments. Methods - DI + HMM. [Video, 20m](https://youtu.be/J61hFn5lB14)
     - Wang, Xiaotao, Jie Xu, Baozhen Zhang, Ye Hou, Fan Song, Huijue Lyu, and Feng Yue. “[Genome-Wide Detection of Enhancer-Hijacking Events from Chromatin Interaction Data in Rearranged Genomes](https://doi.org/10.1038/s41592-021-01164-w).” Nature Methods, (June 2021)
@@ -346,22 +363,6 @@ from breast, prostate, and pancreatic tissue samples
 - [HiCPeaks](https://github.com/XiaoTaoWang/HiCPeaks) - Python CPU-based implementation for BH-FDR and HICCUPS, two peak calling algorithms for Hi-C data, proposed by Rao et al. 2014. Text-to-cooler Hi-C data converter, two scripts to call peaks, and one for visualization (creation of a .png file). [Pypi repo](https://pypi.org/project/hicpeaks/)
 
 - [HOMER](http://homer.ucsd.edu/homer/interactions/) - Perl scripts for normalization, visualization, significant interaction detection, motif discovery. Does not correct for bias. http://homer.ucsd.edu/homer/interactions/
-
-### Capture-C peaks
-
-- [Peaky](https://github.com/cqgd/pky) - Bayesian sparse variable selection approach. The model proposes that for any given bait, the expected CHi-C signal at each prey fragment is expressed as a sum of contributions from a set of fragments directly contacting that bait. https://github.com/cqgd/pky
-    - Eijsbouts, Christiaan Q, Oliver S Burren, Paul J Newcombe, and Chris Wallace. “[Fine Mapping Chromatin Contacts in Capture Hi-C Data](https://doi.org/10.1186/s12864-018-5314-5).” BMC Genomics 20, no. 1 (December 2019). 
-
-- [ChiCMaxima](https://github.com/yousra291987/ChiCMaxima) - a pipeline for detection and visualization of chromatin loops in Capture Hi-C data. Loess smoothing combined with a background model to detect significant interactions Comparison with GOTHiC and CHiCAGO. https://github.com/yousra291987/ChiCMaxima
-    - Ben Zouari, Yousra, Anne M Molitor, Natalia Sikorska, Vera Pancaldi, and Tom Sexton. “[ChiCMaxima: A Robust and Simple Pipeline for Detection and Visualization of Chromatin Looping in Capture Hi-C](https://doi.org/10.1101/445023),” October 16, 2018. 
-
-- [HiCapTools](https://github.com/sahlenlab/HiCapTools) - A software package that can design sequence capture probes for targeted chromosome capture applications and analyze sequencing output to detect proximities involving targeted fragments. Two probes are designed for each feature while avoiding repeat elements and non-unique regions. The data analysis suite processes alignment files to report genomic proximities for each feature at restriction fragment level and is isoform-aware for gene features. Statistical significance of contact frequencies is evaluated using an empirically derived background distribution. https://github.com/sahlenlab/HiCapTools
-    - Anandashankar Anil, Rapolas Spalinskas, Örjan Åkerborg, Pelin Sahlén; "[HiCapTools: a software suite for probe design and proximity detection for targeted chromosome conformation capture applications](https://doi.org/10.1093/bioinformatics/btx625).", Bioinformatics, Volume 34, Issue 4, 15 February 2018
-
-- [CHiCAGO](https://bioconductor.org/packages/Chicago/) is a Capture Hi-C data processing method that filters out contacts that are expected by chance given the linear proximity of the interacting fragments on the genome and takes into account the asymmetric biases introduced by the capture step used in the Capture Hi-C approach. Two-component background model (Delaporte distribution) - Brownian motion (Neg. Binom.) and technical noise (Poisson). Account for distance. https://bioconductor.org/packages/Chicago/, [Tweet by Mikhail Spivakov](https://twitter.com/mikhailspivakov/status/1254879775971258368?s=20): Running Chicago with data generated w/ a 4-cutter such as DpnII? Default settings were tuned on 6-cutter data (HindIII) & not optimal for this. Our suggested settings for DpnII are: MaxLBrowndist = 75000, binsize = 1500, minFragLen=75, maxFragLen=1200.
-    - Cairns, Jonathan, Paula Freire-Pritchett, Steven W. Wingett, Csilla Várnai, Andrew Dimond, Vincent Plagnol, Daniel Zerbino, et al. “[CHiCAGO: Robust Detection of DNA Looping Interactions in Capture Hi-C Data.](https://doi.org/10.1186/s13059-016-0992-2)” Genome Biology 17, no. 1 (2016): 127.
-
-
 
 ## Differential interactions
 
