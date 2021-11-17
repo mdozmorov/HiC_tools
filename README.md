@@ -510,6 +510,9 @@ from breast, prostate, and pancreatic tissue samples
 
 ## Prediction of 3D features
 
+- [DL2021_HI-C](https://github.com/koritsky/DL2021_HI-C) - deep-learning approach for increasing Hi-C data resolution by appending additional information about genome sequence. Two algorithms: the image-to-image model (modified after [VEHiCLE](https://github.com/Max-Highsmith/VEHiCLE)), which enhances Hi-C resolution by itself, and the sequence-to-image model (modified after [Akita](https://github.com/calico/basenji/tree/master/manuscripts/akita)), which uses additional information about the underlying genome sequence for further resolution improvement. Both models are combined with the simple head model (Figure 4). Details of network architecture, training, testing, validation (5 metrics). Various architecture modifications. VEHiCLE by itself performs well. 
+    - Kriukov, Dmitrii, Mark Zaretckii, Igor Kozlovskii, Mikhail Zybin, Nikita Koritskiy, Mariia Bazarevich, and Ekaterina Khrameeva. “[Hi-C Resolution Enhancement with Genome Sequence Data](https://doi.org/10.1101/2021.10.25.465745).” Preprint. Systems Biology, October 26, 2021. 
+
 - [CCIP](https://github.com/GaoLabXDU/CCIP) (CTCF-mediated Chromatin Interaction Prediction) - predicting CTCF-mediated convergent and tandem loops with transitivity. Transitivity definition from the network of multiple CTCF-interacting regions, convergent and tandem. Incorporating the GCP (graph connecting probability) score, together with CTCF, RAD21, directional CTCF motif one-hot encoding into random forest. GCP is the most important predictive feature. Compared with Lollipop and CTCF-MP.
     - Wang, Weibing, Lin Gao, Yusen Ye, and Yong Gao. “[CCIP: Predicting CTCF-Mediated Chromatin Loops with Transitivity](https://doi.org/10.1093/bioinformatics/btab534).” Bioinformatics, 20 July 2021.
 
