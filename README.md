@@ -839,6 +839,8 @@ from breast, prostate, and pancreatic tissue samples
 - Micro-C technology - mononucleosome resolution mapping in yeast. Micrococcal nuclease to fragment chromatin. Yeast does not have TADs, but Micro-C revealed self-associating domains (chromatin interaction domains, CIDs) driven by the number of genes. Enrichment of histone modifications. [Data](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE68016)
     - Hsieh, Tsung-Han S., Assaf Weiner, Bryan Lajoie, Job Dekker, Nir Friedman, and Oliver J. Rando. “[Mapping Nucleosome Resolution Chromosome Folding in Yeast by Micro-C](https://doi.org/10.1016/j.cell.2015.05.048).” Cell 162, no. 1 (July 2015)
 
+- [Micro-C](https://github.com/dovetail-genomics/Micro-C) scripts and [documentation](https://micro-c.readthedocs.io/) for Dovetail™ Micro-C Kit. Uses the Micrococcal nuclease (MNase) enzyme instead of restriction enzymes for chromatin digestion, yielding 146 bp fragments distributed frequently across the genome. Detailed computational processing of Micro-C data, generation of valid pairs using bwa mem, pairtools, juicer_tools, cooler and other genomics tools, QC, contact matrix generation. [Introduction to Dovetail™ Micro-C Technology Video](https://vimeo.com/431456105), 5min, [Breaking the Hi-C Resolution Barrier with Micro-C Video](https://vimeo.com/470724936), 45 min. [Micro-C datasets](https://micro-c.readthedocs.io/en/latest/data_sets.html), [MicroC](https://github.com/EricSDavis/MicroC) Snakemake pipeline by Eric Davis.
+
 
 #### Multi-way interactions
 
