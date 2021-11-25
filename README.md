@@ -42,6 +42,7 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
   - [Technology](#technology)
     - [Micro-C](#micro-c)
     - [Multi-way interactions](#multi-way-interactions)
+    - [Imaging](#imaging)
   - [Normalization](#normalization-1)
   - [TAD detection](#tad-detection)
   - [Spectral clustering](#spectral-clustering)
@@ -879,6 +880,12 @@ from breast, prostate, and pancreatic tissue samples
 
 - **INGRID** - chromatin conformation capture technology using in-gel replication of interacting DNA segments. Detects multi-way interactions. Protocol, demonstration of beta-globin gene locus.
     - Gavrilov, Alexey A., Helena V. Chetverina, Elina S. Chermnykh, Sergey V. Razin, and Alexander B. Chetverin. “[Quantitative Analysis of Genomic Element Interactions by Molecular Colony Technique](https://doi.org/10.1093/nar/gkt1322).” Nucleic Acids Research 42, no. 5 (March 1, 2014)
+
+#### Imaging
+
+- [MERFISH](https://github.com/BogdanBintu/ChromatinImaging) - Super-resolution imaging technology, reconstruction 3D structure in single cells at 30kb resolution, 1.2Mb region of Chr21 in IMR90 cells. Distance maps obtained by microscopy show small distance for loci within, and larger between, TADs. TAD-like structures exist in single cells. 2.5Mb region of Chr21 in HCT116 cells, cohesin depletion does not abolish TADs, only alter their preferential positioning. Multi-point (triplet) interactions are prevalent. TAD boundaries are highly heterogeneous in single cells. , diffraction-limited and STORM (stochastic optical reconstruction microscopy) imaging. [GitHub](https://github.com/BogdanBintu/ChromatinImaging)
+    - Bintu, Bogdan, Leslie J. Mateo, Jun-Han Su, Nicholas A. Sinnott-Armstrong, Mirae Parker, Seon Kinrot, Kei Yamaya, Alistair N. Boettiger, and Xiaowei Zhuang. “[Super-Resolution Chromatin Tracing Reveals Domains and Cooperative Interactions in Single Cells](https://doi.org/10.1126/science.aau1783).” Science, (October 26, 2018)
+
 
 ### Normalization
 
