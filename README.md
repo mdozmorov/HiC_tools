@@ -53,39 +53,72 @@ Tools are sorted by publication date, newest on top. Unpublished tools are liste
 
 ## Pipelines
 
-- [Juicer](https://github.com/theaidenlab/juicebox/wiki/Download) - Java full pipeline to convert raw reads into Hi-C maps, visualized in Juicebox. Call domains, loops, CTCF binding sites. `.hic` file format for storing multi-resolution Hi-C data.
+- [Juicer](https://github.com/theaidenlab/juicebox/wiki/Download) - Java full pipeline to convert raw reads into Hi-C maps, visualized in Juicebox. Calls domains, loops, CTCF binding sites. `.hic` file format for storing multi-resolution Hi-C data. <details>
+    <summary>Paper</summary>
+
     - Durand, Neva C., Muhammad S. Shamim, Ido Machol, Suhas S. P. Rao, Miriam H. Huntley, Eric S. Lander, and Erez Lieberman Aiden. “[Juicer Provides a One-Click System for Analyzing Loop-Resolution Hi-C Experiments](https://doi.org/10.1016/j.cels.2016.07.002).” Cell Systems 3, no. 1 (July 2016) 
+    
     - Rao, Suhas S. P., Miriam H. Huntley, Neva C. Durand, Elena K. Stamenova, Ivan D. Bochkov, James T. Robinson, Adrian L. Sanborn, et al. “[A 3D Map of the Human Genome at Kilobase Resolution Reveals Principles of Chromatin Looping](https://doi.org/10.1016/j.cell.2014.11.021).” Cell 159, no. 7 (December 18, 2014)  - Juicer analysis example. TADs defined by frequent interactions. Enriched in CTCF and cohesin members. Five domain types. A1 and A2 enriched in genes. Chr 19 contains 6th pattern B6. Enrichment in different histone modification marks. TADs are preserved across cell types. Yet, differences between Gm12878 and IMR90 were detected. Boundaries detection by scanning image. Refs to the original paper.
+</details>
 
-- [HiC-Pro](https://github.com/nservant/HiC-Pro) - Python and command line-based optimized and flexible pipeline for Hi-C data processing. [hicpro2juicebox](https://github.com/nservant/HiC-Pro/blob/master/bin/utils/hicpro2juicebox.sh) tool to generate Juicebox-compatible files (requires juicebox_clt.jar)
+- [HiC-Pro](https://github.com/nservant/HiC-Pro) - Python and command line-based optimized and flexible pipeline for Hi-C data processing. [hicpro2juicebox](https://github.com/nservant/HiC-Pro/blob/master/bin/utils/hicpro2juicebox.sh) tool to generate Juicebox-compatible files (requires juicebox_clt.jar) <details>
+    <summary>Paper</summary>
+
     - Servant, Nicolas, Nelle Varoquaux, Bryan R. Lajoie, Eric Viara, Chong-Jian Chen, Jean-Philippe Vert, Edith Heard, Job Dekker, and Emmanuel Barillot. “[HiC-Pro: An Optimized and Flexible Pipeline for Hi-C Data Processing.](https://doi.org/10.1186/s13059-015-0831-x)” Genome Biology 16 (December 1, 2015)  - HiC pipeline, references to other pipelines, comparison. From raw reads to normalized matrices. Normalization methods, fast and memory-efficient implementation of iterative correction normalization (ICE). Data format. Using genotyping information to phase contact maps.
+</details>
 
-- [HiCExplorer](https://github.com/deeptools/HiCExplorer/) - set of programs to process, normalize, analyze and visualize Hi-C data, Python, .cool format, conversion utilities. [Documentation](https://hicexplorer.readthedocs.io/)
+- [HiCExplorer](https://github.com/deeptools/HiCExplorer/) - set of programs to process, normalize, analyze and visualize Hi-C data, Python, .cool format, conversion utilities. [Documentation](https://hicexplorer.readthedocs.io/) <details>
+    <summary>Paper</summary>
+
     - Ramírez, Fidel, Vivek Bhardwaj, Laura Arrigoni, Kin Chung Lam, Björn A. Grüning, José Villaveces, Bianca Habermann, Asifa Akhtar, and Thomas Manke. “[High-Resolution TADs Reveal DNA Sequences Underlying Genome Organization in Flies](https://doi.org/10.1038/s41467-017-02525-w).” Nature Communications 9, no. 1 (December 2018) 
+</details>
 
-- [Galaxy HiCExplorer](https://hicexplorer.usegalaxy.eu/) - a web server for Hi-C data preprocessing, QC, visualization. [Docker container](https://github.com/deeptools/docker-galaxy-hicexplorer)
+- [Galaxy HiCExplorer](https://hicexplorer.usegalaxy.eu/) - a web server for Hi-C data preprocessing, QC, visualization. [Docker container](https://github.com/deeptools/docker-galaxy-hicexplorer) <details>
+    <summary>Paper</summary>
+
     - Wolff, Joachim, Vivek Bhardwaj, Stephan Nothjunge, Gautier Richard, Gina Renschler, Ralf Gilsbach, Thomas Manke, Rolf Backofen, Fidel Ramírez, and Björn A. Grüning. “[Galaxy HiCExplorer: A Web Server for Reproducible Hi-C Data Analysis, Quality Control and Visualization](https://doi.org/10.1093/nar/gky504).” Nucleic Acids Research 46, no. W1 (July 2, 2018) 
+</details>
 
-- [v3 of the Galaxy HiCExplorer](https://hicexplorer.usegalaxy.eu/). Includes full analysis of Hi-C, Capture-C, scHi-C. Workflow-like description of tools/tasks for each data type. [scHiCExplorer](https://github.com/joachimwolff/scHiCExplorer) set of tools specifically designed for scHi-C data. [scHiCExplorer's documentation](https://schicexplorer.readthedocs.io/en/latest/)
+- [v3 of the Galaxy HiCExplorer](https://hicexplorer.usegalaxy.eu/). Includes full analysis of Hi-C, Capture-C, scHi-C. Workflow-like description of tools/tasks for each data type. [scHiCExplorer](https://github.com/joachimwolff/scHiCExplorer) set of tools specifically designed for scHi-C data. [scHiCExplorer's documentation](https://schicexplorer.readthedocs.io/en/latest/) <details>
+    <summary>Paper</summary>
+
     - Wolff, Joachim, Leily Rabbani, Ralf Gilsbach, Gautier Richard, Thomas Manke, Rolf Backofen, and Björn A Grüning. “[Galaxy HiCExplorer 3: A Web Server for Reproducible Hi-C, Capture Hi-C and Single-Cell Hi-C Data Analysis, Quality Control and Visualization](https://doi.org/10.1093/nar/gkaa220).” Nucleic Acids Research, (July 2, 2020)
+</details>
 
-- [HiCUP](http://www.bioinformatics.babraham.ac.uk/projects/hicup/) - Perl-based pipeline, alignment only, output - BAM files. 
+- [HiCUP](http://www.bioinformatics.babraham.ac.uk/projects/hicup/) - Perl-based pipeline, alignment only, output - BAM files. <details>
+    <summary>Paper</summary>
+
     - Wingett, Steven, Philip Ewels, Mayra Furlan-Magaril, Takashi Nagano, Stefan Schoenfelder, Peter Fraser, and Simon Andrews. “[HiCUP: Pipeline for Mapping and Processing Hi-C Data](https://doi.org/10.12688/f1000research.7334.1).” F1000Research 4 (2015) - HiCUP pipeline, alignment only, removes artifacts (religations, duplicate reads) creating BAM files. Details about Hi-C sequencing artifacts. Used in conjunction with other pipelines. 
+</details>
 
-- [FAN-C](https://github.com/vaquerizaslab/fanc) - Python pipeline for Hi-C processing. Input - raw FASTQ (aligned using BWA or Bowtie2, artifact filtering) or pre-aligned BAMs. KR or ICE normalization. Analysis and Visualization (contact distance decay, A/B compartment detection, TAD/loop detection, Average TAD/loop profiles, saddle plots, triangular heatmaps, comparison of two heatmaps). Automatic or modular. Compatible with .cool and .hic formats. [Tweet1](https://twitter.com/vaquerizas_lab/status/1225011187668209664?s=20), [Tweet2](https://twitter.com/vaquerizasjm/status/1339937903473025027?s=20). [Table 1](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02215-9/tables/1) - detailed comparison of 13 Hi-C processing tools
+- [FAN-C](https://github.com/vaquerizaslab/fanc) - Python pipeline for Hi-C processing. Input - raw FASTQ (aligned using BWA or Bowtie2, artifact filtering) or pre-aligned BAMs. KR or ICE normalization. Analysis and Visualization (contact distance decay, A/B compartment detection, TAD/loop detection, Average TAD/loop profiles, saddle plots, triangular heatmaps, comparison of two heatmaps). Automatic or modular. Compatible with .cool and .hic formats. [Tweet1](https://twitter.com/vaquerizas_lab/status/1225011187668209664?s=20), [Tweet2](https://twitter.com/vaquerizasjm/status/1339937903473025027?s=20). [Table 1](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02215-9/tables/1) - detailed comparison of 13 Hi-C processing tools <details>
+    <summary>Paper</summary>
     - Kruse, Kai, Clemens B. Hug, and Juan M. Vaquerizas. “[FAN-C: A Feature-Rich Framework for the Analysis and Visualisation of Chromosome Conformation Capture Data](https://doi.org/10.1186/s13059-020-02215-9).” Genome Biology 21, no. 1 (December 2020) 
+</details>
 
-- [GITAR](https://www.genomegitar.org/https://github.com/Zhong-Lab-UCSD/HiCtool) - full Hi-C pre-processing, normalization, TAD detection, and visualization. Python scripts wrapping other tools. Table 1 summarizes the functionality of existing tools.
+- [GITAR](https://www.genomegitar.org/https://github.com/Zhong-Lab-UCSD/HiCtool) - full Hi-C pre-processing, normalization, TAD detection, and visualization. Python scripts wrapping other tools. Table 1 summarizes the functionality of existing tools. <details>
+    <summary>Paper</summary>
+
     - Calandrelli, Riccardo, Qiuyang Wu, Jihong Guan, and Sheng Zhong. “GITAR: An Open Source Tool for Analysis and Visualization of Hi-C Data.” Genomics, Proteomics & Bioinformatics 16, no. 5 (2018): 365–72. https://doi.org/10.1016/j.gpb.2018.06.006 
+</details>
 
-- [HiCdat](https://github.com/MWSchmid/HiCdat) - Hi-C processing pipeline and downstream analysis/visualization. Analyses: normalization, correlation, visualization, comparison, distance decay, PCA, interaction enrichment test, epigenomic enrichment/depletion.
+- [HiCdat](https://github.com/MWSchmid/HiCdat) - Hi-C processing pipeline and downstream analysis/visualization. Analyses: normalization, correlation, visualization, comparison, distance decay, PCA, interaction enrichment test, epigenomic enrichment/depletion. <details>
+    <summary>Paper</summary>
+
     - Schmid, Marc W., Stefan Grob, and Ueli Grossniklaus. “[HiCdat: A Fast and Easy-to-Use Hi-C Data Analysis Tool](https://doi.org/10.1186/s12859-015-0678-x).” BMC Bioinformatics 16 (September 3, 2015) 
+</details>
 
-- [HiC-bench](https://github.com/NYU-BFX/hic-bench) - complete pipeline for Hi-C data analysis.
+- [HiC-bench](https://github.com/NYU-BFX/hic-bench) - complete pipeline for Hi-C data analysis. <details>
+    <summary>Paper</summary>
+
     - Lazaris, Charalampos, Stephen Kelly, Panagiotis Ntziachristos, Iannis Aifantis, and Aristotelis Tsirigos. “[HiC-Bench: Comprehensive and Reproducible Hi-C Data Analysis Designed for Parameter Exploration and Benchmarking](https://doi.org/10.1186/s12864-016-3387-6).” BMC Genomics 18, no. 1 (December 2017)
+</details>
 
-- [TADbit](https://github.com/3DGenomes/tadbit) - TADbit is a complete Python library to deal with all steps to analyze, model and explore 3C-based data. With TADbit, the user can map FASTsQ files to obtain raw interaction binned matrices (Hi-C like matrices), normalize and correct interaction matrices, identify and compare the Topologically Associating Domains (TADs), build 3D models from the interaction matrices, and finally, extract structural properties from the models. TADbit is complemented by TADkit for visualizing 3D models.
+- [TADbit](https://github.com/3DGenomes/tadbit) - TADbit is a complete Python library to deal with all steps to analyze, model and explore 3C-based data. With TADbit, the user can map FASTsQ files to obtain raw interaction binned matrices (Hi-C like matrices), normalize and correct interaction matrices, identify and compare the Topologically Associating Domains (TADs), build 3D models from the interaction matrices, and finally, extract structural properties from the models. TADbit is complemented by TADkit for visualizing 3D models. <details>
+    <summary>Paper</summary>
+
     - Serra, François, Davide Baù, Mike Goodstadt, David Castillo, Guillaume J. Filion, and Marc A. Marti-Renom. “[Automatic Analysis and 3D-Modelling of Hi-C Data Using TADbit Reveals Structural Features of the Fly Chromatin Colors](https://doi.org/10.1371/journal.pcbi.1005665).” PLoS Computational Biology 13, no. 7 (July 2017) 
+</details>
 
 - [HiC_Pipeline](https://github.com/XiaoTaoWang/HiC_pipeline) - Python-based pipeline performing mapping, filtering, binning, and ICE-correcting Hi-C data, from raw reads (.sra, .fastq) to contact matrices. Additionally, converting to sparse format, performing QC. 
 
