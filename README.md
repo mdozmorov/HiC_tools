@@ -978,4 +978,4 @@ from breast, prostate, and pancreatic tissue samples
 
 - [Workshop on measuring, analyzing, and visualizing the 3D genome with Hi-C data](https://github.com/hms-dbmi/hic-data-analysis-bootcamp). Presentations (PDFs, PPTX) and Jupyter notebooks. Cooler, HiCGlass, HiPlier. https://github.com/hms-dbmi/hic-data-analysis-bootcamp
 
-
+- [The 3D Organization of Our Genome](https://youtu.be/Pl44JjA--2k) 3 min video recapitulates our current understanding of genome organization in the three-dimensional space of the cell nucleus. More videos in the description. By the [Cavalli lab videos](https://www.youtube.com/channel/UCFjv-tOfb_AaGLE-tKvLvTA), [Tweet](https://twitter.com/giacomo_cavalli/status/1453771881740476422?s=20)
