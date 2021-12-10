@@ -680,6 +680,12 @@ from breast, prostate, and pancreatic tissue samples
 
 ## De novo genome scaffolding
 
+- [EndHiC](https://github.com/fanagislab/EndHiC) - chromosome scaffolding using Hi-C links from contig ends. Requires contigs from PacBio's HiFiasm technology (assembled by HiCanu), and Hi-C data processed by HiC-Pro. Applied to human, rice, Arabidopsis, achieves higher accuracy than LACHESIS, ALLHiC, 3D-DNA. Perl scripts. <details>
+    <summary>Preprint</summary>
+
+    Wang, Sen, Hengchao Wang, Fan Jiang, Anqi Wang, Hangwei Liu, Hanbo Zhao, Boyuan Yang, Dong Xu, Yan Zhang, and Wei Fan. “[EndHiC: Assemble Large Contigs into Chromosomal-Level Scaffolds Using the Hi-C Links from Contig Ends](https://arxiv.org/abs/2111.15411).” ArXiv, 30 Nov 2021
+</details>
+
 - [instaGRAAL](https://github.com/koszullab/instaGRAAL) - reimplementation of GRAAL genome assembler (chromosome level) for large genomes. Similar MCMC approach, implemented on NVIDIA GPU. Tested, among others, on segments of the human genome. https://github.com/koszullab/instaGRAAL
     - Baudry, Lyam, Nadège Guiglielmoni, Hervé Marie-Nelly, Alexandre Cormier, Martial Marbouty, Komlan Avia, Yann Loe Mie, et al. “[InstaGRAAL: Chromosome-Level Quality Scaffolding of Genomes Using a Proximity Ligation-Based Scaffolder](https://doi.org/10.1186/s13059-020-02041-z).” Genome Biology 21, no. 1 (December 2020)
 
