@@ -46,6 +46,7 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
   - [TAD detection](#tad-detection)
   - [Spectral clustering](#spectral-clustering)
 - [Courses](#courses)
+- [Labs](#labs)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -1349,3 +1350,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 - [Workshop on measuring, analyzing, and visualizing the 3D genome with Hi-C data](https://github.com/hms-dbmi/hic-data-analysis-bootcamp). Presentations (PDFs, PPTX) and Jupyter notebooks. Cooler, HiCGlass, HiPlier. https://github.com/hms-dbmi/hic-data-analysis-bootcamp
 
 - [The 3D Organization of Our Genome](https://youtu.be/Pl44JjA--2k) 3 min video recapitulates our current understanding of genome organization in the three-dimensional space of the cell nucleus. More videos in the description. By the [Cavalli lab videos](https://www.youtube.com/channel/UCFjv-tOfb_AaGLE-tKvLvTA), [Tweet](https://twitter.com/giacomo_cavalli/status/1453771881740476422?s=20)
+
+## Labs
+
+- [Best-Labs-of-3D-Genome](https://github.com/XiaoTaoWang/Best-Labs-of-3D-Genome) - Most active 3D genomics labs, collaborative networks. By Xiaotao Wang
+
+<center><img src="https://github.com/XiaoTaoWang/Best-Labs-of-3D-Genome/blob/master/networks/2017-2021/2017-2021.coauthors.png?raw=true" alt="Best-Labs-of-3D-Genome" width="514" height="300"></center>
+
+
