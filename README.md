@@ -1101,6 +1101,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     - Denker, Annette, and Wouter de Laat. "The Second Decade of 3C Technologies: Detailed Insights into Nuclear Organization"  https://doi.org/10.1101/gad.281964.116 Genes & Development 30, no. 12 (June 15, 2016)
 </details>
 
+- **RD-SPRITE** (RNA & DNA SPRITE) technology to map the spatial organization of RNA and DNA (improved efficiency of the RNA-tagging steps). Noncoding RNAs form high-concentration territories throughout the nucleus (ncRNAs involved in rRNA processing organize around rRNA genes, splicing ncRNAs are concentrated near PolII sites, more examples). In general, (noncoding) RNA-chromatin structures are associated with three functional classes: RNA processing, heterochromatin assembly, gene regulation. [GSE GEO151515](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE151515) - RD-SPRITE data (clusters information) on mouse ESCs, naive and treated with Actinomycin D. [GitHub 1](https://github.com/GuttmanLab/sprite2.0-pipeline), [GitHub 2](https://github.com/GuttmanLab/sprite-pipeline) - pipelines. <details>
+    <summary>Paper</summary>
+    Quinodoz, Sofia A., Joanna W. Jachowicz, Prashant Bhat, Noah Ollikainen, Abhik K. Banerjee, Isabel N. Goronzy, Mario R. Blanco, et al. “RNA Promotes the Formation of Spatial Compartments in the Nucleus.” Cell 184, no. 23 (November 2021): 5775-5790.e30. https://doi.org/10.1016/j.cell.2021.10.014.
+</details>
+
 - **Hi-CO** - chromatin conformation capture with nucleosome orientation technology. Ligation of DNA entry or exit points at every nucleosome locus in a micrococcal nuclease (MNase)-fragmented genome. Produces \~300M reads. Computational analysis - simulated annealing - molecular dynamics, determines 3D positions and orientation of every nucleosome. Not suitable for single-cell genome analysis, only detects pairwise ligations. Applied to the S. cerevisiae genome. Protocol. [Example data and tutorial](https://figshare.com/articles/software/Hi-CO_3D_genome_structure_analysis_with_nucleosome_resolution/13176101/1). <details>
     <summary>Paper</summary>
     - Ohno, Masae, Tadashi Ando, David G. Priest, and Yuichi Taniguchi. "Hi-CO: 3D Genome Structure Analysis with Nucleosome Resolution"  https://doi.org/10.1038/s41596-021-00543-z Nature Protocols, May 28, 2021. 
