@@ -516,6 +516,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 ## Differential interactions
 
+- [NE-MVNMF](https://github.com/Roy-lab/mvnmf) - combines network enhancement (network denoising) and multitask non-negative matrix factorization for comparing multiple Hi-C matrices and idenrtifying dynamic (changing) regions. MVNMF - joint decomposition to find a common underlying structure in multiple matrices, clustering regions, comparing cluster assignments, identifying stretches of 5 or more regions switching clusters (dynamic regions). Applied to rat mammary epithelial cells, two time points (within and outside the window of susceptibility (WOS) to breast cancer, week 6 and 12). Arima Genomics, triplicates (6 samples total), merged into two, 10kb, HiC-Pro processing, ICE normalization, differential point interactions as intersection of Selfish and Fit-Hi-C. Integrated with gene expression (RNA-seq) and published breast cancer SNPs. [GEO GSE184285](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE184285). <details>
+    <summary>Paper</summary>
+    Baur, Brittany, Da-Inn Lee, Jill Haag, Deborah Chasman, Michael Gould, and Sushmita Roy. “Deciphering the Role of 3D Genome Organization in Breast Cancer Susceptibility.” Frontiers in Genetics 12 (January 11, 2022): 788318. https://doi.org/10.3389/fgene.2021.788318.
+</details>
+
 - [HICDCPlus](https://bioconductor.org/packages/HiCDCPlus/) - an R/Bioconductor package for Hi-C/Hi-ChIP interaction calling (directly from raw data, negative binomial regression accounting for genomic distance,GC content, mappability, restriction enzyme-based bin size) and differential analysis (DESeq2). Includes TAD (TopDom) and A/B compartment callers. Input - HiC-Pro or Juicer. Output compatible with visualization in Juicebox and HiCExplorer. Compared with diffHiC, multiHiCcompare, Selfish, provides better results. Normalization by ChIP-seq input may not be helpful. [BitBucket](https://bitbucket.org/leslielab/hicdcplus/src/master/). <details>
     <summary>Paper</summary>
     Sahin, Merve, Wilfred Wong, Yingqian Zhan, Kinsey Van Deynze, Richard Koche, and Christina S. Leslie. "[HiC-DC+ enables systematic 3D interaction calls and differential analysis for Hi-C and HiChIP"  https://doi.org/10.1038/s41467-021-23749-x Nature communications, 07 June 2021
