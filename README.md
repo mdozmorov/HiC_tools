@@ -34,7 +34,7 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 - [De novo genome scaffolding](#de-novo-genome-scaffolding)
 - [3D modeling](#3d-modeling)
 - [Deconvolution](#deconvolution)
-- [Haplotype separation](#haplotype-separation)
+- [Haplotype phasing](#haplotype-phasing)
 - [Papers](#papers)
   - [Methodological Reviews](#methodological-reviews)
   - [General Reviews](#general-reviews)
@@ -1027,7 +1027,12 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     - Rowland, Bryce and Huh, Ruth and Hou, Zoey and Hu, Ming and Shen, Yin and Li, Yun "THUNDER: A Reference-Free Deconvolution Method to Infer Cell Type Proportions from Bulk Hi-C Data"  https://doi.org/10.1101/2020.11.12.379941 bioRxiv, November 12, 2020
 </details>
 
-## Haplotype separation
+## Haplotype phasing
+
+- [GAMIBHEAR](https://bitbucket.org/schwarzlab/gamibhear) - an R package for haplotype reconstruction in GAM (Genome Architecture Mapping, nuclear cryosectioned profiles) data. Uses the local proximity of SNVs extended to larger genomic windows using a proximity-scaled graph-based approach. Tested on the F123 mESCs, outperforms WhatsHap and HapCHAT, fast. <details>
+    <summary>Paper</summary>
+    Markowski, Julia, Rieke Kempfer, Alexander Kukalev, Ibai Irastorza-Azcarate, Gesa Loof, Birte Kehr, Ana Pombo, Sven Rahmann, and Roland F Schwarz. “GAMIBHEAR: Whole-Genome Haplotype Reconstruction from Genome Architecture Mapping Data.” Edited by Yann Ponty. Bioinformatics 37, no. 19 (October 11, 2021): 3128–35. https://doi.org/10.1093/bioinformatics/btab238.
+</details>
 
 - [HaploHiC](https://github.com/Nobel-Justin/HaploHiC) - Hi-C phasing using SNPs/InDels, placement of unphased reads inferred from the nearby phased reads. <details>
     <summary>Paper</summary>
