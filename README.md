@@ -47,6 +47,7 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
   - [Spectral clustering](#spectral-clustering)
 - [Courses](#courses)
 - [Labs](#labs)
+- [Misc](#misc)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -1384,4 +1385,6 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 <center><img src="https://github.com/XiaoTaoWang/Best-Labs-of-3D-Genome/blob/master/networks/2017-2021/2017-2021.coauthors.png?raw=true" alt="Best-Labs-of-3D-Genome" width="514" height="300"></center>
 
+## Misc
 
+- [liftOverBedpe](https://github.com/dphansti/liftOverBedpe) - A liftOver wrapper to convert BEDPE files. Requires Python 2, e.g., `conda create -n liftOverBedpe python=2.7 -y`. By [Doug Phanstiel](https://github.com/dphansti)
