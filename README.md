@@ -117,6 +117,8 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 - [distiller-nf](https://github.com/mirnylab/distiller-nf) - Java modular Hi-C mapping pipeline for reproducible data analysis, nextflow pipeline. Alignment, filtering, aggregating Hi-C matrices.
 
+- [runHiC](https://github.com/XiaoTaoWang/HiC_pipeline) - aka `HiC_pipeline`, Hi-C data processing pipeline, from raw FASTQ files. Supports bwa-mem, chromap (default), and minimap2 aligners. Performs quality control (plots), filtering, binning (to mcool output), pileup. Parallelized. By [XiaoTao Wang](https://github.com/XiaoTaoWang).
+
 - [4D Nucleome Hi-C Processing Pipeline](https://github.com/4dn-dcic/docker-4dn-hic), set of scripts wrapped in a Docker image. Works with `.hic` and `.cool` files. [Overview](https://data.4dnucleome.org/resources/data-analysis/hi_c-processing-pipeline)
 
 - Abdennur, Nezar, and Leonid Mirny. "Cooler: Scalable Storage for Hi-C Data and Other Genomically-Labeled Arrays"  https://doi.org/10.1093/bioinformatics/btz540 Bioinformatics, January 1, 2020. 
