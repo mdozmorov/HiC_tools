@@ -1387,6 +1387,6 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 ## Misc
 
-- [pairLiftOver](https://github.com/XiaoTaoWang/pairLiftOver) - Python package that converts the two-dimensional genomic coordinates of chromatin contact matrices (pairs) between genomic assemblies. Supports cool, hic, allValidPairs, 4DN pairs formats. Lifted matrices nearly equivalent realigned. By [Xiaotao Wang](https://github.com/XiaoTaoWang)
+- [pairLiftOver](https://github.com/XiaoTaoWang/pairLiftOver) - Python package that converts the two-dimensional genomic coordinates of chromatin contact matrices (pairs) between genomic assemblies. Supports cool, Juicer's hic, HiC-Pro's allValidPairs, 4DN's pairs formats. Lifted matrices nearly equivalent realigned. By [Xiaotao Wang](https://github.com/XiaoTaoWang)
 
 - [liftOverBedpe](https://github.com/dphansti/liftOverBedpe) - A liftOver wrapper to convert BEDPE files. Requires Python 2, e.g., `conda create -n liftOverBedpe python=2.7 -y`. By [Doug Phanstiel](https://github.com/dphansti)
