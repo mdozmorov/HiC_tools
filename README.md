@@ -1381,10 +1381,12 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 ## Labs
 
-- [Best-Labs-of-3D-Genome](https://github.com/XiaoTaoWang/Best-Labs-of-3D-Genome) - Most active 3D genomics labs, collaborative networks. By Xiaotao Wang
+- [Best-Labs-of-3D-Genome](https://github.com/XiaoTaoWang/Best-Labs-of-3D-Genome) - Most active 3D genomics labs, collaborative networks. By [Xiaotao Wang](https://github.com/XiaoTaoWang)
 
 <center><img src="https://github.com/XiaoTaoWang/Best-Labs-of-3D-Genome/blob/master/networks/2017-2021/2017-2021.coauthors.png?raw=true" alt="Best-Labs-of-3D-Genome" width="514" height="300"></center>
 
 ## Misc
+
+- [pairLiftOver](https://github.com/XiaoTaoWang/pairLiftOver) - Python package that converts the two-dimensional genomic coordinates of chromatin contact matrices (pairs) between genomic assemblies. Supports cool, hic, allValidPairs, 4DN pairs formats. Lifted matrices nearly equivalent realigned. By [Xiaotao Wang](https://github.com/XiaoTaoWang)
 
 - [liftOverBedpe](https://github.com/dphansti/liftOverBedpe) - A liftOver wrapper to convert BEDPE files. Requires Python 2, e.g., `conda create -n liftOverBedpe python=2.7 -y`. By [Doug Phanstiel](https://github.com/dphansti)
