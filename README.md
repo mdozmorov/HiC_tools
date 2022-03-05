@@ -849,6 +849,8 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     - Huynh, Linh, and Fereydoun Hormozdiari. "Contribution of Structural Variation to Genome Structure: TAD Fusion Discovery and Ranking"  https://doi.org/10.1101/279356 BioRxiv, March 9, 2018. 
 </details>
 
+- [Arima-SV-Pipeline](https://github.com/ArimaGenomics/Arima-SV-Pipeline) - Docker/Singularity image for running [Structural Variant Detection with Arima Hi-C Technology](https://arimagenomics.com/resources/blog/new-products-structural-variant-detection/). Includes several tools (HiCUP, hic_breakfinder, Juicer, HiCCUPS). 
+
 ## Visualization
 
 - [plotgardener](https://github.com/PhanstielLab/plotgardener) - R/Bioconductor package for multi-panel genomic and non-genomic data visualization. 45 functions for plotting and annotating multiple genomic data formats: genome sequences, gene/transcript annotations, chromosome ideograms, signal tracks, GWAS Manhattan plots, genomic ranges (e.g. peaks, reads, contact domains, etc), paired ranges (e.g. paired-end reads, chromatin loops, structural rearrangements, QTLs, etc), and 3D chromatin contact frequencies. Auto-recognizes .bam, .bigWig, .hic formats, converts genomic data into standard R objects (e.g., data.frame, tibble, GInteractions). Includes 29 genomes, more through Bioconductor integration. [Documentation](https://phanstiellab.github.io/plotgardener/), [Tweet 1](https://twitter.com/dphansti/status/1436417383732813829?s=20), [Tweet 2](https://twitter.com/mikelove/status/1437388358754443274?s=20). <details>
