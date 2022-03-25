@@ -59,12 +59,21 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 </details>
 
 - [HiCExplorer](https://github.com/deeptools/HiCExplorer/) - set of programs to process, normalize, analyze and visualize Hi-C data, Python, .cool format, conversion utilities. [Documentation](https://hicexplorer.readthedocs.io/) <details>
-    <summary>Paper</summary>
-    Ramírez, Fidel, Vivek Bhardwaj, Laura Arrigoni, Kin Chung Lam, Björn A. Grüning, José Villaveces, Bianca Habermann, Asifa Akhtar, and Thomas Manke. "High-Resolution TADs Reveal DNA Sequences Underlying Genome Organization in Flies"  https://doi.org/10.1038/s41467-017-02525-w Nature Communications 9, no. 1 (December 2018) 
-</details> <details>
-    <summary>Galaxy HiCExplorer</summary>
-    [Galaxy HiCExplorer](https://hicexplorer.usegalaxy.eu/) - a web server for Hi-C data preprocessing, QC, visualization. [Docker container](https://github.com/deeptools/docker-galaxy-hicexplorer). Wolff, Joachim, Vivek Bhardwaj, Stephan Nothjunge, Gautier Richard, Gina Renschler, Ralf Gilsbach, Thomas Manke, Rolf Backofen, Fidel Ramírez, and Björn A. Grüning. "Galaxy HiCExplorer: A Web Server for Reproducible Hi-C Data Analysis, Quality Control and Visualization"  https://doi.org/10.1093/nar/gky504 Nucleic Acids Research 46, no. W1 (July 2, 2018). [v3 of the Galaxy HiCExplorer](https://hicexplorer.usegalaxy.eu/). Includes full analysis of Hi-C, Capture-C, scHi-C. Workflow-like description of tools/tasks for each data type. [scHiCExplorer](https://github.com/joachimwolff/scHiCExplorer) set of tools specifically designed for scHi-C data. [scHiCExplorer's documentation](https://schicexplorer.readthedocs.io/en/latest/). Wolff, Joachim, Leily Rabbani, Ralf Gilsbach, Gautier Richard, Thomas Manke, Rolf Backofen, and Björn A Grüning. "Galaxy HiCExplorer 3: A Web Server for Reproducible Hi-C, Capture Hi-C and Single-Cell Hi-C Data Analysis, Quality Control and Visualization"  https://doi.org/10.1093/nar/gkaa220 Nucleic Acids Research, (July 2, 2020)
+  <summary>Paper</summary>
+  Ramírez, Fidel, Vivek Bhardwaj, Laura Arrigoni, Kin Chung Lam, Björn A. Grüning, José Villaveces, Bianca Habermann, Asifa Akhtar, and Thomas Manke. "High-Resolution TADs Reveal DNA Sequences Underlying Genome Organization in Flies"  https://doi.org/10.1038/s41467-017-02525-w Nature Communications 9, no. 1 (December 2018) 
+</details> 
+
+- [Galaxy HiCExplorer](https://hicexplorer.usegalaxy.eu/) - a web server for Hi-C data preprocessing, QC, visualization. [Docker container](https://github.com/deeptools/docker-galaxy-hicexplorer). <details>
+  <summary>Paper</summary>
+    Wolff, Joachim, Vivek Bhardwaj, Stephan Nothjunge, Gautier Richard, Gina Renschler, Ralf Gilsbach, Thomas Manke, Rolf Backofen, Fidel Ramírez, and Björn A. Grüning. "Galaxy HiCExplorer: A Web Server for Reproducible Hi-C Data Analysis, Quality Control and Visualization"  https://doi.org/10.1093/nar/gky504 Nucleic Acids Research 46, no. W1 (July 2, 2018). 
 </details>
+
+- [v3 of the Galaxy HiCExplorer](https://hicexplorer.usegalaxy.eu/). Includes full analysis of Hi-C, Capture-C, scHi-C. Workflow-like description of tools/tasks for each data type. <details>
+  <summary>Paper</summary>
+    Wolff, Joachim, Leily Rabbani, Ralf Gilsbach, Gautier Richard, Thomas Manke, Rolf Backofen, and Björn A Grüning. "Galaxy HiCExplorer 3: A Web Server for Reproducible Hi-C, Capture Hi-C and Single-Cell Hi-C Data Analysis, Quality Control and Visualization"  https://doi.org/10.1093/nar/gkaa220 Nucleic Acids Research, (July 2, 2020)
+</details>
+
+- [scHiCExplorer](https://github.com/joachimwolff/scHiCExplorer) - set of tools specifically designed for scHi-C data. [scHiCExplorer's documentation](https://schicexplorer.readthedocs.io/en/latest/). 
 
 - [GITAR](https://www.genomegitar.org/https://github.com/Zhong-Lab-UCSD/HiCtool) - full Hi-C pre-processing, normalization, TAD detection, and visualization. Python scripts wrapping other tools. Table 1 summarizes the functionality of existing tools. <details>
     <summary>Paper</summary>
