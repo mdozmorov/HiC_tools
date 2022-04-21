@@ -712,6 +712,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 - [domaincaller](https://github.com/XiaoTaoWang/domaincaller) - A Python implementation of the original DI domain caller.
 
+- [lavaburst](https://github.com/nvictus/lavaburst) - extension of the Armatus algorithm introduced in [Filippova et al., “Identification of Alternative Topological Domains in Chromatin.”](https://doi.org/10.1186/1748-7188-9-14). [Documentation](https://nezar-compbio.github.io/lavaburst/index.html). <details>
+    <summary>Paper</summary>
+    Schwarzer, Wibke, Nezar Abdennur, Anton Goloborodko, Aleksandra Pekowska, Geoffrey Fudenberg, Yann Loe-Mie, Nuno A. Fonseca, et al. “Two Independent Modes of Chromatin Organization Revealed by Cohesin Removal.” Nature 551, no. 7678 (02 2017): 51–56. https://doi.org/10.1038/nature24281.
+</details>
+
 ### Architectural stripes
 
 - [Stripenn](https://github.com/vahedilab/stripenn) - a computer vision-based method for architectural stripes detection using Canny edge detection.Scores stripes by median p-value and stripiness based on the continuity of interaction signal. Input - .cool files, optionally normalized. Output - coordinates and scores of the predicted stripes. Applicable to Hi-C, HiChIP, Micro-C data. Introduction to the biology of architectural stripes, review of previous methods (Zebra from Vian et al. 2018, domainClassifyR, CHESS for comparing 3D domains and stripes). Analysis of stripes from B and T lymphocytes identifies stripe anchors enriched in the transcriptionally active compartments, architectural proteins mediating loop extrusion. Strips are strongly conserved, correspond to TAD boundaries, subtle changes are associated with transcriptional output. Python, three functions (compute, score seeimage). [Video 16m](https://www.youtube.com/watch?v=_TEomDYv2vk). <details>
