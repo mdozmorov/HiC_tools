@@ -952,6 +952,8 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     - Servant, Nicolas, Bryan R. Lajoie, Elphège P. Nora, Luca Giorgetti, Chong-Jian Chen, Edith Heard, Job Dekker, and Emmanuel Barillot. "HiTC: Exploration of High-Throughput ‘C’ Experiments"  https://doi.org/10.1093/bioinformatics/bts521 Bioinformatics (Oxford, England) 28, no. 21 (November 1, 2012)
 </details>
 
+- [HiCognition](https://github.com/gerlichlab/HiCognition) - A visual exploration and hypothesis testing tool for 3D genomics. HiCognition is a data exploration tool that allows stream-lined exploration of aggregate genomic data. HiCognition is centered around Hi-C data but also enables integration of Chip-seq and region-based data. Docker installation, uses D3.js and Pixi.js. Similar to HiGlass, HiPiler. [Documentation](https://gerlichlab.github.io/hicognition/docs/)
+
 - [pyGenomeTracks](https://github.com/deeptools/pyGenomeTracks) - python module to plot beautiful and highly customizable genome browser tracks.
 
 - [TADKit](https://github.com/3DGenomes/TADkit) - 3D Genome Browser.[ Main web site](http://sgt.cnag.cat/3dg/tadkit/), and [GitHub](https://github.com/3DGenomes/TADkit)
