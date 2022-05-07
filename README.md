@@ -872,6 +872,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 ## Visualization
 
+- [HiCognition](https://github.com/gerlichlab/HiCognition) - visual exploration of Hi-C data, testing for association with 1D data. Region set concept (ChIP-seq peaks, genes, TADs, etc.). Widget architecture: 1D average, 2D average, embedding/heterogeneity views, association/enrichment analysis. Input: BED, bigWig, cooler files. Data and precomputations are stored in MySQL database. Prebuild dataset of common features. Docker container. [Documentation](https://gerlichlab.github.io/hicognition/docs/). <details>
+    <summary>Paper</summary>
+    Langer, Christoph C. H., Michael Mitter, Roman R. Stocsits, and Daniel W. Gerlich. “HiCognition: A Visual Exploration and Hypothesis Testing Tool for 3D Genomics.” Preprint. Bioinformatics, May 1, 2022. https://doi.org/10.1101/2022.04.30.490134.
+</details>
+
 - [plotgardener](https://github.com/PhanstielLab/plotgardener) - R/Bioconductor package for multi-panel genomic and non-genomic data visualization. 45 functions for plotting and annotating multiple genomic data formats: genome sequences, gene/transcript annotations, chromosome ideograms, signal tracks, GWAS Manhattan plots, genomic ranges (e.g. peaks, reads, contact domains, etc), paired ranges (e.g. paired-end reads, chromatin loops, structural rearrangements, QTLs, etc), and 3D chromatin contact frequencies. Auto-recognizes .bam, .bigWig, .hic formats, converts genomic data into standard R objects (e.g., data.frame, tibble, GInteractions). Includes 29 genomes, more through Bioconductor integration. [Documentation](https://phanstiellab.github.io/plotgardener/), [Tweet 1](https://twitter.com/dphansti/status/1436417383732813829?s=20), [Tweet 2](https://twitter.com/mikelove/status/1437388358754443274?s=20). <details>
     <summary>Paper</summary>
     - Kramer, Nicole E, Eric S Davis, Craig D Wenger, Erika M Deoudes, Sarah M Parker, Michael I Love, and Douglas H Phanstiel. "Plotgardener: Cultivating Precise Multi-Panel Figures in R"  https://doi.org/10.1101/2021.09.08.459338 Preprint. Bioinformatics, September 10, 2021. 
