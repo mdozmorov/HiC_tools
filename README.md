@@ -527,6 +527,8 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     Luzhin, Artem V., Arkadiy K. Golov, Alexey A. Gavrilov, Artem K. Velichko, Sergey V. Ulianov, Sergey V. Razin, and Omar L. Kantidze. "LASCA: Loop and Significant Contact Annotation Pipeline"  https://doi.org/10.1038/s41598-021-85970-4 Scientific Reports, (December 2021)
 </details>
 
+- <a name="hiccups">[HiCCUPS](https://github.com/aidenlab/juicer/wiki/HiCCUPS)</a> - chromatin loop detection, local maxima detection in Hi-C images. GPU and CPU implementations. Described in Section VI.a of the Extended Experimental Procedures of [Rao, Huntley et al. Cell 2014](https://www.cell.com/cms/10.1016/j.cell.2014.11.021/attachment/d3c6dcd8-c799-4f68-bbe4-201be54960b5/mmc1.pdf)
+
 - [HiCPeaks](https://github.com/XiaoTaoWang/HiCPeaks) - Python CPU-based implementation for BH-FDR and HICCUPS, two peak calling algorithms for Hi-C data, proposed by Rao et al. 2014. Text-to-cooler Hi-C data converter, two scripts to call peaks, and one for visualization (creation of a .png file). [Pypi repo](https://pypi.org/project/hicpeaks/)
 
 - [HOMER](http://homer.ucsd.edu/homer/interactions/) - Perl scripts for normalization, visualization, significant interaction detection, motif discovery. Does not correct for bias.
