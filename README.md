@@ -413,7 +413,7 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     Xiong, Kyle, and Jian Ma. "Revealing Hi-C Subcompartments by Imputing High-Resolution Inter-Chromosomal Chromatin Interactions"  https://doi.org/10.1038/s41467-019-12954-4 Nature Communications, 07 November 2019
 </details>
 
-- [Eigenvector](https://github.com/aidenlab/juicer/wiki/Eigenvector) - Juicer's native tool. The eigenvector can be used to delineate compartments in Hi-C data at coarse resolution; the sign of the eigenvector typically indicates the compartment. The eigenvector is the first principal component of the Pearson's matrix.
+- <a name="eigenvector">[Eigenvector](https://github.com/aidenlab/juicer/wiki/Eigenvector)</a> - Juicer's native tool. The eigenvector can be used to delineate compartments in Hi-C data at coarse resolution; the sign of the eigenvector typically indicates the compartment. The eigenvector is the first principal component of the Pearson's matrix.
 
 ## Peak/Loop callers
 
