@@ -608,6 +608,8 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     Lun, Aaron T. L., and Gordon K. Smyth. "DiffHic: A Bioconductor Package to Detect Differential Genomic Interactions in Hi-C Data"  https://doi.org/10.1186/s12859-015-0683-0 BMC Bioinformatics 16 (2015)
 </details>
 
+- <a name="hiccupsdiff">[HiCCUPS Diff](https://github.com/aidenlab/juicer/wiki/HiCCUPSDiff)</a> - differential loop analysis. Input - two .hic files and loop lists, output - lists of differential loops. 
+
 ## TAD callers
 
 - [HiCKey](https://github.com/YingruWuGit/HiCKey) - hierarchical TAD caller, comparison of TADs across samples. A generalized likelihood-ratio (GRL) test for detecting change-points in an interaction matrix that follows negative binomial distribution (Methods). Bottom-up approach to detect hierarchy. Tested on Forcato simulated data with nested TADs, TPR/FPR/difference/Fowlkes-Mallows index to estimate performance. Applied to seven cell lines. TAD hierarchy is up to four levels. Compared with TADtree, 3DNetMod, IC-Finder, HiCSeg. Colocalization within a 2-bin distance. Input - normalized, distance effect removed matrix in sparse text format, output - TAD start coordinate, hierarchy level, p-value of the changepoint. C++ implementation. Did not compare with SpectralTAD hierarchical caller.<details>
