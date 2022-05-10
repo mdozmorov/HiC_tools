@@ -684,6 +684,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     Abbas Roayaei Ardakany, Stefano Lonardi, and Marc Herbstritt, "Efficient and Accurate Detection of Topologically Associating Domains from Contact Maps"  https://doi.org/10.4230/LIPIcs.WABI.2017.22 (Schloss Dagstuhl - Leibniz-Zentrum fuer Informatik GmbH, Wadern/Saarbruecken, Germany, 2017)
 </details>
 
+- [lavaburst](https://github.com/nvictus/lavaburst) - extension of the Armatus algorithm introduced in [Filippova et al., “Identification of Alternative Topological Domains in Chromatin.”](https://doi.org/10.1186/1748-7188-9-14). [Documentation](https://nezar-compbio.github.io/lavaburst/index.html). <details>
+    <summary>Paper</summary>
+    Schwarzer, Wibke, Nezar Abdennur, Anton Goloborodko, Aleksandra Pekowska, Geoffrey Fudenberg, Yann Loe-Mie, Nuno A. Fonseca, et al. “Two Independent Modes of Chromatin Organization Revealed by Cohesin Removal.” Nature 551, no. 7678 (02 2017): 51–56. https://doi.org/10.1038/nature24281.
+</details>
+
 - [TADtree](http://compbio.cs.brown.edu/software/) - Hierarchical (nested) TAD identification. Two ways of TAD definition: 1D and 2D. Normalization by distance. Enrichment over the background. <details>
     <summary>Paper</summary>
     Weinreb, Caleb, and Benjamin J. Raphael. "Identification of Hierarchical Chromatin Domains"  https://doi.org/10.1093/bioinformatics/btv485 Bioinformatics (Oxford, England) 32, no. 11 (June 1, 2016)
@@ -716,10 +721,7 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 - [domaincaller](https://github.com/XiaoTaoWang/domaincaller) - A Python implementation of the original DI domain caller.
 
-- [lavaburst](https://github.com/nvictus/lavaburst) - extension of the Armatus algorithm introduced in [Filippova et al., “Identification of Alternative Topological Domains in Chromatin.”](https://doi.org/10.1186/1748-7188-9-14). [Documentation](https://nezar-compbio.github.io/lavaburst/index.html). <details>
-    <summary>Paper</summary>
-    Schwarzer, Wibke, Nezar Abdennur, Anton Goloborodko, Aleksandra Pekowska, Geoffrey Fudenberg, Yann Loe-Mie, Nuno A. Fonseca, et al. “Two Independent Modes of Chromatin Organization Revealed by Cohesin Removal.” Nature 551, no. 7678 (02 2017): 51–56. https://doi.org/10.1038/nature24281.
-</details>
+- <a name="arrowhead">[Arrowhead](https://github.com/aidenlab/juicer/wiki/Arrowhead)</a> - contact domain (TAD) detection using Arrowhead transformation. Described in Section IV.a of the Extended Experimental Procedures of [Rao, Huntley et al. Cell 2014](https://www.cell.com/cms/10.1016/j.cell.2014.11.021/attachment/d3c6dcd8-c799-4f68-bbe4-201be54960b5/mmc1.pdf)
 
 ### Architectural stripes
 
