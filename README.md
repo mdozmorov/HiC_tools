@@ -116,6 +116,8 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 - [Juicer Tools](https://github.com/aidenlab/juicer/wiki/Juicer-Tools-Quick-Start) for creating/extracting data from .hic files, [Arrowhead](#arrowhead) for finding contact domains, [HiCCUPS](#hiccups) for loop detection and [HiCCUPS Diff](#hiccupsdiff) for finding differential loops, [MotifFinder](https://github.com/aidenlab/juicer/wiki/MotifFinder) for characterizing CTCF peaks at loop anchors, [Pearsons](https://github.com/aidenlab/juicer/wiki/Pearsons) for calculating the Pearson's correlation matrix of the Observed/Expected, [APA](https://github.com/aidenlab/juicer/wiki/APA) aggregated peak analysis, [Eigenvector](#eigenvector) for determining A/B chromatin states, [Compare Lists](https://github.com/aidenlab/juicer/wiki/Compare-Lists) for separating loop lists into common and condition-specific loops. All tools are described in the Extended Experimental Procedures of [Rao, Huntley et al. Cell 2014](https://www.cell.com/cms/10.1016/j.cell.2014.11.021/attachment/d3c6dcd8-c799-4f68-bbe4-201be54960b5/mmc1.pdf)
 
+- [Juicer's 3D de novo assembly pipeline and resources](#theaidenlab3ddna)
+
 - [ENCODE project Data Production and Processing Standard of the Hi-C Mapping Center, PDF](https://www.encodeproject.org/documents/75926e4b-77aa-4959-8ca7-87efcba39d79/@@download/attachment/comp_doc_7july2018_final.pdf)
 
 - [Arima mapping pipeline](https://github.com/ArimaGenomics/mapping_pipeline) - Mapping pipeline for data generated using Arima-HiC
@@ -996,9 +998,12 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     - DeMaere, Matthew Z., and Aaron E. Darling. "Bin3C: Exploiting Hi-C Sequencing Data to Accurately Resolve Metagenome-Assembled Genomes"  https://doi.org/10.1186/s13059-019-1643-1 Genome Biology 20, no. 1 (December 2019)
 </details>
 
-- [3D-DNA](https://github.com/theaidenlab/3D-DNA) Hi-C genome assembler and its application/validation. Methods are in the supplemental. <details>
+- <a name="theaidenlab3ddna">[3D-DNA](https://github.com/theaidenlab/3D-DNA)</a> Hi-C genome assembler and its application/validation. Methods are in the supplemental. [DNA Zoo](https://www.dnazoo.org/methods) - genome assemblies using Hi-C, methods, papers. <details>
     <summary>Paper</summary>
     - Dudchenko, Olga, Sanjit S. Batra, Arina D. Omer, Sarah K. Nyquist, Marie Hoeger, Neva C. Durand, Muhammad S. Shamim, et al. "De Novo Assembly of the Aedes Aegypti Genome Using Hi-C Yields Chromosome-Length Scaffolds"  https://doi.org/10.1126/science.aal3327 Science (New York, N.Y.) 356, no. 6333 (07 2017)
+</details> <details>
+    <summary>Genome Assembly Cookbook</summary>
+    https://github.com/theaidenlab/Genome-Assembly-Cookbook) - Genome assembly from Hi-C data, pipeline and instructions from the Aiden Lab. https://aidenlab.org/assembly/manual_180322.pdf
 </details>
 
 - [GRAAL](https://github.com/koszullab/GRAAL) - Genome (Re)Assembly Assessing Likelihood - genome assembly from Hi-C data. Gaps in genome assembly that can be filled by scaffolding. Superior to Lachesis and dnaTri, which are sensitive to duplications, clustering they use to initially arrange the scaffolds, parameters, unknown reliability. A Bayesian approach, prior assumptions are that cis-contact probabilities follow a power-law decay and that counts in the interaction matrix are Poisson. Multiple genomic structures tested using MCMC (Multiple-Try Metropolis algorithm) to maximize the likelihood of data given a genomic structure. <details>
@@ -1015,8 +1020,6 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     <summary>Paper</summary>
     - Burton, Joshua N., Andrew Adey, Rupali P. Patwardhan, Ruolan Qiu, Jacob O. Kitzman, and Jay Shendure. "Chromosome-Scale Scaffolding of de Novo Genome Assemblies Based on Chromatin Interactions"  https://doi.org/10.1038/nbt.2727 Nature Biotechnology 31, no. 12 (December 2013)
 </details>
-
-- [Genome-Assembly-Cookbook](https://github.com/theaidenlab/Genome-Assembly-Cookbook) - Genome assembly from Hi-C data, pipeline and instructions from the Aiden Lab. [Download PDF](https://www.dropbox.com/s/dk5gmptvtl1f5hf/manual_180319.docx?dl=0), [another PDF](https://aidenlab.org/assembly/manual_180322.pdf)
 
 - [YaHS](https://github.com/c-zhou/yahs) - yet another Hi-C scaffolding tool. It relies on a new algothrim for contig joining detection which considers the topological distribution of Hi-C signals aiming to distingush real interaction signals from mapping nosies. Implemented in C, very fast.
 
