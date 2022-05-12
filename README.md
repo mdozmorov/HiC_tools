@@ -386,7 +386,7 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     Krismer, Konstantin, Yuchun Guo, and David K Gifford. "IDR2D Identifies Reproducible Genomic Interactions"  https://doi.org/10.1093/nar/gkaa030 Nucleic Acids Research, 06 April 2020
 </details>
 
-- [3DChromatin_ReplicateQC](https://github.com/kundajelab/3DChromatin_ReplicateQC) - Comparison of four Hi-C reproducibility assessment tools, [HiCRep](#hicrep), [GenomeDISCO](#genomedisco), [HiC-Spector](#hic-spector), [QuASAR-Rep](#quasar-rep). Tested the effects of noise, sparsity, resolution. Spearman doesn't work well. All tools performed similarly, worsening expectedly. [QuASAR](#quasar-rep) has a QC tool measuring the level of noise. <details>
+- [3DChromatin_ReplicateQC](https://github.com/kundajelab/3DChromatin_ReplicateQC) - Comparison of four Hi-C reproducibility assessment tools, [HiCRep](#hicrep), [GenomeDISCO](https://github.com/kundajelab/genomedisco), [HiC-Spector](#hic-spector), [QuASAR-Rep](https://github.com/kundajelab/3DChromatin_ReplicateQC). Tested the effects of noise, sparsity, resolution. Spearman doesn't work well. All tools performed similarly, worsening expectedly. [QuASAR](#quasar) has a QC tool measuring the level of noise. <details>
     <summary>Paper</summary>
     Yardimci, Galip, Hakan Ozadam, Michael E.G. Sauria, Oana Ursu, Koon-Kiu Yan, Tao Yang, Abhijit Chakraborty, et al. "Measuring the Reproducibility and Quality of Hi-C Data](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1658-7 Genome Biology, March 19, 2019
 </details>
@@ -408,7 +408,7 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 - <a name="hic-spector">[HiC-Spector](https://github.com/gersteinlab/HiC-spector)</a> - reproducibility metric to quantify the similarity between contact maps using spectral decomposition. Decomposing Laplacian matrices and sum the Euclidean distance between eigenvectors. <details>
     <summary>Paper</summary>
-    - Yan, Koon-Kiu, Galip Gürkan Yardimci, Chengfei Yan, William S. Noble, and Mark Gerstein. "HiC-Spector: A Matrix Library for Spectral and Reproducibility Analysis of Hi-C Contact Maps"  https://doi.org/10.1093/bioinformatics/btx152 Bioinformatics (Oxford, England) 33, no. 14 (July 15, 2017)
+    Yan, Koon-Kiu, Galip Gürkan Yardimci, Chengfei Yan, William S. Noble, and Mark Gerstein. "HiC-Spector: A Matrix Library for Spectral and Reproducibility Analysis of Hi-C Contact Maps"  https://doi.org/10.1093/bioinformatics/btx152 Bioinformatics (Oxford, England) 33, no. 14 (July 15, 2017)
 </details>
 
 ## AB compartments
@@ -462,7 +462,7 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     Lagler, Taylor M., Armen Abnousi, Ming Hu, Yuchen Yang, and Yun Li. "HiC-ACT: Improved Detection of Chromatin Interactions from Hi-C Data via Aggregated Cauchy Test"  https://doi.org/10.1016/j.ajhg.2021.01.009 The American Journal of Human Genetics, (February 2021)
 </details>
 
-- <a name="chromosight">[Chromosight](https://github.com/koszullab/chromosight)</a> - python implemetnation of loop and pattern detection, computer vision-based (borders, FIREs, hairpins, and centromeres) in Hi-C maps. Takes in a single, whole-genome contact map, text-based bedGraph2d, and binary cool formats, ICE-normalizes. Sliding window, pattern detection using Pearson correlation with the template, then series of filters. Output - text-based. Outperforms [HiCexplorer](#hicecplorer), [HICCUPS](#hiccups), [HOMER](#homer), [cooltools](#cooler), in the order of decreasing F1. Tested on synthetic Hi-C data mimicking *S. cerevisiae* genome, [benchmark data at Zenodo](https://zenodo.org/record/3742095). <details>
+- <a name="chromosight">[Chromosight](https://github.com/koszullab/chromosight)</a> - python implemetnation of loop and pattern detection, computer vision-based (borders, FIREs, hairpins, and centromeres) in Hi-C maps. Takes in a single, whole-genome contact map, text-based bedGraph2d, and binary cool formats, ICE-normalizes. Sliding window, pattern detection using Pearson correlation with the template, then series of filters. Output - text-based. Outperforms [HiCexplorer](#hicexplorer), [HICCUPS](#hiccups), [HOMER](#homer), [cooltools](#cooler), in the order of decreasing F1. Tested on synthetic Hi-C data mimicking *S. cerevisiae* genome, [benchmark data at Zenodo](https://zenodo.org/record/3742095). <details>
     <summary>Paper</summary>
     Matthey-Doret, Cyril, Lyam Baudry, Axel Breuer, Rémi Montagne, Nadège Guiglielmoni, Vittore Scolari, Etienne Jean, et al. "Computer Vision for Pattern Detection in Chromosome Contact Maps"  https://doi.org/10.1038/s41467-020-19562-7 Nature Communications, (December 2020)
 </details>
@@ -482,7 +482,7 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     Galan, Silvia, François Serra, and Marc A. Marti-Renom. “Identification of Chromatin Loops from Hi-C Interaction Matrices by CTCF-CTCF Topology Classification.” Preprint. Bioinformatics, July 22, 2020. https://doi.org/10.1101/2020.07.21.214585.
 </details>
 
-- <a name="sip">[SIP](https://github.com/PouletAxel/SIP)</a> - loop caller using image analysis. Regional maxima-based, peaks called in a sliding window. Distance-normalized Hi-C matrices, image adjusted using Gaussian blur, contrast enhancement, White Top-Hat correction, identified peaks then filtered by peak enrichment, empirical FDR, loop decay. Comparison with [HiCCUPS](#hiccups) and cLoops callers. Robust to noise, sequencing depth, much faster, good agreement, improved detection rate. SIPMeta - average metaplots of loops on bias-corrected images for better representation. Java implementation, works with .hic and .cool files. <details>
+- <a name="sip">[SIP](https://github.com/PouletAxel/SIP)</a> - loop caller using image analysis. Regional maxima-based, peaks called in a sliding window. Distance-normalized Hi-C matrices, image adjusted using Gaussian blur, contrast enhancement, White Top-Hat correction, identified peaks then filtered by peak enrichment, empirical FDR, loop decay. Comparison with [HiCCUPS](#hiccups) and [cLoops](#cloops) callers. Robust to noise, sequencing depth, much faster, good agreement, improved detection rate. SIPMeta - average metaplots of loops on bias-corrected images for better representation. Java implementation, works with .hic and .cool files. <details>
     <summary>Paper</summary>
     Rowley, M. Jordan, Axel Poulet, Michael H. Nichols, Brianna J. Bixler, Adrian L. Sanborn, Elizabeth A. Brouhard, Karen Hermetz, et al. "Analysis of Hi-C Data Using SIP Effectively Identifies Loops in Organisms from C. Elegans to Mammals"  https://doi.org/10.1101/gr.257832.119 Genome Research 30, no. 3 (March 2020)
 </details>
