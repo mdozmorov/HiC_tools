@@ -63,6 +63,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     Wolff, Joachim, Leily Rabbani, Ralf Gilsbach, Gautier Richard, Thomas Manke, Rolf Backofen, and Björn A Grüning. "Galaxy HiCExplorer 3: A Web Server for Reproducible Hi-C, Capture Hi-C and Single-Cell Hi-C Data Analysis, Quality Control and Visualization"  https://doi.org/10.1093/nar/gkaa220 Nucleic Acids Research, (July 2, 2020)
 </details>
 
+- [scHiCExplorer](https://github.com/joachimwolff/scHiCExplorer) - set of command-line tools specifically designed for scHi-C data. [scHiCExplorer's documentation](https://schicexplorer.readthedocs.io/en/latest/). <details>
+  <summary>Paper</summary>
+    Wolff, Joachim, Leily Rabbani, Ralf Gilsbach, Gautier Richard, Thomas Manke, Rolf Backofen, and Björn A Grüning. "Galaxy HiCExplorer 3: A Web Server for Reproducible Hi-C, Capture Hi-C and Single-Cell Hi-C Data Analysis, Quality Control and Visualization"  https://doi.org/10.1093/nar/gkaa220 Nucleic Acids Research, (July 2, 2020)
+</details>
+
 - Abdennur, Nezar, and Leonid Mirny. "Cooler: Scalable Storage for Hi-C Data and Other Genomically-Labeled Arrays"  https://doi.org/10.1093/bioinformatics/btz540 Bioinformatics, January 1, 2020. 
     - [cooler](https://github.com/mirnylab/cooler)  - file format for storing Hi-C matrices, sparse, hierarchical, multi-resolution. `cooler` Python package for data loading, aggregation, merging, normalization (balancing), viewing, exporting data. Together with ["pairs" text-based format](https://github.com/4dn-dcic/pairix/blob/master/pairs_format_specification.md), and hic, cooler is accepted by the 4D Nucleome Consortium DAC. [Documentation](https://cooler.readthedocs.io/en/latest/)
     - [cooltools](https://github.com/mirnylab/cooltools) - tools to work with .cool files, [Documentation](https://cooltools.readthedocs.io/en/latest/)
@@ -79,8 +84,6 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
   <summary>Paper</summary>
     Wolff, Joachim, Vivek Bhardwaj, Stephan Nothjunge, Gautier Richard, Gina Renschler, Ralf Gilsbach, Thomas Manke, Rolf Backofen, Fidel Ramírez, and Björn A. Grüning. "Galaxy HiCExplorer: A Web Server for Reproducible Hi-C Data Analysis, Quality Control and Visualization"  https://doi.org/10.1093/nar/gky504 Nucleic Acids Research 46, no. W1 (July 2, 2018). 
 </details>
-
-- [scHiCExplorer](https://github.com/joachimwolff/scHiCExplorer) - set of command-line tools specifically designed for scHi-C data. [scHiCExplorer's documentation](https://schicexplorer.readthedocs.io/en/latest/). 
 
 - [GITAR](https://github.com/Zhong-Lab-UCSD/HiCtool) - full Hi-C pre-processing, normalization, TAD detection, and visualization. Python scripts wrapping other tools. Table 1 summarizes the functionality of existing tools. [Documentation](https://www.genomegitar.org). <details>
     <summary>Paper</summary>
