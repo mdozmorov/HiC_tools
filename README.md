@@ -68,15 +68,16 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     Wolff, Joachim, Leily Rabbani, Ralf Gilsbach, Gautier Richard, Thomas Manke, Rolf Backofen, and Björn A Grüning. "Galaxy HiCExplorer 3: A Web Server for Reproducible Hi-C, Capture Hi-C and Single-Cell Hi-C Data Analysis, Quality Control and Visualization"  https://doi.org/10.1093/nar/gkaa220 Nucleic Acids Research, (July 2, 2020)
 </details>
 
-- [Cooler: Scalable Storage for Hi-C Data and Other Genomically-Labeled Arrays](https://doi.org/10.1093/bioinformatics/btz540) <details>
-  <summary>Paper</summary>
-    Abdennur, Nezar, and Leonid Mirny. "Cooler: Scalable Storage for Hi-C Data and Other Genomically-Labeled Arrays" https://doi.org/10.1093/bioinformatics/btz540 Bioinformatics, January 1, 2020
-</details>
+- [Cooler: Scalable Storage for Hi-C Data and Other Genomically-Labeled Arrays](https://doi.org/10.1093/bioinformatics/btz540) 
     - [cooler](https://github.com/mirnylab/cooler)  - file format for storing Hi-C matrices, sparse, hierarchical, multi-resolution. `cooler` Python package for data loading, aggregation, merging, normalization (balancing), viewing, exporting data. Together with ["pairs" text-based format](https://github.com/4dn-dcic/pairix/blob/master/pairs_format_specification.md), and hic, cooler is accepted by the 4D Nucleome Consortium DAC. [Documentation](https://cooler.readthedocs.io/en/latest/)
     - [cooltools](https://github.com/mirnylab/cooltools) - tools to work with .cool files, [Documentation](https://cooltools.readthedocs.io/en/latest/)
     - [hiclib](https://github.com/mirnylab/hiclib-legacy) - Python tools to QC, map, normalize, filter and analyze Hi-C data
     - [hic2cool](https://github.com/4dn-dcic/hic2cool) - Lightweight converter between hic and cool contact matrices.
-    - [pairtools](https://github.com/mirnylab/pairtools) - tools for low-level processing of mapped Hi-C paired reads. [Documentation](https://pairtools.readthedocs.io/en/latest/index.html)
+    - [pairtools](https://github.com/mirnylab/pairtools) - tools for low-level processing of mapped Hi-C paired reads. [Documentation](https://pairtools.readthedocs.io/en/latest/index.html).
+  <details>
+  <summary>Paper</summary>
+    Abdennur, Nezar, and Leonid Mirny. "Cooler: Scalable Storage for Hi-C Data and Other Genomically-Labeled Arrays" https://doi.org/10.1093/bioinformatics/btz540 Bioinformatics, January 1, 2020
+</details>
 
 - [HiCExplorer](https://github.com/deeptools/HiCExplorer/) - set of programs to process, normalize, analyze and visualize Hi-C data, Python, .cool format, conversion utilities. [Documentation](https://hicexplorer.readthedocs.io/). <details>
   <summary>Paper</summary>
