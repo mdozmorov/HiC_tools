@@ -70,7 +70,7 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     - [hic2cool](https://github.com/4dn-dcic/hic2cool) - Lightweight converter between hic and cool contact matrices.
     - [pairtools](https://github.com/mirnylab/pairtools) - tools for low-level processing of mapped Hi-C paired reads. [Documentation](https://pairtools.readthedocs.io/en/latest/index.html)
 
-- [HiCExplorer](https://github.com/deeptools/HiCExplorer/) - set of programs to process, normalize, analyze and visualize Hi-C data, Python, .cool format, conversion utilities.[Documentation](https://hicexplorer.readthedocs.io/)  <details>
+- [HiCExplorer](https://github.com/deeptools/HiCExplorer/) - set of programs to process, normalize, analyze and visualize Hi-C data, Python, .cool format, conversion utilities. [Documentation](https://hicexplorer.readthedocs.io/). <details>
   <summary>Paper</summary>
   Ramírez, Fidel, Vivek Bhardwaj, Laura Arrigoni, Kin Chung Lam, Björn A. Grüning, José Villaveces, Bianca Habermann, Asifa Akhtar, and Thomas Manke. "High-Resolution TADs Reveal DNA Sequences Underlying Genome Organization in Flies"  https://doi.org/10.1038/s41467-017-02525-w Nature Communications 9, no. 1 (December 2018) 
 </details> 
@@ -82,7 +82,7 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 - [scHiCExplorer](https://github.com/joachimwolff/scHiCExplorer) - set of command-line tools specifically designed for scHi-C data. [scHiCExplorer's documentation](https://schicexplorer.readthedocs.io/en/latest/). 
 
-- [GITAR](https://github.com/Zhong-Lab-UCSD/HiCtool) - full Hi-C pre-processing, normalization, TAD detection, and visualization. Python scripts wrapping other tools. Table 1 summarizes the functionality of existing tools.[Documentation](https://www.genomegitar.org) <details>
+- [GITAR](https://github.com/Zhong-Lab-UCSD/HiCtool) - full Hi-C pre-processing, normalization, TAD detection, and visualization. Python scripts wrapping other tools. Table 1 summarizes the functionality of existing tools. [Documentation](https://www.genomegitar.org). <details>
     <summary>Paper</summary>
     Calandrelli, Riccardo, Qiuyang Wu, Jihong Guan, and Sheng Zhong. “GITAR: An Open Source Tool for Analysis and Visualization of Hi-C Data.” Genomics, Proteomics & Bioinformatics 16, no. 5 (2018): 365–72. https://doi.org/10.1016/j.gpb.2018.06.006 
 </details>
@@ -114,34 +114,35 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     Schmid, Marc W., Stefan Grob, and Ueli Grossniklaus. "HiCdat: A Fast and Easy-to-Use Hi-C Data Analysis Tool"  https://doi.org/10.1186/s12859-015-0678-x BMC Bioinformatics 16 (September 3, 2015) 
 </details>
 
-- [HiC_Pipeline](https://github.com/XiaoTaoWang/HiC_pipeline) - Python-based pipeline performing mapping, filtering, binning, and ICE-correcting Hi-C data, from raw reads (.sra, .fastq) to contact matrices. Additionally, converting to sparse format, performing QC. [Documentation](http://xiaotaowang.github.io/HiC_pipeline/)
 
-- [HiCUP](http://www.bioinformatics.babraham.ac.uk/projects/hicup/)  - Perl-based pipeline, alignment only, output BAM files. [Documentation](https://www.bioinformatics.babraham.ac.uk/projects/hicup/read_the_docs/html/index.html)  <details>
+- [HiCUP](http://www.bioinformatics.babraham.ac.uk/projects/hicup/)  - Perl-based pipeline, alignment only, output BAM files. [Documentation](https://www.bioinformatics.babraham.ac.uk/projects/hicup/read_the_docs/html/index.html). <details>
     <summary>Paper</summary>
     Wingett, Steven, Philip Ewels, Mayra Furlan-Magaril, Takashi Nagano, Stefan Schoenfelder, Peter Fraser, and Simon Andrews. "HiCUP: Pipeline for Mapping and Processing Hi-C Data"  https://doi.org/10.12688/f1000research.7334.1 F1000Research 4 (2015) - HiCUP pipeline, alignment only, removes artifacts (religations, duplicate reads) creating BAM files. Details about Hi-C sequencing artifacts. Used in conjunction with other pipelines.
 </details>
 
-- [Juicer Tools](https://github.com/aidenlab/juicer/wiki/Juicer-Tools-Quick-Start) - for creating/extracting data from .hic files, [Arrowhead](#arrowhead) for finding contact domains, [HiCCUPS](#hiccups) for loop detection and [HiCCUPS Diff](#hiccupsdiff) for finding differential loops, [MotifFinder](https://github.com/aidenlab/juicer/wiki/MotifFinder) for characterizing CTCF peaks at loop anchors, [Pearsons](https://github.com/aidenlab/juicer/wiki/Pearsons) for calculating the Pearson's correlation matrix of the Observed/Expected, [APA](https://github.com/aidenlab/juicer/wiki/APA) aggregated peak analysis, [Eigenvector](#eigenvector) for determining A/B chromatin states, [Compare Lists](https://github.com/aidenlab/juicer/wiki/Compare-Lists) for separating loop lists into common and condition-specific loops. All tools are described in the Extended Experimental Procedures of [Rao, Huntley et al. Cell 2014](https://www.cell.com/cms/10.1016/j.cell.2014.11.021/attachment/d3c6dcd8-c799-4f68-bbe4-201be54960b5/mmc1.pdf)
+- [HiC_Pipeline](https://github.com/XiaoTaoWang/HiC_pipeline) - Python-based pipeline performing mapping, filtering, binning, and ICE-correcting Hi-C data, from raw reads (.sra, .fastq) to contact matrices. Additionally, converting to sparse format, performing QC. [Documentation](http://xiaotaowang.github.io/HiC_pipeline/).
 
-- [Juicer's 3D de novo assembly pipeline and resources](#theaidenlab3ddna)
+- [Juicer Tools](https://github.com/aidenlab/juicer/wiki/Juicer-Tools-Quick-Start) - for creating/extracting data from .hic files, [Arrowhead](#arrowhead) for finding contact domains, [HiCCUPS](#hiccups) for loop detection and [HiCCUPS Diff](#hiccupsdiff) for finding differential loops, [MotifFinder](https://github.com/aidenlab/juicer/wiki/MotifFinder) for characterizing CTCF peaks at loop anchors, [Pearsons](https://github.com/aidenlab/juicer/wiki/Pearsons) for calculating the Pearson's correlation matrix of the Observed/Expected, [APA](https://github.com/aidenlab/juicer/wiki/APA) aggregated peak analysis, [Eigenvector](#eigenvector) for determining A/B chromatin states, [Compare Lists](https://github.com/aidenlab/juicer/wiki/Compare-Lists) for separating loop lists into common and condition-specific loops. All tools are described in the Extended Experimental Procedures of [Rao, Huntley et al. Cell 2014](https://www.cell.com/cms/10.1016/j.cell.2014.11.021/attachment/d3c6dcd8-c799-4f68-bbe4-201be54960b5/mmc1.pdf).
+
+- [Juicer's 3D de novo assembly pipeline and resources](#theaidenlab3ddna).
 
 - [ENCODE project Data Production and Processing Standard of the Hi-C Mapping Center, PDF](https://www.encodeproject.org/documents/75926e4b-77aa-4959-8ca7-87efcba39d79/@@download/attachment/comp_doc_7july2018_final.pdf) - Computational standards of the Hi-C ENCODE mapping center including quality control measures and computational methods. 
 
-- [Arima mapping pipeline](https://github.com/ArimaGenomics/mapping_pipeline) - Mapping pipeline for data generated using Arima-HiC
+- [Arima mapping pipeline](https://github.com/ArimaGenomics/mapping_pipeline) - Mapping pipeline for data generated using Arima-HiC.
 
 - [cword](https://github.com/dekkerlab/cworld-dekker) - Perl cworld module and collection of utility/analysis scripts for C data (3C, 4C, 5C, Hi-C).
 
-- [HiCpipe](https://github.com/ChenFengling/HiCpipe) - an efficient Hi-C data processing pipeline. It is based on [Juicer](#juicer) and [HiC-pro](#hicpro), which combines the advantages of these two processing pipelines. HiCpipe is much faster than Juicer and HiC-pro and can output multiple features of Hi-C maps.
+- [HiCpipe](https://github.com/ChenFengling/HiCpipe) - an efficient Hi-C data processing pipeline. It is based on [Juicer](https://github.com/theaidenlab/juicebox/wiki/Download) and [HiC-pro](https://github.com/nservant/HiC-Pro), which combines the advantages of these two processing pipelines. HiCpipe is much faster than Juicer and HiC-pro and can output multiple features of Hi-C maps.
 
 - [my5C](http://my5c.umassmed.edu/) - web-based tools, well-documented analysis and visualization of 5S data.
 
-- [nf-core-hic](https://github.com/nservant/nf-core-hic) - Analysis of Chromosome Conformation Capture data (Hi-C and more), [Nextflow](https://www.nextflow.io) pipeline. Also, [nf-core/hic](https://github.com/nf-core/hic). [Documentation](https://nf-co.re/hic/usage)
+- [nf-core-hic](https://github.com/nservant/nf-core-hic) - Analysis of Chromosome Conformation Capture data (Hi-C and more), [Nextflow](https://www.nextflow.io) pipeline. Also, [nf-core/hic](https://github.com/nf-core/hic). [Documentation](https://nf-co.re/hic/usage).
 
 - [distiller-nf](https://github.com/mirnylab/distiller-nf) - Java modular Hi-C mapping pipeline for reproducible data analysis, [Nextflow](https://www.nextflow.io) pipeline. Alignment, filtering, aggregating Hi-C matrices.
 
-- [runHiC](https://github.com/XiaoTaoWang/HiC_pipeline) - aka [HiC_pipeline](#hicpipeline), Hi-C data processing pipeline, from raw FASTQ files. Supports bwa-mem, chromap (default), and minimap2 aligners. Performs quality control (plots), filtering, binning (to mcool output), pileup. Parallelized. By [XiaoTao Wang](https://github.com/XiaoTaoWang).
+- [runHiC](https://github.com/XiaoTaoWang/HiC_pipeline) - aka `HiC_pipeline`, Hi-C data processing pipeline, from raw FASTQ files. Supports bwa-mem, chromap (default), and minimap2 aligners. Performs quality control (plots), filtering, binning (to mcool output), pileup. Parallelized. By [XiaoTao Wang](https://github.com/XiaoTaoWang).
 
-- [4D Nucleome Hi-C Processing Pipeline](https://github.com/4dn-dcic/docker-4dn-hic) - set of scripts wrapped in a Docker image. Works with `.hic` and `.cool` files. [Overview](https://data.4dnucleome.org/resources/data-analysis/hi_c-processing-pipeline)
+- [4D Nucleome Hi-C Processing Pipeline](https://github.com/4dn-dcic/docker-4dn-hic) - set of scripts wrapped in a Docker image. Works with `.hic` and `.cool` files. [Overview](https://data.4dnucleome.org/resources/data-analysis/hi_c-processing-pipeline).
 
 
 
