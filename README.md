@@ -53,22 +53,22 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 ## Pipelines
 
-- [FAN-C](https://github.com/vaquerizaslab/fanc) - Python pipeline for Hi-C processing. Input - raw FASTQ (aligned using BWA or Bowtie2, artifact filtering) or pre-aligned BAMs. KR or ICE normalization. Analysis and Visualization (contact distance decay, A/B compartment detection, TAD/loop detection, Average TAD/loop profiles, saddle plots, triangular heatmaps, comparison of two heatmaps). Automatic or modular. Compatible with .cool and .hic formats. [Tweet1](https://twitter.com/vaquerizas_lab/status/1225011187668209664?s=20), [Tweet2](https://twitter.com/vaquerizasjm/status/1339937903473025027?s=20). [Table 1](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02215-9/tables/1) - detailed comparison of 13 Hi-C processing tools <details>
+- <a name="fan-c">[FAN-C](https://github.com/vaquerizaslab/fanc)</a> - Python pipeline for Hi-C processing. Input - raw FASTQ (aligned using BWA or Bowtie2, artifact filtering) or pre-aligned BAMs. KR or ICE normalization. Analysis and Visualization (contact distance decay, A/B compartment detection, TAD/loop detection, Average TAD/loop profiles, saddle plots, triangular heatmaps, comparison of two heatmaps). Automatic or modular. Compatible with .cool and .hic formats. [Tweet1](https://twitter.com/vaquerizas_lab/status/1225011187668209664?s=20), [Tweet2](https://twitter.com/vaquerizasjm/status/1339937903473025027?s=20). [Table 1](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02215-9/tables/1) - detailed comparison of 13 Hi-C processing tools <details>
     <summary>Paper</summary>
     Kruse, Kai, Clemens B. Hug, and Juan M. Vaquerizas. "FAN-C: A Feature-Rich Framework for the Analysis and Visualisation of Chromosome Conformation Capture Data"  https://doi.org/10.1186/s13059-020-02215-9 Genome Biology 21, no. 1 (December 2020) 
 </details>
 
-- [v3 of the Galaxy HiCExplorer](https://hicexplorer.usegalaxy.eu/). Includes full analysis of Hi-C, Capture-C, scHi-C. Workflow-like description of tools/tasks for each data type. <details>
+- <a name="v3-galaxy-hicexplorer">[v3 of the Galaxy HiCExplorer](https://hicexplorer.usegalaxy.eu/)</a> - Includes full analysis of Hi-C, Capture-C, scHi-C. Workflow-like description of tools/tasks for each data type. <details>
   <summary>Paper</summary>
     Wolff, Joachim, Leily Rabbani, Ralf Gilsbach, Gautier Richard, Thomas Manke, Rolf Backofen, and Björn A Grüning. "Galaxy HiCExplorer 3: A Web Server for Reproducible Hi-C, Capture Hi-C and Single-Cell Hi-C Data Analysis, Quality Control and Visualization"  https://doi.org/10.1093/nar/gkaa220 Nucleic Acids Research, (July 2, 2020)
 </details>
 
-- [scHiCExplorer](https://github.com/joachimwolff/scHiCExplorer) - set of command-line tools specifically designed for scHi-C data. [scHiCExplorer's documentation](https://schicexplorer.readthedocs.io/en/latest/). <details>
+- <a name="schicexplorer">[scHiCExplorer](https://github.com/joachimwolff/scHiCExplorer)</a> - set of command-line tools specifically designed for scHi-C data. [scHiCExplorer's documentation](https://schicexplorer.readthedocs.io/en/latest/). <details>
   <summary>Paper</summary>
     Wolff, Joachim, Leily Rabbani, Ralf Gilsbach, Gautier Richard, Thomas Manke, Rolf Backofen, and Björn A Grüning. "Galaxy HiCExplorer 3: A Web Server for Reproducible Hi-C, Capture Hi-C and Single-Cell Hi-C Data Analysis, Quality Control and Visualization"  https://doi.org/10.1093/nar/gkaa220 Nucleic Acids Research, (July 2, 2020)
 </details>
 
-- [Cooler: Scalable Storage for Hi-C Data and Other Genomically-Labeled Arrays](https://doi.org/10.1093/bioinformatics/btz540) 
+- <a name="cooler">[Cooler: Scalable Storage for Hi-C Data and Other Genomically-Labeled Arrays](https://doi.org/10.1093/bioinformatics/btz540)</a>
     - [cooler](https://github.com/mirnylab/cooler)  - file format for storing Hi-C matrices, sparse, hierarchical, multi-resolution. `cooler` Python package for data loading, aggregation, merging, normalization (balancing), viewing, exporting data. Together with ["pairs" text-based format](https://github.com/4dn-dcic/pairix/blob/master/pairs_format_specification.md), and hic, cooler is accepted by the 4D Nucleome Consortium DAC. [Documentation](https://cooler.readthedocs.io/en/latest/)
     - [cooltools](https://github.com/mirnylab/cooltools) - tools to work with .cool files, [Documentation](https://cooltools.readthedocs.io/en/latest/)
     - [hiclib](https://github.com/mirnylab/hiclib-legacy) - Python tools to QC, map, normalize, filter and analyze Hi-C data
@@ -79,75 +79,75 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     Abdennur, Nezar, and Leonid Mirny. "Cooler: Scalable Storage for Hi-C Data and Other Genomically-Labeled Arrays" https://doi.org/10.1093/bioinformatics/btz540 Bioinformatics, January 1, 2020
 </details>
 
-- [HiCExplorer](https://github.com/deeptools/HiCExplorer/) - set of programs to process, normalize, analyze and visualize Hi-C data, Python, .cool format, conversion utilities. [Documentation](https://hicexplorer.readthedocs.io/). <details>
+- <a name="hicexplorer">[HiCExplorer](https://github.com/deeptools/HiCExplorer/)</a> - set of programs to process, normalize, analyze and visualize Hi-C data, Python, .cool format, conversion utilities. [Documentation](https://hicexplorer.readthedocs.io/). <details>
   <summary>Paper</summary>
   Ramírez, Fidel, Vivek Bhardwaj, Laura Arrigoni, Kin Chung Lam, Björn A. Grüning, José Villaveces, Bianca Habermann, Asifa Akhtar, and Thomas Manke. "High-Resolution TADs Reveal DNA Sequences Underlying Genome Organization in Flies"  https://doi.org/10.1038/s41467-017-02525-w Nature Communications 9, no. 1 (December 2018) 
 </details> 
 
-- [Galaxy HiCExplorer](https://hicexplorer.usegalaxy.eu/) - a web server for Hi-C data preprocessing, QC, visualization. [Docker container](https://github.com/deeptools/docker-galaxy-hicexplorer). <details>
+- <a name="galaxy-hicexplorer">[Galaxy HiCExplorer](https://hicexplorer.usegalaxy.eu/)</a> - a web server for Hi-C data preprocessing, QC, visualization. [Docker container](https://github.com/deeptools/docker-galaxy-hicexplorer). <details>
   <summary>Paper</summary>
     Wolff, Joachim, Vivek Bhardwaj, Stephan Nothjunge, Gautier Richard, Gina Renschler, Ralf Gilsbach, Thomas Manke, Rolf Backofen, Fidel Ramírez, and Björn A. Grüning. "Galaxy HiCExplorer: A Web Server for Reproducible Hi-C Data Analysis, Quality Control and Visualization"  https://doi.org/10.1093/nar/gky504 Nucleic Acids Research 46, no. W1 (July 2, 2018). 
 </details>
 
-- [GITAR](https://github.com/Zhong-Lab-UCSD/HiCtool) - full Hi-C pre-processing, normalization, TAD detection, and visualization. Python scripts wrapping other tools. Table 1 summarizes the functionality of existing tools. [Documentation](https://www.genomegitar.org). <details>
+- <a name="gitar">[GITAR](https://github.com/Zhong-Lab-UCSD/HiCtool)</a> - full Hi-C pre-processing, normalization, TAD detection, and visualization. Python scripts wrapping other tools. Table 1 summarizes the functionality of existing tools. [Documentation](https://www.genomegitar.org). <details>
     <summary>Paper</summary>
     Calandrelli, Riccardo, Qiuyang Wu, Jihong Guan, and Sheng Zhong. “GITAR: An Open Source Tool for Analysis and Visualization of Hi-C Data.” Genomics, Proteomics & Bioinformatics 16, no. 5 (2018): 365–72. https://doi.org/10.1016/j.gpb.2018.06.006 
 </details>
 
-- [HiC-bench](https://github.com/NYU-BFX/hic-bench) - complete pipeline for Hi-C data analysis. <details>
+- <a name="hic-bench">[HiC-bench](https://github.com/NYU-BFX/hic-bench)</a> - complete pipeline for Hi-C data analysis. <details>
     <summary>Paper</summary>
     Lazaris, Charalampos, Stephen Kelly, Panagiotis Ntziachristos, Iannis Aifantis, and Aristotelis Tsirigos. "HiC-Bench: Comprehensive and Reproducible Hi-C Data Analysis Designed for Parameter Exploration and Benchmarking"  https://doi.org/10.1186/s12864-016-3387-6 BMC Genomics 18, no. 1 (December 2017)
 </details>
 
-- [TADbit](https://github.com/3DGenomes/tadbit) - TADbit is a complete Python library to deal with all steps to analyze, model and explore 3C-based data. With TADbit, the user can map FASTQ files to obtain raw interaction binned matrices (Hi-C like matrices), normalize and correct interaction matrices, identify and compare the Topologically Associating Domains (TADs), build 3D models from the interaction matrices, and finally, extract structural properties from the models. TADbit is complemented by [TADkit](https://github.com/3DGenomes/TADkit) for visualizing 3D models. <details>
+- <a name="tadbit">[TADbit](https://github.com/3DGenomes/tadbit)</a> - TADbit is a complete Python library to deal with all steps to analyze, model and explore 3C-based data. With TADbit, the user can map FASTQ files to obtain raw interaction binned matrices (Hi-C like matrices), normalize and correct interaction matrices, identify and compare the Topologically Associating Domains (TADs), build 3D models from the interaction matrices, and finally, extract structural properties from the models. TADbit is complemented by [TADkit](https://github.com/3DGenomes/TADkit) for visualizing 3D models. <details>
     <summary>Paper</summary>
     Serra, François, Davide Baù, Mike Goodstadt, David Castillo, Guillaume J. Filion, and Marc A. Marti-Renom. "Automatic Analysis and 3D-Modelling of Hi-C Data Using TADbit Reveals Structural Features of the Fly Chromatin Colors"  https://doi.org/10.1371/journal.pcbi.1005665 PLoS Computational Biology 13, no. 7 (July 2017) 
 </details>
 
-- [Juicer](https://github.com/theaidenlab/juicebox/wiki/Download) - Java full pipeline to convert raw reads into Hi-C maps, visualized in Juicebox. Calls domains, loops, CTCF binding sites. `.hic` file format for storing multi-resolution Hi-C data. <details>
+- <a name="juicer">[Juicer](https://github.com/theaidenlab/juicebox/wiki/Download)</a> - Java full pipeline to convert raw reads into Hi-C maps, visualized in Juicebox. Calls domains, loops, CTCF binding sites. `.hic` file format for storing multi-resolution Hi-C data. <details>
     <summary>Paper</summary>
     Durand, Neva C., Muhammad S. Shamim, Ido Machol, Suhas S. P. Rao, Miriam H. Huntley, Eric S. Lander, and Erez Lieberman Aiden. "Juicer Provides a One-Click System for Analyzing Loop-Resolution Hi-C Experiments"  https://doi.org/10.1016/j.cels.2016.07.002 Cell Systems 3, no. 1 (July 2016)   
 
     Rao, Suhas S. P., Miriam H. Huntley, Neva C. Durand, Elena K. Stamenova, Ivan D. Bochkov, James T. Robinson, Adrian L. Sanborn, et al. "A 3D Map of the Human Genome at Kilobase Resolution Reveals Principles of Chromatin Looping"  https://doi.org/10.1016/j.cell.2014.11.021 Cell 159, no. 7 (December 18, 2014)  - Juicer analysis example. TADs defined by frequent interactions. Enriched in CTCF and cohesin members. Five domain types. A1 and A2 enriched in genes. Chr 19 contains 6th pattern B6. Enrichment in different histone modification marks. TADs are preserved across cell types. Yet, differences between Gm12878 and IMR90 were detected. Boundaries detection by scanning image. Refs to the original paper.
 </details>
 
-- [HiC-Pro](https://github.com/nservant/HiC-Pro) - Python and command line-based optimized and flexible pipeline for Hi-C data processing. [hicpro2juicebox](https://github.com/nservant/HiC-Pro/blob/master/bin/utils/hicpro2juicebox.sh) tool to generate Juicebox-compatible files (requires juicebox_clt.jar). [Documentation](http://nservant.github.io/HiC-Pro/) <details>
+- <a name="hic-pro">[HiC-Pro](https://github.com/nservant/HiC-Pro)</a> - Python and command line-based optimized and flexible pipeline for Hi-C data processing. [hicpro2juicebox](https://github.com/nservant/HiC-Pro/blob/master/bin/utils/hicpro2juicebox.sh) tool to generate Juicebox-compatible files (requires juicebox_clt.jar). [Documentation](http://nservant.github.io/HiC-Pro/) <details>
     <summary>Paper</summary>
     Servant, Nicolas, Nelle Varoquaux, Bryan R. Lajoie, Eric Viara, Chong-Jian Chen, Jean-Philippe Vert, Edith Heard, Job Dekker, and Emmanuel Barillot. "HiC-Pro: An Optimized and Flexible Pipeline for Hi-C Data Processing."  https://doi.org/10.1186/s13059-015-0831-x Genome Biology 16 (December 1, 2015) - HiC pipeline, references to other pipelines, comparison. From raw reads to normalized matrices. Normalization methods, fast and memory-efficient implementation of iterative correction normalization (ICE). Data format. Using genotyping information to phase contact maps.
 </details>
 
-- [HiCdat](https://github.com/MWSchmid/HiCdat) - Hi-C processing pipeline and downstream analysis/visualization. Analyses: normalization, correlation, visualization, comparison, distance decay, PCA, interaction enrichment test, epigenomic enrichment/depletion. Consists of GUI tool for data preprocessing and R package for data analysis. <details>
+- <a name="hicdat">[HiCdat](https://github.com/MWSchmid/HiCdat)</a> - Hi-C processing pipeline and downstream analysis/visualization. Analyses: normalization, correlation, visualization, comparison, distance decay, PCA, interaction enrichment test, epigenomic enrichment/depletion. Consists of GUI tool for data preprocessing and R package for data analysis. <details>
     <summary>Paper</summary>
     Schmid, Marc W., Stefan Grob, and Ueli Grossniklaus. "HiCdat: A Fast and Easy-to-Use Hi-C Data Analysis Tool"  https://doi.org/10.1186/s12859-015-0678-x BMC Bioinformatics 16 (September 3, 2015) 
 </details>
 
 
-- [HiCUP](http://www.bioinformatics.babraham.ac.uk/projects/hicup/)  - Perl-based pipeline, alignment only, output BAM files. [Documentation](https://www.bioinformatics.babraham.ac.uk/projects/hicup/read_the_docs/html/index.html). <details>
+- <a name="hicup">[HiCUP](http://www.bioinformatics.babraham.ac.uk/projects/hicup/)</a>  - Perl-based pipeline, alignment only, output BAM files. [Documentation](https://www.bioinformatics.babraham.ac.uk/projects/hicup/read_the_docs/html/index.html). <details>
     <summary>Paper</summary>
     Wingett, Steven, Philip Ewels, Mayra Furlan-Magaril, Takashi Nagano, Stefan Schoenfelder, Peter Fraser, and Simon Andrews. "HiCUP: Pipeline for Mapping and Processing Hi-C Data"  https://doi.org/10.12688/f1000research.7334.1 F1000Research 4 (2015) - HiCUP pipeline, alignment only, removes artifacts (religations, duplicate reads) creating BAM files. Details about Hi-C sequencing artifacts. Used in conjunction with other pipelines.
 </details>
 
-- [HiC_Pipeline](https://github.com/XiaoTaoWang/HiC_pipeline) - Python-based pipeline performing mapping, filtering, binning, and ICE-correcting Hi-C data, from raw reads (.sra, .fastq) to contact matrices. Additionally, converting to sparse format, performing QC. [Documentation](http://xiaotaowang.github.io/HiC_pipeline/).
+- <a name="hicpipeline">[HiC_Pipeline](https://github.com/XiaoTaoWang/HiC_pipeline)</a> - Python-based pipeline performing mapping, filtering, binning, and ICE-correcting Hi-C data, from raw reads (.sra, .fastq) to contact matrices. Additionally, converting to sparse format, performing QC. [Documentation](http://xiaotaowang.github.io/HiC_pipeline/).
 
-- [Juicer Tools](https://github.com/aidenlab/juicer/wiki/Juicer-Tools-Quick-Start) - for creating/extracting data from .hic files, [Arrowhead](#arrowhead) for finding contact domains, [HiCCUPS](#hiccups) for loop detection and [HiCCUPS Diff](#hiccupsdiff) for finding differential loops, [MotifFinder](https://github.com/aidenlab/juicer/wiki/MotifFinder) for characterizing CTCF peaks at loop anchors, [Pearsons](https://github.com/aidenlab/juicer/wiki/Pearsons) for calculating the Pearson's correlation matrix of the Observed/Expected, [APA](https://github.com/aidenlab/juicer/wiki/APA) aggregated peak analysis, [Eigenvector](#eigenvector) for determining A/B chromatin states, [Compare Lists](https://github.com/aidenlab/juicer/wiki/Compare-Lists) for separating loop lists into common and condition-specific loops. All tools are described in the Extended Experimental Procedures of [Rao, Huntley et al. Cell 2014](https://www.cell.com/cms/10.1016/j.cell.2014.11.021/attachment/d3c6dcd8-c799-4f68-bbe4-201be54960b5/mmc1.pdf).
+- <a name="juicer-tools">[Juicer Tools](https://github.com/aidenlab/juicer/wiki/Juicer-Tools-Quick-Start)</a> - for creating/extracting data from .hic files, [Arrowhead](#arrowhead) for finding contact domains, [HiCCUPS](#hiccups) for loop detection and [HiCCUPS Diff](#hiccupsdiff) for finding differential loops, [MotifFinder](https://github.com/aidenlab/juicer/wiki/MotifFinder) for characterizing CTCF peaks at loop anchors, [Pearsons](https://github.com/aidenlab/juicer/wiki/Pearsons) for calculating the Pearson's correlation matrix of the Observed/Expected, [APA](https://github.com/aidenlab/juicer/wiki/APA) aggregated peak analysis, [Eigenvector](#eigenvector) for determining A/B chromatin states, [Compare Lists](https://github.com/aidenlab/juicer/wiki/Compare-Lists) for separating loop lists into common and condition-specific loops. All tools are described in the Extended Experimental Procedures of [Rao, Huntley et al. Cell 2014](https://www.cell.com/cms/10.1016/j.cell.2014.11.021/attachment/d3c6dcd8-c799-4f68-bbe4-201be54960b5/mmc1.pdf).
 
 - [Juicer's 3D de novo assembly pipeline and resources](#theaidenlab3ddna).
 
 - [ENCODE project Data Production and Processing Standard of the Hi-C Mapping Center, PDF](https://www.encodeproject.org/documents/75926e4b-77aa-4959-8ca7-87efcba39d79/@@download/attachment/comp_doc_7july2018_final.pdf) - Computational standards of the Hi-C ENCODE mapping center including quality control measures and computational methods. 
 
-- [Arima mapping pipeline](https://github.com/ArimaGenomics/mapping_pipeline) - Mapping pipeline for data generated using Arima-HiC.
+- <a name="arima-mapping-pipeline">[Arima mapping pipeline](https://github.com/ArimaGenomics/mapping_pipeline)</a> - Mapping pipeline for data generated using Arima-HiC.
 
-- [cword](https://github.com/dekkerlab/cworld-dekker) - Perl cworld module and collection of utility/analysis scripts for C data (3C, 4C, 5C, Hi-C).
+- <a name="cword">[cword](https://github.com/dekkerlab/cworld-dekker)</a> - Perl cworld module and collection of utility/analysis scripts for C data (3C, 4C, 5C, Hi-C).
 
-- [HiCpipe](https://github.com/ChenFengling/HiCpipe) - an efficient Hi-C data processing pipeline. It is based on [Juicer](https://github.com/theaidenlab/juicebox/wiki/Download) and [HiC-pro](https://github.com/nservant/HiC-Pro), which combines the advantages of these two processing pipelines. HiCpipe is much faster than Juicer and HiC-pro and can output multiple features of Hi-C maps.
+- <a name="hicpipe">[HiCpipe](https://github.com/ChenFengling/HiCpipe)</a> - an efficient Hi-C data processing pipeline. It is based on [Juicer](#juicer) and [HiC-pro](#hic-pro), which combines the advantages of these two processing pipelines. HiCpipe is much faster than Juicer and HiC-pro and can output multiple features of Hi-C maps.
 
-- [my5C](http://my5c.umassmed.edu/) - web-based tools, well-documented analysis and visualization of 5S data.
+- <a name="my5c">[my5C](http://my5c.umassmed.edu/)</a> - web-based tools, well-documented analysis and visualization of 5S data.
 
-- [nf-core-hic](https://github.com/nservant/nf-core-hic) - Analysis of Chromosome Conformation Capture data (Hi-C and more), [Nextflow](https://www.nextflow.io) pipeline. Also, [nf-core/hic](https://github.com/nf-core/hic). [Documentation](https://nf-co.re/hic/usage).
+- <a name="nf-core-hic">[nf-core-hic](https://github.com/nservant/nf-core-hic)</a> - Analysis of Chromosome Conformation Capture data (Hi-C and more), [Nextflow](https://www.nextflow.io) pipeline. Also, [nf-core/hic](https://github.com/nf-core/hic). [Documentation](https://nf-co.re/hic/usage).
 
-- [distiller-nf](https://github.com/mirnylab/distiller-nf) - Java modular Hi-C mapping pipeline for reproducible data analysis, [Nextflow](https://www.nextflow.io) pipeline. Alignment, filtering, aggregating Hi-C matrices.
+- <a name="distiller-nf">[distiller-nf](https://github.com/mirnylab/distiller-nf)</a> - Java modular Hi-C mapping pipeline for reproducible data analysis, [Nextflow](https://www.nextflow.io) pipeline. Alignment, filtering, aggregating Hi-C matrices.
 
-- [runHiC](https://github.com/XiaoTaoWang/HiC_pipeline) - aka `HiC_pipeline`, Hi-C data processing pipeline, from raw FASTQ files. Supports bwa-mem, chromap (default), and minimap2 aligners. Performs quality control (plots), filtering, binning (to mcool output), pileup. Parallelized. By [XiaoTao Wang](https://github.com/XiaoTaoWang).
+- <a name="runhic">[runHiC](https://github.com/XiaoTaoWang/HiC_pipeline)</a> - aka `HiC_pipeline`, Hi-C data processing pipeline, from raw FASTQ files. Supports bwa-mem, chromap (default), and minimap2 aligners. Performs quality control (plots), filtering, binning (to mcool output), pileup. Parallelized. By [XiaoTao Wang](https://github.com/XiaoTaoWang).
 
 - [4D Nucleome Hi-C Processing Pipeline](https://github.com/4dn-dcic/docker-4dn-hic) - set of scripts wrapped in a Docker image. Works with `.hic` and `.cool` files. [Overview](https://data.4dnucleome.org/resources/data-analysis/hi_c-processing-pipeline).
 
@@ -160,28 +160,28 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     DeMaere, Matthew Z., and Aaron E. Darling. "Qc3C: Reference-Free Quality Control for Hi-C Sequencing Data"  https://doi.org/10.1101/2021.02.24.432586 Preprint. Bioinformatics, February 25, 2021.
 </details>
 
-- [HiCNoiseMeasurer](https://github.com/JRowleyLab/HiCNoiseMeasurer) - a Python script to measure noise in .hic files using the auto-correlation function. 
+- <a name="hicnoisemeasurer">[HiCNoiseMeasurer](https://github.com/JRowleyLab/HiCNoiseMeasurer)</a> - a Python script to measure noise in .hic files using the auto-correlation function. 
 
-- [HiCSampler](https://github.com/jrowleylab/hicsampler) - a Python script for subsetting .hic files.
+- <a name="hicsampler">[HiCSampler](https://github.com/jrowleylab/hicsampler)</a> - a Python script for subsetting .hic files.
 
 ### Capture-C
 
-- [CHiCANE](https://CRAN.R-project.org/package=chicane) - an R-based data processing and interaction calling toolkit for the analysis and interpretation of Capture Hi-C data ([Arima](https://github.com/ArimaGenomics/CHiC), [Dovetail](https://github.com/dovetail-genomics/chicago)). Data preprocessing with [HiCUP](http://www.bioinformatics.babraham.ac.uk/projects/hicup/) (recommended), but BAMs from other pipelines are supported. Flexible regression modeling of the number of reads linking bait and target fragments, including distance. (Truncated) Negative binomial, Poisson distributions, zeros may be included, other covariates. Functionality to assess model fit. Similar tools - [GOTHiC](https://www.bioconductor.org/packages/release/bioc/html/GOTHiC.html), [CHiCAGO](https://bioconductor.org/packages/Chicago/), [ChiCMaxima](https://github.com/yousra291987/ChiCMaxima). Protocol explaining each step. <details>
+- <a name="chicane">[CHiCANE](https://CRAN.R-project.org/package=chicane)</a> - an R-based data processing and interaction calling toolkit for the analysis and interpretation of Capture Hi-C data ([Arima](https://github.com/ArimaGenomics/CHiC), [Dovetail](https://github.com/dovetail-genomics/chicago)). Data preprocessing with [HiCUP](#hicup) (recommended), but BAMs from other pipelines are supported. Flexible regression modeling of the number of reads linking bait and target fragments, including distance. (Truncated) Negative binomial, Poisson distributions, zeros may be included, other covariates. Functionality to assess model fit. Similar tools - [GOTHiC](#gothic), [CHiCAGO](#chicago), [ChiCMaxima](#chicmaxima). Protocol explaining each step. <details>
     <summary>Paper</summary>
     Holgersen, Erle M. "Identifying High-Confidence Capture Hi-C Interactions Using CHiCANE" https://doi.org/10.1038/s41596-021-00498-1 NATURE PROTOCOLS (April 2021)
 </details>
 
-- [CaptureCompendium](http://userweb.molbiol.ox.ac.uk/public/telenius/CaptureCompendium/) - all-in-one toolkit for the design, analysis and presentation of 3C experiments, combines oligonucleotide design [Capsequm2](http://apps.molbiol.ox.ac.uk/CaptureC/cgi-bin/CapSequm.cgi), sequence mapping and extraction [CCseqBasic](https://github.com/Hughes-Genome-Group/CCseqBasicS), statistical data presentation and distribution [CaptureCompare](https://github.com/Hughes-Genome-Group/CaptureCompare) with [Peaky](https://github.com/cqgd/pky) integration, [CaptureSee](https://capturesee.molbiol.ox.ac.uk/). Allows for multi-way interactions (Tri-C). [Overview of previous tools doing parts](https://userweb.molbiol.ox.ac.uk/public/telenius/CaptureCompendium/vignette/index.html). <details>
+- [CaptureCompendium](http://userweb.molbiol.ox.ac.uk/public/telenius/CaptureCompendium/) - all-in-one toolkit for the design, analysis and presentation of 3C experiments, combines oligonucleotide design [Capsequm2](http://apps.molbiol.ox.ac.uk/CaptureC/cgi-bin/CapSequm.cgi), sequence mapping and extraction [CCseqBasic](https://github.com/Hughes-Genome-Group/CCseqBasicS), statistical data presentation and distribution [CaptureCompare](https://github.com/Hughes-Genome-Group/CaptureCompare) with [Peaky](#peaky) integration, [CaptureSee](https://capturesee.molbiol.ox.ac.uk/). Allows for multi-way interactions (Tri-C). [Overview of previous tools doing parts](https://userweb.molbiol.ox.ac.uk/public/telenius/CaptureCompendium/vignette/index.html). <details>
     <summary>Paper</summary>
     Telenius, Jelena M., Damien J. Downes, Martin Sergeant, A. Marieke Oudelaar, Simon McGowan, Jon Kerry, Lars L.P. Hanssen, et al. "CaptureCompendium: A Comprehensive Toolkit for 3C Analysis"  https://doi.org/10.1101/2020.02.17.952572 Preprint. Bioinformatics, February 18, 2020. 
 </details>
 
-- [GOPHER](https://github.com/TheJacksonLaboratory/Gopher) - Java app probe design for Capture Hi-C. All, or selected, promoters, or around GWAS hits. [Documentation](https://gopher.readthedocs.io/en/latest/). <details>
+- <a name="gopher">[GOPHER](https://github.com/TheJacksonLaboratory/Gopher)</a> - Java app probe design for Capture Hi-C. All, or selected, promoters, or around GWAS hits. [Documentation](https://gopher.readthedocs.io/en/latest/). <details>
     <summary>Paper</summary>
     Hansen, Peter, Salaheddine Ali, Hannah Blau, Daniel Danis, Jochen Hecht, Uwe Kornak, Darío G. Lupiáñez, Stefan Mundlos, Robin Steinhaus, and Peter N. Robinson. "GOPHER: Generator Of Probes for Capture Hi-C Experiments at High Resolution"  https://doi.org/10.1186/s12864-018-5376-4 BMC Genomics 20, no. 1 (December 2019). 
 </details>
 
-- [capC-MAP](https://github.com/cbrackley/capC-MAP) - Capture-C analysis pipeline. Python and C++, run through a configuration file. Outputs bedGraph. Compared with [HiC-Pro](https://github.com/nservant/HiC-Pro), better detects PCR duplicates, identifies more interactions. Normalization tuned for Capture-C data. [Documentation](https://capc-map.readthedocs.io/) <details>
+- [capC-MAP](https://github.com/cbrackley/capC-MAP) - Capture-C analysis pipeline. Python and C++, run through a configuration file. Outputs bedGraph. Compared with [HiC-Pro](#hic-pro), better detects PCR duplicates, identifies more interactions. Normalization tuned for Capture-C data. [Documentation](https://capc-map.readthedocs.io/) <details>
     <summary>Paper</summary>
     Buckle, Adam, Nick Gilbert, Davide Marenduzzo, and Chris A Brackley. "capC-MAP: software for analysis of Capture-C data"  https://doi.org/10.1093/bioinformatics/btz480 Bioinformatics, 15 November 2019
 </details>
@@ -190,7 +190,7 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 #### Capture-C peaks
 
-- [CHiCAGO](https://bioconductor.org/packages/Chicago/) protocol for Capture Hi-C analysis. Introduction into 3C-based technologies, as compared with Hi-C, Statistical model for background noise estimation, normalization, weighted p-value correction. Comparison with other tools ([HiCapTools](https://github.com/sahlenlab/HiCapTools), [CHiCMaxima](https://github.com/yousra291987/ChiCMaxima), [CHiCANE](https://CRAN.R-project.org/package=chicane)), downstream analysis with [Peaky](https://github.com/cqgd/pky), [Chicdiff](https://github.com/RegulatoryGenomicsGroup/chicdiff). Preprocessing with [HiCUP](http://www.bioinformatics.babraham.ac.uk/projects/hicup/), input files (Table 1), how to create auxillary files and set parameters for different restriction enzymes (R, Python scripts), QC, visualization. [CHiCAGO R package](https://bioconductor.org/packages/Chicago/), [chicagoTools](https://bitbucket.org/chicagoTeam/chicago/src/master/), [PCHiCdata R package](https://bitbucket.org/chicagoTeam/chicago/src/master/PCHiCdata/inst/extdata/). <details>
+- <a name="chicago">[CHiCAGO](https://bioconductor.org/packages/Chicago/)</a> - protocol for Capture Hi-C analysis. Introduction into 3C-based technologies, as compared with Hi-C, Statistical model for background noise estimation, normalization, weighted p-value correction. Comparison with other tools ([HiCapTools](#hiccaptools), [CHiCMaxima](#chicmaxima), [CHiCANE](#chicane)), downstream analysis with [Peaky](#peaky), [Chicdiff](#chicdiff). Preprocessing with [HiCUP](#hicup), input files (Table 1), how to create auxillary files and set parameters for different restriction enzymes (R, Python scripts), QC, visualization. [CHiCAGO R package](https://bioconductor.org/packages/Chicago/), [chicagoTools](https://bitbucket.org/chicagoTeam/chicago/src/master/), [PCHiCdata R package](https://bitbucket.org/chicagoTeam/chicago/src/master/PCHiCdata/inst/extdata/). <details>
     <summary>Paper</summary>
     Freire-Pritchett, Paula, Helen Ray-Jones, Monica Della Rosa, Chris Q. Eijsbouts, William R. Orchard, Steven W. Wingett, Chris Wallace, Jonathan Cairns, Mikhail Spivakov, and Valeriya Malysheva. "Detecting Chromosomal Interactions in Capture Hi-C Data with CHiCAGO and Companion Tools"  https://doi.org/10.1038/s41596-021-00567-5 Nature Protocols, August 9, 2021. 
     </details> <details>
@@ -198,17 +198,17 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     Cairns, Jonathan, Paula Freire-Pritchett, Steven W. Wingett, Csilla Várnai, Andrew Dimond, Vincent Plagnol, Daniel Zerbino, et al. "CHiCAGO: Robust Detection of DNA Looping Interactions in Capture Hi-C Data."  https://doi.org/10.1186/s13059-016-0992-2 Genome Biology 17, no. 1 (2016): 127.
 </details>
 
-- [Peaky](https://github.com/cqgd/pky) - Bayesian sparse variable selection approach. The model proposes that for any given bait, the expected CHi-C signal at each prey fragment is expressed as a sum of contributions from a set of fragments directly contacting that bait. [Documentation](https://cqgd.github.io/pky/articles/introduction.html). <details>
+- <a name="peaky">[Peaky](https://github.com/cqgd/pky)</a> - Bayesian sparse variable selection approach. The model proposes that for any given bait, the expected CHi-C signal at each prey fragment is expressed as a sum of contributions from a set of fragments directly contacting that bait. [Documentation](https://cqgd.github.io/pky/articles/introduction.html). <details>
     <summary>Paper</summary>
     Eijsbouts, Christiaan Q, Oliver S Burren, Paul J Newcombe, and Chris Wallace. "Fine Mapping Chromatin Contacts in Capture Hi-C Data"  https://doi.org/10.1186/s12864-018-5314-5 BMC Genomics 20, no. 1 (December 2019). 
 </details>
 
-- [ChiCMaxima](https://github.com/yousra291987/ChiCMaxima) - a pipeline for detection and visualization of chromatin loops in Capture Hi-C data. Loess smoothing combined with a background model to detect significant interactions. Compare with [GOTHiC](https://www.bioconductor.org/packages/release/bioc/html/GOTHiC.html) and [CHiCAGO](https://bioconductor.org/packages/Chicago/). <details>
+- <a name="chicmaxima">[ChiCMaxima](https://github.com/yousra291987/ChiCMaxima)</a> - a pipeline for detection and visualization of chromatin loops in Capture Hi-C data. Loess smoothing combined with a background model to detect significant interactions. Compare with [GOTHiC](#gothic) and [CHiCAGO](#chicago). <details>
     <summary>Paper</summary>
     Ben Zouari, Yousra, Anne M Molitor, Natalia Sikorska, Vera Pancaldi, and Tom Sexton. "ChiCMaxima: A Robust and Simple Pipeline for Detection and Visualization of Chromatin Looping in Capture Hi-C"  https://doi.org/10.1186/s13059-019-1706-3 Genome Biology, 22 May 2019
 </details>
 
-- [HiCapTools](https://github.com/sahlenlab/HiCapTools) - A command-line software package that can design sequence capture probes for targeted chromosome capture applications and analyze sequencing output to detect proximities involving targeted fragments. Two probes are designed for each feature while avoiding repeat elements and non-unique regions. The data analysis suite processes alignment files to report genomic proximities for each feature at restriction fragment level and is isoform-aware for gene features. Statistical significance of contact frequencies is evaluated using an empirically derived background distribution. <details>
+- <a name="hicaptools">[HiCapTools](https://github.com/sahlenlab/HiCapTools)</a> - A command-line software package that can design sequence capture probes for targeted chromosome capture applications and analyze sequencing output to detect proximities involving targeted fragments. Two probes are designed for each feature while avoiding repeat elements and non-unique regions. The data analysis suite processes alignment files to report genomic proximities for each feature at restriction fragment level and is isoform-aware for gene features. Statistical significance of contact frequencies is evaluated using an empirically derived background distribution. <details>
     <summary>Paper</summary>
     Anandashankar Anil, Rapolas Spalinskas, Örjan Åkerborg, Pelin Sahlén; "[HiCapTools: a software suite for probe design and proximity detection for targeted chromosome conformation capture applications"  https://doi.org/10.1093/bioinformatics/btx625 Bioinformatics, Volume 34, Issue 4, 15 February 2018
 </details>
@@ -216,101 +216,101 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 ### HiChIP
 
-- [HiChIP-Peak](https://github.com/ChenfuShi/HiChIP_peaks) - Command-line HiChIP peak caller, focus on peaks at re-ligation sites. Peak filtering, then negative binomial model. Differential peak analysis similar to [DiffBind](http://bioconductor.org/packages/devel/bioc/html/DiffBind.html). <details>
+- <a name="hichip-peak">[HiChIP-Peak](https://github.com/ChenfuShi/HiChIP_peaks)</a> - Command-line HiChIP peak caller, focus on peaks at re-ligation sites. Peak filtering, then negative binomial model. Differential peak analysis similar to [DiffBind](#diffbind). <details>
     <summary>Paper</summary>
     Shi, Chenfu, Magnus Rattray, and Gisela Orozco. "HiChIP-Peaks: A HiChIP Peak Calling Algorithm"  https://doi.org/10.1093/bioinformatics/btaa202 Bioinformatics, Volume 36, Issue 12, 15 June 2020
 </details>
 
-- [MAPS](https://github.com/ijuric/MAPS) - Model-based Analysis of PLAC-seq and HiChIP data. A zero-truncated Poisson regression framework to explicitly remove systematic biases, normalize, call long-distance interactions. Compared with [hichipper](https://github.com/aryeelab/hichipper), identifies more long-range, biologically relevant interactions. Works with [Arima's HiChIP data](https://arimagenomics.com/products/hichip/) <details>
+- <a name="maps">[MAPS](https://github.com/ijuric/MAPS)</a> - Model-based Analysis of PLAC-seq and HiChIP data. A zero-truncated Poisson regression framework to explicitly remove systematic biases, normalize, call long-distance interactions. Compared with [hichipper](#hichipper), identifies more long-range, biologically relevant interactions. Works with [Arima's HiChIP data](https://arimagenomics.com/products/hichip/) <details>
     <summary>Paper</summary>
     Juric, Ivan, Miao Yu, Armen Abnousi, Ramya Raviram, Rongxin Fang, Yuan Zhao, Yanxiao Zhang, et al. "MAPS: Model-Based Analysis of Long-Range Chromatin Interactions from PLAC-Seq and HiChIP Experiments"  https://doi.org/10.1371/journal.pcbi.1006982 April 15, 2019, 24.
 </details>
 
-- [CID](https://groups.csail.mit.edu/cgs/gem/cid/) - Chromatin Interaction Discovery, call chromatin interactions from ChIA-PET. Outperforms [ChIA-PET2](https://github.com/GuipengLi/ChIA-PET2), [MANGO pipelines](https://github.com/dphansti/mango), call more peaks than [HICCUPS](#hiccups), [hichipper](https://github.com/aryeelab/hichipper). Java implementation <details>
+- <a name="cid">[CID](https://groups.csail.mit.edu/cgs/gem/cid/)</a> - Chromatin Interaction Discovery, call chromatin interactions from ChIA-PET. Outperforms [ChIA-PET2](https://github.com/GuipengLi/ChIA-PET2), [MANGO pipelines](https://github.com/dphansti/mango), call more peaks than [HICCUPS](#hiccups), [hichipper](#hichipper). Java implementation <details>
     <summary>Paper</summary>
     Guo, Yuchun, Konstantin Krismer, Michael Closser, Hynek Wichterle, and David K Gifford. "High Resolution Discovery of Chromatin Interactions"  https://doi.org/10.1093/nar/gkz051 Nucleic Acids Research, February 14, 2019. 
 </details>
 
-- [HiChIP pipeline](https://hichip.readthedocs.io/) by [Dovetail Genomics](https://dovetailgenomics.com/services/epigenetics/dovetail-hichip/), technology and analysis steps.
+- <a name="hichip-pipeline">[HiChIP pipeline](https://hichip.readthedocs.io/)</a> - by [Dovetail Genomics](https://dovetailgenomics.com/services/epigenetics/dovetail-hichip/), technology and analysis steps.
 
 ### 4C
 
-- [pipe4C](https://github.com/deLaatLab/pipe4C) - 4C-seq processing pipeline, R implementation. <details>
+- <a name="pipe4c">[pipe4C](https://github.com/deLaatLab/pipe4C)</a> - 4C-seq processing pipeline, R implementation. <details>
     <summary>Paper</summary>
     Krijger, Peter H.L., Geert Geeven, Valerio Bianchi, Catharina R.E. Hilvering, and Wouter de Laat. "4C-Seq from Beginning to End: A Detailed Protocol for Sample Preparation and Data Analysis"  https://doi.org/10.1016/j.ymeth.2019.07.014 Methods 170 (January 2020)
 </details>
 
-- [peakC](https://github.com/deWitLab/peakC) - an R package for non-parametric peak calling in 4C/Capture-c/PCHiC data. <details>
+- <a name="peakC">[peakC](https://github.com/deWitLab/peakC)</a> - an R package for non-parametric peak calling in 4C/Capture-c/PCHiC data. <details>
     <summary>Paper</summary>
     Geeven, Geert, Hans Teunissen, Wouter de Laat, and Elzo de Wit. "PeakC: A Flexible, Non-Parametric Peak Calling Package for 4C and Capture-C Data"  https://doi.org/10.1093/nar/gky443 Nucleic Acids Research 46, no. 15 (September 6, 2018)
 </details>
 
-- [4Cseqpipe](https://github.com/changegene/4Cseqpipe) processing pipeline and a genome-wide 4C primer database. <details>
+- <a name="4cseqpipe">[4Cseqpipe](https://github.com/changegene/4Cseqpipe)</a> processing pipeline and a genome-wide 4C primer database. <details>
     <summary>Paper</summary>
     Werken, Harmen J. G. van de, Gilad Landan, Sjoerd J. B. Holwerda, Michael Hoichman, Petra Klous, Ran Chachik, Erik Splinter, et al. "Robust 4C-Seq Data Analysis to Screen for Regulatory DNA Interactions"  https://doi.org/10.1038/nmeth.2173 Nature Methods 9, no. 10 (October 2012) - 4C technology paper. Two different 4bp cutters to increase resolution. Investigation of beta-globin locus, interchromosomal interactions.
 </details>
 
 ## Resolution improvement
 
- [VEHiCLE](https://github.com/Max-Highsmith/VEHiCLE) - a variational autoencoder (feature extraction, dimensionality reduction) and Generative Adversarial Network (maps low-dimensional vectors to Hi-C maps) for Hi-C resolution enhancement. Uses a combination of four loss functions: adversarial loss, variational loss, mean square error, and insulation score loss (interesting!). Intro into VAEs, GANs, loss functions. Uses GM12878, IMR90, K562, HMEC data. Compared using five metrics (similarity, reproducibility) against [HiCPlus](https://github.com/zhangyan32/HiCPlus), [DeepHiC](http://sysomics.com/deephic/), [HiCSR](https://github.com/PSI-Lab/HiCSR), outperforms all. Improves TAD identification, 3D structure modeling. Python implementation. <details>
+- <a name="vehicle">[VEHiCLE](https://github.com/Max-Highsmith/VEHiCLE)</a> - a variational autoencoder (feature extraction, dimensionality reduction) and Generative Adversarial Network (maps low-dimensional vectors to Hi-C maps) for Hi-C resolution enhancement. Uses a combination of four loss functions: adversarial loss, variational loss, mean square error, and insulation score loss (interesting!). Intro into VAEs, GANs, loss functions. Uses GM12878, IMR90, K562, HMEC data. Compared using five metrics (similarity, reproducibility) against [HiCPlus](#hicplus), [DeepHiC](#deephic), [HiCSR](#hicsr), outperforms all. Improves TAD identification, 3D structure modeling. Python implementation. <details>
     <summary>Paper</summary>
     Highsmith, Max, and Jianlin Cheng. "VEHiCLE: A Variationally Encoded Hi-C Loss Enhancement Algorithm for Improving and Generating Hi-C Data"  https://doi.org/10.1038/s41598-021-88115-9 Scientific Reports 11, no. 1 (December 2021)
 </details>
 
 
-- [HiCRes](https://github.com/ClaireMarchal/HiCRes) - resolution estimation, based on the linear dependence of 20th percentile of coverage and the window size used to access coverage. Includes preseq for estimating and predicting library complexity, [bowtie2](https://github.com/BenLangmead/bowtie2) and [HiCUP](https://www.bioinformatics.babraham.ac.uk/projects/hicup/) for estimating Hi-C-specific QC metrics. Relatively insensitive to enzyme of choice. Implemented as Docker/Singularity images. Requires significant computational resources, like 5 hours on 40 CPU cluster. <details>
+- <a name="hicres">[HiCRes](https://github.com/ClaireMarchal/HiCRes)</a> - resolution estimation, based on the linear dependence of 20th percentile of coverage and the window size used to access coverage. Includes preseq for estimating and predicting library complexity, [bowtie2](https://github.com/BenLangmead/bowtie2) and [HiCUP](#hicup) for estimating Hi-C-specific QC metrics. Relatively insensitive to enzyme of choice. Implemented as Docker/Singularity images. Requires significant computational resources, like 5 hours on 40 CPU cluster. <details>
     <summary>Paper</summary>
     Marchal, Claire, Nivedita Singh, Ximena Corso-Díaz, and Anand Swaroop. "HiCRes: A Computational Method to Estimate and Predict the Resolution of HiC Libraries"  https://doi.org/10.1101/2020.09.22.307967 Preprint. Bioinformatics, September 22, 2020
 </details>
 
-- [HiCSR](https://github.com/PSI-Lab/HiCSR) - enhancement of Hi-C contact maps using a Generative Adversarial Network trained to optimize a custom loss function (weighted adversarial loss, pixel-wise L1 loss, and a feature reconstruction loss). An increase in resolution refers to recovering additional Hi-C contacts, "saturating" downsampled and noisy Hi-C matrices, not increasing the number of pixels. Representation learning with autoencoder with several convolutional layers and skip connections, then using it for the generator to create new matrices with discriminator telling them fake or real. Compared with [HiCPlus](https://github.com/zhangyan32/HiCPlus), [HiCNN](http://dna.cs.miami.edu/HiCNN/), [hicGAN](https://github.com/kimmo1019/hicGAN), [DeepHiC](http://sysomics.com/deephic/). Reproducibility is better using four metrics. Python3 PyTorch implementation. <details>
+- <a name="hicsr">[HiCSR](https://github.com/PSI-Lab/HiCSR)</a> - enhancement of Hi-C contact maps using a Generative Adversarial Network trained to optimize a custom loss function (weighted adversarial loss, pixel-wise L1 loss, and a feature reconstruction loss). An increase in resolution refers to recovering additional Hi-C contacts, "saturating" downsampled and noisy Hi-C matrices, not increasing the number of pixels. Representation learning with autoencoder with several convolutional layers and skip connections, then using it for the generator to create new matrices with discriminator telling them fake or real. Compared with [HiCPlus](#hicplus), [HiCNN](#hicnn), [hicGAN](#hicgan), [DeepHiC](#deephic). Reproducibility is better using four metrics. Python3 PyTorch implementation. <details>
     <summary>Paper</summary>
     Dimmick, Michael C., Leo J. Lee, and Brendan J. Frey. "HiCSR: A Hi-C Super-Resolution Framework for Producing Highly Realistic Contact Maps"  https://doi.org/10.1101/2020.02.24.961714 Preprint. Genomics, February 25, 2020. 
 </details>
 
-- [DeepHiC](http://sysomics.com/deephic/) - a web-based generative adversarial network (GAN) for enhancing Hi-C data. Does not change the bin size, enhances the content of Hi-C data. Reconstructs the content from \~1% of the original data. Outperforms [Boost-HiC](https://github.com/LeopoldC/Boost-HiC), [HiCPlus](https://github.com/zhangyan32/HiCPlus), [HiCNN](http://dna.cs.miami.edu/HiCNN/). [GitHub](https://github.com/omegahh/DeepHiC). <details>
+- <a name="deephic">[DeepHiC](https://github.com/omegahh/DeepHiC)</a> - a web-based generative adversarial network (GAN) for enhancing Hi-C data. Does not change the bin size, enhances the content of Hi-C data. Reconstructs the content from \~1% of the original data. Outperforms [Boost-HiC](https://github.com/LeopoldC/Boost-HiC), [HiCPlus](#hicplus), [HiCNN](#hicnn). [Documentation](http://sysomics.com/deephic/). <details>
     <summary>Paper</summary>
     - Hong, Hao, Shuai Jiang, Hao Li, Cheng Quan, Chenghui Zhao, Ruijiang Li, Wanying Li, et al. "DeepHiC: A Generative Adversarial Network for Enhancing Hi-C Data Resolution"  https://doi.org/10.1371/journal.pcbi.1007287 PLOS Computational Biology, February 21, 2020
 </details>
 
-- [HIFI](https://github.com/BlanchetteLab/HIFI) - Command-line tool for Hi-C Interaction Frequency Inference for restriction fragment-resolution analysis of Hi-C data. Sparsity is resolved by using dependencies between neighboring restriction fragments, with Markov Random Fields performing the best. Better resolves TADs and sub-TADs, significant interactions. CTCF, RAD21, SMC3, ZNF143 are enriched around TAD boundaries. Matrices normalized for fragment-specific biases. <details>
+- <a name="hifi">[HIFI](https://github.com/BlanchetteLab/HIFI)</a> - Command-line tool for Hi-C Interaction Frequency Inference for restriction fragment-resolution analysis of Hi-C data. Sparsity is resolved by using dependencies between neighboring restriction fragments, with Markov Random Fields performing the best. Better resolves TADs and sub-TADs, significant interactions. CTCF, RAD21, SMC3, ZNF143 are enriched around TAD boundaries. Matrices normalized for fragment-specific biases. <details>
     <summary>Paper</summary>
     - Cameron, Christopher JF, Josée Dostie, and Mathieu Blanchette. "Estimating DNA-DNA Interaction Frequency from Hi-C Data at Restriction-Fragment Resolution"  https://doi.org/10.1186/s13059-019-1913-y Genome Biology, 14 January 2020
 </details>
 
-- [hicGAN](https://github.com/kimmo1019/hicGAN) - improving resolution (saturation) of Hi-C data using Generative Adversarial Networks. Generator - five inner residual blocks to fight vanishing gradient (each block has two convolutional layers and batch normalization) and an outer skip connection. The discriminator has three convolutional blocks. Evaluation metrics: MSE, signal-to-noise ratio, structure similarity index, chromatin loop score. Compared against [HiCPlus](https://github.com/zhangyan32/HiCPlus). Python, Tensorflow implementation. <details>
+- <a name="hicgan">[hicGAN](https://github.com/kimmo1019/hicGAN)</a> - improving resolution (saturation) of Hi-C data using Generative Adversarial Networks. Generator - five inner residual blocks to fight vanishing gradient (each block has two convolutional layers and batch normalization) and an outer skip connection. The discriminator has three convolutional blocks. Evaluation metrics: MSE, signal-to-noise ratio, structure similarity index, chromatin loop score. Compared against [HiCPlus](#hicplus). Python, Tensorflow implementation. <details>
     <summary>Paper</summary>
     Liu, Qiao, Hairong Lv, and Rui Jiang. "HicGAN Infers Super Resolution Hi-C Data with Generative Adversarial Networks"  https://doi.org/10.1093/bioinformatics/btz317 Bioinformatics 35, no. 14 (July 15, 2019)
 </details>
 
-- [HiCNN](http://dna.cs.miami.edu/HiCNN/) - a computational method for resolution enhancement. A modification of the [HiCPlus](https://github.com/zhangyan32/HiCPlus) approach, using very deep (54 layers, five types of layers) convolutional neural network. A Hi-C matrix of regular resolution is transformed into the high-resolution but very sparse matrix, HiCNN predicts the missing values. Pearson and MSE evaluation metrics, overlap of Fit-Hi-C-detected significant interactions - perform similar or slightly better than [HiCPlus](https://github.com/zhangyan32/HiCPlus). PyTorch implementation. <details>
+- <a name="hicnn">[HiCNN](http://dna.cs.miami.edu/HiCNN/)</a> - a computational method for resolution enhancement. A modification of the [HiCPlus](#hicplus) approach, using very deep (54 layers, five types of layers) convolutional neural network. A Hi-C matrix of regular resolution is transformed into the high-resolution but very sparse matrix, HiCNN predicts the missing values. Pearson and MSE evaluation metrics, overlap of Fit-Hi-C-detected significant interactions - perform similar or slightly better than [HiCPlus](#hicplus). PyTorch implementation. <details>
     <summary>Paper</summary>
     Liu, Tong, and Zheng Wang. "HiCNN: A Very Deep Convolutional Neural Network to Better Enhance the Resolution of Hi-C Data"  https://doi.org/10.1093/bioinformatics/btz251 Bioinformatics, April 9, 2019
 </details>
 
-- [Boost-HiC](https://github.com/LeopoldC/Boost-HiC) - infer fine-resolution contact frequencies in Hi-C data, performs well even on 0.1% of the raw data. TAD boundaries remain. Better than [HiCPlus](https://github.com/zhangyan32/HiCPlus). It can be used for differential analysis (comparison) of two Hi-C maps. <details>
+- <a name="boost-hic">[Boost-HiC](https://github.com/LeopoldC/Boost-HiC)</a> - infer fine-resolution contact frequencies in Hi-C data, performs well even on 0.1% of the raw data. TAD boundaries remain. Better than [HiCPlus](#hicplus). It can be used for differential analysis (comparison) of two Hi-C maps. <details>
     <summary>Paper</summary>
-    Carron, Leopold, Jean-baptiste Morlot, Vincent Matthys, Annick Lesne, and Julien Mozziconacci. "Boost-HiC : Computational Enhancement of Long-Range Contacts in Chromosomal Contact Maps"  https://doi.org/10.1101/471607 November 18, 2018. 
+    Carron, Leopold, Jean-baptiste Morlot, Vincent Matthys, Annick Lesne, and Julien Mozziconacci. "Boost-HiC: Computational Enhancement of Long-Range Contacts in Chromosomal Contact Maps"  https://doi.org/10.1101/471607 November 18, 2018. 
 </details>
 
-- [mHi-C](https://github.com/keleslab/mHiC) - recovering alignment of multi-mapped reads in Hi-C data. Generative model to estimate probabilities for each bin-pair originating from a given origin. Reproducibility of contact matrices (stratum-adjusted correlation), reproducibility and number of significant interactions are improved. Novel interactions. Enrichment of TAD boundaries in LINE and SINE repetitive elements. Multi-mapping is not sensitive to trimming. Read filtering strategy (Figure 1, supplementary figures are very visual). <details>
+- <a name="mhi-c">[mHi-C](https://github.com/keleslab/mHiC)</a> - recovering alignment of multi-mapped reads in Hi-C data. Generative model to estimate probabilities for each bin-pair originating from a given origin. Reproducibility of contact matrices (stratum-adjusted correlation), reproducibility and number of significant interactions are improved. Novel interactions. Enrichment of TAD boundaries in LINE and SINE repetitive elements. Multi-mapping is not sensitive to trimming. Read filtering strategy (Figure 1, supplementary figures are very visual). <details>
     <summary>Paper</summary>
     Zheng, Ye, Ferhat Ay, and Sunduz Keles. "Generative Modeling of Multi-Mapping Reads with MHi-C Advances Analysis of High Throughput Genome-Wide Conformation Capture Studies"  https://doi.org/10.1101/301705 October 3, 2018.
 </details>
 
-- [HiCPlus](https://github.com/zhangyan32/HiCPlus) - increasing resolution of Hi-C data using convolutional neural network, mean squared error as a loss function. Basically, smoothing parts of Hi-C image, then binning into smaller parts. Performs better than bilinear/biqubic smoothing. <details>
+- <a name="hicplus">[HiCPlus](https://github.com/zhangyan32/HiCPlus)</a> - increasing resolution of Hi-C data using convolutional neural network, mean squared error as a loss function. Basically, smoothing parts of Hi-C image, then binning into smaller parts. Performs better than bilinear/biqubic smoothing. <details>
     <summary>Paper</summary>
     Zhang, Yan, Lin An, Ming Hu, Jijun Tang, and Feng Yue. "HiCPlus: Resolution Enhancement of Hi-C Interaction Heatmap"  https://doi.org/10.1038/s41467-018-03113-2 March 1, 2017. 
 </details>
 
 ### Simulation
 
-- [FreeHi-C v.2.0]((https://github.com/keleslab/FreeHiC)) - simulation of realistic Hi-C matrices with user- or data-driven spike-ins. Spike-ins are introduced on read-level and converted to interaction frequency level. Benchmark of [HiCcompare](#hiccompare), [multiHiCcompare](#multihiccompare), [diffHiC](#diffhic), and [Selfish](#selfish). Assessment of FDR, power, significance order, PRC and AUROC, genomic properties. GM12878 and A549 replicates of experimental Hi-C data. Three simulation settings with varying background distribution of interaction frequencies, spike-in proportions, sequencing depth. Figure 5 - summary of performances for all methods and comparison types. Subjective top performers: [multiHiCcompare](#multihiccompare), [HiCcompare](#hiccompare), [diffHiC](#diffhic), [Selfish](#selfish).<details>
+- <a name="freehi-c-v.2.0">[FreeHi-C v.2.0](https://github.com/keleslab/FreeHiC)</a> - simulation of realistic Hi-C matrices with user- or data-driven spike-ins. Spike-ins are introduced on read-level and converted to interaction frequency level. Benchmark of [HiCcompare](#hiccompare), [multiHiCcompare](#multihiccompare), [diffHiC](#diffhic), and [Selfish](#selfish). Assessment of FDR, power, significance order, PRC and AUROC, genomic properties. GM12878 and A549 replicates of experimental Hi-C data. Three simulation settings with varying background distribution of interaction frequencies, spike-in proportions, sequencing depth. Figure 5 - summary of performances for all methods and comparison types. Subjective top performers: [multiHiCcompare](#multihiccompare), [HiCcompare](#hiccompare), [diffHiC](#diffhic), [Selfish](#selfish).<details>
     <summary>Paper</summary>
     Zheng, Ye, Peigen Zhou, and Sündüz Keleş. "FreeHi-C Spike-in Simulations for Benchmarking Differential Chromatin Interaction Detection"  https://doi.org/10.1016/j.ymeth.2020.07.001 Methods, July 2020
 </details>
 
-- [FreeHi-C](https://github.com/keleslab/FreeHiC) - Hi-C data simulation based on properties of experimental Hi-C data. Preserves A/B compartments, TADs, the correlation between replicated ([HiCRep](https://github.com/TaoYang-dev/hicrep)), significant interactions, improves power to detect differential interactions. Robust to sequencing depth changes. Tested on replicates of GM12878, A549 human cancer cells, malaria *P.falciparum*. Compared with poorly performing [Sim3C](https://github.com/cerebis/sim3C). [Simulated data](https://zenodo.org/record/3345896). Python3 implementation. <details>
+- <a name="freehi-c">[FreeHi-C](https://github.com/keleslab/FreeHiC)</a> - Hi-C data simulation based on properties of experimental Hi-C data. Preserves A/B compartments, TADs, the correlation between replicated ([HiCRep](https://github.com/TaoYang-dev/hicrep)), significant interactions, improves power to detect differential interactions. Robust to sequencing depth changes. Tested on replicates of GM12878, A549 human cancer cells, malaria *P.falciparum*. Compared with poorly performing [Sim3C](https://github.com/cerebis/sim3C). [Simulated data](https://zenodo.org/record/3345896). Python3 implementation. <details>
     <summary>Paper</summary>
     Zheng, Ye, and Sündüz Keleş. "FreeHi-C Simulates High-Fidelity Hi-C Data for Benchmarking and Data Augmentation"  https://doi.org/10.1038/s41592-019-0624-3 Nature Methods 17, no. 1 (January 2020)
 </details>
@@ -322,7 +322,7 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     Lu, Leina, Xiaoxiao Liu, Wei-Kai Huang, Paola Giusti-Rodríguez, Jian Cui, Shanshan Zhang, Wanying Xu, et al. "Robust Hi-C Maps of Enhancer-Promoter Interactions Reveal the Function of Non-Coding Genome in Neural Development and Diseases"  https://doi.org/10.1016/j.molcel.2020.06.007 Molecular Cell, June 2020
 </details>
 
-- [multiHiCcompare](https://bioconductor.org/packages/multiHiCcompare/) - R/Bioconductor package for joint normalization of multiple Hi-C datasets using cyclic loess regression through pairs of MD plots (minus-distance). Data-driven normalization accounting for the between-dataset biases. Per-distance edgeR-based testing of significant interactions. <details>
+- <a name="multihiccompare-norm">[multiHiCcompare](https://bioconductor.org/packages/multiHiCcompare/)</a> - R/Bioconductor package for joint normalization of multiple Hi-C datasets using cyclic loess regression through pairs of MD plots (minus-distance). Data-driven normalization accounting for the between-dataset biases. Per-distance edgeR-based testing of significant interactions. <details>
     <summary>Paper</summary>
     Stansfield, John C, Kellen G Cresswell, and Mikhail G Dozmorov. "MultiHiCcompare: Joint Normalization and Comparative Analysis of Complex Hi-C Experiments"  https://doi.org/10.1093/bioinformatics/btz048 Bioinformatics, January 22, 2019. 
 </details>
@@ -337,7 +337,7 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     - Spill, Yannick G., David Castillo, Enrique Vidal, and Marc A. Marti-Renom. "Binless Normalization of Hi-C Data Provides Significant Interaction and Difference Detection Independent of Resolution"  https://doi.org/10.1038/s41467-019-09907-2 Nature Communications 10, no. 1 (26 2019)
 </details>
 
-- [HiCcompare](https://bioconductor.org/packages/HiCcompare/) - R/Bioconductor package for joint normalization of two Hi-C datasets using loess regression through an MD plot (minus-distance). Data-driven normalization accounting for the between-dataset biases. Per-distance permutation testing of significant interactions. <details>
+- <a name="hiccompare_norm">[HiCcompare](https://bioconductor.org/packages/HiCcompare/)</a> - R/Bioconductor package for joint normalization of two Hi-C datasets using loess regression through an MD plot (minus-distance). Data-driven normalization accounting for the between-dataset biases. Per-distance permutation testing of significant interactions. <details>
     <summary>Paper</summary>
     Stansfield, John C., Kellen G. Cresswell, Vladimir I. Vladimirov, and Mikhail G. Dozmorov. "HiCcompare: An R-Package for Joint Normalization and Comparison of HI-C Datasets"  https://doi.org/10.1186/s12859-018-2288-x BMC Bioinformatics 19, no. 1 (December 2018). 
 </details>
@@ -560,7 +560,7 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     Baur, Brittany, Da-Inn Lee, Jill Haag, Deborah Chasman, Michael Gould, and Sushmita Roy. “Deciphering the Role of 3D Genome Organization in Breast Cancer Susceptibility.” Frontiers in Genetics 12 (January 11, 2022): 788318. https://doi.org/10.3389/fgene.2021.788318.
 </details>
 
-- [HICDCPlus](https://bioconductor.org/packages/HiCDCPlus/) - an R/Bioconductor package for Hi-C/Hi-ChIP interaction calling (directly from raw data, negative binomial regression accounting for genomic distance,GC content, mappability, restriction enzyme-based bin size) and differential analysis (DESeq2). Includes TAD (TopDom) and A/B compartment callers. Input - HiC-Pro or Juicer. Output compatible with visualization in Juicebox and HiCExplorer. Compared with diffHiC, multiHiCcompare, Selfish, provides better results. Normalization by ChIP-seq input may not be helpful. [BitBucket](https://bitbucket.org/leslielab/hicdcplus/src/master/). <details>
+- [HICDCPlus](https://bioconductor.org/packages/HiCDCPlus/) - an R/Bioconductor package for Hi-C/Hi-ChIP interaction calling (directly from raw data, negative binomial regression accounting for genomic distance,GC content, mappability, restriction enzyme-based bin size) and differential analysis (DESeq2). Includes TAD (TopDom) and A/B compartment callers. Input - HiC-Pro or Juicer. Output compatible with visualization in Juicebox and HiCExplorer. Compared with diffHiC, [multiHiCcompare](#multihiccompare), Selfish, provides better results. Normalization by ChIP-seq input may not be helpful. [BitBucket](https://bitbucket.org/leslielab/hicdcplus/src/master/). <details>
     <summary>Paper</summary>
     Sahin, Merve, Wilfred Wong, Yingqian Zhan, Kinsey Van Deynze, Richard Koche, and Christina S. Leslie. "[HiC-DC+ enables systematic 3D interaction calls and differential analysis for Hi-C and HiChIP"  https://doi.org/10.1038/s41467-021-23749-x Nature communications, 07 June 2021
 </details>
@@ -580,17 +580,17 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     Liu, Huiling, and Wenxiu Ma. "DiffGR: Detecting Differentially Interacting Genomic Regions from Hi-C Contact Maps"  https://doi.org/10.1101/2020.08.29.273698 bioRxiv, August 31, 2020
 </details>
 
-- [Serpentine](https://github.com/koszullab/serpentine) - differential analysis of two Hi-C maps using the 2D serpentine-binning method. Serpentine is a subset of connected pixels defined by thresholds in control and experimental contact maps. Serpentines are then compared using the Mean-Deviation plot. Help to alleviate the effect of sparsity. Uses HiCcompare functionality. Normalization does not help. Python package, currently processes full 1500x1500 matrices. <details>
+- [Serpentine](https://github.com/koszullab/serpentine) - differential analysis of two Hi-C maps using the 2D serpentine-binning method. Serpentine is a subset of connected pixels defined by thresholds in control and experimental contact maps. Serpentines are then compared using the Mean-Deviation plot. Help to alleviate the effect of sparsity. Uses [HiCcompare](#hiccompare) functionality. Normalization does not help. Python package, currently processes full 1500x1500 matrices. <details>
     <summary>Paper</summary>
     Baudry, Lyam, Gaël A Millot, Agnes Thierry, Romain Koszul, and Vittore F Scolari. "Serpentine: A Flexible 2D Binning Method for Differential Hi-C Analysis"  https://doi.org/10.1093/bioinformatics/btaa249 Edited by Alfonso Valencia. Bioinformatics 36, no. 12 (June 1, 2020)
 </details>
 
-- [ACCOST](https://bitbucket.org/noblelab/accost/src/master/) (Altered Chromatin COnformation STatirstics) - distance-aware differential Hi-C analysis. Extends the statistical model of DEseq by using the size factors to model the genomic distance effect. The use of the MD plot. Compared with diffHiC, FIND, and HiCcompare. Evaluated on human, mouse, plasmodium Hi-C data. <details>
+- [ACCOST](https://bitbucket.org/noblelab/accost/src/master/) (Altered Chromatin COnformation STatirstics) - distance-aware differential Hi-C analysis. Extends the statistical model of DEseq by using the size factors to model the genomic distance effect. The use of the MD plot. Compared with [diffHiC](#diffhic), FIND, and [HiCcompare](#hiccompare). Evaluated on human, mouse, plasmodium Hi-C data. <details>
     <summary>Paper</summary>
     - Cook, Kate B., Borislav H. Hristov, Karine G. Le Roch, Jean Philippe Vert, and William Stafford Noble. "[Measuring significant changes in chromatin conformation with ACCOST"  https://doi.org/10.1093/nar/gkaa069 Nucleic acids research, (18 March 2020) 
 </details>
 
-- [multiHiCcompare](https://bioconductor.org/packages/multiHiCcompare/) - R/Bioconductor package for joint normalization of multiple Hi-C datasets using cyclic loess regression through pairs of MD plots (minus-distance). Data-driven normalization accounting for the between-dataset biases. Per-distance edgeR-based testing of significant interactions. <details>
+- <a name="multihiccompare">[multiHiCcompare](https://bioconductor.org/packages/multiHiCcompare/)</a> - R/Bioconductor package for joint normalization of multiple Hi-C datasets using cyclic loess regression through pairs of MD plots (minus-distance). Data-driven normalization accounting for the between-dataset biases. Per-distance edgeR-based testing of significant interactions. <details>
     <summary>Paper</summary>
     Stansfield, John C, Kellen G Cresswell, and Mikhail G Dozmorov. "MultiHiCcompare: Joint Normalization and Comparative Analysis of Complex Hi-C Experiments"  https://doi.org/10.1093/bioinformatics/btz048 Bioinformatics, January 22, 2019
 </details>
@@ -600,12 +600,12 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     Cairns, Jonathan, William R. Orchard, Valeriya Malysheva, and Mikhail Spivakov. "Chicdiff: A Computational Pipeline for Detecting Differential Chromosomal Interactions in Capture Hi-C Data"  https://doi.org/10.1101/526269 BioRxiv, January 1, 2019
 </details>
 
-- [Selfish](https://github.com/ucrbioinfo/Selfish) - comparative analysis of replicate Hi-C experiments via a self-similarity measure - local similarity borrowed from image comparison. Check reproducibility, detect differential interactions. Boolean representation of contact matrices for reproducibility quantification. Deconvoluting local interactions with a Gaussian filter (putting a Gaussian bell around a pixel), then comparing derivatives between contact maps for each radius. Simulated (Zhou method) and real comparison with FIND - better performance, especially on low fold-changes. Stronger enrichment of relevant epigenomic features. Matlab implementation. <details>
+- <a name="selfish">[Selfish](https://github.com/ucrbioinfo/Selfish)</a> - comparative analysis of replicate Hi-C experiments via a self-similarity measure - local similarity borrowed from image comparison. Check reproducibility, detect differential interactions. Boolean representation of contact matrices for reproducibility quantification. Deconvoluting local interactions with a Gaussian filter (putting a Gaussian bell around a pixel), then comparing derivatives between contact maps for each radius. Simulated (Zhou method) and real comparison with FIND - better performance, especially on low fold-changes. Stronger enrichment of relevant epigenomic features. Matlab implementation. <details>
     <summary>Paper</summary>
     Roayaei Ardakany, Abbas, Ferhat Ay, and Stefano Lonardi. "Selfish: Discovery of Differential Chromatin Interactions via a Self-Similarity Measure"  https://doi.org/10.1093/bioinformatics/btz362 Bioinformatics, July 2019
 </details>
 
-- [HiCcompare](https://bioconductor.org/packages/HiCcompare/) - R/Bioconductor package for joint normalization of two Hi-C datasets using loess regression through an MD plot (minus-distance). Data-driven normalization accounting for the between-dataset biases. Per-distance permutation testing of significant interactions. <details>
+- <a name="hiccompare">[HiCcompare](https://bioconductor.org/packages/HiCcompare/)</a> - R/Bioconductor package for joint normalization of two Hi-C datasets using loess regression through an MD plot (minus-distance). Data-driven normalization accounting for the between-dataset biases. Per-distance permutation testing of significant interactions. <details>
     <summary>Paper</summary>
     Stansfield, John C., Kellen G. Cresswell, Vladimir I. Vladimirov, and Mikhail G. Dozmorov. "HiCcompare: An R-Package for Joint Normalization and Comparison of HI-C Datasets"  https://doi.org/10.1186/s12859-018-2288-x BMC Bioinformatics 19, no. 1 (December 2018)
 </details>
@@ -894,7 +894,7 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     - Huynh, Linh, and Fereydoun Hormozdiari. "Contribution of Structural Variation to Genome Structure: TAD Fusion Discovery and Ranking"  https://doi.org/10.1101/279356 BioRxiv, March 9, 2018. 
 </details>
 
-- [Arima-SV-Pipeline](https://github.com/ArimaGenomics/Arima-SV-Pipeline) - Docker/Singularity image for running [Structural Variant Detection with Arima Hi-C Technology](https://arimagenomics.com/resources/blog/new-products-structural-variant-detection/). Includes several tools (HiCUP, hic_breakfinder, Juicer, [HiCCUPS](#hiccups)). 
+- [Arima-SV-Pipeline](https://github.com/ArimaGenomics/Arima-SV-Pipeline) - Docker/Singularity image for running [Structural Variant Detection with Arima Hi-C Technology](https://arimagenomics.com/resources/blog/new-products-structural-variant-detection/). Includes several tools ([HiCUP](#hicup), hic_breakfinder, Juicer, [HiCCUPS](#hiccups)). 
 
 ## Visualization
 
@@ -948,12 +948,12 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     - Ramirez, R N, K Bedirian, S M Gray, and A Diallo. "DNA Rchitect: An R Based Visualizer for Network Analysis of Chromatin Interaction Data"  https://doi.org/10.1093/bioinformatics/btz608 Edited by John Hancock. Bioinformatics, August 2, 2019
 </details>
 
-- [HiGlass](http://higlass.io/) - visualization server for Google maps-style navigation of Hi-C maps. Overlay genes, epigenomic tracks. "Composable linked views" synchronizing exploration of multiple Hi-C datasets linked by location/zoom. [GitHub](https://github.com/higlass/higlass), [documentation](https://docs.higlass.io/), [links and resources](https://higlass.io/about). <details>
+- [HiGlass](https://github.com/higlass/higlass) - visualization server for Google maps-style navigation of Hi-C maps. Overlay genes, epigenomic tracks. "Composable linked views" synchronizing exploration of multiple Hi-C datasets linked by location/zoom. [Documentation](https://docs.higlass.io/), [links and resources](https://higlass.io/about). <details>
     <summary>Paper</summary>
     - Kerpedjiev, Peter, Nezar Abdennur, Fritz Lekschas, Chuck McCallum, Kasper Dinkla, Hendrik Strobelt, Jacob M. Luber, et al. "HiGlass: Web-Based Visual Exploration and Analysis of Genome Interaction Maps"  https://doi.org/10.1186/s13059-018-1486-1 Genome Biology, (December 2018).
 </details>
 
-- [HiPiler](http://hipiler.higlass.io/) - exploration and comparison of loops and domains as snippets-heatmaps of data. [GitHub](https://github.com/flekschas/hipiler), [documentation](http://hipiler.higlass.io/docs). <details>
+- [HiPiler](https://github.com/flekschas/hipiler) - exploration and comparison of loops and domains as snippets-heatmaps of data. [Documentation](http://hipiler.higlass.io/docs). <details>
     <summary>Paper</summary>
     - Lekschas, Fritz, Benjamin Bach, Peter Kerpedjiev, Nils Gehlenborg, and Hanspeter Pfister. "HiPiler: Visual Exploration of Large Genome Interaction Matrices with Interactive Small Multiples"  https://doi.org/10.1109/TVCG.2017.2745978 IEEE Transactions on Visualization and Computer Graphics 24, no. 1 (January 2018). TechBlog: [HiPiler simplifies chromatin structure analysis](http://blogs.nature.com/naturejobs/2017/09/11/techblog-hipiler-simplifies-chromatin-structure-analysis/)
 </details>
@@ -987,7 +987,7 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 - [pyGenomeTracks](https://github.com/deeptools/pyGenomeTracks) - python module to plot beautiful and highly customizable genome browser tracks.
 
-- [TADKit](https://github.com/3DGenomes/TADkit) - 3D Genome Browser.[ Main web site](http://sgt.cnag.cat/3dg/tadkit/), and [GitHub](https://github.com/3DGenomes/TADkit)
+- [TADKit](https://github.com/3DGenomes/TADkit) - 3D Genome Browser. [Main web site](http://sgt.cnag.cat/3dg/tadkit/).
 
 
 
@@ -1008,7 +1008,7 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     - Renschler, Gina, Gautier Richard, Claudia Isabelle Keller Valsecchi, Sarah Toscano, Laura Arrigoni, Fidel Ramirez, and Asifa Akhtar. "Hi-C Guided Assemblies Reveal Conserved Regulatory Topologies on X and Autosomes despite Extensive Genome Shuffling"  https://doi.org/10.1101/580969 BioRxiv, March 18, 2019. 
 </details>
 
-- [bin3C](https://github.com/cerebis/bin3C) - resolving metagenome-assembled genomes from Hi-C data. Metagenomic assembly using [SPAdes](http://cab.spbu.ru/software/spades/). Tested using simulated (Sim3C and MetaART) and real-life data. Performance metrics: adjusted mutual information, weighted Bcubed. Contact matrix where bins are contigs. Infomap method for clustering the whole-contig graph. Compared with ProxiMeta (Phase Genomics). <details>
+- [bin3C](https://github.com/cerebis/bin3C) - resolving metagenome-assembled genomes from Hi-C data. Metagenomic assembly using [SPAdes](http://cab.spbu.ru/software/spades/). Tested using simulated ( [Sim3C](https://github.com/cerebis/sim3C) and MetaART) and real-life data. Performance metrics: adjusted mutual information, weighted Bcubed. Contact matrix where bins are contigs. Infomap method for clustering the whole-contig graph. Compared with ProxiMeta (Phase Genomics). <details>
     <summary>Paper</summary>
     - DeMaere, Matthew Z., and Aaron E. Darling. "Bin3C: Exploiting Hi-C Sequencing Data to Accurately Resolve Metagenome-Assembled Genomes"  https://doi.org/10.1186/s13059-019-1643-1 Genome Biology 20, no. 1 (December 2019)
 </details>
@@ -1169,7 +1169,7 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     - Wit, E. de, and W. de Laat. "A Decade of 3C Technologies: Insights into Nuclear Organization"  https://doi.org/10.1101/gad.179804.111 Genes & Development 26, no. 1 (January 1, 2012)
 </details>
 
-- Review of technologies for studying the 3D structure of the genome. From microscopy to 3C techniques revealing CTCF and cohesin as the key proteins for establishing chromatin loops.TADs are unlikely over large distances >>1Mb. Details of 3C, 4C, 5C, Hi-C, ChIP-PET, and other derivatives. A/B compartments and their subdivision. TADs, their conservation, \~35-50% still seem to change. CTCF (directionality of binding important) and cohesin. Diseases and the 3D genome, examples. Key steps in data analysis and interpretation, software, visualization. Hi-C data specifics - chimeric reads, mapping, data representation as fixed or enzyme-sized bins, normalization, detection of A/B compartments and TAD boundaries, significant interactions. Hi-C analysis tools: HiC-Pro, HiCUP, HOMER, Juicer. Tools for 3D modeling. <details>
+- Review of technologies for studying the 3D structure of the genome. From microscopy to 3C techniques revealing CTCF and cohesin as the key proteins for establishing chromatin loops.TADs are unlikely over large distances >>1Mb. Details of 3C, 4C, 5C, Hi-C, ChIP-PET, and other derivatives. A/B compartments and their subdivision. TADs, their conservation, \~35-50% still seem to change. CTCF (directionality of binding important) and cohesin. Diseases and the 3D genome, examples. Key steps in data analysis and interpretation, software, visualization. Hi-C data specifics - chimeric reads, mapping, data representation as fixed or enzyme-sized bins, normalization, detection of A/B compartments and TAD boundaries, significant interactions. Hi-C analysis tools: HiC-Pro, [HiCUP](#hicup), HOMER, Juicer. Tools for 3D modeling. <details>
     <summary>Paper</summary>
     - Denker, Annette, and Wouter de Laat. "The Second Decade of 3C Technologies: Detailed Insights into Nuclear Organization"  https://doi.org/10.1101/gad.281964.116 Genes & Development 30, no. 12 (June 15, 2016)
 </details>
@@ -1390,7 +1390,7 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 ### Normalization
 
-- Lyu, Hongqiang, Erhu Liu, and Zhifang Wu. "Comparison of Normalization Methods for Hi-C Data](https://europepmc.org/article/med/31588782 BioTechniques 68, no. 2 (2020) - a comprehensive analysis of six Hi-C normalization methods for their ability to remove systematic biases. The introduction provides a good classification and overview of different normalization methods, including the latest methods for cross-sample normalization, such as "multiHiCcompare." Human and mouse Hi-C data were used, only cis interaction matrices are considered. A systematic protocol for benchmarking is presented. Several benchmarks were performed, including statistical quality, the influence of resolution, consistency of distance-dependent changes in interaction frequency, reproducibility of the 3D architecture. [multiHiCcompare](https://bioconductor.org/packages/multiHiCcompare/) is reported as outperforming other methods on a range of performance metrics. 
+- Lyu, Hongqiang, Erhu Liu, and Zhifang Wu. "Comparison of Normalization Methods for Hi-C Data](https://europepmc.org/article/med/31588782 BioTechniques 68, no. 2 (2020) - a comprehensive analysis of six Hi-C normalization methods for their ability to remove systematic biases. The introduction provides a good classification and overview of different normalization methods, including the latest methods for cross-sample normalization, such as [multiHiCcompare](#multihiccompare). Human and mouse Hi-C data were used, only cis interaction matrices are considered. A systematic protocol for benchmarking is presented. Several benchmarks were performed, including statistical quality, the influence of resolution, consistency of distance-dependent changes in interaction frequency, reproducibility of the 3D architecture. [multiHiCcompare](#multihiccompare) is reported as outperforming other methods on a range of performance metrics. 
 
 - Imakaev, Maxim, Geoffrey Fudenberg, Rachel Patton McCord, Natalia Naumova, Anton Goloborodko, Bryan R. Lajoie, Job Dekker, and Leonid A. Mirny. "Iterative Correction of Hi-C Data Reveals Hallmarks of Chromosome Organization"  https://doi.org/10.1038/nmeth.2148 Nature Methods 9, no. 10 (October 2012) - ICE - Iterative Correction and Eigenvalue decomposition, normalization of HiC data. Assumption - all loci should have equal visibility. Deconvolution into eigenvectors/values.
 
