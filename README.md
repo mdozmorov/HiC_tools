@@ -58,6 +58,18 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     Kruse, Kai, Clemens B. Hug, and Juan M. Vaquerizas. "FAN-C: A Feature-Rich Framework for the Analysis and Visualisation of Chromosome Conformation Capture Data"  https://doi.org/10.1186/s13059-020-02215-9 Genome Biology 21, no. 1 (December 2020) 
 </details>
 
+- [v3 of the Galaxy HiCExplorer](https://hicexplorer.usegalaxy.eu/). Includes full analysis of Hi-C, Capture-C, scHi-C. Workflow-like description of tools/tasks for each data type. <details>
+  <summary>Paper</summary>
+    Wolff, Joachim, Leily Rabbani, Ralf Gilsbach, Gautier Richard, Thomas Manke, Rolf Backofen, and Björn A Grüning. "Galaxy HiCExplorer 3: A Web Server for Reproducible Hi-C, Capture Hi-C and Single-Cell Hi-C Data Analysis, Quality Control and Visualization"  https://doi.org/10.1093/nar/gkaa220 Nucleic Acids Research, (July 2, 2020)
+</details>
+
+- Abdennur, Nezar, and Leonid Mirny. "Cooler: Scalable Storage for Hi-C Data and Other Genomically-Labeled Arrays"  https://doi.org/10.1093/bioinformatics/btz540 Bioinformatics, January 1, 2020. 
+    - [cooler](https://github.com/mirnylab/cooler)  - file format for storing Hi-C matrices, sparse, hierarchical, multi-resolution. `cooler` Python package for data loading, aggregation, merging, normalization (balancing), viewing, exporting data. Together with ["pairs" text-based format](https://github.com/4dn-dcic/pairix/blob/master/pairs_format_specification.md), and hic, cooler is accepted by the 4D Nucleome Consortium DAC. [Documentation](https://cooler.readthedocs.io/en/latest/)
+    - [cooltools](https://github.com/mirnylab/cooltools) - tools to work with .cool files, [Documentation](https://cooltools.readthedocs.io/en/latest/)
+    - [hiclib](https://github.com/mirnylab/hiclib-legacy) - Python tools to QC, map, normalize, filter and analyze Hi-C data
+    - [hic2cool](https://github.com/4dn-dcic/hic2cool) - Lightweight converter between hic and cool contact matrices.
+    - [pairtools](https://github.com/mirnylab/pairtools) - tools for low-level processing of mapped Hi-C paired reads. [Documentation](https://pairtools.readthedocs.io/en/latest/index.html)
+
 - [HiCExplorer](https://github.com/deeptools/HiCExplorer/) - set of programs to process, normalize, analyze and visualize Hi-C data, Python, .cool format, conversion utilities. [Documentation](https://hicexplorer.readthedocs.io/) <details>
   <summary>Paper</summary>
   Ramírez, Fidel, Vivek Bhardwaj, Laura Arrigoni, Kin Chung Lam, Björn A. Grüning, José Villaveces, Bianca Habermann, Asifa Akhtar, and Thomas Manke. "High-Resolution TADs Reveal DNA Sequences Underlying Genome Organization in Flies"  https://doi.org/10.1038/s41467-017-02525-w Nature Communications 9, no. 1 (December 2018) 
@@ -68,14 +80,9 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     Wolff, Joachim, Vivek Bhardwaj, Stephan Nothjunge, Gautier Richard, Gina Renschler, Ralf Gilsbach, Thomas Manke, Rolf Backofen, Fidel Ramírez, and Björn A. Grüning. "Galaxy HiCExplorer: A Web Server for Reproducible Hi-C Data Analysis, Quality Control and Visualization"  https://doi.org/10.1093/nar/gky504 Nucleic Acids Research 46, no. W1 (July 2, 2018). 
 </details>
 
-- [v3 of the Galaxy HiCExplorer](https://hicexplorer.usegalaxy.eu/). Includes full analysis of Hi-C, Capture-C, scHi-C. Workflow-like description of tools/tasks for each data type. <details>
-  <summary>Paper</summary>
-    Wolff, Joachim, Leily Rabbani, Ralf Gilsbach, Gautier Richard, Thomas Manke, Rolf Backofen, and Björn A Grüning. "Galaxy HiCExplorer 3: A Web Server for Reproducible Hi-C, Capture Hi-C and Single-Cell Hi-C Data Analysis, Quality Control and Visualization"  https://doi.org/10.1093/nar/gkaa220 Nucleic Acids Research, (July 2, 2020)
-</details>
+- [scHiCExplorer](https://github.com/joachimwolff/scHiCExplorer) - set of command-line tools specifically designed for scHi-C data. [scHiCExplorer's documentation](https://schicexplorer.readthedocs.io/en/latest/). 
 
-- [scHiCExplorer](https://github.com/joachimwolff/scHiCExplorer) - set of tools specifically designed for scHi-C data. [scHiCExplorer's documentation](https://schicexplorer.readthedocs.io/en/latest/). 
-
-- [GITAR](https://www.genomegitar.org/https://github.com/Zhong-Lab-UCSD/HiCtool) - full Hi-C pre-processing, normalization, TAD detection, and visualization. Python scripts wrapping other tools. Table 1 summarizes the functionality of existing tools. <details>
+- [GITAR](https://github.com/Zhong-Lab-UCSD/HiCtool) - full Hi-C pre-processing, normalization, TAD detection, and visualization. Python scripts wrapping other tools. Table 1 summarizes the functionality of existing tools. [Documentation](https://www.genomegitar.org) <details>
     <summary>Paper</summary>
     Calandrelli, Riccardo, Qiuyang Wu, Jihong Guan, and Sheng Zhong. “GITAR: An Open Source Tool for Analysis and Visualization of Hi-C Data.” Genomics, Proteomics & Bioinformatics 16, no. 5 (2018): 365–72. https://doi.org/10.1016/j.gpb.2018.06.006 
 </details>
@@ -85,26 +92,9 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     Lazaris, Charalampos, Stephen Kelly, Panagiotis Ntziachristos, Iannis Aifantis, and Aristotelis Tsirigos. "HiC-Bench: Comprehensive and Reproducible Hi-C Data Analysis Designed for Parameter Exploration and Benchmarking"  https://doi.org/10.1186/s12864-016-3387-6 BMC Genomics 18, no. 1 (December 2017)
 </details>
 
-- [TADbit](https://github.com/3DGenomes/tadbit) - TADbit is a complete Python library to deal with all steps to analyze, model and explore 3C-based data. With TADbit, the user can map FASTsQ files to obtain raw interaction binned matrices (Hi-C like matrices), normalize and correct interaction matrices, identify and compare the Topologically Associating Domains (TADs), build 3D models from the interaction matrices, and finally, extract structural properties from the models. TADbit is complemented by TADkit for visualizing 3D models. <details>
+- [TADbit](https://github.com/3DGenomes/tadbit) - TADbit is a complete Python library to deal with all steps to analyze, model and explore 3C-based data. With TADbit, the user can map FASTQ files to obtain raw interaction binned matrices (Hi-C like matrices), normalize and correct interaction matrices, identify and compare the Topologically Associating Domains (TADs), build 3D models from the interaction matrices, and finally, extract structural properties from the models. TADbit is complemented by [TADkit](https://github.com/3DGenomes/TADkit) for visualizing 3D models. <details>
     <summary>Paper</summary>
     Serra, François, Davide Baù, Mike Goodstadt, David Castillo, Guillaume J. Filion, and Marc A. Marti-Renom. "Automatic Analysis and 3D-Modelling of Hi-C Data Using TADbit Reveals Structural Features of the Fly Chromatin Colors"  https://doi.org/10.1371/journal.pcbi.1005665 PLoS Computational Biology 13, no. 7 (July 2017) 
-</details>
-
-- [HiCdat](https://github.com/MWSchmid/HiCdat) - Hi-C processing pipeline and downstream analysis/visualization. Analyses: normalization, correlation, visualization, comparison, distance decay, PCA, interaction enrichment test, epigenomic enrichment/depletion. <details>
-    <summary>Paper</summary>
-    Schmid, Marc W., Stefan Grob, and Ueli Grossniklaus. "HiCdat: A Fast and Easy-to-Use Hi-C Data Analysis Tool"  https://doi.org/10.1186/s12859-015-0678-x BMC Bioinformatics 16 (September 3, 2015) 
-</details>
-
-- [HiC-Pro](https://github.com/nservant/HiC-Pro) - Python and command line-based optimized and flexible pipeline for Hi-C data processing. [hicpro2juicebox](https://github.com/nservant/HiC-Pro/blob/master/bin/utils/hicpro2juicebox.sh) tool to generate Juicebox-compatible files (requires juicebox_clt.jar) <details>
-    <summary>Paper</summary>
-    Servant, Nicolas, Nelle Varoquaux, Bryan R. Lajoie, Eric Viara, Chong-Jian Chen, Jean-Philippe Vert, Edith Heard, Job Dekker, and Emmanuel Barillot. "HiC-Pro: An Optimized and Flexible Pipeline for Hi-C Data Processing."  https://doi.org/10.1186/s13059-015-0831-x Genome Biology 16 (December 1, 2015) - HiC pipeline, references to other pipelines, comparison. From raw reads to normalized matrices. Normalization methods, fast and memory-efficient implementation of iterative correction normalization (ICE). Data format. Using genotyping information to phase contact maps.
-</details>
-
-- [HiC_Pipeline](https://github.com/XiaoTaoWang/HiC_pipeline) - Python-based pipeline performing mapping, filtering, binning, and ICE-correcting Hi-C data, from raw reads (.sra, .fastq) to contact matrices. Additionally, converting to sparse format, performing QC. 
-
-- [HiCUP](http://www.bioinformatics.babraham.ac.uk/projects/hicup/)  - Perl-based pipeline, alignment only, output BAM files. <details>
-    <summary>Paper</summary>
-    Wingett, Steven, Philip Ewels, Mayra Furlan-Magaril, Takashi Nagano, Stefan Schoenfelder, Peter Fraser, and Simon Andrews. "HiCUP: Pipeline for Mapping and Processing Hi-C Data"  https://doi.org/10.12688/f1000research.7334.1 F1000Research 4 (2015) - HiCUP pipeline, alignment only, removes artifacts (religations, duplicate reads) creating BAM files. Details about Hi-C sequencing artifacts. Used in conjunction with other pipelines.
 </details>
 
 - [Juicer](https://github.com/theaidenlab/juicebox/wiki/Download) - Java full pipeline to convert raw reads into Hi-C maps, visualized in Juicebox. Calls domains, loops, CTCF binding sites. `.hic` file format for storing multi-resolution Hi-C data. <details>
@@ -114,34 +104,46 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     Rao, Suhas S. P., Miriam H. Huntley, Neva C. Durand, Elena K. Stamenova, Ivan D. Bochkov, James T. Robinson, Adrian L. Sanborn, et al. "A 3D Map of the Human Genome at Kilobase Resolution Reveals Principles of Chromatin Looping"  https://doi.org/10.1016/j.cell.2014.11.021 Cell 159, no. 7 (December 18, 2014)  - Juicer analysis example. TADs defined by frequent interactions. Enriched in CTCF and cohesin members. Five domain types. A1 and A2 enriched in genes. Chr 19 contains 6th pattern B6. Enrichment in different histone modification marks. TADs are preserved across cell types. Yet, differences between Gm12878 and IMR90 were detected. Boundaries detection by scanning image. Refs to the original paper.
 </details>
 
-- [Juicer Tools](https://github.com/aidenlab/juicer/wiki/Juicer-Tools-Quick-Start) for creating/extracting data from .hic files, [Arrowhead](#arrowhead) for finding contact domains, [HiCCUPS](#hiccups) for loop detection and [HiCCUPS Diff](#hiccupsdiff) for finding differential loops, [MotifFinder](https://github.com/aidenlab/juicer/wiki/MotifFinder) for characterizing CTCF peaks at loop anchors, [Pearsons](https://github.com/aidenlab/juicer/wiki/Pearsons) for calculating the Pearson's correlation matrix of the Observed/Expected, [APA](https://github.com/aidenlab/juicer/wiki/APA) aggregated peak analysis, [Eigenvector](#eigenvector) for determining A/B chromatin states, [Compare Lists](https://github.com/aidenlab/juicer/wiki/Compare-Lists) for separating loop lists into common and condition-specific loops. All tools are described in the Extended Experimental Procedures of [Rao, Huntley et al. Cell 2014](https://www.cell.com/cms/10.1016/j.cell.2014.11.021/attachment/d3c6dcd8-c799-4f68-bbe4-201be54960b5/mmc1.pdf)
+- [HiC-Pro](https://github.com/nservant/HiC-Pro) - Python and command line-based optimized and flexible pipeline for Hi-C data processing. [hicpro2juicebox](https://github.com/nservant/HiC-Pro/blob/master/bin/utils/hicpro2juicebox.sh) tool to generate Juicebox-compatible files (requires juicebox_clt.jar). [Documentation](http://nservant.github.io/HiC-Pro/) <details>
+    <summary>Paper</summary>
+    Servant, Nicolas, Nelle Varoquaux, Bryan R. Lajoie, Eric Viara, Chong-Jian Chen, Jean-Philippe Vert, Edith Heard, Job Dekker, and Emmanuel Barillot. "HiC-Pro: An Optimized and Flexible Pipeline for Hi-C Data Processing."  https://doi.org/10.1186/s13059-015-0831-x Genome Biology 16 (December 1, 2015) - HiC pipeline, references to other pipelines, comparison. From raw reads to normalized matrices. Normalization methods, fast and memory-efficient implementation of iterative correction normalization (ICE). Data format. Using genotyping information to phase contact maps.
+</details>
+
+- [HiCdat](https://github.com/MWSchmid/HiCdat) - Hi-C processing pipeline and downstream analysis/visualization. Analyses: normalization, correlation, visualization, comparison, distance decay, PCA, interaction enrichment test, epigenomic enrichment/depletion. Consists of GUI tool for data preprocessing and R package for data analysis. <details>
+    <summary>Paper</summary>
+    Schmid, Marc W., Stefan Grob, and Ueli Grossniklaus. "HiCdat: A Fast and Easy-to-Use Hi-C Data Analysis Tool"  https://doi.org/10.1186/s12859-015-0678-x BMC Bioinformatics 16 (September 3, 2015) 
+</details>
+
+- [HiC_Pipeline](https://github.com/XiaoTaoWang/HiC_pipeline) - Python-based pipeline performing mapping, filtering, binning, and ICE-correcting Hi-C data, from raw reads (.sra, .fastq) to contact matrices. Additionally, converting to sparse format, performing QC. [Documentation](http://xiaotaowang.github.io/HiC_pipeline/)
+
+- [HiCUP](http://www.bioinformatics.babraham.ac.uk/projects/hicup/)  - Perl-based pipeline, alignment only, output BAM files. [Documentation](https://www.bioinformatics.babraham.ac.uk/projects/hicup/read_the_docs/html/index.html) <details>
+    <summary>Paper</summary>
+    Wingett, Steven, Philip Ewels, Mayra Furlan-Magaril, Takashi Nagano, Stefan Schoenfelder, Peter Fraser, and Simon Andrews. "HiCUP: Pipeline for Mapping and Processing Hi-C Data"  https://doi.org/10.12688/f1000research.7334.1 F1000Research 4 (2015) - HiCUP pipeline, alignment only, removes artifacts (religations, duplicate reads) creating BAM files. Details about Hi-C sequencing artifacts. Used in conjunction with other pipelines.
+</details>
+
+- [Juicer Tools](https://github.com/aidenlab/juicer/wiki/Juicer-Tools-Quick-Start) - for creating/extracting data from .hic files, [Arrowhead](#arrowhead) for finding contact domains, [HiCCUPS](#hiccups) for loop detection and [HiCCUPS Diff](#hiccupsdiff) for finding differential loops, [MotifFinder](https://github.com/aidenlab/juicer/wiki/MotifFinder) for characterizing CTCF peaks at loop anchors, [Pearsons](https://github.com/aidenlab/juicer/wiki/Pearsons) for calculating the Pearson's correlation matrix of the Observed/Expected, [APA](https://github.com/aidenlab/juicer/wiki/APA) aggregated peak analysis, [Eigenvector](#eigenvector) for determining A/B chromatin states, [Compare Lists](https://github.com/aidenlab/juicer/wiki/Compare-Lists) for separating loop lists into common and condition-specific loops. All tools are described in the Extended Experimental Procedures of [Rao, Huntley et al. Cell 2014](https://www.cell.com/cms/10.1016/j.cell.2014.11.021/attachment/d3c6dcd8-c799-4f68-bbe4-201be54960b5/mmc1.pdf)
 
 - [Juicer's 3D de novo assembly pipeline and resources](#theaidenlab3ddna)
 
-- [ENCODE project Data Production and Processing Standard of the Hi-C Mapping Center, PDF](https://www.encodeproject.org/documents/75926e4b-77aa-4959-8ca7-87efcba39d79/@@download/attachment/comp_doc_7july2018_final.pdf)
+- [ENCODE project Data Production and Processing Standard of the Hi-C Mapping Center, PDF](https://www.encodeproject.org/documents/75926e4b-77aa-4959-8ca7-87efcba39d79/@@download/attachment/comp_doc_7july2018_final.pdf) - Computational standards of the Hi-C ENCODE mapping center including quality control measures and computational methods. 
 
 - [Arima mapping pipeline](https://github.com/ArimaGenomics/mapping_pipeline) - Mapping pipeline for data generated using Arima-HiC
 
-- [cword](https://github.com/dekkerlab/cworld-dekker) - perl cworld module and collection of utility/analysis scripts for C data (3C, 4C, 5C, Hi-C).
+- [cword](https://github.com/dekkerlab/cworld-dekker) - Perl cworld module and collection of utility/analysis scripts for C data (3C, 4C, 5C, Hi-C).
 
-- [HiCpipe](https://github.com/ChenFengling/HiCpipe) - an efficient Hi-C data processing pipeline. It is based on Juicer and HiC-pro, which combines the advantages of these two processing pipelines. HiCpipe is much faster than Juicer and HiC-pro and can output multiple features of Hi-C maps.
+- [HiCpipe](https://github.com/ChenFengling/HiCpipe) - an efficient Hi-C data processing pipeline. It is based on [Juicer](#juicer) and [HiC-pro](#hicpro), which combines the advantages of these two processing pipelines. HiCpipe is much faster than Juicer and HiC-pro and can output multiple features of Hi-C maps.
 
 - [my5C](http://my5c.umassmed.edu/) - web-based tools, well-documented analysis and visualization of 5S data.
 
-- [nf-core-hic](https://github.com/nservant/nf-core-hic) - Analysis of Chromosome Conformation Capture data (Hi-C and more), Nextflow pipeline. https://github.com/nservant/nf-core-hic. Also, [nf-core/hic](https://github.com/nf-core/hic)
+- [nf-core-hic](https://github.com/nservant/nf-core-hic) - Analysis of Chromosome Conformation Capture data (Hi-C and more), [Nextflow](https://www.nextflow.io) pipeline. Also, [nf-core/hic](https://github.com/nf-core/hic). [Documentation](https://nf-co.re/hic/usage)
 
-- [distiller-nf](https://github.com/mirnylab/distiller-nf) - Java modular Hi-C mapping pipeline for reproducible data analysis, nextflow pipeline. Alignment, filtering, aggregating Hi-C matrices.
+- [distiller-nf](https://github.com/mirnylab/distiller-nf) - Java modular Hi-C mapping pipeline for reproducible data analysis, [Nextflow](https://www.nextflow.io) pipeline. Alignment, filtering, aggregating Hi-C matrices.
 
-- [runHiC](https://github.com/XiaoTaoWang/HiC_pipeline) - aka `HiC_pipeline`, Hi-C data processing pipeline, from raw FASTQ files. Supports bwa-mem, chromap (default), and minimap2 aligners. Performs quality control (plots), filtering, binning (to mcool output), pileup. Parallelized. By [XiaoTao Wang](https://github.com/XiaoTaoWang).
+- [runHiC](https://github.com/XiaoTaoWang/HiC_pipeline) - aka [HiC_pipeline](#hicpipeline), Hi-C data processing pipeline, from raw FASTQ files. Supports bwa-mem, chromap (default), and minimap2 aligners. Performs quality control (plots), filtering, binning (to mcool output), pileup. Parallelized. By [XiaoTao Wang](https://github.com/XiaoTaoWang).
 
-- [4D Nucleome Hi-C Processing Pipeline](https://github.com/4dn-dcic/docker-4dn-hic), set of scripts wrapped in a Docker image. Works with `.hic` and `.cool` files. [Overview](https://data.4dnucleome.org/resources/data-analysis/hi_c-processing-pipeline)
+- [4D Nucleome Hi-C Processing Pipeline](https://github.com/4dn-dcic/docker-4dn-hic) - set of scripts wrapped in a Docker image. Works with `.hic` and `.cool` files. [Overview](https://data.4dnucleome.org/resources/data-analysis/hi_c-processing-pipeline)
 
-- Abdennur, Nezar, and Leonid Mirny. "Cooler: Scalable Storage for Hi-C Data and Other Genomically-Labeled Arrays"  https://doi.org/10.1093/bioinformatics/btz540 Bioinformatics, January 1, 2020. 
-    - [cooler](https://github.com/mirnylab/cooler) file format for storing Hi-C matrices, sparse, hierarchical, multi-resolution. `cooler` Python package for data loading, aggregation, merging, normalization (balancing), viewing, exporting data. Together with ["pairs" text-based format](https://github.com/4dn-dcic/pairix/blob/master/pairs_format_specification.md), and hic, cooler is accepted by the 4D Nucleome Consortium DAC. https://github.com/mirnylab/cooler, https://cooler.readthedocs.io/en/latest/
-    - [cooltools](https://github.com/mirnylab/cooltools) - tools to work with .cool files, [Documentation](https://cooltools.readthedocs.io/en/latest/), https://github.com/mirnylab/cooltools
-    - [hiclib](https://bitbucket.org/mirnylab/hiclib) - Python tools to QC, map, normalize, filter and analyze Hi-C data, https://bitbucket.org/mirnylab/hiclib
-    - [hic2cool](https://github.com/4dn-dcic/hic2cool) - Lightweight converter between hic and cool contact matrices. https://github.com/4dn-dcic/hic2cool
-    - [pairtools](https://github.com/mirnylab/pairtools) - tools for low-level processing of mapped Hi-C paired reads. https://github.com/mirnylab/pairtools. [Documentation](https://pairtools.readthedocs.io/en/latest/index.html)
+
 
 ### QC, quality control
 
