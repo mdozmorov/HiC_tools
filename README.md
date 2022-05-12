@@ -70,7 +70,7 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     - [hic2cool](https://github.com/4dn-dcic/hic2cool) - Lightweight converter between hic and cool contact matrices.
     - [pairtools](https://github.com/mirnylab/pairtools) - tools for low-level processing of mapped Hi-C paired reads. [Documentation](https://pairtools.readthedocs.io/en/latest/index.html)
 
-- [HiCExplorer](https://github.com/deeptools/HiCExplorer/) - set of programs to process, normalize, analyze and visualize Hi-C data, Python, .cool format, conversion utilities. [Documentation](https://hicexplorer.readthedocs.io/) <details>
+- [HiCExplorer](https://github.com/deeptools/HiCExplorer/) - set of programs to process, normalize, analyze and visualize Hi-C data, Python, .cool format, conversion utilities.[Documentation](https://hicexplorer.readthedocs.io/)  <details>
   <summary>Paper</summary>
   Ramírez, Fidel, Vivek Bhardwaj, Laura Arrigoni, Kin Chung Lam, Björn A. Grüning, José Villaveces, Bianca Habermann, Asifa Akhtar, and Thomas Manke. "High-Resolution TADs Reveal DNA Sequences Underlying Genome Organization in Flies"  https://doi.org/10.1038/s41467-017-02525-w Nature Communications 9, no. 1 (December 2018) 
 </details> 
@@ -82,7 +82,7 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 - [scHiCExplorer](https://github.com/joachimwolff/scHiCExplorer) - set of command-line tools specifically designed for scHi-C data. [scHiCExplorer's documentation](https://schicexplorer.readthedocs.io/en/latest/). 
 
-- [GITAR](https://github.com/Zhong-Lab-UCSD/HiCtool) - full Hi-C pre-processing, normalization, TAD detection, and visualization. Python scripts wrapping other tools. Table 1 summarizes the functionality of existing tools. [Documentation](https://www.genomegitar.org) <details>
+- [GITAR](https://github.com/Zhong-Lab-UCSD/HiCtool) - full Hi-C pre-processing, normalization, TAD detection, and visualization. Python scripts wrapping other tools. Table 1 summarizes the functionality of existing tools.[Documentation](https://www.genomegitar.org) <details>
     <summary>Paper</summary>
     Calandrelli, Riccardo, Qiuyang Wu, Jihong Guan, and Sheng Zhong. “GITAR: An Open Source Tool for Analysis and Visualization of Hi-C Data.” Genomics, Proteomics & Bioinformatics 16, no. 5 (2018): 365–72. https://doi.org/10.1016/j.gpb.2018.06.006 
 </details>
@@ -116,7 +116,7 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 - [HiC_Pipeline](https://github.com/XiaoTaoWang/HiC_pipeline) - Python-based pipeline performing mapping, filtering, binning, and ICE-correcting Hi-C data, from raw reads (.sra, .fastq) to contact matrices. Additionally, converting to sparse format, performing QC. [Documentation](http://xiaotaowang.github.io/HiC_pipeline/)
 
-- [HiCUP](http://www.bioinformatics.babraham.ac.uk/projects/hicup/)  - Perl-based pipeline, alignment only, output BAM files. [Documentation](https://www.bioinformatics.babraham.ac.uk/projects/hicup/read_the_docs/html/index.html) <details>
+- [HiCUP](http://www.bioinformatics.babraham.ac.uk/projects/hicup/)  - Perl-based pipeline, alignment only, output BAM files. [Documentation](https://www.bioinformatics.babraham.ac.uk/projects/hicup/read_the_docs/html/index.html)  <details>
     <summary>Paper</summary>
     Wingett, Steven, Philip Ewels, Mayra Furlan-Magaril, Takashi Nagano, Stefan Schoenfelder, Peter Fraser, and Simon Andrews. "HiCUP: Pipeline for Mapping and Processing Hi-C Data"  https://doi.org/10.12688/f1000research.7334.1 F1000Research 4 (2015) - HiCUP pipeline, alignment only, removes artifacts (religations, duplicate reads) creating BAM files. Details about Hi-C sequencing artifacts. Used in conjunction with other pipelines.
 </details>
