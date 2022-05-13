@@ -982,7 +982,7 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     Akdemir, Kadir Caner, and Lynda Chin. "HiCPlotter Integrates Genomic Data with Interaction Matrices"  https://doi.org/10.1186/s13059-015-0767-1 Genome Biology 16 (2015)
 </details>
 
-- <a name="nuchart">[NuChart](ftp://fileserver.itb.cnr.it/nuchart/)</a> - gene-centric network of genes interacting in 3D. Integration of epigenomic features. Statistical network analysis. <details>
+- <a name="nuchart">[NuChart](https://doi.org/10.1371/journal.pone.0075146)</a> - gene-centric network of genes interacting in 3D. Integration of epigenomic features. Statistical network analysis. Code unavailable. <details>
     <summary>Paper</summary>
     Merelli, Ivan, Pietro Liò, and Luciano Milanesi. “NuChart: An R Package to Study Gene Spatial Neighbourhoods with Multi-Omics Annotations.” PloS One 8, no. 9 (2013): e75146. https://doi.org/10.1371/journal.pone.0075146
 </details>
@@ -1232,7 +1232,7 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     Gavrilov, Alexey A., Rinat I. Sultanov, Mikhail D. Magnitov, Aleksandra A. Galitsyna, Erdem B. Dashinimaev, Erez Lieberman Aiden, and Sergey V. Razin. “RedChIP Identifies Noncoding RNAs Associated with Genomic Sites Occupied by Polycomb and CTCF Proteins.” Proceedings of the National Academy of Sciences 119, no. 1 (January 4, 2022): e2116222119. https://doi.org/10.1073/pnas.2116222119.
 </details>
 
-- RD-SPRITE](https://github.com/GuttmanLab/sprite2.0-pipeline) -  (RNA & DNA SPRITE) technology to map the spatial organization of RNA and DNA (improved efficiency of the RNA-tagging steps). Noncoding RNAs form high-concentration territories throughout the nucleus (ncRNAs involved in rRNA processing organize around rRNA genes, splicing ncRNAs are concentrated near PolII sites, more examples). In general, (noncoding) RNA-chromatin structures are associated with three functional classes: RNA processing, heterochromatin assembly, gene regulation. [GSE GEO151515](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE151515) - RD-SPRITE data (clusters information) on mouse ESCs, naive and treated with Actinomycin D. See also the [other sprite pipeline](https://github.com/GuttmanLab/sprite-pipeline) <details>
+- [RD-SPRITE](https://github.com/GuttmanLab/sprite2.0-pipeline) -  (RNA & DNA SPRITE) technology to map the spatial organization of RNA and DNA (improved efficiency of the RNA-tagging steps). Noncoding RNAs form high-concentration territories throughout the nucleus (ncRNAs involved in rRNA processing organize around rRNA genes, splicing ncRNAs are concentrated near PolII sites, more examples). In general, (noncoding) RNA-chromatin structures are associated with three functional classes: RNA processing, heterochromatin assembly, gene regulation. [GSE GEO151515](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE151515) - RD-SPRITE data (clusters information) on mouse ESCs, naive and treated with Actinomycin D. See also the [other sprite pipeline](https://github.com/GuttmanLab/sprite-pipeline) <details>
     <summary>Paper</summary>
     Quinodoz, Sofia A., Joanna W. Jachowicz, Prashant Bhat, Noah Ollikainen, Abhik K. Banerjee, Isabel N. Goronzy, Mario R. Blanco, et al. “RNA Promotes the Formation of Spatial Compartments in the Nucleus.” Cell 184, no. 23 (November 2021): 5775-5790.e30. https://doi.org/10.1016/j.cell.2021.10.014.
 </details>
@@ -1297,40 +1297,40 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     Tan, Longzhi, Dong Xing, Chi-Han Chang, Heng Li, and X. Sunney Xie. "Three-Dimensional Genome Structures of Single Diploid Human Cells"  https://doi.org/10.1126/science.aat5641 Science. August 31, 2018
 </details>
 
-- Methyl-HiC technology, in situ Hi-C and WGBS. Comparable Hi-C matrices, TADs. 20% fewer CpGs overall, more CpGs in open chromatin. Proximal CpGs correlate irrespectively of loop anchors, weaker for inter-chromosomal interactions. Application to single-cell, mouse ESCs under different conditions. Relevant clustering, cluster-specific genes. Methods for wet-lab and computational processing. [Bulk (replicates) and single-cell Methyl-HiC data](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE119171). Scripts in https://bitbucket.org/dnaase/bisulfitehic/src/master/, Bhmem pipeline to map bisulfite-converted reads, Juicer pipeline for processing, VC normalization, HiCRep at 1Mb matrix similarity. <details>
+- [Methyl-HiC technology, in situ Hi-C and WGBS](https://bitbucket.org/dnaase/bisulfitehic/src/master/) - Comparable Hi-C matrices, TADs. 20% fewer CpGs overall, more CpGs in open chromatin. Proximal CpGs correlate irrespectively of loop anchors, weaker for inter-chromosomal interactions. Application to single-cell, mouse ESCs under different conditions. Relevant clustering, cluster-specific genes. Methods for wet-lab and computational processing. [Bulk (replicates) and single-cell Methyl-HiC data](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE119171). Bhmem pipeline to map bisulfite-converted reads, Juicer pipeline for processing, VC normalization, HiCRep at 1Mb matrix similarity. <details>
     <summary>Paper</summary>
     Li, Guoqiang, Yaping Liu, Yanxiao Zhang, Naoki Kubo, Miao Yu, Rongxin Fang, Manolis Kellis, and Bing Ren. "Joint Profiling of DNA Methylation and Chromatin Architecture in Single Cells"  https://doi.org/10.1038/s41592-019-0502-z Nature Methods, August 5, 2019. 
 </details>
 
-- Review of chromatin conformation capture technologies, from image-based methods (FISH), through proximity ligation (3/4/5C, Hi-C, TCC, ChIA-PET, scHi-C), to ligation-free methods (GAM, SPRITE, ChIA-Drop). Details of each technology (Table 1, Figures), comparison of them (Table 2). <details>
+- [Review of chromatin conformation capture technologies](https://doi.org/10.1038/s41576-019-0195-2) - from image-based methods (FISH), through proximity ligation (3/4/5C, Hi-C, TCC, ChIA-PET, scHi-C), to ligation-free methods (GAM, SPRITE, ChIA-Drop). Details of each technology (Table 1, Figures), comparison of them (Table 2). <details>
     <summary>Paper</summary>
     Kempfer, Rieke, and Ana Pombo. "Methods for Mapping 3D Chromosome Architecture"  https://doi.org/10.1038/s41576-019-0195-2 Nature Reviews Genetics, December 17, 2019. 
 </details>
 
-- Optimization steps for Hi-C wet-lab protocol. Pitfalls and their effect on the downstream quality. Recommendations for each step. 
+- [Optimization steps for Hi-C wet-lab protocol](https://doi.org/10.1101/287201) - Pitfalls and their effect on the downstream quality. Recommendations for each step. 
     Golloshi, Rosela, Jacob Sanders, and Rachel Patton McCord. "Iteratively Improving Hi-C Experiments One Step at a Time"  https://doi.org/10.1101/287201 Preprint. Genomics, March 22, 2018. 
 
-- DLO Hi-C technology (digestion-ligation-only Hi-C). Uses two rounds of digestion and ligation, without biotin and pull-down. Allows for early evaluation of Hi-C quality. Cost-effective, high signal-to-noise-ratio. Tested on THP-1 (human monocytes) and K562 cells. [Data processed with ChIA-PET Tool, normalized with ICE](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE89663). <details>
+- [DLO Hi-C technology (digestion-ligation-only Hi-C)](https://github.com/GangCaoLab/DLO-HiC-Tools) - Uses two rounds of digestion and ligation, without biotin and pull-down. Allows for early evaluation of Hi-C quality. Cost-effective, high signal-to-noise-ratio. Tested on THP-1 (human monocytes) and K562 cells. [Data processed with ChIA-PET Tool, normalized with ICE](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE89663). <details>
     <summary>Paper</summary>
     Lin, Da, Ping Hong, Siheng Zhang, Weize Xu, Muhammad Jamal, Keji Yan, Yingying Lei, et al. "Digestion-Ligation-Only Hi-C Is an Efficient and Cost-Effective Method for Chromosome Conformation Capture"  https://doi.org/10.1038/s41588-018-0111-2 Nature Genetics 50, no. 5 (May 2018)
 </details>
 
-- HIPMap - high-throughput imaging and analysis pipeline to map the location of gene loci within the 3D space. FISH in a 384-well plate format, automated imaging. <details>
+- [HIPMap](https://doi.org/10.1101/sqb.2015.80.027417)  - high-throughput imaging and analysis pipeline to map the location of gene loci within the 3D space. [FISH](#fish) in a 384-well plate format, automated imaging. <details>
     <summary>Paper</summary>
     Shachar, Sigal, Gianluca Pegoraro, and Tom Misteli. "HIPMap: A High-Throughput Imaging Method for Mapping Spatial Gene Positions"  https://doi.org/10.1101/sqb.2015.80.027417 Cold Spring Harbor Symposia on Quantitative Biology 80 (2015)
 </details>
 
-- HiC method description, 1Mb, Gm06990. Small chromosomes, but 18, interact. Compartment A associated with open chromatin. 1Mb, 100kb resolution. <details>
+- [HiC method description](https://doi.org/10.1126/science.1181369) - 1Mb, Gm06990. Small chromosomes, but 18, interact. Compartment A associated with open chromatin. 1Mb, 100kb resolution. <details>
     <summary>Paper</summary>
     Lieberman-Aiden, Erez, Nynke L. van Berkum, Louise Williams, Maxim Imakaev, Tobias Ragoczy, Agnes Telling, Ido Amit, et al. "Comprehensive Mapping of Long-Range Interactions Reveals Folding Principles of the Human Genome"  https://doi.org/10.1126/science.1181369 Science (New York, N.Y.) 326, no. 5950 (October 9, 2009)
 </details>
 
-- 3C technology, the matrix of interaction frequencies, application to reveal spatial information, applied to yeast (S cerevisiae) genome. Interphase and metaphase chromosomes show different patterns of interactions. Distance-dependent decay of interaction frequencies. Basic observations on chromosome size, inter-chromosomal interactions. <details>
+- [3C technology](https://doi.org/10.1126/science.1067799) - the matrix of interaction frequencies, application to reveal spatial information, applied to yeast (S cerevisiae) genome. Interphase and metaphase chromosomes show different patterns of interactions. Distance-dependent decay of interaction frequencies. Basic observations on chromosome size, inter-chromosomal interactions. <details>
     <summary>Paper</summary>
     Dekker, Job, Karsten Rippe, Martijn Dekker, and Nancy Kleckner. "Capturing Chromosome Conformation"  https://doi.org/10.1126/science.1067799 Science (New York, N.Y.) 295, no. 5558 (February 15, 2002)
 </details>
 
-- The Arima kit uses two restriction enzymes: ^GATC (DpnII), G^ANTC (N can be either of the 4 genomic bases) (HinfI), which after ligation of DNA ends generates 4 possible ligation junctions in the chimeric reads: GATC-GATC, GANT-GATC, GANT-ANTC, GATC-ANTC. Source: 'Hi-C library preparation' Methods section from [Du et al., “DNA Methylation Is Required to Maintain Both DNA Replication Timing Precision and 3D Genome Organization Integrity.”"  https://doi.org/10.1016/j.celrep.2021.109722)
+- [Hi-C library prep with Arima kit](https://doi.org/10.1016/j.celrep.2021.109722) - The Arima kit uses two restriction enzymes: ^GATC (DpnII), G^ANTC (N can be either of the 4 genomic bases) (HinfI), which after ligation of DNA ends generates 4 possible ligation junctions in the chimeric reads: GATC-GATC, GANT-GATC, GANT-ANTC, GATC-ANTC. Source: 'Hi-C library preparation' Methods section from [Du et al., “DNA Methylation Is Required to Maintain Both DNA Replication Timing Precision and 3D Genome Organization Integrity.”"  https://doi.org/10.1016/j.celrep.2021.109722)
 
 #### Micro-C
 
