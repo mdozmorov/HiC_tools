@@ -517,11 +517,6 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     Bhattacharyya, Sourya, Vivek Chandra, Pandurangan Vijayanand, and Ferhat Ay. "FitHiChIP: Identification of Significant Chromatin Contacts from HiChIP Data"  https://doi.org/10.1101/412833 September 10, 2018. 
 </details>
 
-- <a name="stripecaller">[StripeCaller](https://github.com/XiaoTaoWang/StripeCaller)</a> - A toolkit for analyzing architectural stripes. Architectural stripes, created by extensive loading of cohesin near CTCF anchors, with Nipbl and Rad21 help. Little overlap between B cells and ESCs. Architectural stripes are sites for tumor-inducing TOP2beta DNA breaks. ATP is required for loop extrusion, cohesin translocation, but not required for maintenance, Replication of transcription is not important for loop extrusion. Zebra algorithm for detecting architectural stripes, image analysis, math in Methods. Human lymphoblastoid cells, mouse ESCs, mouse B-cells activated with LPS, CH12 B lymphoma cells, wild-type, treated with hydroxyurea (blocks DNA replication), flavopiridol (blocks transcription, PolII elongation), oligomycin (blocks ATP). Hi-C, ChIA-pet, ChIP-seq, ATAC-seq, and more [Data1](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE82144), [Data2](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE98119). <details>
-    <summary>Paper</summary>
-    Vian, Laura, Aleksandra Pękowska, Suhas S.P. Rao, Kyong-Rim Kieffer-Kwon, Seolkyoung Jung, Laura Baranello, Su-Chen Huang, et al. "The Energetics and Physiological Impact of Cohesin Extrusion"  https://doi.org/10.1016/j.cell.2018.03.072 Cell 173, no. 5 (May 2018)
-</details>
-
 - <a name="hic-dc">[HiC-DC](https://bitbucket.org/leslielab/hic-dc/src/master/)</a> - significant interaction detection using the zero-inflated negative binomial model and accounting for biases like GC content, mappability. Compared with Fit-Hi-C, more conservative. Robust to sequencing depth. Detects significant, biologically relevant interactions at all length scales, including sub-TADs. BWA-MEM alignment (Python script), then processing in R. <details>
     <summary>Paper</summary>
     Carty, Mark, Lee Zamparo, Merve Sahin, Alvaro González, Raphael Pelossof, Olivier Elemento, and Christina S. Leslie. "An Integrated Model for Detecting Significant Chromatin Interactions from High-Resolution Hi-C Data"  https://doi.org/10.1038/ncomms15454 Nature Communications 8, no. 1 (August 2017)
@@ -769,6 +764,17 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     <summary>Paper</summary>
     Yoon, Sora, and Golnaz Vahedi. "Stripenn Detects Architectural Stripes from Chromatin Conformation Data Using Computer Vision"  https://doi.org/10.1101/2021.04.16.440239 Preprint. Bioinformatics, April 18, 2021
 </details>
+
+- [domainClassifyR](https://github.com/ChristopherBarrington/domainClassifyR) - detection and classification of 'Stripes' structures at TAD boundaries. Associated with both poised and active chromatin landscapes and transcription is not a key determinant of their structure. Stripe formation is linked to the functional state of the cell through cohesin loading at lineage-specific enhancers and developmental control of CTCF binding site occupancy. Comparison of pluripotent mouse embryonic stem cells and lineage-committed neural cells and characterizing emergent, lost, and mainained stripes. Raw data at [SRA668328](https://www.ncbi.nlm.nih.gov/sra/?term=SRA668328). <details>
+    <summary>Paper</summary>
+    Barrington, Christopher, Dimitra Georgopoulou, Dubravka Pezic, Wazeer Varsally, Javier Herrero, and Suzana Hadjur. "Enhancer accessibility and CTCF occupancy underlie asymmetric TAD architecture and cell type specific genome topology." Nature communications 10, no. 1 (2019): 1-14.
+</details>
+
+- <a name="stripecaller">[StripeCaller](https://github.com/XiaoTaoWang/StripeCaller)</a> - A toolkit for analyzing architectural stripes. Architectural stripes, created by extensive loading of cohesin near CTCF anchors, with Nipbl and Rad21 help. Little overlap between B cells and ESCs. Architectural stripes are sites for tumor-inducing TOP2beta DNA breaks. ATP is required for loop extrusion, cohesin translocation, but not required for maintenance, Replication of transcription is not important for loop extrusion. Zebra algorithm for detecting architectural stripes, image analysis, math in Methods. Human lymphoblastoid cells, mouse ESCs, mouse B-cells activated with LPS, CH12 B lymphoma cells, wild-type, treated with hydroxyurea (blocks DNA replication), flavopiridol (blocks transcription, PolII elongation), oligomycin (blocks ATP). Hi-C, ChIA-pet, ChIP-seq, ATAC-seq, and more [Data1](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE82144), [Data2](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE98119). <details>
+    <summary>Paper</summary>
+    Vian, Laura, Aleksandra Pękowska, Suhas S.P. Rao, Kyong-Rim Kieffer-Kwon, Seolkyoung Jung, Laura Baranello, Su-Chen Huang, et al. "The Energetics and Physiological Impact of Cohesin Extrusion"  https://doi.org/10.1016/j.cell.2018.03.072 Cell 173, no. 5 (May 2018)
+</details>
+
 
 ### Differential/timecourse TAD analysis
 
