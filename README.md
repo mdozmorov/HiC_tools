@@ -810,6 +810,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 ## Prediction of 3D features
 
+- <a name="corigami">C. Origami</a> - a deep neural network (Sequence encoder+Feature encoder->transformer->decoderб Ьуерщвы) predict cell type-specific Hi-C matrices using DNA sequence (one-hot encoding), CTCF binding (ChIP-seq), and chromatin accessibility (ATAC-seq) profiles (all critical for best performance). Chromosome-wide predictions by joining predictions across sliding windows (2Mb). Performance evaluation - correlation of insulation scores, over 0.95 Pearson. Outperforms [Akita](#akita). Enables prediction of the effect of genetic perturbations. <details>
+    <summary>Paper</summary>
+    Tan, Jimin, Javier Rodriguez-Hernaez, Theodore Sakellaropoulos, Francesco Boccalatte, Iannis Aifantis, Jane Skok, David Fenyo, Bo Xia, and Aristotelis Tsirigos. “Cell Type-Specific Prediction of 3D Chromatin Architecture.” Preprint. Genomics, March 7, 2022. https://doi.org/10.1101/2022.03.05.483136.
+</details>
+
 - <a name="chinn">[ChINN](https://github.com/caofan/chinn)</a> - chromatin interaction neural network, predicting chromatin interactions from DNA sequence. Trained on CTCF- and RNA PolII-mediated loops, as well as on Hi-C data. Gradient boosting trained on functional annotation, distance, or both as predictors. ChINN - CNN trained on sequence. Convergent CTCF orientation is an important predictor, other motifs complement predictive power. Applied to 6 new chronic lymphocytic leukemia samples, patient-specific interactions, vaildated by Hi-C and 4C. <details>
     <summary>Paper</summary>
     Cao, Fan, Yu Zhang, Yichao Cai, Sambhavi Animesh, Ying Zhang, Semih Can Akincilar, Yan Ping Loh, et al. "Chromatin Interaction Neural Network (ChINN): A Machine Learning-Based Method for Predicting Chromatin Interactions from DNA Sequences"  https://doi.org/10.1186/s13059-021-02453-5 Genome Biology, (December 2021)
