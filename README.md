@@ -413,7 +413,7 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 ## AB compartments
 
-- [Pentad](https://github.com/magnitov/pentad) - average A/B compartment analysis, within pre-defined range of genomic distances. A/B compartment areas from the observed-to-expected matrix rescaled using bilinear interpolation into squares of a predefined size, median averaged, plotted. Small (noisy) areas are filtered. Separate analysis of cis and trans interactions. Python implementation. Input: cooler Hi-C matrix and a compartment signal in the bedGraph format. <details>
+- <a name="pentad">[Pentad](https://github.com/magnitov/pentad)</a> - average A/B compartment analysis, within pre-defined range of genomic distances. A/B compartment areas from the observed-to-expected matrix rescaled using bilinear interpolation into squares of a predefined size, median averaged, plotted. Small (noisy) areas are filtered. Separate analysis of cis and trans interactions. Python implementation. Input: cooler Hi-C matrix and a compartment signal in the bedGraph format. <details>
   <summary>Paper</summary>
   Magnitov, Mikhail D., Azat K. Garaev, Alexander V. Tyakht, Sergey V. Ulianov, and Sergey V. Razin. “Pentad: A Tool for Distance-Dependent Analysis of Hi-C Interactions within and between Chromatin Compartments.” BMC Bioinformatics 23, no. 1 (December 2022): 116. https://doi.org/10.1186/s12859-022-04654-6.
 </details>
@@ -942,6 +942,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 - [Arima-SV-Pipeline](https://github.com/ArimaGenomics/Arima-SV-Pipeline) - Docker/Singularity image for running [Structural Variant Detection with Arima Hi-C Technology](https://arimagenomics.com/resources/blog/new-products-structural-variant-detection/). Includes several tools ([HiCUP](#hicup), [hic_breakfinder](#hic-breakfinder), [Juicer](#juicer), [HiCCUPS](#hiccups)). 
 
 ## Visualization
+
+- <a name="nucleomebrowser">[4D Nucleome Browser](http://www.nucleome.org)</a> - integrative analysis and visualization of 3D genomic structure models, 1D genomics, imaging, single-cell data. Hosts over 2K genomics and 700 image datasets for human (hg38) and mouse (mm10). Supports bigWig, bigBed, Tabix, hic formats. Other tools, like bigWig correlation scatterplot. Interaction with external databases, e.g., [4D Nucleome](https://data.4dnucleome.org). [GitHub](https://github.com/nucleome) code. [Supplementary material](https://www.biorxiv.org/content/10.1101/2022.02.21.481225v1.supplementary-material) - Five detailed tutorials. Table S1 - comparison of functionality with UCSC/WashU/Ensembl genome browsers, IGV, JBrowse, 3D Genome Browser, GIVE, Juicebox, HiGlass. Table S2 - Summary of tools/packages/websites created in Nucleome Browser. [Gallery](https://gallery.nucleome.org/) of examples, [Youtube](https://www.youtube.com/playlist?list=PLyp0mWOpk-buPrfuh18_Bqu1wx04VbbxD) video tutorials, [Documentation](https://nb-docs.readthedocs.io/en/latest/). <details>
+    <summary>Paper</summary>
+    Zhu, Xiaopeng, Yang Zhang, Yuchuan Wang, Dechao Tian, Andrew S Belmont, Jason R Swedlow, and Jian Ma. “Nucleome Browser: An Integrative and Multimodal Data Navigation Platform for 4D Nucleome,” n.d., 15.
+</details>
 
 - <a name="hicognition">[HiCognition](https://github.com/gerlichlab/HiCognition)</a> - visual exploration of Hi-C data, testing for association with 1D data. Region set concept (ChIP-seq peaks, genes, TADs, etc.). Widget architecture: 1D average, 2D average, embedding/heterogeneity views, association/enrichment analysis. Input: BED, bigWig, [cooler](#cooler) files. Data and precomputations are stored in MySQL database. Prebuild dataset of common features. Docker container. [Documentation](https://gerlichlab.github.io/hicognition/docs/). <details>
     <summary>Paper</summary>
