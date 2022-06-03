@@ -1091,6 +1091,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 ## 3D modeling
 
+- [The Nucleome Data Bank](https://ndb.rice.edu/) (NDB) - A web platform to simulate and browse the three-dimensional architecture of genomes. Data download from different studies, and computationally simulated. Interactive visualization of these data. Molecular Dynamics simulation using the MEGABASE (Maximum Entropy Genomic Annotation from Biomarkers Associated to Structural Ensembles, neural network to predict A/B compartments from 1D epigenomic data) + MiChroM (Minimal Chromatin Model, energy landscape model, [documentation](https://open-michrom.readthedocs.io/)) computational pipeline. Input: 1D epigenomic data, DNA proximity (3C, HiC, GAM, SPRITE), imaging data. Output: chromosomal folding predictive of HiC, imaging data, GROMACS input files. [.ndb format](https://ndb.rice.edu/ndb-format) to store nucleome structural data, analog of the Protein Data Bank [.pdb](https://pdb101.rcsb.org/learn/guide-to-understanding-pdb-data) format. <details>
+  <summary>Paper</summary>
+  Contessoto, Vinícius G., Ryan R. Cheng, Arya Hajitaheri, Esteban Dodero-Rojas, Matheus F. Mello, Erez Lieberman-Aiden, Peter G. Wolynes, Michele Di Pierro, and José N. Onuchic. "The Nucleome Data Bank: web-based resources to simulate and analyze the three-dimensional genome." Nucleic Acids Research 49, no. D1 (8 January 2021): D172-D182. https://doi.org/10.1093/nar/gkaa818
+</details>
+
 - <a name="pastis-nb">[Pastis-NB](https://github.com/hiclib/pastis)</a> - an extrension of Pastis 3D modeling tool with negative binomial distribution-based modeling. Compared with MDS-based methods ([ShRec3D](#shrec3d), [ChromSDE](https://www.comp.nus.edu.sg/~bioinfo/ChromSDE/), [Pastis-MDS](https://github.com/hiclib/pastis)) and Pastis- PM (Poisson model). More accurate and stable results. [Supplementary material](https://nellev.github.io/pastisnb/). <details>
     <summary>Paper</summary>
     Nelle Varoquaux, William Stafford Noble, Jean-Phillipe Vert. "Inference of genome 3D architecture by modeling overdispersion of Hi-C data"  https://doi.org/10.1101/2021.02.04.429864 bioRxiv. February 05, 2021
