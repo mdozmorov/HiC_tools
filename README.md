@@ -1053,6 +1053,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 ## De novo genome scaffolding
 
+- Benchmark of five Hi-C scaffolders (Lachesis, HiRise, 3d-dna, SALSA, AllHiC). Accuracy measured by matching scaffolds with the assembly contigs. On average, HiRise and Lachesis performed the best, with HiRise and Salsa working best on less fragmented assemblies, and HiRise, Lacheis, or AllHiC being better choices for more fragmented assemblies. Details and problems with some software. [Docker images](https://hub.docker.com/u/aakashsur) for individual tools. <details>
+  <summary>Paper</summary>
+  Sur, Aakash, William Stafford Noble, and Peter J. Myler. "A benchmark of Hi-C scaffolders using reference genomes and de novo assemblies." bioRxiv (April 20, 2022). https://doi.org/10.1101/2022.04.20.488415
+</details>
+
 - <a name="endhic">[EndHiC](https://github.com/fanagislab/EndHiC)</a> - chromosome scaffolding using Hi-C links from contig ends. Requires contigs from [PacBio's HiFiasm technology](https://github.com/chhylp123/hifiasm) (assembled by [HiCanu](https://github.com/marbl/canu)), and Hi-C data processed by [HiC-Pro](#hic-pro). Applied to human, rice, Arabidopsis, achieves higher accuracy than [Lachesis](#lachesis), [ALLHiC](https://github.com/tanghaibao/allhic), [3D-DNA](#theaidenlab3ddna). Perl scripts. <details>
     <summary>Paper</summary>
     Wang, Sen, Hengchao Wang, Fan Jiang, Anqi Wang, Hangwei Liu, Hanbo Zhao, Boyuan Yang, Dong Xu, Yan Zhang, and Wei Fan. "EndHiC: Assemble Large Contigs into Chromosomal-Level Scaffolds Using the Hi-C Links from Contig Ends](https://arxiv.org/abs/2111.15411 ArXiv, 30 Nov 2021
