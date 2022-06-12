@@ -1053,7 +1053,7 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 ## De novo genome scaffolding
 
-- Benchmark of five Hi-C scaffolders (Lachesis, HiRise, 3d-dna, SALSA, AllHiC). Accuracy measured by matching scaffolds with the assembly contigs. On average, HiRise and Lachesis performed the best, with HiRise and Salsa working best on less fragmented assemblies, and HiRise, Lacheis, or AllHiC being better choices for more fragmented assemblies. Details and problems with some software. [Docker images](https://hub.docker.com/u/aakashsur) for individual tools. <details>
+- Benchmark of five Hi-C scaffolders ([Lachesis](#lachesis), [HiRise](https://github.com/DovetailGenomics/HiRise_July2015_GR), [3D-DNA](#theaidenlab3ddna), [SALSA](https://github.com/marbl/SALSA), [ALLHiC](https://github.com/tanghaibao/allhic)). Accuracy measured by matching scaffolds with the assembly contigs. On average, HiRise and Lachesis performed the best, with HiRise and Salsa working best on less fragmented assemblies, and HiRise, Lacheis, or AllHiC being better choices for more fragmented assemblies. Details and problems with some software. [Docker images](https://hub.docker.com/u/aakashsur) for individual tools. <details>
   <summary>Paper</summary>
   Sur, Aakash, William Stafford Noble, and Peter J. Myler. "A benchmark of Hi-C scaffolders using reference genomes and de novo assemblies." bioRxiv (April 20, 2022). https://doi.org/10.1101/2022.04.20.488415
 </details>
