@@ -1513,6 +1513,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     Nguyen, Huy Q., Shyamtanu Chattoraj, David Castillo, Son C. Nguyen, Guy Nir, Antonios Lioutas, Elliot A. Hershberg, et al. "3D Mapping and Accelerated Super-Resolution Imaging of the Human Genome Using in Situ Sequencing"  https://doi.org/10.1038/s41592-020-0890-0 Nature Methods, (August 2020)
 </details>
 
+- 3D genome visualization techniques overview. Electron microscopy, STORM and its modifications (Oligopaint and STORM = OligoSTORM). Nucleosome clutches and clutch domains, correlate with histone acetylation. A/B compartments and TADs generally correlate with imaging, but heterogeneity at single-cell level is observed. Live-cell imaging techniques (LacO/LacI, ParB/parS, CRISPR-based). Newer high-resolution techniques (3D MINFLUX). <details>
+  <summary>Paper</summary>
+  Lakadamyali, Melike, and Maria Pia Cosma. “Visualizing the Genome in High Resolution Challenges Our Textbook Understanding.” Nature Methods, March 2, 2020. https://doi.org/10.1038/s41592-020-0758-3.
+</details>
+
 - [MERFISH](https://github.com/BogdanBintu/ChromatinImaging) - Super-resolution imaging technology, reconstruction 3D structure in single cells at 30kb resolution, 1.2Mb region of Chr21 in IMR90 cells. Distance maps obtained by microscopy show small distance for loci within, and larger between, TADs. TAD-like structures exist in single cells. 2.5Mb region of Chr21 in HCT116 cells, cohesin depletion does not abolish TADs, only alter their preferential positioning. Multi-point (triplet) interactions are prevalent. TAD boundaries are highly heterogeneous in single cells. , diffraction-limited and STORM (stochastic optical reconstruction microscopy) imaging. [GitHub](https://github.com/BogdanBintu/ChromatinImaging). <details>
     <summary>Paper</summary>
     Bintu, Bogdan, Leslie J. Mateo, Jun-Han Su, Nicholas A. Sinnott-Armstrong, Mirae Parker, Seon Kinrot, Kei Yamaya, Alistair N. Boettiger, and Xiaowei Zhuang. "Super-Resolution Chromatin Tracing Reveals Domains and Cooperative Interactions in Single Cells"  https://doi.org/10.1126/science.aau1783 Science, (October 26, 2018)
