@@ -27,7 +27,7 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 - [TAD callers](#tad-callers)
   - [TAD detection, benchmarking](#tad-detection-benchmarking)
   - [Architectural stripes](#architectural-stripes)
-  - [Differential/timecourse TAD analysis](#differential-timecourse-tad-analysis)
+  - [Differential, timecourse TAD analysis](#differential-timecourse-tad-analysis)
 - [Prediction of 3D features](#prediction-of-3d-features)
 - [SNP-oriented](#snp-oriented)
 - [CNV and Structural variant detection](#cnv-and-structural-variant-detection)
@@ -796,7 +796,7 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 </details>
 
 
-### Differential/timecourse TAD analysis
+### Differential, timecourse TAD analysis
 
 - <a name="intertads">[InterTADs](https://github.com/nikopech/InterTADs)</a> - TAD-centric integration of multi-omics (SNPs, gene expression, methylation) data by genomic coordinateы, proper data scaling, and differential analysis. Differential TAD analysis by interaction strength changes, the number of other differential events. [Documentation](https://github.com/nikopech/InterTADs/wiki/Usage). <details>
     <summary>Paper</summary>
