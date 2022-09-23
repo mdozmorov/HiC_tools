@@ -1131,7 +1131,7 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     MacKay, Kimberly, and Anthony Kusalik. "StoHi-C: Using t-Distributed Stochastic Neighbor Embedding (t-SNE) to Predict 3D Genome Structure from Hi-C Data"  https://doi.org/10.1101/2020.01.28.923615 Preprint. Bioinformatics, January 29, 2020.
 </details>
 
-- <a name="hierarchical3dgenome">[Hierarchical3DGenome](https://github.com/BDM-Lab/Hierarchical3DGenome)</a> - high-resolution (5kb) reconstruction of the 3D structure of the genome. Using [LorDG](https://github.com/BDM-Lab/LorDG), first, assemble the 3D model at the level of TADs, then inside individual TADs. Gm12878 cell line, [Arrowhead](#arrowhead) for TAD calling, KR and ICE normalization, benchmarking against [miniMDS](https://github.com/seqcode/miniMDS), five tests including comparison with [FISH](#fish). <details>
+- <a name="hierarchical3dgenome">[Hierarchical3DGenome](https://github.com/BDM-Lab/Hierarchical3DGenome)</a> - high-resolution (5kb) reconstruction of the 3D structure of the genome. Using [LorDG](https://github.com/BDM-Lab/LorDG), first, assemble the 3D model at the level of TADs, then inside individual TADs. Gm12878 cell line, [Arrowhead](#arrowhead) for TAD calling, KR and ICE normalization, benchmarking against [miniMDS](https://github.com/seqcode/miniMDS), five tests including comparison with FISH. <details>
     <summary>Paper</summary>
     Trieu, Tuan, Oluwatosin Oluwadare, and Jianlin Cheng. "Hierarchical Reconstruction of High-Resolution 3D Models of Large Chromosomes"  https://doi.org/10.1038/s41598-019-41369-w Scientific Reports 9, no. 1 (March 21, 2019): 4971. 
 </details>
@@ -1139,6 +1139,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 - <a name="csynth">[CSynth](http://csynth.org/)</a> - 3D genome interactive modeling on GPU, and visualization. <details>
     <summary>Paper</summary>
     Todd, Stephen, Peter Todd, Simon J McGowan, James R Hughes, Yasutaka Kakui, Frederic Fol Leymarie, William Latham, and Stephen Taylor. "CSynth: A Dynamic Modelling and Visualisation Tool for 3D Chromatin Structure"  https://doi.org/10.1101/499806 BioRxiv, January 1, 2019
+</details>
+
+- [3DMax](https://github.com/BDM-Lab/3DMax) - reconstruction of 3D genome structure. Maximum likelihood objective function. Many simplifying assymptions. Gradient ascent algorithm. Distance Pearson and Spearman correlation coefficients for comparing 3D structures. <details>
+  <summary>Paper</summary>
+  Oluwadare, Oluwatosin, Yuxiang Zhang, and Jianlin Cheng. “A Maximum Likelihood Algorithm for Reconstructing 3D Structures of Human Chromosomes from Chromosomal Contact Data.” BMC Genomics 19, no. 1 (December 2018). https://doi.org/10.1186/s12864-018-4546-8.
 </details>
 
 - <a name="genomeflow">[GenomeFlow](https://github.com/jianlin-cheng/GenomeFlow)</a> - a complete set of tools for Hi-C data alignment, normalization, 2D visualization, 3D genome modeling and visualization. [ClusterTAD](#clustertad) for TAD identification. [LorDG](https://github.com/BDM-Lab/LorDG) and [3DMax](https://github.com/BDM-Lab/3DMax) for 3D genome reconstruction. <details>
