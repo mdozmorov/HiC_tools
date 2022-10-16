@@ -1050,6 +1050,8 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 - <a name="hicognition">[HiCognition](https://github.com/gerlichlab/HiCognition)</a> - A visual exploration and hypothesis testing tool for 3D genomics. HiCognition is a data exploration tool that allows stream-lined exploration of aggregate genomic data. HiCognition is centered around Hi-C data but also enables integration of Chip-seq and region-based data. Docker installation, uses D3.js and Pixi.js. Similar to [HiGlass](#higlass), [HiPiler](#hipiler). [Documentation](https://gerlichlab.github.io/hicognition/docs/)
 
+- [MuGVRE](https://www.multiscalegenomics.eu/MuGVRE/) - The MuG Virtual Research Environment supports the expanding 3D/4D genomics community by developing tools to integrate and visualize genomics data from sequence to 3D/4D chromatin dynamics data
+
 - <a name="pygenometracks">[pyGenomeTracks](https://github.com/deeptools/pyGenomeTracks)</a> - python module to plot beautiful and highly customizable genome browser tracks.
 
 - <a name="tadkit">[TADKit](https://github.com/3DGenomes/TADkit)</a> - 3D Genome Browser. [Main web site](http://sgt.cnag.cat/3dg/tadkit/).
