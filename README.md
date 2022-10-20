@@ -1028,6 +1028,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     Seaman, Laura, and Indika Rajapakse. "4D Nucleome Analysis Toolbox: Analysis of Hi-C Data with Abnormal Karyotype and Time Series Capabilities"  https://doi.org/10.1093/bioinformatics/btx484 Bioinformatics (Oxford, England) 34, no. 1 (01 2018)
 </details>
 
+- <a name="gcmapexplorer">[gcMapExplorer](https://rjdkmr.github.io/gcMapExplorer/)</a> - Genome contact map explorer. Analyze and compare Hi-C contact maps, plot other data types alongside. Normalization: KR, IC, and their distance-centric normalization MCFS (median contact frequency). gcmap and HDF5 file format, ccmap is in numpy memmap forman for fast data access, utilities for conversion of coo (sparse 3-columns), pairCoo, homer, hic, bed, bigWig to gcmap/h5 formats. Command line, GUI, API. Python3. [Documentation](https://gcmapexplorer.readthedocs.io). <details>
+  <summary>Paper</summary>
+  Kumar, Rajendra, Haitham Sobhy, Per Stenberg, and Ludvig Lizana. “Genome Contact Map Explorer: A Platform for the Comparison, Interactive Visualization and Analysis of Genome Contact Maps.” Nucleic Acids Research 45, no. 17 (September 29, 2017): e152–e152. https://doi.org/10.1093/nar/gkx644.
+</details>
+
 - <a name="hic-3dviewer">[HiC-3DViewer](https://bitbucket.org/nadhir/hic3dviewer/src/master/)<a/> - HiC-3DViewer is an interactive web-based tool designed to provide an intuitive environment for investigators to facilitate the 3D exploratory analysis of Hi-C data. It based on Flask and can be run directly or as a docker container. <details>
     <summary>Paper</summary>
     Mohamed Nadhir, Djekidel, Wang, Mengjie, Michael Q. Zhang, Juntao Gao. "HiC-3DViewer: a new tool to visualize Hi-C data in 3D space"  https://doi.org/10.1007/s40484-017-0091-8 Quantitative Biology (2017)
