@@ -149,7 +149,7 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 - <a name="runhic">[runHiC](https://github.com/XiaoTaoWang/HiC_pipeline)</a> - aka `HiC_pipeline`, Hi-C data processing pipeline, from raw FASTQ files. Supports bwa-mem, chromap (default), and minimap2 aligners. Performs quality control (plots), filtering, binning (to mcool output), pileup. Parallelized. By [XiaoTao Wang](https://github.com/XiaoTaoWang).
 
-- [4D Nucleome Hi-C Processing Pipeline](https://github.com/4dn-dcic/docker-4dn-hic) - set of scripts wrapped in a Docker image. Works with `.hic` and `.cool` files. [Overview](https://data.4dnucleome.org/resources/data-analysis/hi_c-processing-pipeline).
+- [4D Nucleome Hi-C Processing Pipeline](https://github.com/4dn-dcic/docker-4dn-hic) - set of scripts wrapped in a Docker image. Works with `.hic` and `.cool` files. [Overview](https://data.4dnucleome.org/resources/data-analysis/hi_c-processing-pipeline). [runHiC](https://pypi.org/project/runHiC/) -Python implementation of the 4DN Hi-C processing pipeline, by Xiaotao Wang
 
 
 
