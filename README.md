@@ -149,8 +149,12 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 - <a name="runhic">[runHiC](https://github.com/XiaoTaoWang/HiC_pipeline)</a> - aka `HiC_pipeline`, Hi-C data processing pipeline, from raw FASTQ files. Supports bwa-mem, chromap (default), and minimap2 aligners. Performs quality control (plots), filtering, binning (to mcool output), pileup. Parallelized. By [XiaoTao Wang](https://github.com/XiaoTaoWang).
 
-- [4D Nucleome Hi-C Processing Pipeline](https://github.com/4dn-dcic/docker-4dn-hic) - set of scripts wrapped in a Docker image. Works with `.hic` and `.cool` files. [Overview](https://data.4dnucleome.org/resources/data-analysis/hi_c-processing-pipeline). [runHiC](https://pypi.org/project/runHiC/) -Python implementation of the 4DN Hi-C processing pipeline, by Xiaotao Wang
+- [4D Nucleome Hi-C Processing Pipeline](https://github.com/4dn-dcic/docker-4dn-hic) - set of scripts wrapped in a Docker image. Works with `.hic` and `.cool` files. [Overview](https://data.4dnucleome.org/resources/data-analysis/hi_c-processing-pipeline). 
 
+- <a name="pairix">[Pairix](https://github.com/4dn-dcic/pairix)</a> - a tool to index and query files in [Pairs format](https://github.com/4dn-dcic/pairix/blob/master/pairs_format_specification.md), a block-compressed text file format for storing paired genomic coordinates (header plus 7 columns: readID, chr1, pos1, chr2, pos2, strand1, strand2). Bgzipped sorted files (chr1, chr2, pos1, then pos2 sorting order) are indexed (less than a second for million lines) by pairix (similar in functionality, but incompatible with tabix). Command-line, R ([Rpairix](https://github.com/4dn-dcic/Rpairix)), Python implementations. Supplementary scripts like `bam2pairs`, `merged_nodups2pairs.pl`, `pairs_merger` are available. [pairsqc](https://github.com/4dn-dcic/pairsqc) - QC report generator for pairs files. Standard of the 4D Nucleome consortium, supported by [Juicer](https://github.com/aidenlab/juicer), [cooler](https://github.com/open2c/cooler), [pairtools](https://github.com/open2c/pairtools). <details>
+    <summary>Paper</summary>
+    Lee, Soohyun, Carl Vitzthum, Burak H. Alver, and Peter J. Park. "Pairs and Pairix: A File Format and a Tool for Efficient Storage and Retrieval for Hi-C Read Pairs"  https://doi.org/10.1101/2021.08.24.457552 Bioinformatics preprint, August 26, 2021.
+</details>
 
 
 ### QC, quality control
@@ -1188,10 +1192,6 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 - [3D Genome, from technology to visualization](https://zhonglab.gitbook.io/3dgenome/preface) - a GitBook by Xingzhao Wen and Sheng Zhong covering biological and computational aspects of 3D genomics and RNA-genome interactions.
 
-- <a name="pairix">[Pairix](https://github.com/4dn-dcic/pairix)</a> - a tool to index and query files in [Pairs format](https://github.com/4dn-dcic/pairix/blob/master/pairs_format_specification.md), a block-compressed text file format for storing paired genomic coordinates (header plus 7 columns: readID, chr1, pos1, chr2, pos2, strand1, strand2). Bgzipped sorted files (chr1, chr2, pos1, then pos2 sorting order) are indexed (less than a second for million lines) by pairix (similar in functionality, but incompatible with tabix). Command-line, R ([Rpairix](https://github.com/4dn-dcic/Rpairix)), Python implementations. Supplementary scripts like `bam2pairs`, `merged_nodups2pairs.pl`, `pairs_merger` are available. [pairsqc](https://github.com/4dn-dcic/pairsqc) - QC report generator for pairs files. Standard of the 4D Nucleome consortium, supported by [Juicer](https://github.com/aidenlab/juicer), [cooler](https://github.com/open2c/cooler), [pairtools](https://github.com/open2c/pairtools). <details>
-    <summary>Paper</summary>
-    Lee, Soohyun, Carl Vitzthum, Burak H. Alver, and Peter J. Park. "Pairs and Pairix: A File Format and a Tool for Efficient Storage and Retrieval for Hi-C Read Pairs"  https://doi.org/10.1101/2021.08.24.457552 Bioinformatics preprint, August 26, 2021.
-</details>
 
 ### Methodological Reviews
 
