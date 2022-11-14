@@ -769,6 +769,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 ### TAD detection, benchmarking
 
+- [TADMaster](http://biomlearn.uccs.edu/TADMaster/) - a tool/webserver to evaluate the concordance of results of TAD callers. Multiple comparison metrics (number, size, Measure of Concordance (MoC) considering tolerance boundary (flank)) Two run modes - one accepts BED files and compares them, another (TADMaster Plus) processes Hi-C matrices (hic, h5, cool, sparse, full matrices), normalizes them (VC, ICE, KR, more), detects TADs (DI, Insulation Score, HiCseq, SpectralTAD, 12 total), and compares them. Visualization, clustering, [example output](http://biomlearn.uccs.edu/TADMaster/visualize_example/415/). Docker version, [GitHub](https://github.com/OluwadareLab/TADMaster). <details>
+  <summary>Paper</summary>
+  Higgins, Sean, Victor Akpokiro, Allen Westcott, and Oluwatosin Oluwadare. “TADMaster: A Comprehensive Web-Based Tool for the Analysis of Topologically Associated Domains.” BMC Bioinformatics 23, no. 1 (November 4, 2022): 463. https://doi.org/10.1186/s12859-022-05020-2.
+</details>
+
 - Sefer, Emre. “[A Comparison of Topologically Associating Domain Callers over Mammals at High Resolution](https://doi.org/10.1186/s12859-022-04674-2).” BMC Bioinformatics 23, no. 1 (December 2022) - Benchmarking of 27 TAD callers (Table 1). Brief description of each caller. Classified into 3 categories: feature-based, clustering, graph-partitioning methods. Systematic evaluation of TAD number, size, enrichment/depletion in functional annotations, 8 metrics. Distinguish corner-dot loops and TADs withour corner dots and evaluate performance on detecting each. Using mESCs Micro-C (HiCNorm normalized), simulated data, testing resolution, sequencing depth. Feature-based callers generally perform better, but performance depends on the type of test. SpectralTAD performs well. Code for all tests at [GitHub](https://github.com/seferlab/TADcomparison).
 
 - [Brief description of 22 TAD calling methods](https://static-content.springer.com/esm/art%3A10.1186%2Fs13059-018-1596-9/MediaObjects/13059_2018_1596_MOESM1_ESM.pdf). Source: [Zufferey et al., “Comparison of Computational Methods for the Identification of Topologically Associating Domains.”](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-018-1596-9#Bib1)
