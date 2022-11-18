@@ -1202,7 +1202,7 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     <summary>Paper</summary>
     Lindsly, Stephen, Wenlong Jia, Haiming Chen, Sijia Liu, Scott Ronquist, Can Chen, Xingzhao Wen, et al. "Functional Organization of the Maternal and Paternal Human 4D Nucleome"  https://doi.org/10.1101/2020.03.15.992164 bioRxiv, June 17, 2021. Supplementary note 2 - algorithm details.
     
-- <a name="hichap">[HiCHap](https://github.com/Prayforhanluo/HiCHap_master)</a> - a Python package designed to process diploid Hi-C data by using phased SNPs. Propose a novel strategy to correct the systematic biases in diploid Hi-C contact maps. Perform read mapping, contact map construction, whole-genome identification of compartments, topological domains and chromatin loops, and allele-specific testing for diploid Hi-C data. <details>
+- <a name="hichap">[HiCHap](https://pypi.org/project/HiCHap/)</a> - a Python 2.7 package designed to process diploid (and haploid) Hi-C data by using phased SNPs. Propose a novel strategy to correct the systematic biases in diploid Hi-C contact maps, includes VC or ICE normalization. Perform read mapping with read rescue using ligation junction sites, contact map construction based on phased SNPs, whole-genome identification of A/B compartments (PCA_, topological domains (DI) and chromatin loops (HiCCUPS), and allele-specific testing for diploid Hi-C data (permutation, paired t-test, binomial). [GitHub](https://github.com/Prayforhanluo/HiCHap_master). <details>
     <summary>Paper</summary>
     Luo, H., Li, X., Fu, H. et al. HiCHap: a package to correct and analyze the diploid Hi-C data. https://doi.org/10.1186/s12864-020-07165-x BMC Genomics, October 27, 2020
 </details>
