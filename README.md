@@ -977,6 +977,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 ## Visualization
 
+- <a name="sashimipy">[Sashimy.py](https://github.com/ygidtu/sashimi.py)</a> - a Python package for genomics data visualization. Supports scRNA-seq, protein–DNA/RNA interactions, long-reads sequencing data, and Hi-C data (BAM, BED, bigWig, bigBed, GTF, BedGraph, h5, more. Strand-aware). Programming and interactive web interfaces. Output: pdf, png, jpg, svg. [Bioconda](https://anaconda.org/bioconda/sashimi-py), [Pypi](https://pypi.org/project/sashimi.py/). [Documentation](https://sashimi.readthedocs.io/). <details>
+  <summary>Paper</summary>
+  Zhang, Yiming, Ran Zhou, and Yuan Wang. “Sashimi.Py: A Flexible Toolkit for Combinatorial Analysis of Genomic Data.” Preprint. Bioinformatics, November 3, 2022. https://doi.org/10.1101/2022.11.02.514803.
+</details>
+
 - <a name="nucleomebrowser">[4D Nucleome Browser](http://www.nucleome.org)</a> - an integrative and multimodal data navigation platform for 4D Nucleome. Synchronized multi-panel visualization of 1D, 2D, 3D models, and microscopy data. Hosts over 2K genomics and 700 image datasets for human (hg38) and mouse (mm10). Supports bigWig, bigBed, Tabix, hic formats. Functionality to compare two conditions, scatterplot for bigWig comparisons. Accepts external data via [Nucleome Bridge](https://tinyurl.com/nb-bridge). Integrated with [HiGlass](http://vis.nucleome.org/static/apps/higlass/). [Documentation](https://nb-docs.readthedocs.io/en/latest/), [Youtube video tutorials](https://tinyurl.com/nb-video-tutorial). [GitHub](https://github.com/nucleome). Local installation available. [Supplementary Notes](https://www.nature.com/articles/s41592-022-01559-3#Sec1) - detailed description and illustration of functionality. Table S1 - functionality comparison with UCSC, WashU, others. Table S2 - URLs. Table S3 - data integrated in the browser. Six tutorials, including [Single cell analysis tutorial](https://github.com/nucleome/Tutorial-SingeCellHiC). [Gallery](https://gallery.nucleome.org/) of examples. <details>
     <summary>Paper</summary>
     Zhu, X., Zhang, Y., Wang, Y. et al. Nucleome Browser: an integrative and multimodal data navigation platform for 4D Nucleome. Nat Methods 19, 911–913 (21 July 2022). https://doi.org/10.1038/s41592-022-01559-3
