@@ -817,6 +817,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 ### Differential, timecourse TAD analysis
 
+- [DiffDomain](https://github.com/Tian-Dechao/diffDomain) - differential TAD analysis. Uses random matrix theory (the Tracy–Widom distribution) to identify structurally reorganized TADs (six subtypes: strength-change, loss, split, merge, zoom, and complex). Outperforms other methods (TADCompare, HiCcompare, DiffGR, DiffTAD, HiC-DC+, TADsplimer) in terms of FPR, TPR, proportions and subtypes of reorganized TADs. Applicable to scHi-C (pseudobulk, 100 cells minimum, imputed with scHiCluster). Input - two Hi-C matrices and TADs called in the first (e.g., Arrowhead on KR-normalized matrix). Computes a log2 difference matrix from two KR-normalized matrices, then distance/depth-normalizes off-diagonals, normalizes by SQRT(N) - white noise, a generalized Wigner D matrix, the largest eigenvalue of which converges to 2, hypothesis testing is the eigenvalue is larger than 2. <details>
+  <summary>Paper</summary>
+  Hua, Dunming, Ming Gu, Xiao Zhang, Yanyi Du, Hangcheng Xie, Li Qi, Xiangjun Du, Zhidong Bai, Xiaopeng Zhu, and Dechao Tian. “DiffDomain Enables Identification of Structurally Reorganized Topologically Associating Domains,” n.d.
+</details>
+
 - <a name="intertads">[InterTADs](https://github.com/nikopech/InterTADs)</a> - TAD-centric integration of multi-omics (SNPs, gene expression, methylation) data by genomic coordinateы, proper data scaling, and differential analysis. Differential TAD analysis by interaction strength changes, the number of other differential events. [Documentation](https://github.com/nikopech/InterTADs/wiki/Usage). <details>
     <summary>Paper</summary>
     - Tsagiopoulou, Maria, Nikolaos Pechlivanis, and Fotis Psomopoulos. "InterTADs: Integration of Multi-Omics Data on Topological Associated Domains"  https://doi.org/10.21203/rs.3.rs-54194/v1 Preprint. In Review, August 12, 2020
