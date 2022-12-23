@@ -451,6 +451,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 ## Peak/Loop callers
 
+- [RefHiC](https://github.com/BlanchetteLab/RefHiC) - reference Hi-C data-guided TAD/loop detection (annotation). An attention-based deep learning frameworkthat determines which of the reference samples (4D Nucleome) are most relevant, and then makes a prediction based on the combined study sample and attention-weighted reference samples. Two components - a network combining the study sample and the reference panel and predicting loop points or left/right TAD boundary scores based on the local contact submatrix, and a task-specific component selecting one representative TAD/loop boundary (an encoder for dimensionality reduction, an attention module, a task-specific perceptron). Outperforms other tools (Mustache, Chromosight, HiCCUPS, Peakachu, RobusTAD and 13 TAD callers) across different cell types, species, and sequencing depths, using experimental ChIA-PET on CTCF, RAD21 and HiChIP on SMC1, H3K27ac. [Scripts to reproduce the paper](https://zenodo.org/record/7133194). Python. <details>
+  <summary>Paper</summary>
+  Zhang, Yanlin, and Mathieu Blanchette. “Reference Panel Guided Topological Structure Annotation of Hi-C Data.” Nature Communications 13, no. 1 (December 2, 2022): 7426. https://doi.org/10.1038/s41467-022-35231-3.
+</details>
+
 - <a name="lasca">[LASCA](https://github.com/ArtemLuzhin/LASCA_pipeline)</a> - loop/significant contact caller that uses Weibull distribution-based modeling to each diagonal. DBSCAN to cluster adjacent significant pixels. Works with Hi-C data from any species, tested on human, *C. Elegans*, *S. Cerevisiae*. Filters according Aggregate Peak Analysis patterns may be used to refine calls. Compared with [HiCCUPS](#hiccups), [MUSTACHE](#mustache), demonstrates good overlap. Also identifies non-CTCF-driven loops. Input - .cool files. [Python code](https://github.com/ArtemLuzhin/LASCA_pipeline). <details>
     <summary>Paper</summary>
     Luzhin, Artem V., Arkadiy K. Golov, Alexey A. Gavrilov, Artem K. Velichko, Sergey V. Ulianov, Sergey V. Razin, and Omar L. Kantidze. "LASCA: Loop and Significant Contact Annotation Pipeline"  https://doi.org/10.1038/s41598-021-85970-4 Scientific Reports, (December 2021)
