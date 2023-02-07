@@ -146,6 +146,8 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 - <a name="hicpipe">[HiCpipe](https://github.com/ChenFengling/HiCpipe)</a> - an efficient Hi-C data processing pipeline. It is based on [Juicer](#juicer) and [HiC-pro](#hic-pro), which combines the advantages of these two processing pipelines. HiCpipe is much faster than [Juicer](#juicer) and [HiC-Pro](#hic-pro) and can output multiple features of Hi-C maps.
 
+- <a name="hicexperiment">[HiCExperiment](https://github.com/js2264/HiCExperiment)</a> - R package for handling three main Hi-C data formats ((m)cool, hic, HiC-Pro). Imports interaction pairs in the GInteractions objects with the intuitive metadata, like bin IDs, raw and normalized (balanced) interaction frequencies. The objects have the expected slots for features one can define from Hi-C data, like TADs, loops. Allows to query subsets (chunks) of Hi-C data.
+
 - <a name="my5c">[my5C](http://my5c.umassmed.edu/)</a> - web-based tools, well-documented analysis and visualization of 5S data.
 
 - <a name="nf-core-hic">[nf-core-hic](https://github.com/nservant/nf-core-hic)</a> - Analysis of Chromosome Conformation Capture data (Hi-C and more), [Nextflow](https://www.nextflow.io) pipeline. Also, [nf-core/hic](https://github.com/nf-core/hic). [Documentation](https://nf-co.re/hic/usage).
