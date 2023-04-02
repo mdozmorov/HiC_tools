@@ -1004,6 +1004,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 ## Visualization
 
+- <a name="hicube">[HiCube](https://github.com/wmalab/HiCube)</a> - web application for Hi-C map and 3D structure visualization, along with 1D annotations. Uses [HiGlass](https://github.com/higlass/higlass-server). Input - mcool files, db annotation files for HiGlass (created from bigWig, BED, BEDPE, BedGraph, etc.), 3D genome structure data in the [g3d](https://github.com/vimaec/g3d) format. Runs via Docker. [Supplementary Table 1](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btad154/7085595#supplementary-data) - Visualization tool comparison, HiCube vs. Nucleome Browser, WashU Epigenome Browser, HiGlass, 3D Genome Browser,  TADkit, HiC3d Viewer, HiCPlotter, pyGenomeTracks. <details>
+  <summary>Paper</summary>
+  Ye, Tiantian, Yangyang Hu, Sydney Pun, and Wenxiu Ma. “HiCube: Interactive Visualization of Multiscale and Multimodal Hi-C and 3D Genome Data.” Edited by Can Alkan. Bioinformatics, March 24, 2023, btad154. https://doi.org/10.1093/bioinformatics/btad154.
+</details>
+
 - <a name="sashimipy">[Sashimi.py](https://github.com/ygidtu/sashimi.py)</a> - a Python package for genomics data visualization. Supports scRNA-seq, protein–DNA/RNA interactions, long-reads sequencing data, and Hi-C data (BAM, BED, bigWig, bigBed, GTF, BedGraph, h5, more. Strand-aware). Programming and interactive web interfaces. Output: pdf, png, jpg, svg. [Bioconda](https://anaconda.org/bioconda/sashimi-py), [Pypi](https://pypi.org/project/sashimi.py/). [Documentation](https://sashimi.readthedocs.io/). <details>
   <summary>Paper</summary>
   Zhang, Yiming, Ran Zhou, and Yuan Wang. “Sashimi.Py: A Flexible Toolkit for Combinatorial Analysis of Genomic Data.” Preprint. Bioinformatics, November 3, 2022. https://doi.org/10.1101/2022.11.02.514803.
