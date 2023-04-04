@@ -463,6 +463,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 ## Peak/Loop callers
 
+- Review of chromatin loop calling tools. Intro about loop formation (loop extrusion model), Hi-C data biases (GC content, mappability, fragment length, distance decay). Table 1 - loop calling tools for Hi-C, by year (model, language, application, etc.), Table 2 - loop calling for ChIA-PET, Table 3 - for HiChIP, Table 4 - for capture Hi-C. Table 5 - multiway interactions. Brief description of each method. <details>
+  <summary>Paper</summary>
+  Liu, Li, Kaiyuan Han, Huimin Sun, Lu Han, Dong Gao, Qilemuge Xi, Lirong Zhang, and Hao Lin. “A Comprehensive Review of Bioinformatics Tools for Chromatin Loop Calling.” Briefings in Bioinformatics 24, no. 2 (March 19, 2023): bbad072. https://doi.org/10.1093/bib/bbad072.
+</details>
+
 - [RefHiC](https://github.com/BlanchetteLab/RefHiC) - reference Hi-C data-guided TAD/loop detection (annotation). An attention-based deep learning frameworkthat determines which of the reference samples (4D Nucleome) are most relevant, and then makes a prediction based on the combined study sample and attention-weighted reference samples. Two components - a network combining the study sample and the reference panel and predicting loop points or left/right TAD boundary scores based on the local contact submatrix, and a task-specific component selecting one representative TAD/loop boundary (an encoder for dimensionality reduction, an attention module, a task-specific perceptron). Outperforms other tools (Mustache, Chromosight, HiCCUPS, Peakachu, RobusTAD and 13 TAD callers) across different cell types, species, and sequencing depths, using experimental ChIA-PET on CTCF, RAD21 and HiChIP on SMC1, H3K27ac. [Scripts to reproduce the paper](https://zenodo.org/record/7133194). Python. <details>
   <summary>Paper</summary>
   Zhang, Yanlin, and Mathieu Blanchette. “Reference Panel Guided Topological Structure Annotation of Hi-C Data.” Nature Communications 13, no. 1 (December 2, 2022): 7426. https://doi.org/10.1038/s41467-022-35231-3.
