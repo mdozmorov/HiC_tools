@@ -1601,6 +1601,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 #### Imaging
 
+- 3D chromatin imaging technology review. [Table 1](https://www.cell.com/action/showFullTableHTML?isHtml=true&tableId=tbl1&pii=S2211-1247%2823%2900372-8)- 3D technologies and their description. Details in the text. Live-cell imaging, spatial and temporal chromatin profiling. <details>
+  <summary>Paper</summary>
+  Cosma, Maria Pia, and Maria Victoria Neguembor. “The Magic of Unraveling Genome Architecture and Function.” Cell Reports, April 2023, 112361. https://doi.org/10.1016/j.celrep.2023.112361.
+</details>
+
 - [OligoFISSEQ](https://doi.org/10.1038/s41592-020-0890-0) - fluorescence in situ sequencing (FISSEQ) of barcoded oligopaint probes to enable the rapid visualization of many targeted genomic regions. Three strategies for interrogation of targets: sequencing by ligation (SBL, O-LIT), sequencing by synthesis (SBS, O-SIT), sequencing by hybridization (SBH, O-HIT). Applied to human diploit fibroblast cells, 36 regions across 6 chromosomes in just 4-8 rounds of sequencing. Fine tracing of 46 regions on X chromosome. Combined with OligoSTORM, allows for single-molecule super-resolution imaging. Whole genome-ready technology. [Figure-specific source data](https://www.nature.com/articles/s41592-020-0890-0#Sec51), [Analysis scripts](https://github.com/3DGenomes/OligoFISSEQ/). <details>
     <summary>Paper</summary>
     Nguyen, Huy Q., Shyamtanu Chattoraj, David Castillo, Son C. Nguyen, Guy Nir, Antonios Lioutas, Elliot A. Hershberg, et al. "3D Mapping and Accelerated Super-Resolution Imaging of the Human Genome Using in Situ Sequencing"  https://doi.org/10.1038/s41592-020-0890-0 Nature Methods, (August 2020)
