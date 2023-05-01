@@ -1659,6 +1659,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 ## Misc
 
+- [PaintSHOP](https://paintshop.io/) - database and web tool for developing probes for oligonucleotide (oligo)-based FISH experiments. Uses OligoMiner, wrapped in Snakemake. RNA- and DNA-probe design. Newly generated collections for human, mouse, and model organisms. [GitHub1](https://github.com/beliveau-lab/PaintSHOP), [GitHub2](https://github.com/beliveau-lab/PaintSHOP_pipeline). <details>
+  <summary>Paper</summary>
+  Hershberg, Elliot A., Conor K. Camplisson, Jennie L. Close, Sahar Attar, Ryan Chern, Yuzhen Liu, Shreeram Akilesh, Philip R. Nicovich, and Brian J. Beliveau. “PaintSHOP Enables the Interactive Design of Transcriptome- and Genome-Scale Oligonucleotide FISH Experiments.” Nature Methods 18, no. 8 (August 2021): 937–44. https://doi.org/10.1038/s41592-021-01187-3.
+</details>
+
 - [HiC Poweraid](http://phanstiel-lab.med.unc.edu/poweraid/) - power analysis for loop detection from Hi-C data. Power calculated using the median counts for each genomic distance as depth values. Loop size is anti-correlated with fold change compression. Web app to assess power across sequencing depth and loop sizes. At least 6 billion valid contacts per condition, split between two replicates is required. <details>
   <summary>Paper</summary>
   Parker, Sarah M, Eric S Davis, and Douglas H Phanstiel. “Guiding the Design of Well-Powered Hi-C Experiments to Detect Differential Loops.” Preprint. Bioinformatics, March 16, 2023. https://doi.org/10.1101/2023.03.15.532762.
