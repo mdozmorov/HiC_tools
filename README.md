@@ -206,6 +206,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 #### Capture-C peaks
 
+- Benchmarking of Capture Hi-C analysis pipelines. HiCUP and mHiC preprocessing, the multimapping read rescue doesn't in mHiC doesn't improve data quality. GOTHIC, CHiCAGO, CHiCANE, CHiCMaxima tools comparison, reproducibility, the proportion of bait-bait interactions, overlap with open chromatin, histone marks. GOTHIC may be too permissive, CHiCANE is the strictest, CHiCAGO and CHiCMaxima overall provide good quality results. <details>
+  <summary>Paper</summary>
+  Aljogol, Dina, I. Richard Thompson, Cameron S. Osborne, and Borbala Mifsud. “Comparison of Capture Hi-C Analytical Pipelines.” Frontiers in Genetics 13 (January 28, 2022): 786501. https://doi.org/10.3389/fgene.2022.786501.
+</details>
+
 - <a name="chicago">[CHiCAGO](https://bioconductor.org/packages/Chicago/)</a> - protocol for Capture Hi-C analysis. Introduction into 3C-based technologies, as compared with Hi-C, Statistical model for background noise estimation, normalization, weighted p-value correction. Comparison with other tools ([HiCapTools](#hicaptools), [CHiCMaxima](#chicmaxima), [CHiCANE](#chicane)), downstream analysis with [Peaky](#peaky), [Chicdiff](#chicdiff). Preprocessing with [HiCUP](#hicup), input files (Table 1), how to create auxillary files and set parameters for different restriction enzymes (R, Python scripts), QC, visualization. [CHiCAGO R package](https://bioconductor.org/packages/Chicago/), [chicagoTools](https://bitbucket.org/chicagoTeam/chicago/src/master/), [PCHiCdata R package](https://bitbucket.org/chicagoTeam/chicago/src/master/PCHiCdata/inst/extdata/). <details>
     <summary>Paper</summary>
     Freire-Pritchett, Paula, Helen Ray-Jones, Monica Della Rosa, Chris Q. Eijsbouts, William R. Orchard, Steven W. Wingett, Chris Wallace, Jonathan Cairns, Mikhail Spivakov, and Valeriya Malysheva. "Detecting Chromosomal Interactions in Capture Hi-C Data with CHiCAGO and Companion Tools"  https://doi.org/10.1038/s41596-021-00567-5 Nature Protocols, August 9, 2021. 
