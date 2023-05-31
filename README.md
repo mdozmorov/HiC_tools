@@ -1131,6 +1131,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 ## De novo genome scaffolding
 
+- Benchmarking of three genome assemblers from Hi-C data (3d-dna, SALSA2, YaHS) on a de novo assembly of Arabidopsis Thaliana. Oxford Nanopore read processing for making the draft assembly. Hi-C scaffolding, overview of each scaffolder, processing with [Arima pipeline](https://github.com/ArimaGenomics/mapping_pipeline), QUAST and BUSCO metrics for benchmarking. YaHS performs best, easiest to install and use. <details>
+  <summary>Paper</summary>
+  Obinu, Lia, Urmi Trivedi, and Andrea Porceddu. “Benchmarking of Hi-C Tools for Scaffolding de Novo Genome Assemblies.” Preprint. Genomics, May 18, 2023. https://doi.org/10.1101/2023.05.16.540917.
+</details>
+
 - Benchmark of five Hi-C scaffolders ([Lachesis](#lachesis), [HiRise](https://github.com/DovetailGenomics/HiRise_July2015_GR), [3D-DNA](#theaidenlab3ddna), [SALSA](https://github.com/marbl/SALSA), [ALLHiC](https://github.com/tanghaibao/allhic)). Accuracy measured by matching scaffolds with the assembly contigs. On average, HiRise and Lachesis performed the best, with HiRise and Salsa working best on less fragmented assemblies, and HiRise, Lacheis, or AllHiC being better choices for more fragmented assemblies. Details and problems with some software. [Docker images](https://hub.docker.com/u/aakashsur) for individual tools. <details>
   <summary>Paper</summary>
   Sur, Aakash, William Stafford Noble, and Peter J. Myler. "A benchmark of Hi-C scaffolders using reference genomes and de novo assemblies." bioRxiv (April 20, 2022). https://doi.org/10.1101/2022.04.20.488415
