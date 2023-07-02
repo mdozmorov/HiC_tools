@@ -133,7 +133,7 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 </details>
 
 
-- <a name="hicup">[HiCUP](http://www.bioinformatics.babraham.ac.uk/projects/hicup/)</a>  - Perl-based pipeline, alignment only, output BAM files. [Documentation](https://www.bioinformatics.babraham.ac.uk/projects/hicup/read_the_docs/html/index.html). <details>
+- <a name="hicup">[HiCUP](http://www.bioinformatics.babraham.ac.uk/projects/hicup/)</a>  - modular pipeline (Perl) for Hi-C and Capture Hi-C mapping, filtering artifacts, religation of adjacent restriction fragments, removing PCR duplicates. Creates BAM files, QC reports. Details about Hi-C sequencing artifacts. Output compatible with CHiCAGO, GOTHiC, Homer, Hicpipe. [Documentation](https://www.bioinformatics.babraham.ac.uk/projects/hicup/read_the_docs/html/index.html). <details>
     <summary>Paper</summary>
     Wingett, Steven, Philip Ewels, Mayra Furlan-Magaril, Takashi Nagano, Stefan Schoenfelder, Peter Fraser, and Simon Andrews. "HiCUP: Pipeline for Mapping and Processing Hi-C Data"  https://doi.org/10.12688/f1000research.7334.1 F1000Research 4 (2015) - HiCUP pipeline, alignment only, removes artifacts (religations, duplicate reads) creating BAM files. Details about Hi-C sequencing artifacts. Used in conjunction with other pipelines.
 </details>
