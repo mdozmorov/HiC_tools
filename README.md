@@ -1387,6 +1387,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     Hansen, Peter, Michael Gargano, Jochen Hecht, Jonas Ibn-Salem, Guy Karlebach, Johannes T. Roehr, and Peter N. Robinson. "Computational Processing and Quality Control of Hi-C, Capture Hi-C and Capture-C Data"  https://doi.org/10.3390/genes10070548 Genes 10, no. 7 (July 18, 2019): 548. 
 </details>
 
+- [Promoter Capture Hi-C](https://www.jove.com/video/57320) wet-lab protocol and video instructions. <details>
+  <summary>Paper</summary>
+  Schoenfelder, Stefan, Biola-Maria Javierre, Mayra Furlan-Magaril, Steven W. Wingett, and Peter Fraser. “Promoter Capture Hi-C: High-Resolution, Genome-Wide Profiling of Promoter Interactions.” Journal of Visualized Experiments, no. 136 (June 28, 2018): 57320. https://doi.org/10.3791/57320.
+</details>
+
 - [Chromosome conformation capture technologies, 4C, 5C, Hi-C, ChIP-loop, ChIA-PET](https://doi.org/10.1101/gad.179804.111) - From microscopy observations (constrained movement of genomic loci, LADs, preferential stability of chromosome conformation and its independence from transcription), to technology details (Figure 1). Examples of alpha- and beta-globin locus studies by different technologies, X chromosome inactivation, HOXA-d gene clusters. The future vision of single-cell, single-allele investigation of chromatin interactions. <details>
     <summary>Paper</summary>
     Wit, E. de, and W. de Laat. "A Decade of 3C Technologies: Insights into Nuclear Organization"  https://doi.org/10.1101/gad.179804.111 Genes & Development 26, no. 1 (January 1, 2012)
