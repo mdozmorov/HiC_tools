@@ -212,14 +212,6 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
   Aljogol, Dina, I. Richard Thompson, Cameron S. Osborne, and Borbala Mifsud. “Comparison of Capture Hi-C Analytical Pipelines.” Frontiers in Genetics 13 (January 28, 2022): 786501. https://doi.org/10.3389/fgene.2022.786501.
 </details>
 
-- <a name="chicago">[CHiCAGO](https://bioconductor.org/packages/Chicago/)</a> - protocol for Capture Hi-C analysis. Introduction into 3C-based technologies, as compared with Hi-C, Statistical model for background noise estimation, normalization, weighted p-value correction. Comparison with other tools ([HiCapTools](#hicaptools), [CHiCMaxima](#chicmaxima), [CHiCANE](#chicane)), downstream analysis with [Peaky](#peaky), [Chicdiff](#chicdiff). Preprocessing with [HiCUP](#hicup), input files (Table 1), how to create auxillary files and set parameters for different restriction enzymes (R, Python scripts), QC, visualization. [CHiCAGO R package](https://bioconductor.org/packages/Chicago/), [chicagoTools](https://bitbucket.org/chicagoTeam/chicago/src/master/), [PCHiCdata R package](https://bitbucket.org/chicagoTeam/chicago/src/master/PCHiCdata/inst/extdata/). <details>
-    <summary>Paper</summary>
-    Freire-Pritchett, Paula, Helen Ray-Jones, Monica Della Rosa, Chris Q. Eijsbouts, William R. Orchard, Steven W. Wingett, Chris Wallace, Jonathan Cairns, Mikhail Spivakov, and Valeriya Malysheva. "Detecting Chromosomal Interactions in Capture Hi-C Data with CHiCAGO and Companion Tools"  https://doi.org/10.1038/s41596-021-00567-5 Nature Protocols, August 9, 2021. 
-    </details> <details>
-    <summary>Paper</summary>
-    Cairns, Jonathan, Paula Freire-Pritchett, Steven W. Wingett, Csilla Várnai, Andrew Dimond, Vincent Plagnol, Daniel Zerbino, et al. "CHiCAGO: Robust Detection of DNA Looping Interactions in Capture Hi-C Data."  https://doi.org/10.1186/s13059-016-0992-2 Genome Biology 17, no. 1 (2016): 127.
-</details>
-
 - <a name="peaky">[Peaky](https://github.com/cqgd/pky)</a> - Bayesian sparse variable selection approach. The model proposes that for any given bait, the expected CHi-C signal at each prey fragment is expressed as a sum of contributions from a set of fragments directly contacting that bait. [Documentation](https://cqgd.github.io/pky/articles/introduction.html). <details>
     <summary>Paper</summary>
     Eijsbouts, Christiaan Q, Oliver S Burren, Paul J Newcombe, and Chris Wallace. "Fine Mapping Chromatin Contacts in Capture Hi-C Data"  https://doi.org/10.1186/s12864-018-5314-5 BMC Genomics 20, no. 1 (December 2019). 
@@ -235,6 +227,15 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     Anandashankar Anil, Rapolas Spalinskas, Örjan Åkerborg, Pelin Sahlén; "HiCapTools: a software suite for probe design and proximity detection for targeted chromosome conformation capture applications"  https://doi.org/10.1093/bioinformatics/btx625 Bioinformatics, Volume 34, Issue 4, 15 February 2018
 </details>
 
+- <a name="chicago">[CHiCAGO](https://bioconductor.org/packages/Chicago/)</a> (Capture Hi-C Analysis of Genomic Organisation) - R package for Capture Hi-C data processing. Two-component background model (Delaporte distribution) - Brownian motion (Neg. Binom.) and technical noise (Poisson), accounts for distance. Compared with a null model from all possible fragment pairs. Considers asymmetry of bait-fragment interactions, considering bait-bait and bait-other end. The majority of true interactions are on the same chromosome. Weighted (distance-dependent) multiple testing correction. Tested on GM12878 and mESC capture Hi-C data. Enrichment of highly interacting regions in regulatory features and SNP sets (permutations, GoShifter). Autoimmune SNPs are enriched in "other end" fragments. <details>
+    <summary>Paper</summary>
+    Cairns, Jonathan, Paula Freire-Pritchett, Steven W. Wingett, Csilla Várnai, Andrew Dimond, Vincent Plagnol, Daniel Zerbino, et al. "CHiCAGO: Robust Detection of DNA Looping Interactions in Capture Hi-C Data."  https://doi.org/10.1186/s13059-016-0992-2 Genome Biology 17, no. 1 (2016): 127.
+</details>
+
+- CHiCAGO protocol for Capture Hi-C analysis. Introduction into 3C-based technologies, as compared with Hi-C, Statistical model for background noise estimation, normalization, weighted p-value correction. Comparison with other tools ([HiCapTools](#hicaptools), [CHiCMaxima](#chicmaxima), [CHiCANE](#chicane)), downstream analysis with [Peaky](#peaky), [Chicdiff](#chicdiff). Preprocessing with [HiCUP](#hicup), input files (Table 1), how to create auxillary files and set parameters for different restriction enzymes (R, Python scripts), QC, visualization. [CHiCAGO R package](https://bioconductor.org/packages/Chicago/), [chicagoTools](https://bitbucket.org/chicagoTeam/chicago/src/master/), [PCHiCdata R package](https://bitbucket.org/chicagoTeam/chicago/src/master/PCHiCdata/inst/extdata/). <details>
+    <summary>Paper</summary>
+    Freire-Pritchett, Paula, Helen Ray-Jones, Monica Della Rosa, Chris Q. Eijsbouts, William R. Orchard, Steven W. Wingett, Chris Wallace, Jonathan Cairns, Mikhail Spivakov, and Valeriya Malysheva. "Detecting Chromosomal Interactions in Capture Hi-C Data with CHiCAGO and Companion Tools"  https://doi.org/10.1038/s41596-021-00567-5 Nature Protocols, August 9, 2021. 
+</details>
 
 ### HiChIP
 
