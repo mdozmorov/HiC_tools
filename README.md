@@ -1317,6 +1317,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 ### General Reviews
 
+- [4D Nucleome](https://www.4dnucleome.org/) project overview, current state and future goals. Studying chromatin dynamics at different timescales, during cell cycle, differentiation, stress response, senescence, and pathogenic processes, including in live mammalian cells. Spatial and temporal organization of the nubleus by integrating imaging and genomic datasets. Overview of 4DN technologies for nucleosome mapping (Hi-C 3.0, Micro-C, multi-way contacts with GAM, PLAC-seq, ChIA-Drop, ChIA-PET, SPRITE, RNA-chromatin interactions with iMARGI, protein-chromatin with C-BERST, cytological distances with TSA-seq, GPSeq), time-resolved and single-cell technologies (DamID, liquid chromatin HiC LC-Hi-C, multi-contact 3C, Repli-seq), multiplexFISH for single-cell chromatin measures (ball-and-stick, or volumetric chromatin tracing). Standards ([Open Chromosome Collective](https://open2c.github.io/)), including for imaging ([Open Microscopy Environment](https://www.openmicroscopy.org/), [BioImaging North America](https://www.bioimagingnorthamerica.org/qc-dm-wg/)). Association of sequence signatures with chromatin organization, the effect of repetitive DNA, the effect of phase separation, RNA, cohesin complexes, machine learning tools for integrative models. [Data portal](https://data.4dnucleome.org/). <details>
+  <summary>Paper</summary>
+  Dekker, Job, Frank Alber, Sarah Aufmkolk, Brian J. Beliveau, Benoit G. Bruneau, Andrew S. Belmont, Lacramioara Bintu, et al. “Spatial and Temporal Organization of the Genome: Current State and Future Aims of the 4D Nucleome Project.” Molecular Cell, July 2023, S1097276523004653. https://doi.org/10.1016/j.molcel.2023.06.018.
+</details>
+
 - [“Getting the Genome in Shape: The Formation of Loops, Domains and Compartments"](https://doi.org/10.1186/s13059-015-0730-1).” - TAD/loop formation review. Convergent CTCF, cohesin, mediator, different scenarios of loop formation. Stability and dynamics of TADs. Rich source of references.<details>
     <summary>Paper</summary>
     Bouwman, Britta A. M., and Wouter de Laat. “Getting the Genome in Shape: The Formation of Loops, Domains and Compartments(https://doi.org/10.1186/s13059-015-0730-1).” Genome Biology 16 (August 10, 2015)
