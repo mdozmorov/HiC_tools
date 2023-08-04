@@ -158,6 +158,8 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 - <a name="nf-core-hic">[nf-core-hic](https://github.com/nservant/nf-core-hic)</a> - Analysis of Chromosome Conformation Capture data (Hi-C and more), [Nextflow](https://www.nextflow.io) pipeline. Also, [nf-core/hic](https://github.com/nf-core/hic). [Documentation](https://nf-co.re/hic/usage).
 
+- <a name="dietjuicer">[dietJuicer](https://github.com/EricSDavis/dietJuicer)</a> - a lighter-weight, HPC flexible version of juicer written with snakemake. Designed for SLURM, modifiable for other HPC job schedulers.
+
 - <a name="distiller-nf">[distiller-nf](https://github.com/mirnylab/distiller-nf)</a> - Java modular Hi-C mapping pipeline for reproducible data analysis, [Nextflow](https://www.nextflow.io) pipeline. Alignment, filtering, aggregating Hi-C matrices.
 
 - <a name="runhic">[runHiC](https://github.com/XiaoTaoWang/HiC_pipeline)</a> - aka `HiC_pipeline`, Hi-C data processing pipeline, from raw FASTQ files. Supports bwa-mem, chromap (default), and minimap2 aligners. Performs quality control (plots), filtering, binning (to mcool output), pileup. Parallelized. By [XiaoTao Wang](https://github.com/XiaoTaoWang).
