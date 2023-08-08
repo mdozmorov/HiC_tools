@@ -27,7 +27,7 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 - [Differential analysis](#differential-analysis)
 - [TAD callers](#tad-callers)
   - [TAD detection, benchmarking](#tad-detection-benchmarking)
-  - [Architectural stripes](#architectural-stripes)
+  - [Architectural features](#architectural-features)
   - [Differential, timecourse TAD analysis](#differential-timecourse-tad-analysis)
 - [Prediction of 3D features](#prediction-of-3d-features)
 - [SNP-oriented](#snp-oriented)
@@ -833,7 +833,12 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 - "Hierarchical Regulatory Domain Inference from Hi-C Data" - presentation by Bartek Wilczyński about TAD detection, existing algorithms, new SHERPA and OPPA methods. [Video](https://simons.berkeley.edu/talks/bartek-wilczynski-03-10-16), [PDF](https://simons.berkeley.edu/sites/default/files/docs/4588/2016-03-10-simons-institute-wilczynski.pdf), [Web site](http://regulomics.mimuw.edu.pl/wp/), [GitHub](https://github.com/regulomics/) - SHERPA and OPPA code there.
 
-### Architectural stripes
+### Architectural features
+
+- [fontanka](https://github.com/agalitsyna/fontanka) - a cooltools-based Python software for detection of extrusion foundains (aka jets, plumes, but not TADs, stripes) in Hi-C/Micro-C data. Fountains are hallmarks of chromosome organization, emerging upon zygotic genome activation (ZGA). Occur at active enhancers, as sites of cohesin loading, Pou5f3, Sox19b, and Nanog, but not CTCF. Detected in Zebrafish, Medaka, Xenopus, mouse ESCs. Details about potential mechanisms. Four-step algorithm, convolution-based pattern recognition, outperforms Chromosight, protractor.f [Analysis scripts](https://github.com/encent/danio-2022). <details>
+  <summary>Paper</summary>
+  Galitsyna, Aleksandra, Sergey V. Ulianov, Nikolai S. Bykov, Marina Veil, Meijiang Gao, Kristina Perevoschikova, Mikhail Gelfand, Sergey V. Razin, Leonid Mirny, and Daria Onichtchouk. “Extrusion Fountains Are Hallmarks of Chromosome Organization Emerging upon Zygotic Genome Activation.” Preprint. Molecular Biology, July 15, 2023. https://doi.org/10.1101/2023.07.15.549120.
+</details>
 
 - <a name="stripenn">[Stripenn](https://github.com/vahedilab/stripenn)</a> - a computer vision-based method for architectural stripes detection using Canny edge detection.Scores stripes by median p-value and stripiness based on the continuity of interaction signal. Input - .cool files, optionally normalized. Output - coordinates and scores of the predicted stripes. Applicable to Hi-C, HiChIP, Micro-C data. Introduction to the biology of architectural stripes, review of previous methods (Zebra from Vian et al. 2018, [domainClassifyR](https://github.com/ChristopherBarrington/domainClassifyR), [CHESS](#chess) for comparing 3D domains and stripes). Analysis of stripes from B and T lymphocytes identifies stripe anchors enriched in the transcriptionally active compartments, architectural proteins mediating loop extrusion. Strips are strongly conserved, correspond to TAD boundaries, subtle changes are associated with transcriptional output. Python, three functions (`compute`, `score`, `seeimage`). [Video 16m](https://www.youtube.com/watch?v=_TEomDYv2vk). <details>
     <summary>Paper</summary>
