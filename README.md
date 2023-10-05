@@ -1276,6 +1276,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     Rowland, Bryce and Huh, Ruth and Hou, Zoey and Hu, Ming and Shen, Yin and Li, Yun "THUNDER: A Reference-Free Deconvolution Method to Infer Cell Type Proportions from Bulk Hi-C Data"  https://doi.org/10.1101/2020.11.12.379941 bioRxiv, November 12, 2020
 </details>
 
+- [CIRCLET](https://github.com/zhanglabtools/CIRCLET) - cell cycle phases reconstruction from scHi-C data. Circular trajectory reconstruction using diffusion mapr to embed the data and construct a k-nearest-neighbor (kNN) graph with cells as nodes and edges as connections to closest cells. Random selection of starting cell, continuing to clockwise and counterclockwise directions and linking two semi-circles. Input: four different feature sets: multiple com- posite metrics (MCM), contact probability distribution versus genomic distance (CDD), pairs’ contact coverage (PCC), and insulation score of each bin (Ins), and their combinations. 12 different stages can be distinguished based on the dynamics of chromatin structure. <details>
+  <summary>Paper</summary>
+  Ye, Yusen, Lin Gao, and Shihua Zhang. “Circular Trajectory Reconstruction Uncovers Cell‐Cycle Progression and Regulatory Dynamics from Single‐Cell Hi‐C Maps.” Advanced Science 6, no. 23 (December 2019): 1900986. https://doi.org/10.1002/advs.201900986.
+</details>
+
 ## Haplotype phasing
 
 - <a name="gamibhear">[GAMIBHEAR](https://bitbucket.org/schwarzlab/gamibhear)</a> - an R package for haplotype reconstruction in GAM (Genome Architecture Mapping, nuclear cryosectioned profiles) data. Uses the local proximity of SNVs extended to larger genomic windows using a proximity-scaled graph-based approach. Tested on the F123 mESCs, outperforms [WhatsHap](https://whatshap.readthedocs.io/en/latest/) and [HapCHAT](https://github.com/AlgoLab/HapCHAT), fast. <details>
