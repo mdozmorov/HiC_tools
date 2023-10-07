@@ -1310,6 +1310,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 - [Table summarizing functionality of Hi-C data analysis tools](https://www.sciencedirect.com/science/article/pii/S1672022918304339?via%3Dihub#t0005), from Calandrelli et al., “GITAR: An Open Source Tool for Analysis and Visualization of Hi-C Data(https://www.sciencedirect.com/science/article/pii/S1672022918304339)”
 
+- [Review of computational methods for 3D genome analysis](https://doi.org/10.1038/s41576-023-00638-1). Technologies (ligation-based and free, methods for multiway interactions, single-cell, imaging). Genomics-based analysis (from Hi-C data only, compartments, TADs, loops, stripes), predictive methods (machine learning, neural networks, predicting pairwise chromatin interactions, including enhancer-promoter, contact frequency maps, multiway interactions, using sequence information and/or epigenomic data), 3D polymer models (loop extrusion, phase separation). Single-cell 3D genome analysis (sparsity problem, imputation, dimensionality reduction, cell cycle analysis). Glossary of terms. <details>
+  <summary>Paper</summary>
+  Zhang, Yang, Lorenzo Boninsegna, Muyu Yang, Tom Misteli, Frank Alber, and Jian Ma. “Computational Methods for Analysing Multiscale 3D Genome Organization.” Nature Reviews Genetics, September 6, 2023. https://doi.org/10.1038/s41576-023-00638-1.
+</details>
+
 - [“Analysis Methods for Studying the 3D Architecture of the Genome"](https://doi.org/10.1186/s13059-015-0745-7) - Genome Hi-C technology and methods review. [Table 1](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0745-7#Tab1) - list of tools. Biases, normalization, matrix balancing. Extracting significant contacts, obs/exp ratio, parametric (power-law, neg binomial, double exponential), non-parametric (splines). 3D enrichment. References. TAD identification, directionality index. Outlook, the importance of comparative analysis. <details>
     <summary>Paper</summary>
     Ay, Ferhat, and William S. Noble. “Analysis Methods for Studying the 3D Architecture of the Genome(https://doi.org/10.1186/s13059-015-0745-7).” Genome Biology 16 (September 2, 2015)
