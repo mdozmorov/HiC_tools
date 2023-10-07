@@ -473,6 +473,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     Xiong, Kyle, and Jian Ma. "Revealing Hi-C Subcompartments by Imputing High-Resolution Inter-Chromosomal Chromatin Interactions"  https://doi.org/10.1038/s41467-019-12954-4 Nature Communications, 07 November 2019
 </details>
 
+- <a name="cscoretool">[CScoreTool](https://github.com/scoutzxb/CscoreTool)</a> - AB compartment detection, fast and memory-efficient C++ tool, operates on data with low sequencing depth (benchmarked against HOMER). In contrast to PCA, uses a log-likelihood function, MLE for parameter estimation. C-scores can be directly compared. <details>
+  <summary>Paper</summary>
+  Zheng, Xiaobin, and Yixian Zheng. “CscoreTool: Fast Hi-C Compartment Analysis at High Resolution.” Edited by John Hancock. Bioinformatics 34, no. 9 (May 1, 2018): 1568–70. https://doi.org/10.1093/bioinformatics/btx802.
+</details>
+
 - <a name="eigenvector">[Eigenvector](https://github.com/aidenlab/juicer/wiki/Eigenvector)</a> - Juicer's native tool. The eigenvector can be used to delineate compartments in Hi-C data at coarse resolution; the sign of the eigenvector typically indicates the compartment. The eigenvector is the first principal component of the Pearson's matrix.
 
 ## Peak/Loop callers
