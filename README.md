@@ -1309,6 +1309,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 ### Methodological Reviews
 
+- [Review of computational tools for 3D genome analysis](https://doi.org/10.1093/bib/bbad302). Hi-C technology and data introduction, features and their visual representation (A/B compartments, subcompartments, TADs, meta-TADs, sub-TADs, Structural variations, Chromatin loops, SMC stalled on one side, Rabl configurations, Chromatin jets, SMC interactions, Stripes), methods and tools for detecting them. Systematic description of all tools (Tables 2-5), categorized by methodoligical advances. Comprehensive, up-to-date (2023). <details>
+  <summary>Paper</summary>
+  Raffo, Andrea, and Jonas Paulsen. “The Shape of Chromatin: Insights from Computational Recognition of Geometric Patterns in Hi-C Data.” Briefings in Bioinformatics 24, no. 5 (September 20, 2023): bbad302. https://doi.org/10.1093/bib/bbad302.
+</details>
+
 - [pipelines_list.csv](pipelines_list.csv) - A list of available pipelines, URLs, from Miura et al., “[Practical Analysis of Hi-C Data](https://link.springer.com/protocol/10.1007%2F978-1-4939-8766-5_16)”
 
 - [pipeline_comparison.csv](pipeline_comparison.csv) - Available analysis options in each pipeline, from Miura et al., “[Practical Analysis of Hi-C Data](https://link.springer.com/protocol/10.1007%2F978-1-4939-8766-5_16)”
