@@ -1052,6 +1052,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 ## Visualization
 
+- <a name="hibrowser">[HiBrowser](https://github.com/lyotvincent/HiBrowser)</a> - interactive Hi-C data visualization, heatmaps (2D and horizontal triangles), supports multiple samples with different reference genomes, superimposing and comparing heatmaps, multi-omics tracks, 3D model display. Local deployment ising nginx. Input - .hic files, as well as FASTA, txt annotation files, loops, domains, bedGraphs, bigWigs. <details>
+  <summary>Paper</summary>
+  Li, Pingjing, Hong Liu, Jialiang Sun, Jianguo Lu, and Jian Liu. “HiBrowser: An Interactive and Dynamic Browser for Synchronous Hi-C Data Visualization.” Briefings in Bioinformatics 24, no. 5 (September 20, 2023): bbad283. https://doi.org/10.1093/bib/bbad283.
+</details>
+
 - <a name="hicube">[HiCube](https://github.com/wmalab/HiCube)</a> - web application for Hi-C map and 3D structure visualization, along with 1D annotations. Uses [HiGlass](https://github.com/higlass/higlass-server). Input - mcool files, db annotation files for HiGlass (created from bigWig, BED, BEDPE, BedGraph, etc.), 3D genome structure data in the [g3d](https://github.com/vimaec/g3d) format. Runs via Docker. [Supplementary Table 1](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btad154/7085595#supplementary-data) - Visualization tool comparison, HiCube vs. Nucleome Browser, WashU Epigenome Browser, HiGlass, 3D Genome Browser,  TADkit, HiC3d Viewer, HiCPlotter, pyGenomeTracks. <details>
   <summary>Paper</summary>
   Ye, Tiantian, Yangyang Hu, Sydney Pun, and Wenxiu Ma. “HiCube: Interactive Visualization of Multiscale and Multimodal Hi-C and 3D Genome Data.” Edited by Can Alkan. Bioinformatics, March 24, 2023, btad154. https://doi.org/10.1093/bioinformatics/btad154.
