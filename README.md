@@ -702,6 +702,8 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 - <a name="hiccupsdiff">[HiCCUPS Diff](https://github.com/aidenlab/juicer/wiki/HiCCUPSDiff)</a> - differential loop analysis. Input - two .hic files and loop lists; output - lists of differential loops. 
 
+- <a name="meltron">[Meltron](https://github.com/DominikSzabo1/Meltron)</a> - a statistical framework to detect differences in chromatin contact density at genomic regions of interest
+
 ## TAD callers
 
 - <a name="tadfit">[TADfit](https://github.com/lhqxinghun/TADfit)</a> - a multivariate linear regression model for detecting hierarchical chromatin domains. Fits the interaction frequencies in Hi-C contact matrix with and without replicates using all-possible hierarchical TADs, and the significant ones can be determined by the regression coefficients. Tested on simulated and experimental data, ICE-normalized, outperforms TADtree, 3DNetMod, OnTAD, SpectralTAD, and TADpole. Three steps algorithm: preparing TADs with TopDom, modeling the relationship between IFs and candidate hierarchical TADs, solving the model by FTRL (an online learning solver FTRL, Follow-The-Regularized-Leader). Considers overlapping TADs. R implementation. <details>
