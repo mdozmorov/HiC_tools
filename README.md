@@ -1624,7 +1624,7 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     Krietenstein, Nils, Sameer Abraham, Sergey Venev, Nezar Abdennur, Johan Gibcus, Tsung-Han Hsieh, Krishna Mohan Parsi, et al. "Ultrastructural Details of Mammalian Chromosome Architecture"  https://doi.org/10.1101/639922 Preprint. Genomics, May 17, 2019. 
 </details>
 
-- Micro-C technology - mononucleosome resolution mapping in yeast. Micrococcal nuclease to fragment chromatin. Yeast does not have TADs, but Micro-C revealed self-associating domains (chromatin interaction domains, CIDs) driven by the number of genes. Enrichment of histone modifications. [Data](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE68016). <details>
+- Micro-C technology - mononucleosome resolution mapping in yeast. Micrococcal nuclease to fragment chromatin. Yeast does not have TADs, but Micro-C revealed self-associating domains (chromatin interaction domains, CIDs) driven by the number of genes. Boundaries between CIDs strongly enriched for the nucleosome depleted regions. Gene compaction anticorrelated with transcription rate. Enrichment of histone modifications. Yeast boundary calls, gene compaction scores, Micro-C interactions vs. distance, [GSE68016](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE68016). <details>
     <summary>Paper</summary>
     Hsieh, Tsung-Han S., Assaf Weiner, Bryan Lajoie, Job Dekker, Nir Friedman, and Oliver J. Rando. "Mapping Nucleosome Resolution Chromosome Folding in Yeast by Micro-C"  https://doi.org/10.1016/j.cell.2015.05.048 Cell 162, no. 1 (July 2015)
 </details>
