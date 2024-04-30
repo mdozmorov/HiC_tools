@@ -1059,6 +1059,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 ## Visualization
 
+- <a name="hicrayon">[HiCrayon](https://github.com/JRowleyLab/HiCrayon)</a> - An R package to integrate/visualize 1D (bigWig, bedGraph) and 3D (Hi-C) maps. Coloring of interactions depending on the associated 1D signal, non-existing interactions are not colored. A/B compartment analysis reveals the potential additional state. Docker image, [web version](https://jrowleylab.com/HiCrayon) for visualizing ENCODE-hosted data. <details>
+  <summary>Paper</summary>
+  Ben Nolan, Hannah L. Harris, Achyuth Kalluchi, Timothy E. Reznicek, Christopher T. Cummings, and M. Jordan Rowley. “HiCrayon Reveals Distinct Layers of Multi-State 3D Chromatin Organization.” bioRxiv, January 1, 2024, 2024.02.11.579821. https://doi.org/10.1101/2024.02.11.579821.
+</details>
+
 - <a name="hibrowser">[HiBrowser](https://github.com/lyotvincent/HiBrowser)</a> - interactive Hi-C data visualization, heatmaps (2D and horizontal triangles), supports multiple samples with different reference genomes, superimposing and comparing heatmaps, multi-omics tracks, 3D model display. Local deployment ising nginx. Input - .hic files, as well as FASTA, txt annotation files, loops, domains, bedGraphs, bigWigs. <details>
   <summary>Paper</summary>
   Li, Pingjing, Hong Liu, Jialiang Sun, Jianguo Lu, and Jian Liu. “HiBrowser: An Interactive and Dynamic Browser for Synchronous Hi-C Data Visualization.” Briefings in Bioinformatics 24, no. 5 (September 20, 2023): bbad283. https://doi.org/10.1093/bib/bbad283.
