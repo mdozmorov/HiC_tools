@@ -342,6 +342,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 ## Normalization
 
+- [VSS-Hi-C](https://github.com/nedashokraneh/vssHiC) - Variance-stabilized signals for chromatin contacts, normalizes individual matrices. Improves subcompartment detection. <details>
+  <summary>Paper</summary>
+  Kenari, Neda Shokraneh, Faezeh Bayat, and Maxwell Libbrecht. “VSS-Hi-C: Variance-Stabilized Signals for Chromatin Contacts,” n.d.
+</details>
+
 - [HiConfidence](https://github.com/victorykobets/HiConfidence) - Python tool for eliminating biases from the Hi-C data by downweighting chromatin contacts from low-quality (low-coverage) Hi-C replicates. For each replicate, calculate differential matrix and then the confidence for each pixel as the inverse pixel-wise difference divided by their mean, raised to the power of a tunable parameter k (Figure 2A). Used for correction for replicates' confidence in calculating TAD boundaries, intra-TAD densities, improves replicate reproducibility (stratum-adjusted correlation coefficient). Compared with multiHiCcompare, aids in differential analysis, compartment and TAD detection. Applied to D. melanogaster S2 cells, [GSE200078](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE200078), processed with distiller, pairtools, cooltools. <details>
   <summary>Paper</summary>
   Kobets, Victoria A, Sergey V Ulianov, Aleksandra A Galitsyna, Semen A Doronin, Elena A Mikhaleva, Mikhail S Gelfand, Yuri Y Shevelyov, Sergey V Razin, and Ekaterina E Khrameeva. “HiConfidence: A Novel Approach Uncovering the Biological Signal in Hi-C Data Affected by Technical Biases.” Briefings in Bioinformatics, February 9, 2023, bbad044. https://doi.org/10.1093/bib/bbad044.
