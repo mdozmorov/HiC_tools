@@ -185,6 +185,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 ### Capture-C
 
+- [Bacon](https://github.com/CSUBioGroup/Bacon) - tool for benchmarking computational pipelines for targeted chromatin conformation capture technologies (e.g., HiChIP, ChIA-PET). Overlap with ChIP-seq data, the Uniquely Valid Rate, Peak Co-occupancy, Accuracy. HiChIP technology outperforms ChIA-PET. ChIAPoP/MAPS pipelines perform better for ChIA-PET/HiChIP technologies. Figure 3 - practical guidelines. <details>
+  <summary>Paper</summary>
+  Tang, Li, Matthew C. Hill, Patrick T. Ellinor, and Min Li. “Bacon: A Comprehensive Computational Benchmarking Framework for Evaluating Targeted Chromatin Conformation Capture-Specific Methodologies.” Genome Biology 23, no. 1 (December 2022): 30. https://doi.org/10.1186/s13059-021-02597-4.
+</details>
+
 - <a name="chicane">[CHiCANE](https://CRAN.R-project.org/package=chicane)</a> - an R-based data processing and interaction calling toolkit for the analysis and interpretation of Capture Hi-C data ([Arima](https://github.com/ArimaGenomics/CHiC), [Dovetail](https://github.com/dovetail-genomics/chicago)). Data preprocessing with [HiCUP](#hicup) (recommended), but BAMs from other pipelines are supported. Flexible regression modeling of the number of reads linking bait and target fragments, including distance. (Truncated) Negative binomial, Poisson distributions, zeros may be included, other covariates. Functionality to assess model fit. Similar tools - [GOTHiC](#gothic), [CHiCAGO](#chicago), [ChiCMaxima](#chicmaxima). Protocol explaining each step. <details>
     <summary>Paper</summary>
     Holgersen, Erle M. "Identifying High-Confidence Capture Hi-C Interactions Using CHiCANE" https://doi.org/10.1038/s41596-021-00498-1 NATURE PROTOCOLS (April 2021)
