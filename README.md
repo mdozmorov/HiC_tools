@@ -1206,6 +1206,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
   Sur, Aakash, William Stafford Noble, and Peter J. Myler. "A benchmark of Hi-C scaffolders using reference genomes and de novo assemblies." bioRxiv (April 20, 2022). https://doi.org/10.1101/2022.04.20.488415
 </details>
 
+- <a name="pinhic">[pin_hic](https://github.com/dfguan/pin_hic)</a> - Hi-C graph scaffolder based on N-best neighbor contigs and an iterative weighted linking approach to extend them. Tested on three draft assemblies (Hi-C from Arima), outperforms SALSA2. Requires draft assembly, to align Hi-C reads with bwa mem -SP -B10 -t12. New SAT format for expanded graph information storage, [satool](https://github.com/dfguan/satool) to visualize and convert. <details>
+  <summary>Paper</summary>
+  Guan, Dengfeng, Shane A. McCarthy, Zemin Ning, Guohua Wang, Yadong Wang, and Richard Durbin. “Efficient Iterative Hi-C Scaffolder Based on N-Best Neighbors.” BMC Bioinformatics 22, no. 1 (December 2021): 569. https://doi.org/10.1186/s12859-021-04453-5.
+</details>
+
 - <a name="endhic">[EndHiC](https://github.com/fanagislab/EndHiC)</a> - chromosome scaffolding using Hi-C links from contig ends. Requires contigs from [PacBio's HiFiasm technology](https://github.com/chhylp123/hifiasm) (assembled by [HiCanu](https://github.com/marbl/canu)), and Hi-C data processed by [HiC-Pro](#hic-pro). Applied to human, rice, Arabidopsis, achieves higher accuracy than [Lachesis](#lachesis), [ALLHiC](https://github.com/tanghaibao/allhic), [3D-DNA](#theaidenlab3ddna). Perl scripts. <details>
     <summary>Paper</summary>
     Wang, Sen, Hengchao Wang, Fan Jiang, Anqi Wang, Hangwei Liu, Hanbo Zhao, Boyuan Yang, Dong Xu, Yan Zhang, and Wei Fan. "EndHiC: Assemble Large Contigs into Chromosomal-Level Scaffolds Using the Hi-C Links from Contig Ends](https://arxiv.org/abs/2111.15411 ArXiv, 30 Nov 2021
