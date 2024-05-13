@@ -146,7 +146,7 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 - [ENCODE project Data Production and Processing Standard of the Hi-C Mapping Center, PDF](https://www.encodeproject.org/documents/75926e4b-77aa-4959-8ca7-87efcba39d79/@@download/attachment/comp_doc_7july2018_final.pdf) - Computational standards of the Hi-C ENCODE mapping center including quality control measures and computational methods. 
 
-- <a name="arima-mapping-pipeline">[Arima mapping pipeline](https://github.com/ArimaGenomics/mapping_pipeline)</a> - Mapping pipeline for data generated using Arima-HiC.
+- <a name="arima-mapping-pipeline">[Arima mapping pipeline](https://github.com/ArimaGenomics/mapping_pipeline)</a> - Mapping pipeline for data generated using Arima-HiC. MboI and HinfI enzymes ([source](https://doi.org/10.1186/s12859-021-04453-5)). The combination of restriction enzymes represent ten possible cut sites: ^GATC, G^ANTC, C^TNAG and T^TAA; ‘^’ is the cut site on the plus DNA strand, and the 'N' can be any of the four genomic bases ([source](https://doi.org/10.1038/s41586-022-05325-5))
 
 - <a name="cword">[cword](https://github.com/dekkerlab/cworld-dekker)</a> - Perl cworld module and collection of utility/analysis scripts for C data (3C, 4C, 5C, Hi-C).
 
