@@ -247,6 +247,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 ### HiChIP
 
+- HiChIP protocol improvement for cohesin target. Two cross-linking agents (formaldehyde and EGS). <a name="nf-hichip">[nf-hichip](https://github.com/SFGLab/nf-hichip)</a> pipeline combining ChIP-specific and HiChIP-specific steps (MAPS pipeline), processing multiple datasets, Nextflow, Docker. Mapping, coverage track, peak calling. Outperforms Juicer, ChIA-PIPE, detects more loops. [gStripe](https://github.com/SFGLab/gStripe) - stripe calling from HiChIP data, graph-based, operates on sets of loops from other tools, outperforms Stripenn, Python implementation. <details>
+  <summary>Paper</summary>
+  Jodkowska, Karolina, Zofia Parteka-Tojek, Abhishek Agarwal, Michał Denkiewicz, Sevastianos Korsak, Mateusz Chiliński, Krzysztof Banecki, and Dariusz Plewczynski. “Improved Cohesin HiChIP Protocol and Bioinformatic Analysis for Robust Detection of Chromatin Loops and Stripes,” n.d.
+</details>
+
 - <a name="hichip-peak">[HiChIP-Peak](https://github.com/ChenfuShi/HiChIP_peaks)</a> - Command-line HiChIP peak caller, focus on peaks at re-ligation sites. Peak filtering, then negative binomial model. Differential peak analysis similar to [DiffBind](https://bioconductor.org/packages/release/bioc/html/DiffBind.html). <details>
     <summary>Paper</summary>
     Shi, Chenfu, Magnus Rattray, and Gisela Orozco. "HiChIP-Peaks: A HiChIP Peak Calling Algorithm"  https://doi.org/10.1093/bioinformatics/btaa202 Bioinformatics, Volume 36, Issue 12, 15 June 2020
@@ -873,7 +878,9 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 ### Architectural features
 
-- [fontanka](https://github.com/agalitsyna/fontanka) - a cooltools-based Python software for detection of extrusion foundains (aka jets, plumes, but not TADs, stripes) in Hi-C/Micro-C data. Fountains are hallmarks of chromosome organization, emerging upon zygotic genome activation (ZGA). Occur at active enhancers, as sites of cohesin loading, Pou5f3, Sox19b, and Nanog, but not CTCF. Detected in Zebrafish, Medaka, Xenopus, mouse ESCs. Details about potential mechanisms. Four-step algorithm, convolution-based pattern recognition, outperforms Chromosight, protractor.f [Analysis scripts](https://github.com/encent/danio-2022). <details>
+- <a name="gstripe">[gStripe](https://github.com/SFGLab/gStripe)</a> - stripe calling from HiChIP data, graph-based, operates on sets of loops from other tools, outperforms Stripenn, Python implementation. Reference to the [nf-hichip](#nf-hichip) pipeline.
+
+- <a name="fontanka">[fontanka](https://github.com/agalitsyna/fontanka)</a> - a cooltools-based Python software for detection of extrusion foundains (aka jets, plumes, but not TADs, stripes) in Hi-C/Micro-C data. Fountains are hallmarks of chromosome organization, emerging upon zygotic genome activation (ZGA). Occur at active enhancers, as sites of cohesin loading, Pou5f3, Sox19b, and Nanog, but not CTCF. Detected in Zebrafish, Medaka, Xenopus, mouse ESCs. Details about potential mechanisms. Four-step algorithm, convolution-based pattern recognition, outperforms Chromosight, protractor.f [Analysis scripts](https://github.com/encent/danio-2022). <details>
   <summary>Paper</summary>
   Galitsyna, Aleksandra, Sergey V. Ulianov, Nikolai S. Bykov, Marina Veil, Meijiang Gao, Kristina Perevoschikova, Mikhail Gelfand, Sergey V. Razin, Leonid Mirny, and Daria Onichtchouk. “Extrusion Fountains Are Hallmarks of Chromosome Organization Emerging upon Zygotic Genome Activation.” Preprint. Molecular Biology, July 15, 2023. https://doi.org/10.1101/2023.07.15.549120.
 </details>
