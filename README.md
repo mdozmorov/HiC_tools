@@ -55,6 +55,10 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 ## Pipelines
 
+- <a name="microket">[Microket](https://github.com/hellosunking/Microcket)</a> - 3D genomics data (Hi-C, Micro-C) preprocessing pipeline. A unique read-stitch strategy (stitching complementary reads) improving mapping efficiency (FLASH). Removes adapters (Ktrim), low-quality cycles, PCR duplicates, uses STAR. Outperforms Juicer, HiC-Pro, HiCUP, Fan-C, Distiller in detecting more pairs (especially at shorter distances), running time, memory. Tested on simulated (sim3C) and Rao2014 data. Output: pairs, hic, and cool formats. Linux, command line. <details>
+  Zhao, Yu, Mengqi Yang, Fanglei Gong, Yuqi Pan, Minghui Hu, Qin Peng, Leina Lu, Xiaowen Lyu, and Kun Sun. “Accelerating 3D Genomics Data Analysis with Microcket.” Communications Biology 7, no. 1 (June 1, 2024): 675. https://doi.org/10.1038/s42003-024-06382-4.
+</details>
+
 - <a name="fan-c">[FAN-C](https://github.com/vaquerizaslab/fanc)</a> - Python pipeline for Hi-C processing. Input - raw FASTQ (aligned using BWA or Bowtie2, artifact filtering) or pre-aligned BAMs. KR or ICE normalization. Analysis and Visualization (contact distance decay, A/B compartment detection, TAD/loop detection, Average TAD/loop profiles, saddle plots, triangular heatmaps, comparison of two heatmaps). Automatic or modular. Compatible with .cool and .hic formats. [Tweet1](https://twitter.com/vaquerizas_lab/status/1225011187668209664?s=20), [Tweet2](https://twitter.com/vaquerizasjm/status/1339937903473025027?s=20). [Table 1](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02215-9/tables/1) - detailed comparison of 13 Hi-C processing tools <details>
     <summary>Paper</summary>
     Kruse, Kai, Clemens B. Hug, and Juan M. Vaquerizas. "FAN-C: A Feature-Rich Framework for the Analysis and Visualisation of Chromosome Conformation Capture Data"  https://doi.org/10.1186/s13059-020-02215-9 Genome Biology 21, no. 1 (December 2020) 
