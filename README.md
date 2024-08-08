@@ -1223,6 +1223,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
   Sur, Aakash, William Stafford Noble, and Peter J. Myler. "A benchmark of Hi-C scaffolders using reference genomes and de novo assemblies." bioRxiv (April 20, 2022). https://doi.org/10.1101/2022.04.20.488415
 </details>
 
+- <a name="HapHiC">[HapHiC](https://github.com/zengxiaofei/HapHiC)</a> - HapHiC exhibits superior performance in handling haplotype-resolved assemblies without the need for reference genomes. This scaffolding tool supports various ploidy levels and has been successfully validated across diverse taxa. This study also provides new insights into the challenges in allele-aware scaffolding, comparing it with other scaffolders such as [ALLHiC](https://github.com/tangerzhang/ALLHiC), [YaHS](https://github.com/c-zhou/yahs), [3D-DNA](https://github.com/aidenlab/3d-dna), [LACHESIS](https://github.com/shendurelab/LACHESIS), and [SALSA2](https://github.com/marbl/SALSA) through comprehensive analyses on various adverse factors. <details>
+  <summary>Paper</summary>
+  Zeng, Xiaofei, Zili Yi, Xingtan Zhang, Yuhui Du, Zhiqing Zhou, Sijie Chen, Huijie Zhao, Sai Yang, Yibin Wang, and Guoan Chen. “Chromosome-level scaffolding of haplotype-resolved assemblies using Hi-C data without reference genomes.” Nature Plants, 05 August,2024. https://doi.org/10.1038/s41477-024-01755-3.
+</details>
+
 - <a name="pinhic">[pin_hic](https://github.com/dfguan/pin_hic)</a> - Hi-C graph scaffolder based on N-best neighbor contigs and an iterative weighted linking approach to extend them. Tested on three draft assemblies (Hi-C from Arima), outperforms SALSA2. Requires draft assembly, to align Hi-C reads with bwa mem -SP -B10 -t12. New SAT format for expanded graph information storage, [satool](https://github.com/dfguan/satool) to visualize and convert. <details>
   <summary>Paper</summary>
   Guan, Dengfeng, Shane A. McCarthy, Zemin Ning, Guohua Wang, Yadong Wang, and Richard Durbin. “Efficient Iterative Hi-C Scaffolder Based on N-Best Neighbors.” BMC Bioinformatics 22, no. 1 (December 2021): 569. https://doi.org/10.1186/s12859-021-04453-5.
