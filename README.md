@@ -1807,6 +1807,8 @@ Demonstrated on the structure of the mouse globin locus (erythroid cells with ac
 
 - [3d-genome-processing-tutorial](https://github.com/hms-dbmi/3d-genome-processing-tutorial) - A 3D genome data processing tutorial for ISMB/ECCB 2017. https://github.com/hms-dbmi/3d-genome-processing-tutorial
 
+- [An Introduction to Analyzing and Interpreting Hi-C Data](https://courses.arimagenomics.com/start) - free Arima Genomics course, short videos, reading, quizzes, final exam, certificate of completion. Free, approx. 2 hours, registration with Gmail and other options. Narrated by Sofia Nomikou.
+
 - [Workshop on measuring, analyzing, and visualizing the 3D genome with Hi-C data](https://github.com/hms-dbmi/hic-data-analysis-bootcamp). Presentations (PDFs, PPTX) and Jupyter notebooks. Cooler, HiCGlass, HiPlier. https://github.com/hms-dbmi/hic-data-analysis-bootcamp
 
 - [The 3D Organization of Our Genome](https://youtu.be/Pl44JjA--2k) 3 min video recapitulates our current understanding of genome organization in the three-dimensional space of the cell nucleus. More videos in the description. By the [Cavalli lab videos](https://www.youtube.com/channel/UCFjv-tOfb_AaGLE-tKvLvTA), [Tweet](https://twitter.com/giacomo_cavalli/status/1453771881740476422?s=20)
