@@ -190,6 +190,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 ### Capture-C
 
+- Capture-C (low input, NuTi Capture-C, Tiled-C, Tri-C) wet and dry lab protocols. Introduction, comparison with other technologies, 4-base enzyme cutters. General purpose tools: [Peaky](https://cqgd.github.io/pky/), [PeakC](https://github.com/deWitLab/peakC); Capture-C compatible: [HiC-Pro](https://github.com/nservant/HiC-Pro), [capC-MAP](https://github.com/cbrackley/capC-MAP), [CCseqBasicS](https://github.com/Hughes-Genome-Group/CCseqBasicS); Tri-C compatible: [TriC](https://github.com/oudelaar/TriC); Tiled-C compatible: [TiledC](https://github.com/oudelaar/TiledC). Recommended analysis tool for NG-Capture-C, Tri-C and Tiled-C data: [CapCruncher](https://github.com/sims-lab/CapCruncher). Requires files: a BED file with coordinates of viewpoints, coordinates of enriched regions (for NuTi Capture-C and Tri-C), a configuration file specifying the genome, mapping parameters, experimental method and output directories. [Documentation](https://sims-lab.github.io/CapCruncher/). <details>
+  <summary>Paper</summary>
+  Downes, Damien J. “Capture-C: A Modular and Flexible Approach for High-Resolution Chromosome Conformation Capture.” NATURE PROTOCOLS 17 (2022). https://doi.org/10.1038/s41596-021-00651-w
+</details>
+
 - [Bacon](https://github.com/CSUBioGroup/Bacon) - tool for benchmarking computational pipelines for targeted chromatin conformation capture technologies (e.g., HiChIP, ChIA-PET). Overlap with ChIP-seq data, the Uniquely Valid Rate, Peak Co-occupancy, Accuracy. HiChIP technology outperforms ChIA-PET. ChIAPoP/MAPS pipelines perform better for ChIA-PET/HiChIP technologies. Figure 3 - practical guidelines. <details>
   <summary>Paper</summary>
   Tang, Li, Matthew C. Hill, Patrick T. Ellinor, and Min Li. “Bacon: A Comprehensive Computational Benchmarking Framework for Evaluating Targeted Chromatin Conformation Capture-Specific Methodologies.” Genome Biology 23, no. 1 (December 2022): 30. https://doi.org/10.1186/s13059-021-02597-4.
