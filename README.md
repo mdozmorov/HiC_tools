@@ -746,6 +746,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
   Zhang, Yu Wei, Lingxi Chen, and Shuai Cheng Li. "Detecting TAD-like domains from RNA-associated interactions." Nucleic Acids Research (25 May 2022). https://doi.org/10.1093/nar/gkac422
 </details>
 
+- <a name="supertadfast">[SuperTAD-Fast](https://github.com/deepomicslab/SuperTAD)</a> - hierarchical TAD caller, improves speed and memory usage of SuperTAD, a dynamic programming approach to find TADs with minimal structural entropy. An approximation algorithm using discretization method in the multinary encoding tree detecting algorithm of SuperTAD. Three parameters: h, the maximum height of the encoding tree; k, the maximum step number in the discretization model, and w, the size of the search window. Tested on experimental and simulated data, outperforms deDOC, SpectralTAD, GMAP, IC-Finder, CaTCH, 3DNetMod. <details>
+  <summary>Paper</summary>
+  Ling, Zhao, Yu Wei Zhang, and Shuai Cheng Li. “SuperTAD-Fast: Accelerating Topologically Associating Domains Detection Through Discretization.” Journal of Computational Biology 31, no. 9 (September 1, 2024): 784–96. https://doi.org/10.1089/cmb.2024.0490.
+</details>
+
 - <a name="supertad">[SuperTAD](https://zenodo.org/record/4314123)</a> - hierarchical TAD callers, efficient algorithms for computing the coding tree of a contact map, structure information theory, dynamic programming, polynomial-time solvable. Compared with seven hierarchical TAD callers (but not [SpectralTAD](#spectraltad)!), better epigenomic enrichment, agreement in calls from raw and KR matrices, better cross-resolution agreement by size, width. Command line, C++ implementation. <details>
   <summary>Paper</summary>
   Zhang, Yu Wei, Meng Bo Wang, and Shuai Cheng Li. “SuperTAD: Robust Detection of Hierarchical Topologically Associated Domains with Optimized Structural Information.” Genome Biology 22, no. 1 (December 2021): 45. https://doi.org/10.1186/s13059-020-02234-6.
