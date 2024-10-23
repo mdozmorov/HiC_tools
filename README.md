@@ -736,6 +736,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 ## TAD callers
 
+- [GILoop](https://github.com/fzbio/GILoop) - a dual-branch neural network for CTCF-mediated loop calling. Integrates the image view and graph view of KR-normalized Hi-C data. A U-net branch for image processing and a graph convolutional network (GCN) that extracts edge-wise information. Each branch is trained separately and then branches are fused via a bilinear pooling operation and fine tuned. Graph representation incorporated DNA k-mer information (320-dimensional feature space). Patch sampling strategy. Detects loops with more stringent CTCF relevance than Peakachu. Highly robust to sequencing depth. Model trained on one cell line can be transferred to another cell line. ChIA-PET for ground truth. <details>
+  <summary>Paper</summary>
+  Wang, Fuzhou, Tingxiao Gao, Jiecong Lin, Zetian Zheng, Lei Huang, Muhammad Toseef, Xiangtao Li, and Ka-Chun Wong. “GILoop: Robust Chromatin Loop Calling across Multiple Sequencing Depths on Hi-C Data.” iScience 25, no. 12 (December 2022): 105535. https://doi.org/10.1016/j.isci.2022.105535.
+</details>
+
 - <a name="tadfit">[TADfit](https://github.com/lhqxinghun/TADfit)</a> - hierarchical TAD finder using a multivariate linear regression model. Fit the interaction frequencies in Hi-C contact matrices (with or without replicates) defined by TopDom boundaries. Finds partially overlapping TADs. Three steps algorithm: preparing TADs with TopDom, modeling the relationship between IFs and candidate hierarchical TADs, solving the model by FTRL (an online learning solver FTRL, Follow-The-Regularized-Leader, two hyperparameters). Tested on simulated and experimental data, ICE-normalized, outperforms (Jaccard, F1) TADtree, 3DNetMod, OnTAD, SpectralTAD, and TADpole.  Considers overlapping TADs. R implementation. <details>
   <summary>Paper</summary>
   Liu, Erhu, Hongqiang Lyu, Qinke Peng, Yuan Liu, Tian Wang, and Jiuqiang Han. “TADfit Is a Multivariate Linear Regression Model for Profiling Hierarchical Chromatin Domains on Replicate Hi-C Data.” Communications Biology 5, no. 1 (June 20, 2022): 608. https://doi.org/10.1038/s42003-022-03546-y.
