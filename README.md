@@ -1398,6 +1398,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 ### Methodological Reviews
 
+- Review of deep learning genome folding methods (predicting 3D structures from DNA sequences and epigenetic marks). Architecture specifics (encoders, decoders), training parameters (loss, optimizer, regularization), described for tools: Akita, AkitaV2, DeepC, ORCA, AkitaR, C.Origami, ChromaFold, EPSCOT, Epiphany. Biological evaluation. [Github Python tutorial](https://github.com/Fudenberg-Research-Group/DeepLearning_for_3DgenomeFoldingTutorial). <details>
+  <summary>Paper</summary>
+  Paulina N Smaruj, Yao Xiao, Geoffrey Fudenberg, "Recipes and ingredients for deep learning models of 3D genome folding", Current Opinion in Genetics & Development 2025. https://doi.org/10.1016/j.gde.2024.102308
+</details>
+
 - [Review of computational tools for 3D genome analysis](https://doi.org/10.1093/bib/bbad302). Hi-C technology and data introduction, features and their visual representation (A/B compartments, subcompartments, TADs, meta-TADs, sub-TADs, Structural variations, Chromatin loops, SMC stalled on one side, Rabl configurations, Chromatin jets, SMC interactions, Stripes), methods and tools for detecting them. Systematic description of all tools (Tables 2-5), categorized by methodoligical advances. Comprehensive, up-to-date (2023). <details>
   <summary>Paper</summary>
   Raffo, Andrea, and Jonas Paulsen. “The Shape of Chromatin: Insights from Computational Recognition of Geometric Patterns in Hi-C Data.” Briefings in Bioinformatics 24, no. 5 (September 20, 2023): bbad302. https://doi.org/10.1093/bib/bbad302.
