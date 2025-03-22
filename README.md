@@ -297,6 +297,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 ## Resolution improvement
 
+- HiCMamba - a deep learning approach for Hi-C resolution enhancement with state space modeling. A Mamba-based autoencoder framework leveraging state space model to infer high coverage Hi-C maps based on the UNet architecture. Ideas from CNN, RNN, Transformer. A holistic scan block enabling the perception of both global and local receptive fields at multiple scales (a two-dimentional selective scan module and a locally-enhanced feedforward neural network). Methods and Figure 1 - clear and detailed overview of HiCMamba architecture. Traditional approaches outperformed by HiCMamba on four key metrics: structural similarity index measure (SSIM), peak signal-to-noise ratio (PSNR), Pearson correlation coefficient (PCC), and Spearman rank correlation coefficient (SRCC): CNN-based (HiCPlus, HiCNN), GAN-based (HiCSR, HiCARN). Requires 1/4 of computational resources than competitors. PyTorch implementation. <details>
+  <summary>Paper</summary>
+  Yang, Minghao, Zhi-An Huang, Zhihang Zheng, Yuqiao Liu, Shichen Zhang, Pengfei Zhang, Hui Xiong, and Shaojun Tang. “HiCMamba: Enhancing Hi-C Resolution and Identifying 3D Genome Structures with State Space Modeling.” arXiv, March 13, 2025. https://doi.org/10.48550/arXiv.2503.10713.
+</details>
+
 - <a name="vehicle">[VEHiCLE](https://github.com/Max-Highsmith/VEHiCLE)</a> - a variational autoencoder (feature extraction, dimensionality reduction) and Generative Adversarial Network (maps low-dimensional vectors to Hi-C maps) for Hi-C resolution enhancement. Uses a combination of four loss functions: adversarial loss, variational loss, mean square error, and insulation score loss (interesting!). Intro into VAEs, GANs, loss functions. Uses GM12878, IMR90, K562, HMEC data. Compared using five metrics (similarity, reproducibility) against [HiCPlus](#hicplus), [DeepHiC](#deephic), [HiCSR](#hicsr), outperforms all. Improves TAD identification, 3D structure modeling. Python implementation. <details>
     <summary>Paper</summary>
     Highsmith, Max, and Jianlin Cheng. "VEHiCLE: A Variationally Encoded Hi-C Loss Enhancement Algorithm for Improving and Generating Hi-C Data"  https://doi.org/10.1038/s41598-021-88115-9 Scientific Reports 11, no. 1 (December 2021)
