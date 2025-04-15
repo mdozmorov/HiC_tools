@@ -307,6 +307,10 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     Highsmith, Max, and Jianlin Cheng. "VEHiCLE: A Variationally Encoded Hi-C Loss Enhancement Algorithm for Improving and Generating Hi-C Data"  https://doi.org/10.1038/s41598-021-88115-9 Scientific Reports 11, no. 1 (December 2021)
 </details>
 
+- [EnHiC](https://github.com/wmalab/EnHiC) - Hi-C resolution improvement using Generative Adversarial Networks. Inspired by non-negative matrix factorization, extracts rank-1 features from multi-scale low-resolution matrices. Hi-C data is represented as a multi-channel image. Two loss functions, one to estimate the rank-1 features and another to evaluate the enhanced resolution. HiCRep, GenomeDISCO, Jaccard scores on TADs, outperforms Deephic and HiCSR. Python3, Tensorflow implementation. <details>
+  <summary>Paper</summary>
+  Hu, Yangyang, and Wenxiu Ma. "EnHiC: learning fine-resolution Hi-C contact maps using a generative adversarial framework." Bioinformatics 37, no. Supplement_1 (2021): i272-i279. https://doi.org/10.1093/bioinformatics/btab272
+</details>
 
 - <a name="hicres">[HiCRes](https://github.com/ClaireMarchal/HiCRes)</a> - resolution estimation, based on the linear dependence of 20th percentile of coverage and the window size used to access coverage. Includes preseq for estimating and predicting library complexity, [bowtie2](https://github.com/BenLangmead/bowtie2) and [HiCUP](#hicup) for estimating Hi-C-specific QC metrics. Relatively insensitive to enzyme of choice. Implemented as Docker/Singularity images. Requires significant computational resources, like 5 hours on 40 CPU cluster. <details>
     <summary>Paper</summary>
@@ -992,6 +996,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 </details>
 
 ## Prediction of 3D features
+
+- <a name="chromoformer">[Chromoformer](https://github.com/dohlee/chromoformer)</a> - gene expression prediction using histone code and 3D interactions using the transformer architecture to account for distant interactions. Binary and regression classification variants. Tested on 11 cell types with the same type of histone data. 4-fold cross-validation, AUROC, accuracy, precision. Outperforms AttentiveChrome, DeepChrome, HM-CRNN. <details>
+  <summary>Paper</summary>
+  Lee, Dohoon. “Learning the Histone Codes with Large Genomic Windows and Three-Dimensional Chromatin Interactions Using Transformer.” Nature Communications, 2022. https://doi.org/10.1038/s41467-022-34152-5
+</details>
 
 - <a name="corigami">C. Origami</a> - a deep neural network (Sequence encoder+Feature encoder->transformer->decoder, Methods) predict cell type-specific Hi-C matrices using DNA sequence (one-hot encoding), CTCF binding (ChIP-seq), and chromatin accessibility (ATAC-seq) profiles (all critical for best performance). Chromosome-wide predictions by joining predictions across sliding windows (2Mb). Performance evaluation - correlation of insulation scores, over 0.95 Pearson. Outperforms [Akita](#akita). Enables prediction of the effect of genetic perturbations. <details>
     <summary>Paper</summary>
