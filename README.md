@@ -1330,7 +1330,7 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 - <a name="yahs">[YaHS](https://github.com/c-zhou/yahs)</a> - yet another Hi-C scaffolding tool. It relies on a new algothrim for contig joining detection which considers the topological distribution of Hi-C signals aiming to distingush real interaction signals from mapping nosies. Implemented in C, very fast.
 
-- <a name="AutoHiC">AutoHiC](https://github.com/Jwindler/AutoHiC)</a> - a deep learning tool that uses Hi-C data to support genome assembly. It can automatically correct errors during genome assembly and generate chromosome-level genome. Conda-installable <details>
+- <a name="AutoHiC">[AutoHiC](https://github.com/Jwindler/AutoHiC)</a> - a deep learning tool that uses Hi-C data to support genome assembly. It can automatically correct errors during genome assembly and generate chromosome-level genome. Conda-installable <details>
     <summary>Paper</summary>
     Zijie Jiang, Zhixiang Peng, Zhaoyuan Wei, Jiahe Sun, Yongjiang Luo, Lingzi Bie, Guoqing Zhang, Yi Wang, A deep learning-based method enables the automatic and accurate assembly of chromosome-level genomes, *Nucleic Acids Research*, Volume 52, Issue 19, 28 October 2024, Page e92, https://doi.org/10.1093/nar/gkae789.
     </details>
