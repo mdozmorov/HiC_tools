@@ -1139,6 +1139,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 ## Visualization
 
+- 3D visualization grammar, [3d.gosling-lang.org](https://3d.gosling-lang.org/). Extended Gosling declarative visualization grammar. Review and description of 3D visualization methods. [Gosling.js](https://github.com/gosling-lang/gosling.js) - a declarative grammar for interactive (epi)genomics visualization on the Web. <details>
+  <summary>Paper</summary>
+  Kouřil, David, Trevor Manz, Sehi L’Yi, and Nils Gehlenborg. “Design Space and Declarative Grammar for 3D Genomic Data Visualization,” https://osf.io/dtr6u_v1
+</details>
+
 - <a name="hicrayon">[HiCrayon](https://github.com/JRowleyLab/HiCrayon)</a> - An R package to integrate/visualize 1D (bigWig, bedGraph) and 3D (Hi-C) maps. Coloring of interactions depending on the associated 1D signal, non-existing interactions are not colored. A/B compartment analysis reveals the potential additional state. Docker image, [web version](https://jrowleylab.com/HiCrayon) for visualizing ENCODE-hosted data. <details>
   <summary>Paper</summary>
   Ben Nolan, Hannah L. Harris, Achyuth Kalluchi, Timothy E. Reznicek, Christopher T. Cummings, and M. Jordan Rowley. “HiCrayon Reveals Distinct Layers of Multi-State 3D Chromatin Organization.” bioRxiv, January 1, 2024, 2024.02.11.579821. https://doi.org/10.1101/2024.02.11.579821.
