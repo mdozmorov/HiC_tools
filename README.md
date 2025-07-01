@@ -1276,6 +1276,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 ## De novo genome scaffolding
 
+- <a name="AutoHiC">[AutoHiC](https://github.com/Jwindler/AutoHiC)</a> - a deep learning tool that uses Hi-C data to support genome assembly. It can automatically correct errors during genome assembly and generate chromosome-level genome. <details>
+    <summary>Paper</summary>
+    Zijie Jiang, Zhixiang Peng, Zhaoyuan Wei, Jiahe Sun, Yongjiang Luo, Lingzi Bie, Guoqing Zhang, Yi Wang, A deep learning-based method enables the automatic and accurate assembly of chromosome-level genomes, *Nucleic Acids Research*, Volume 52, Issue 19, 28 October 2024, Page e92, https://doi.org/10.1093/nar/gkae789.
+</details>
+
 - Benchmarking of three genome assemblers from Hi-C data (3d-dna, SALSA2, YaHS) on a de novo assembly of Arabidopsis Thaliana. Oxford Nanopore read processing for making the draft assembly. Hi-C scaffolding, overview of each scaffolder, processing with [Arima pipeline](https://github.com/ArimaGenomics/mapping_pipeline), QUAST and BUSCO metrics for benchmarking. YaHS performs best, easiest to install and use. <details>
   <summary>Paper</summary>
   Obinu, Lia, Urmi Trivedi, and Andrea Porceddu. “Benchmarking of Hi-C Tools for Scaffolding de Novo Genome Assemblies.” Preprint. Genomics, May 18, 2023. https://doi.org/10.1101/2023.05.16.540917.
