@@ -1149,6 +1149,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 ## Visualization
 
+- [gghic](https://github.com/jasonwong-lab/gghic) - Hi-C data visualization, extends ggplot2 with technology-specific layers. Plot triangular heatmaps for genomic interactions, inter- and intrachromosoma, chromosome ideograms, gene/transcript tracks and tracks of other genomic data, e.g., ChIP-seq peaks, BigWig files, concatemers. Plot compartments, TADs, and loops. Support for multi-way contact plotting. Input - data.frame/tibble, HiCExperiment or GInteraction objects. R implementation. <details>
+  <summary>Paper</summary>
+  Jiang, Minghao, Duohui Jing, and Jason W. H. Wong. “Gghic: A Versatile R Package for Exploring and Visualizing 3D Genome Organization.” arXiv:2412.03005. Preprint, arXiv, December 4, 2024. https://doi.org/10.48550/arXiv.2412.03005.
+</details>
+
 - 3D visualization grammar, [3d.gosling-lang.org](https://3d.gosling-lang.org/). Extended Gosling declarative visualization grammar. Review and description of 3D visualization methods. [Gosling.js](https://github.com/gosling-lang/gosling.js) - a declarative grammar for interactive (epi)genomics visualization on the Web. <details>
   <summary>Paper</summary>
   Kouřil, David, Trevor Manz, Sehi L’Yi, and Nils Gehlenborg. “Design Space and Declarative Grammar for 3D Genomic Data Visualization,” https://osf.io/dtr6u_v1
