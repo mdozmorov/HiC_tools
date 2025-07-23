@@ -1011,6 +1011,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
   Lee, Dohoon. “Learning the Histone Codes with Large Genomic Windows and Three-Dimensional Chromatin Interactions Using Transformer.” Nature Communications, 2022. https://doi.org/10.1038/s41467-022-34152-5
 </details>
 
+- [ORCA](https://github.com/jzhoulab/orca) - 3D genome prediction from sequence, 256Mb max input. Hierarchical multi-resolution sequence encoder and a cascading multi-level decoder. Predicts structural variant effect, transcription factor motifs for cell type specific genome interactions. Predicts from 1 to 256Mb and nine different scales.  Trained on H1-ESC and HFF cells, leukemia. [Online version](https://orca.zhoulab.io/). <details>
+  <summary>Paper</summary>
+  Zhou, Jian. “Sequence-Based Modeling of Three-Dimensional Genome Architecture from Kilobase to Chromosome Scale.” Nature Genetics 54, no. 5 (2022): 725–34. https://doi.org/10.1038/s41588-022-01065-4.
+</details>
+
 - <a name="corigami">C. Origami</a> - a deep neural network (Sequence encoder+Feature encoder->transformer->decoder, Methods) predict cell type-specific Hi-C matrices using DNA sequence (one-hot encoding), CTCF binding (ChIP-seq), and chromatin accessibility (ATAC-seq) profiles (all critical for best performance). Chromosome-wide predictions by joining predictions across sliding windows (2Mb). Performance evaluation - correlation of insulation scores, over 0.95 Pearson. Outperforms [Akita](#akita). Enables prediction of the effect of genetic perturbations. <details>
     <summary>Paper</summary>
     Tan, Jimin, Javier Rodriguez-Hernaez, Theodore Sakellaropoulos, Francesco Boccalatte, Iannis Aifantis, Jane Skok, David Fenyo, Bo Xia, and Aristotelis Tsirigos. “Cell Type-Specific Prediction of 3D Chromatin Architecture.” Preprint. Genomics, March 7, 2022. https://doi.org/10.1101/2022.03.05.483136.
