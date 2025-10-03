@@ -658,6 +658,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
   Gunsalus, Laura M, Evonne McArthur, Ketrin Gjoni, Shuzhen Kuang, John A Capra, and Katherine S Pollard. “Comparing Chromatin Contact Maps at Scale: Methods and Insights,” April 04, 2023, https://www.biorxiv.org/content/10.1101/2023.04.04.535480v1
 </details>
 
+- [HiCDOC](https://bioconductor.org/packages/HiCDOC/) - A/B compartment detection and differential analysis from Hi-C data with replicates. Filtering (small chromosomes, sparse bins, replicates), Normalization (cyclic MD loess, Knight-Ruiz), Compartment detection (K-means clustering, k=2, A/B assignment using the Self-Interaction Ratio SIR, highest = A), Differential analysis, QC/Visualization. Outperforms HOMER, DARIC, dcHiC on experimental human/mouse data, and on simulated changes, dcHiC comes second. Bioconductor R package. <details>
+  <summary>Paper</summary>
+  Maigné, Elise. HiCDOC: Chromatin Compartment Prediction and Differential Analysis from Hi-C Data with Replicates. bioRxiv 2025.09.18.677058; doi: https://doi.org/10.1101/2025.09.18.677058
+</details>
+
 - [DiffHiChIP](https://github.com/ay-lab/DiffHiChIP) - differential chromatin interaction detection from HiChIP and similar 3C data. Uses DESeq2 and edgeR. Settings include test selection (GLM, quasi-likelihood F test, likelihood ration test), complete (A) or a subset (F) of contact map for background estimation. Additional methods include independent hypothesis weighting (IHW), distance stratification for modeling distance decay. Tested on five datasets, used matching Hi-C and other data, aggregate peak analysis. HiChIP contacts have much higher dispersion than RNA-seq and ChIP-seq. IHW correction of p-values captures significant long-distance loops (BH is conservative, distance correction alone performs worse), DESeq2 is affected by the number of replicates, edgeR with GLM performs best. <details>
   <summary>Paper</summary>
   Bhattacharyya, Sourya, Daniela Salgado Figueroa, Katia Georgopoulos, and Ferhat Ay. "DiffHiChIP: Identifying differential chromatin contacts from HiChIP data." bioRxiv (2025): 2025-01. https://doi.org/10.1101/2025.01.14.633096
