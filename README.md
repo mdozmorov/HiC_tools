@@ -658,6 +658,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
   Gunsalus, Laura M, Evonne McArthur, Ketrin Gjoni, Shuzhen Kuang, John A Capra, and Katherine S Pollard. “Comparing Chromatin Contact Maps at Scale: Methods and Insights,” April 04, 2023, https://www.biorxiv.org/content/10.1101/2023.04.04.535480v1
 </details>
 
+- [PB-DiffHiC](https://github.com/Tian-Dechao/PB-DiffHiC) - pseudobulk differential analysis of scRNA-seq data. 10kb resolution. Gaussian convolution to impute pseudobulk data, Poisson-based hypothesis testing considering scaling factors (calculated from short-range interactions). Benchmarked on mESCs, mouse neuron progenitor cells, other brain scHiC data, used pseudo-replicates (randomly split and pseudobulked scHi-C data). Outperforms FIND, Selfish, HiC-DC+. Mentions but not compared with multiHiCcompare and scHiCcompare. <details>
+  <summary>Paper</summary>
+  Zhou, Yan, Yaohua Hu, Liuting Tan, et al. “PB-DiffHiC: A Statistical Framework for Detecting Differential Chromatin Interactions from High Resolution Pseudo-Bulk Hi-C Data.” BMC Genomics 26, no. 1 (2025): 900. https://doi.org/10.1186/s12864-025-11987-y.
+</details>
+
 - [HiCDOC](https://bioconductor.org/packages/HiCDOC/) - A/B compartment detection and differential analysis from Hi-C data with replicates. Filtering (small chromosomes, sparse bins, replicates), Normalization (cyclic MD loess, Knight-Ruiz), Compartment detection (K-means clustering, k=2, A/B assignment using the Self-Interaction Ratio SIR, highest = A), Differential analysis, QC/Visualization. Outperforms HOMER, DARIC, dcHiC on experimental human/mouse data, and on simulated changes, dcHiC comes second. Bioconductor R package. <details>
   <summary>Paper</summary>
   Maigné, Elise. HiCDOC: Chromatin Compartment Prediction and Differential Analysis from Hi-C Data with Replicates. bioRxiv 2025.09.18.677058; doi: https://doi.org/10.1101/2025.09.18.677058
