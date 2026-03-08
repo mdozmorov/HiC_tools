@@ -1374,6 +1374,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 ## 3D modeling
 
+- [Uchimata](https://github.com/hms-dbmi/uchimata) - visualization of the 3D structure of the genome. Web and notebooks ([uchimata-py](https://github.com/hms-dbmi/uchimata-py)). Javascript library. Input XYZ coordinates, Apache tables. [Documentation, examples](https://hms-dbmi.github.io/uchimata/). <details>
+  <summary>Paper</summary>
+  Kouřil, David, Trevor Manz, Tereza Clarence, and Nils Gehlenborg. “Uchimata: A Toolkit for Visualization of 3D Genome Structures on the Web and in Computational Notebooks.” Bioinformatics 42, no. 2 (2026): btag035. https://doi.org/10.1093/bioinformatics/btag035.
+</details>
+
 - [OpenMiChroM](https://github.com/junioreif/OpenMiChroM) - OpenMiChroM is a Python library for performing chromatin dynamics simulations. See documentation here [here](https://open-michrom.readthedocs.io/). Primarily using the [OpenMM Python API](https://openmm.org) and the [MiChroM (Minimal Chromatin Model)](https://www.pnas.org/doi/full/10.1073/pnas.1613607113) energy function, it generates an ensemble of 3D chromosomal structures consistent with experimental Hi-C maps for Human and other [organisms](https://www.nature.com/articles/s41467-023-35909-2).  OpenMiChroM offers flexibility by supporting custom energy functions and optimization procedures like direct inversion, as exemplified in the [Woolly Mammoth genome modeling](https://www.biorxiv.org/content/10.1101/2023.06.30.547175v1.abstract). This makes it suitable for simulations of single or multiple chromosome chains using High-Performance Computing in different platforms (GPUs and CPUs).<details>
   <summary>Paper</summary>
   Oliveira Jr, A. B., Contessoto, V. G., Mello, M. F., & Onuchic, J. N. (2020). A scalable computational approach for simulating complexes of multiple chromosomes. Journal of Molecular Biology, 433(6), 166700. https://doi.org/10.1016/j.jmb.2020.10.034
