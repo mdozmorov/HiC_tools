@@ -29,7 +29,7 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
   - [TAD benchmarking](#tad-benchmarking)
   - [Architectural features](#architectural-features)
   - [Differential, timecourse TAD analysis](#differential-timecourse-tad-analysis)
-- [Prediction of 3D features](#prediction-of-3d-features)
+- [Machine, deep learning](#machine-deep-learning)
 - [SNP-oriented](#snp-oriented)
 - [CNV and Structural variant detection](#cnv-and-structural-variant-detection)
 - [Visualization](#visualization)
@@ -1019,7 +1019,12 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
     Zaborowski, Rafal, and Bartek Wilczynski. "DiffTAD: Detecting Differential Contact Frequency in Topologically Associating Domains Hi-C Experiments between Conditions"  https://doi.org/10.1101/093625 BioRxiv, January 1, 2016
 </details>
 
-## Prediction of 3D features
+## Machine, deep learning
+
+- [CDACHIE](https://github.com/maruyama-lab-design/CDACHIE) - annotating chromatin domains by clustering (k-means, k=6) chromatin interaction (Hi-C, graph, the LINE node embedding method (Large-scale information network embedding), 128-dimensional embeddings) and epigenomic data (16-dimensional embeddings). Bins of 100kb. Two encoders: structural and functional. 6 transformer blocks. contrastive learning - maximizing cosine similarity between same bin vectors and minimizing between different. Compared with HMM_combined, Segway GMM_GRB, and Rao 2014 subcompartments. GM12878 and K562. Detected domains (C1-C6) evaluated using variance explained gene expression, replication timing, CTCF, RNAPII. Projecting concatenated embeddings on 2D UMAP and coloring by histone modifications. <details>
+  <summary>Paper</summary>
+  Yoshinaga, Asato, and Osamu Maruyama. "CDACHIE: chromatin domain annotation by integrating chromatin interaction and epigenomic data with contrastive learning." Bioinformatics 41.9 (2025): https://doi.org/10.1093/bioinformatics/btaf464
+</details>
 
 - <a name="chromoformer">[Chromoformer](https://github.com/dohlee/chromoformer)</a> - gene expression prediction using histone code and 3D interactions using the transformer architecture to account for distant interactions. Binary and regression classification variants. Tested on 11 cell types with the same type of histone data. 4-fold cross-validation, AUROC, accuracy, precision. Outperforms AttentiveChrome, DeepChrome, HM-CRNN. <details>
   <summary>Paper</summary>
