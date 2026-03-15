@@ -1311,6 +1311,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 ## De novo genome scaffolding
 
+- Benchmark of five Hi-C scaffolders ([Lachesis](#lachesis), [HiRise](https://github.com/DovetailGenomics/HiRise_July2015_GR), [3D-DNA](#theaidenlab3ddna), [SALSA](https://github.com/marbl/SALSA), [ALLHiC](https://github.com/tanghaibao/allhic)). Accuracy measured by matching scaffolds with the assembly contigs. HiRise and Salsa working best on less fragmented assemblies, and HiRise, Lacheis, or AllHiC being better choices for more fragmented assemblies. All exceed 80% accuracy. Chromosome count did not improve performance. HiRise (slowest, developed by Dovetail Genomics) and Lachesis (failed with default settings, developed by Phase Genomics) - best performance. Both have installation issues. [Docker](https://hub.docker.com/u/aakashsur) images for individual scaffolders. <details>
+  <summary>Paper</summary>
+ Sur, A., Noble, W.S. & Myler, P.J. Benchmarking Hi-C scaffolders using reference genomes and de novo assemblies. Genome Biol (2026). https://doi.org/10.1186/s13059-026-03978-3
+</details>
+
 - <a name="AutoHiC">[AutoHiC](https://github.com/Jwindler/AutoHiC)</a> - a deep learning tool that uses Hi-C data to support genome assembly. It can automatically correct errors during genome assembly and generate chromosome-level genome. <details>
     <summary>Paper</summary>
     Zijie Jiang, Zhixiang Peng, Zhaoyuan Wei, Jiahe Sun, Yongjiang Luo, Lingzi Bie, Guoqing Zhang, Yi Wang, A deep learning-based method enables the automatic and accurate assembly of chromosome-level genomes, *Nucleic Acids Research*, Volume 52, Issue 19, 28 October 2024, Page e92, https://doi.org/10.1093/nar/gkae789.
@@ -1319,11 +1324,6 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 - Benchmarking of three genome assemblers from Hi-C data (3d-dna, SALSA2, YaHS) on a de novo assembly of Arabidopsis Thaliana. Oxford Nanopore read processing for making the draft assembly. Hi-C scaffolding, overview of each scaffolder, processing with [Arima pipeline](https://github.com/ArimaGenomics/mapping_pipeline), QUAST and BUSCO metrics for benchmarking. YaHS performs best, easiest to install and use. <details>
   <summary>Paper</summary>
   Obinu, Lia, Urmi Trivedi, and Andrea Porceddu. “Benchmarking of Hi-C Tools for Scaffolding de Novo Genome Assemblies.” Preprint. Genomics, May 18, 2023. https://doi.org/10.1101/2023.05.16.540917.
-</details>
-
-- Benchmark of five Hi-C scaffolders ([Lachesis](#lachesis), [HiRise](https://github.com/DovetailGenomics/HiRise_July2015_GR), [3D-DNA](#theaidenlab3ddna), [SALSA](https://github.com/marbl/SALSA), [ALLHiC](https://github.com/tanghaibao/allhic)). Accuracy measured by matching scaffolds with the assembly contigs. On average, HiRise and Lachesis performed the best, with HiRise and Salsa working best on less fragmented assemblies, and HiRise, Lacheis, or AllHiC being better choices for more fragmented assemblies. Details and problems with some software. [Docker images](https://hub.docker.com/u/aakashsur) for individual tools. <details>
-  <summary>Paper</summary>
-  Sur, Aakash, William Stafford Noble, and Peter J. Myler. "A benchmark of Hi-C scaffolders using reference genomes and de novo assemblies." bioRxiv (April 20, 2022). https://doi.org/10.1101/2022.04.20.488415
 </details>
 
 - <a name="HapHiC">[HapHiC](https://github.com/zengxiaofei/HapHiC)</a> - a reference-independent allele-aware Hi-C scaffolding tool. HapHiC exhibits superior performance in handling haplotype-resolved assemblies without the need for reference genomes. This scaffolding tool supports various ploidy levels and has been successfully validated across diverse taxa. This study also provides new insights into the challenges in allele-aware scaffolding, comparing it with other scaffolders such as [ALLHiC](https://github.com/tangerzhang/ALLHiC), [YaHS](https://github.com/c-zhou/yahs), [3D-DNA](https://github.com/aidenlab/3d-dna), [LACHESIS](https://github.com/shendurelab/LACHESIS), and [SALSA2](https://github.com/marbl/SALSA) through comprehensive analyses on various adverse factors. Conda-installable <details>
