@@ -769,6 +769,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 ## TAD callers
 
+- [BINDER](https://github.com/LiuYangyangSDU/BINDER) - hierarchical TAD caller, uses the Infomap community detection algorithm on submatrices (SCN-normalized), feature extraction and inputting them in a neural network (MLP) to learn the characteristics of TAD and non-TAD boundaries. Outperforms TopDom, MSTD, SBTD, SpectralTAD, OnTAD, InsulationScore, deDoc, CATAD, but SpectralTAD performs well. Robust to sparsity. Enrichment in POL2, H3K4me1, PML, CEBPB, YY1. Absence of CTCF near the boundary of partially overlapping TAD. <details>
+  <summary>Paper</summary>
+  Liu, Yangyang, Bingqiang Liu, and Juntao Liu. “BINDER Achieves Accurate Identification of Hierarchical TADs by Comprehensively Characterizing Consensus TAD Boundaries.” Genome Research 35, no. 5 (2025): 1194–208. https://doi.org/10.1101/gr.279647.124.
+</details>
+
 - [RobusTAD](https://github.com/zhyanlin/RobusTAD) - hierarchical TAD caller using reference data (177 datasets processed with distiller), based on RefHiC. Three steps: 1) low-accuracy TAD boundary calls on the study sample (max insulation score, left/right boundaries separately using distance-stratified rank-sum test); 2) Refinement of TAD boundary locations based on a reference panel (locally matched chromosome conformatio metric); 3) Pairing left and right boundaries into an optimal nested domain hierarchy (dynamic programming). Compared with 14 TAD callers (RobusTAD score, mean Obs/Exp interaction frequency, CTCF enrichment with 1 bin mismatch), performs well across cell types, robust to sequencing depth. The Measure of Concordance  to compare two sets of TAD predictions. UMAP clustering of TADs using binary vectors of epigenomic signals into 6 clusters, each associated with distiinct epi features. ZNF143, CTCF, YY1, SMC3, RAD21, TRIM22 highly enriched at boundaries in all clusters. [Data](https://zenodo.org/records/8306238). <details>
   <summary>Paper</summary>
   Zhang, Y., Dali, R. & Blanchette, M. RobusTAD: reference panel based annotation of nested topologically associating domains. Genome Biol 26, 129 (2025). https://doi.org/10.1186/s13059-025-03568-9
