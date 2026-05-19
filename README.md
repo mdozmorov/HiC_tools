@@ -1031,6 +1031,11 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 ## Machine, deep learning
 
+- [ContextTAD](https://github.com/ai4nucleome/ContextTAD) - left/right boundary detection from local Hi-C windows. SAM3 vision model and text encoder, input images enhanced with TAD O/E Feature Enhancement (Figure 1C). Two-part loss function (pair loss, count loss). Used RobusTAD annotations to train. Benchmarked against 15 TAD callers, the highest CTCF-supported TADs, good cross-cell-line performance. <details>
+  <summary>Paper</summary>
+  Long, Weicai, Yusen Hou, and Yanlin Zhang. ContextTAD: Context-Aware Boundary Learning for TAD Calling from Hi-C Contact Maps. bioRxiv 2026.05.08.723772; doi: https://doi.org/10.64898/2026.05.08.72377
+</details>
+
 - [EPInformer](https://github.com/pinellolab/EPInformer) - gene expression prediction from DNA sequences, epigenomics (e.g., H3K27ac and DNase), chromatin contacts (Hi-C), promoter-enhancer interactions. Four modules: a sequence encoder (2kb sequence around TSS), a feature fusion layer, a promoter-enhancer interaction encoder (within 100kb, transformer), a predictor module. 12-fold cross-validation on CAGE and RNA-seq gene expression prediction, predicting cell type-specific enhancer-gene interactions, motif discovery using TF_MoDISco-lite and Tangermeme. Benchmarked against previous models - sequence-based Enformer, Borzoi, models adding epigenomic data - CREaTor, Xpresso, models adding 3D chromatin interactions - Seq-GraphReg. LLMs - DNABERT-2, Nucleotide Transformer, HyenaDNA. <details>
   <summary>Paper</summary>
   Lin, Jiecong, Zhijian Li, Yajie Zhao, Ruibang Luo, and Luca Pinello. “EPInformer: Scalable and Integrative Prediction of Gene Expression from Promoter-Enhancer Sequences with Multimodal Epigenomic Profiles.” Nature Communications, ahead of print, March 14, 2026. https://doi.org/10.1038/s41467-026-70535-8.
