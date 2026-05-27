@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Hi-C Tools Interactive Dashboard"""
+"""HiCatalog — Interactive Hi-C Tools Explorer"""
 
 import html
 import re
@@ -37,7 +37,7 @@ LANGUAGES = [
 ]
 
 st.set_page_config(
-    page_title="Hi-C Tools Explorer",
+    page_title="HiCatalog",
     page_icon="🧬",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -248,9 +248,9 @@ def _card(tool: dict, color: str) -> None:
     if tool['citation']:
         cite_esc = html.escape(tool['citation'], quote=True)
         cite_btn = (
-            f'<button class="card-link copy" '
-            f'onclick="navigator.clipboard.writeText(\'{cite_esc.replace(chr(39), "&apos;")}\').'
-            f'then(()=>{{this.textContent=\'✓ Copied\';this.classList.add(\'done\');'
+            f'<button class="card-link copy" data-citation="{cite_esc}" '
+            f'onclick="navigator.clipboard.writeText(this.dataset.citation)'
+            f'.then(()=>{{this.textContent=\'✓ Copied\';this.classList.add(\'done\');'
             f'setTimeout(()=>{{this.textContent=\'Copy Citation\';'
             f'this.classList.remove(\'done\')}},2000)}})">Copy Citation</button>'
         )
@@ -267,8 +267,8 @@ def _card(tool: dict, color: str) -> None:
 def main():
     st.markdown("""
 <div class="hero">
-  <h1>🧬 Hi-C Tools Explorer</h1>
-  <p>Search and filter tools for Hi-C chromatin conformation capture data analysis</p>
+  <h1>🧬 HiCatalog</h1>
+  <p>The searchable encyclopedia of Hi-C data analysis tools</p>
 </div>""", unsafe_allow_html=True)
 
     readme_mtime = (Path(__file__).parent / "README.md").stat().st_mtime
