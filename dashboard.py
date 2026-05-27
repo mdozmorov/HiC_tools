@@ -1,66 +1,135 @@
 #!/usr/bin/env python3
-"""
-Hi-C Tools Interactive Dashboard
-A Streamlit-based interactive visualization for exploring Hi-C data analysis tools
-"""
+"""Hi-C Tools Interactive Dashboard"""
 
+import html
+import re
 import streamlit as st
 import pandas as pd
-import re
 from collections import defaultdict
 from pathlib import Path
 
-MAX_DESCRIPTION_LENGTH = 300
-MAX_KANBAN_CATEGORIES = 6
-MAX_TOOLS_PER_COLUMN = 10
+MAX_DESCRIPTION_LENGTH = 280
+
+CATEGORY_COLORS = [
+    "#2563eb", "#16a34a", "#9333ea", "#dc2626", "#0891b2",
+    "#d97706", "#db2777", "#059669", "#7c3aed", "#ea580c",
+    "#0284c7", "#65a30d", "#c026d3", "#e11d48", "#0d9488",
+]
+
+GITHUB_SVG = (
+    '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" '
+    'fill="currentColor" style="vertical-align:-2px;">'
+    '<path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577'
+    " 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7"
+    " 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236"
+    " 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332"
+    "-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0"
+    " 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405"
+    " 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84"
+    " 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81"
+    " 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795"
+    ' 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>'
+)
+
+LANGUAGES = [
+    "Python", "R", "Java", "C++", "Perl", "Julia",
+    "Matlab", "JavaScript", "Nextflow", "Snakemake", "Shell",
+]
 
 st.set_page_config(
     page_title="Hi-C Tools Explorer",
     page_icon="🧬",
     layout="wide",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="expanded",
 )
 
 st.markdown("""
 <style>
-    .tool-card {
-        background-color: #f0f2f6;
-        border-radius: 10px;
-        padding: 20px;
-        margin: 10px 0;
-        border-left: 5px solid #4CAF50;
-    }
-    .category-badge {
-        background-color: #4CAF50;
-        color: white;
-        padding: 5px 10px;
-        border-radius: 15px;
-        font-size: 12px;
-        margin-right: 5px;
-        display: inline-block;
-    }
-    .stat-box {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        color: white;
-        padding: 20px;
-        border-radius: 10px;
-        text-align: center;
-        margin: 10px;
-    }
-    .stat-number { font-size: 36px; font-weight: bold; }
-    .stat-label { font-size: 14px; opacity: 0.9; }
-    h1 { color: #2E86AB; }
-    h2 { color: #5C8AB8; }
+html, body, [class*="css"] { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+
+.hero {
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 60%, #0c4a6e 100%);
+    color: white;
+    padding: 2rem 2.5rem;
+    border-radius: 14px;
+    margin-bottom: 1.75rem;
+}
+.hero h1 { color: white; font-size: 1.9rem; font-weight: 700; margin: 0 0 0.4rem 0; }
+.hero p  { color: rgba(255,255,255,0.7); margin: 0; font-size: 0.9rem; }
+
+.stats-row { display: flex; gap: 1rem; margin-bottom: 1.5rem; }
+.stat-card {
+    flex: 1;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    text-align: center;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+.stat-card .num   { font-size: 1.85rem; font-weight: 700; color: #0f172a; }
+.stat-card .lbl   { font-size: 0.72rem; color: #94a3b8; text-transform: uppercase;
+                    letter-spacing: 0.06em; margin-top: 2px; }
+
+.tool-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid var(--ac, #2563eb);
+    border-radius: 10px;
+    padding: 1.1rem 1.4rem;
+    margin: 0.6rem 0;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+.tool-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.09); }
+
+.tool-name { font-size: 1rem; font-weight: 600; color: #0f172a; margin-bottom: 0.3rem; }
+.tool-desc { font-size: 0.85rem; color: #475569; line-height: 1.65; margin: 0.4rem 0 0.6rem; }
+
+.chips { margin-bottom: 0.5rem; }
+.chip {
+    display: inline-block;
+    padding: 2px 9px;
+    border-radius: 99px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    margin: 2px 3px 2px 0;
+}
+.chip-cat  { background: var(--ac-bg, #eff6ff); color: var(--ac, #2563eb); }
+.chip-lang { background: #f0fdf4; color: #15803d; }
+.chip-year { background: #fff7ed; color: #c2410c; }
+
+.card-links { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 0.55rem; }
+.card-link {
+    display: inline-flex; align-items: center; gap: 5px;
+    font-size: 0.78rem; font-weight: 500;
+    padding: 3px 10px; border-radius: 6px; text-decoration: none;
+    border: 1px solid #e2e8f0; background: #f8fafc; color: #334155;
+    cursor: pointer; font-family: inherit;
+}
+.card-link:hover { background: #f1f5f9; border-color: #cbd5e1; }
+.card-link.gh    { background: #f6f8fa; color: #24292f; border-color: #d0d7de; }
+.card-link.copy  { background: #fafafa; color: #6b7280; }
+.card-link.copy.done { color: #16a34a; border-color: #86efac; background: #f0fdf4; }
+
+div[data-testid="stSidebar"] { background: #f8fafc; }
+.block-container { padding-top: 1.25rem; }
+section[data-testid="stSidebar"] > div { padding-top: 1rem; }
 </style>
 """, unsafe_allow_html=True)
 
 
-@st.cache_data
-def parse_readme():
-    """Parse README.md and extract tool entries by section."""
-    tools = []
-    categories = defaultdict(list)
+def _extract_languages(text: str) -> list[str]:
+    tl = text.lower()
+    return [l for l in LANGUAGES if l.lower() in tl][:3]
 
+
+def _extract_year(text: str) -> int | None:
+    hits = re.findall(r'\b(20[0-9]{2}|199[0-9])\b', text)
+    return max(int(y) for y in hits) if hits else None
+
+
+@st.cache_data
+def parse_readme() -> tuple[list, dict]:
     readme_path = Path(__file__).parent / "README.md"
     try:
         content = readme_path.read_text(encoding="utf-8")
@@ -68,174 +137,243 @@ def parse_readme():
         st.error(f"Could not read README.md: {e}")
         return [], {}
 
+    tools: list[dict] = []
+    categories: dict = defaultdict(list)
     sections = re.split(r'\n## ', content)
     current_category = "General"
+
+    SKIP = {"Table of content", "How to View This README", "Interactive Dashboard"}
 
     for section in sections:
         lines = section.split('\n')
         if not lines:
             continue
-
-        category_match = re.match(r'^([^#\n]+)', lines[0])
-        if category_match:
-            current_category = category_match.group(1).strip()
-
-        skip = {"Table of content", "How to View This README",
-                "Interactive Dashboard"}
-        if current_category in skip:
+        m = re.match(r'^([^#\n]+)', lines[0])
+        if m:
+            current_category = m.group(1).strip()
+        if current_category in SKIP:
             continue
 
-        for line in lines:
-            tool_match = re.match(
-                r'^-\s*(?:<a name="([^"]+)">)?\[([^\]]+)\]\(([^)]+)\)', line
-            )
-            if not tool_match:
+        i = 0
+        while i < len(lines):
+            tm = re.match(r'^-\s*(?:<a name="([^"]+)">)?\[([^\]]+)\]\(([^)]+)\)',
+                          lines[i])
+            if not tm:
+                i += 1
                 continue
 
-            tool_id = tool_match.group(1) or ""
-            tool_name = tool_match.group(2)
-            tool_url = tool_match.group(3)
+            # Collect the full block for this entry
+            j = i + 1
+            while j < len(lines) and not re.match(r'^-\s*(?:<a name=|)\[', lines[j]):
+                j += 1
+            block = "\n".join(lines[i:j])
 
-            description = line[tool_match.end():].strip()
-            description = re.sub(r'<details>.*', '', description, flags=re.DOTALL)
-            if len(description) > MAX_DESCRIPTION_LENGTH:
-                description = description[:MAX_DESCRIPTION_LENGTH] + "..."
+            tool_id  = tm.group(1) or ""
+            tool_name = tm.group(2)
+            tool_url  = tm.group(3)
 
-            tool_info = {
-                'name': tool_name,
-                'url': tool_url,
-                'category': current_category,
-                'description': description,
-                'id': tool_id,
+            # Description: text on the opening line, before <details>
+            desc = lines[i][tm.end():].strip()
+            desc = re.sub(r'<details>.*', '', desc, flags=re.DOTALL).strip()
+            if len(desc) > MAX_DESCRIPTION_LENGTH:
+                desc = desc[:MAX_DESCRIPTION_LENGTH] + "…"
+
+            # Citation: first line after <summary>Paper</summary>
+            citation = ""
+            cm = re.search(r'<summary>Paper</summary>\s*\n(.*?)(?:\n|$)', block)
+            if cm:
+                citation = re.sub(r'<[^>]+>', '', cm.group(1)).strip()
+                if len(citation) > 220:
+                    citation = citation[:220] + "…"
+
+            # GitHub URL
+            github_url = ""
+            if "github.com" in tool_url:
+                github_url = tool_url
+            else:
+                gh = re.search(r'https://github\.com/[^\s\)\"\]]+', block)
+                if gh:
+                    github_url = gh.group(0).rstrip('.,;')
+
+            entry = {
+                'name':       tool_name,
+                'url':        tool_url,
+                'github_url': github_url,
+                'category':   current_category,
+                'description': desc,
+                'citation':   citation,
+                'year':       _extract_year(block),
+                'languages':  _extract_languages(block),
+                'id':         tool_id,
             }
-            tools.append(tool_info)
-            categories[current_category].append(tool_info)
+            tools.append(entry)
+            categories[current_category].append(entry)
+            i = j
 
     return tools, dict(categories)
 
 
-def display_tool_card(tool):
+def _color(category: str, all_cats: list[str]) -> str:
+    idx = sorted(all_cats).index(category) % len(CATEGORY_COLORS)
+    return CATEGORY_COLORS[idx]
+
+
+def _card(tool: dict, color: str) -> None:
+    name  = html.escape(tool['name'])
+    desc  = html.escape(tool['description'])
+    ac_bg = color + "18"   # ~10% opacity tint
+
+    # chips
+    cat_chip  = (f'<span class="chip chip-cat" style="--ac:{color};--ac-bg:{ac_bg};">'
+                 f'{html.escape(tool["category"])}</span>')
+    lang_chips = "".join(f'<span class="chip chip-lang">{l}</span>'
+                         for l in tool['languages'])
+    year_chip  = (f'<span class="chip chip-year">{tool["year"]}</span>'
+                  if tool['year'] else "")
+
+    # links
+    gh_btn = ""
+    if tool['github_url']:
+        gh_btn = (f'<a class="card-link gh" href="{html.escape(tool["github_url"])}" '
+                  f'target="_blank">{GITHUB_SVG}&nbsp;GitHub</a>')
+
+    proj_btn = ""
+    if tool['url'] and tool['url'] != tool['github_url']:
+        proj_btn = (f'<a class="card-link" href="{html.escape(tool["url"])}" '
+                    f'target="_blank">🔗 Project</a>')
+
+    cite_btn = ""
+    if tool['citation']:
+        cite_esc = html.escape(tool['citation'], quote=True)
+        cite_btn = (
+            f'<button class="card-link copy" '
+            f'onclick="navigator.clipboard.writeText(\'{cite_esc.replace(chr(39), "&apos;")}\').'
+            f'then(()=>{{this.textContent=\'✓ Copied\';this.classList.add(\'done\');'
+            f'setTimeout(()=>{{this.textContent=\'Copy Citation\';'
+            f'this.classList.remove(\'done\')}},2000)}})">Copy Citation</button>'
+        )
+
     st.markdown(f"""
-    <div class="tool-card">
-        <h3>🔧 {tool['name']}</h3>
-        <span class="category-badge">{tool['category']}</span>
-        <p>{tool['description']}</p>
-        <a href="{tool['url']}" target="_blank">🔗 Visit Project</a>
-    </div>
-    """, unsafe_allow_html=True)
+<div class="tool-card" style="--ac:{color};">
+  <div class="tool-name">{name}</div>
+  <div class="chips">{cat_chip}{lang_chips}{year_chip}</div>
+  <div class="tool-desc">{desc}</div>
+  <div class="card-links">{gh_btn}{proj_btn}{cite_btn}</div>
+</div>""", unsafe_allow_html=True)
 
 
 def main():
-    st.markdown("# 🧬 Hi-C Tools Explorer")
-
-    img_path = Path(__file__).parent / "img" / "3C_technologies.png"
-    if img_path.exists():
-        st.image(str(img_path), caption="3C Technologies Overview",
-                 use_container_width=True)
-
-    st.markdown("---")
+    st.markdown("""
+<div class="hero">
+  <h1>🧬 Hi-C Tools Explorer</h1>
+  <p>Search and filter tools for Hi-C chromatin conformation capture data analysis</p>
+</div>""", unsafe_allow_html=True)
 
     tools, categories = parse_readme()
-
     if not tools:
-        st.error("No tools found. Please check that README.md is present.")
+        st.error("README.md not found or no tools parsed.")
         return
 
-    st.sidebar.title("🔍 Filter & Search")
-    search_query = st.sidebar.text_input("Search tools", "",
-                                         placeholder="Type tool name or keyword...")
-    all_categories = ["All"] + sorted(categories.keys())
-    selected_category = st.sidebar.selectbox("Filter by Category", all_categories)
-    view_mode = st.sidebar.radio("View Mode", ["Cards", "Table", "Kanban Board"])
+    all_cats   = list(categories.keys())
+    color_map  = {c: _color(c, all_cats) for c in all_cats}
+
+    # ── Sidebar ──────────────────────────────────────────────────────────────
+    st.sidebar.markdown("## Filter")
+    search   = st.sidebar.text_input("Search", placeholder="Name, keyword, language…")
+    sel_cat  = st.sidebar.selectbox("Category", ["All"] + sorted(categories.keys()))
+
+    years = sorted({t['year'] for t in tools if t['year']})
+    if years:
+        yr = st.sidebar.slider("Publication year",
+                                min_value=years[0], max_value=years[-1],
+                                value=(years[0], years[-1]))
+    else:
+        yr = None
+
+    all_langs   = sorted({l for t in tools for l in t['languages']})
+    sel_langs   = st.sidebar.multiselect("Language", all_langs)
+
+    sort_by   = st.sidebar.selectbox(
+        "Sort by",
+        ["Newest first", "Oldest first", "A → Z"],
+    )
+    view_mode   = st.sidebar.radio("View", ["Cards", "Table"])
 
     st.sidebar.markdown("---")
-    st.sidebar.markdown("### 📊 Statistics")
-    st.sidebar.metric("Total Tools", len(tools))
-    st.sidebar.metric("Categories", len(categories))
+    st.sidebar.caption(f"{len(tools)} tools · {len(categories)} categories")
 
-    col1, col2, col3 = st.columns(3)
-    filtered_count = (len(categories.get(selected_category, []))
-                      if selected_category != "All" else len(tools))
-    for col, number, label in zip(
-        [col1, col2, col3],
-        [len(tools), len(categories), filtered_count],
+    # ── Filter ────────────────────────────────────────────────────────────────
+    q = search.lower()
+    filtered = [
+        t for t in tools
+        if (not q or q in t['name'].lower() or q in t['description'].lower()
+                   or q in t['category'].lower()
+                   or any(q in l.lower() for l in t['languages']))
+        and (sel_cat == "All" or t['category'] == sel_cat)
+        and (not yr or not t['year'] or yr[0] <= t['year'] <= yr[1])
+        and (not sel_langs or any(l in t['languages'] for l in sel_langs))
+    ]
+
+    if sort_by == "Newest first":
+        filtered.sort(key=lambda t: t['year'] or 0, reverse=True)
+    elif sort_by == "Oldest first":
+        filtered.sort(key=lambda t: t['year'] or 9999)
+    else:
+        filtered.sort(key=lambda t: t['name'].lower())
+
+    # ── Stats ─────────────────────────────────────────────────────────────────
+    c1, c2, c3 = st.columns(3)
+    for col, num, lbl in zip(
+        [c1, c2, c3],
+        [len(tools), len(categories), len(filtered)],
         ["Total Tools", "Categories", "Showing"],
     ):
         with col:
-            st.markdown(f"""
-            <div class="stat-box">
-                <div class="stat-number">{number}</div>
-                <div class="stat-label">{label}</div>
-            </div>
-            """, unsafe_allow_html=True)
+            st.markdown(
+                f'<div class="stat-card"><div class="num">{num}</div>'
+                f'<div class="lbl">{lbl}</div></div>',
+                unsafe_allow_html=True,
+            )
 
-    st.markdown("---")
+    st.markdown("<br>", unsafe_allow_html=True)
 
-    filtered_tools = [
-        t for t in tools
-        if (not search_query or
-            search_query.lower() in t['name'].lower() or
-            search_query.lower() in t['description'].lower() or
-            search_query.lower() in t['category'].lower())
-        and (selected_category == "All" or t['category'] == selected_category)
-    ]
-
-    if not filtered_tools:
-        st.warning("No tools match your search criteria.")
+    if not filtered:
+        st.info("No tools match the current filters.")
         return
 
-    st.markdown(f"## Showing {len(filtered_tools)} tool(s)")
-
+    # ── Results ───────────────────────────────────────────────────────────────
     if view_mode == "Cards":
-        for tool in filtered_tools:
-            display_tool_card(tool)
+        for t in filtered:
+            _card(t, color_map.get(t['category'], CATEGORY_COLORS[0]))
 
-    elif view_mode == "Table":
-        df = pd.DataFrame(filtered_tools)[['name', 'category', 'description', 'url']]
+    else:
+        df = pd.DataFrame([{
+            "Name":        t['name'],
+            "Category":    t['category'],
+            "Year":        t['year'] or "",
+            "Languages":   ", ".join(t['languages']),
+            "Description": t['description'],
+            "Link":        t['url'],
+            "GitHub":      t['github_url'],
+        } for t in filtered])
         st.dataframe(
             df,
             column_config={
-                "url": st.column_config.LinkColumn("Link"),
-                "name": "Tool Name",
-                "category": "Category",
-                "description": "Description",
+                "Link":   st.column_config.LinkColumn("Link"),
+                "GitHub": st.column_config.LinkColumn("GitHub"),
             },
             hide_index=True,
-            use_container_width=True,
+            width="stretch",
         )
 
-    elif view_mode == "Kanban Board":
-        kanban_cats = (
-            list(dict.fromkeys(t['category'] for t in filtered_tools))[:MAX_KANBAN_CATEGORIES]
-            if selected_category == "All"
-            else [selected_category]
-        )
-        cols = st.columns(len(kanban_cats))
-        for col, category in zip(cols, kanban_cats):
-            with col:
-                st.markdown(f"### {category}")
-                for tool in [t for t in filtered_tools
-                             if t['category'] == category][:MAX_TOOLS_PER_COLUMN]:
-                    desc = tool['description'][:100]
-                    if len(tool['description']) > 100:
-                        desc += "..."
-                    st.markdown(f"""
-                    <div style="background:#e3f2fd;padding:10px;margin:5px 0;
-                                border-radius:5px;border-left:3px solid #2196F3;">
-                        <strong>{tool['name']}</strong><br/>
-                        <small>{desc}</small><br/>
-                        <a href="{tool['url']}" target="_blank">🔗</a>
-                    </div>
-                    """, unsafe_allow_html=True)
-
-    st.markdown("---")
     st.markdown("""
-    <div style="text-align:center;color:#666;padding:20px;">
-        <p>💡 Use the sidebar to filter tools by category or search for specific functionality.</p>
-        <p>📚 Full list in <a href="https://github.com/mdozmorov/HiC_tools/blob/master/README.md" target="_blank">README.md</a>
-        · 🌟 <a href="https://github.com/mdozmorov/HiC_tools/blob/master/CONTRIBUTING.md" target="_blank">Contribute</a></p>
-    </div>
-    """, unsafe_allow_html=True)
+<div style="text-align:center;color:#94a3b8;padding:1.5rem 0 0.5rem;font-size:0.78rem;">
+  <a href="https://github.com/mdozmorov/HiC_tools" target="_blank"
+     style="color:#94a3b8;">mdozmorov/HiC_tools</a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/mdozmorov/HiC_tools/blob/master/CONTRIBUTING.md"
+     target="_blank" style="color:#94a3b8;">Contribute</a>
+</div>""", unsafe_allow_html=True)
 
 
 if __name__ == "__main__":
