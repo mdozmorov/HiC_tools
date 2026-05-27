@@ -8,7 +8,7 @@ import pandas as pd
 from collections import defaultdict
 from pathlib import Path
 
-MAX_DESCRIPTION_LENGTH = 280
+DESC_PREVIEW_CHARS = 280
 
 CATEGORY_COLORS = [
     "#2563eb", "#16a34a", "#9333ea", "#dc2626", "#0891b2",
@@ -109,6 +109,22 @@ html, body, [class*="css"] { font-family: -apple-system, BlinkMacSystemFont, "Se
     border-bottom-color: var(--ac);
 }
 
+/* Inline collapsible for long descriptions */
+.tool-desc details.desc-more { display: inline; }
+.tool-desc details.desc-more > summary {
+    display: inline;
+    list-style: none;
+    cursor: pointer;
+    color: var(--ac);
+    font-weight: 500;
+    font-size: 0.8rem;
+    margin-left: 3px;
+    user-select: none;
+}
+.tool-desc details.desc-more > summary::-webkit-details-marker { display: none; }
+.tool-desc details.desc-more > summary::before { content: "…show more"; }
+.tool-desc details.desc-more[open] > summary::before { content: " show less"; }
+
 .card-links { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 0.55rem; }
 .card-link {
     display: inline-flex; align-items: center; gap: 5px;
@@ -140,6 +156,17 @@ def _extract_doi(text: str) -> str:
     """Return the first DOI URL found, or empty string."""
     m = re.search(r'https?://(?:dx\.)?doi\.org/10\.\d{4,}/[^\s\)\"\]]+', text)
     return m.group(0).rstrip('.,;') if m else ""
+
+
+def _split_description(text: str, max_chars: int) -> tuple[str, str]:
+    """Split a description into (preview, rest) at a word boundary.
+    Returns (text, '') if text is short enough to show in full."""
+    if len(text) <= max_chars:
+        return text, ""
+    cut = text.rfind(' ', 0, max_chars)
+    if cut < int(max_chars * 0.7):
+        cut = max_chars
+    return text[:cut].rstrip(), text[cut:].lstrip()
 
 
 @st.cache_data
@@ -191,8 +218,6 @@ def parse_readme(_mtime: float) -> tuple[list, dict]:
             # Description: text on the opening line, before <details>
             desc = lines[i][tm.end():].strip()
             desc = re.sub(r'<details>.*', '', desc, flags=re.DOTALL).strip()
-            if len(desc) > MAX_DESCRIPTION_LENGTH:
-                desc = desc[:MAX_DESCRIPTION_LENGTH] + "…"
 
             # Citation: full contents of <details>…</details>, minus <summary>
             citation = ""
@@ -240,8 +265,18 @@ def _color(category: str, all_cats: list[str]) -> str:
 
 def _card(tool: dict, color: str) -> None:
     name  = html.escape(tool['name'])
-    desc  = html.escape(tool['description'])
     ac_bg = color + "18"   # ~10% opacity tint
+
+    # Description: preview + collapsible tail if long
+    preview, rest = _split_description(tool['description'], DESC_PREVIEW_CHARS)
+    if rest:
+        desc_html = (
+            f'{html.escape(preview)}'
+            f'<details class="desc-more"><summary></summary>'
+            f' {html.escape(rest)}</details>'
+        )
+    else:
+        desc_html = html.escape(preview)
 
     # chips
     cat_chip  = (f'<span class="chip chip-cat" style="--ac:{color};--ac-bg:{ac_bg};">'
@@ -273,7 +308,7 @@ def _card(tool: dict, color: str) -> None:
 <div class="tool-card" style="--ac:{color};">
   <div class="tool-name">{name_html}</div>
   <div class="chips">{cat_chip}{lang_chips}{year_chip}</div>
-  <div class="tool-desc">{desc}</div>
+  <div class="tool-desc">{desc_html}</div>
   <div class="card-links">{gh_btn}{proj_btn}</div>
 </div>""", unsafe_allow_html=True)
 
