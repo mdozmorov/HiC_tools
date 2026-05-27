@@ -9,16 +9,6 @@ Tools are added by publication date, newest on top. Unpublished tools are listed
 
 Live app can be accessed at: https://hicatalog.streamlit.app
 
-<details>
-<summary>Run locally</summary>
-
-```bash
-pip install -r requirements.txt
-streamlit run dashboard.py
-```
-
-</details>
-
 # Table of content
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
