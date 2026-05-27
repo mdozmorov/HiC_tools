@@ -129,7 +129,9 @@ def _extract_year(text: str) -> int | None:
 
 
 @st.cache_data
-def parse_readme() -> tuple[list, dict]:
+def parse_readme(_mtime: float) -> tuple[list, dict]:
+    """Parse README.md. `_mtime` is the file's modification time — passing it
+    as an argument makes the cache invalidate when README.md is edited."""
     readme_path = Path(__file__).parent / "README.md"
     try:
         content = readme_path.read_text(encoding="utf-8")
@@ -269,7 +271,8 @@ def main():
   <p>Search and filter tools for Hi-C chromatin conformation capture data analysis</p>
 </div>""", unsafe_allow_html=True)
 
-    tools, categories = parse_readme()
+    readme_mtime = (Path(__file__).parent / "README.md").stat().st_mtime
+    tools, categories = parse_readme(readme_mtime)
     if not tools:
         st.error("README.md not found or no tools parsed.")
         return
