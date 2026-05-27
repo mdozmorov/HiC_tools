@@ -108,8 +108,6 @@ html, body, [class*="css"] { font-family: -apple-system, BlinkMacSystemFont, "Se
 }
 .card-link:hover { background: #f1f5f9; border-color: #cbd5e1; }
 .card-link.gh    { background: #f6f8fa; color: #24292f; border-color: #d0d7de; }
-.card-link.copy  { background: #fafafa; color: #6b7280; }
-.card-link.copy.done { color: #16a34a; border-color: #86efac; background: #f0fdf4; }
 
 div[data-testid="stSidebar"] { background: #f8fafc; }
 .block-container { padding-top: 1.25rem; }
@@ -180,13 +178,16 @@ def parse_readme(_mtime: float) -> tuple[list, dict]:
             if len(desc) > MAX_DESCRIPTION_LENGTH:
                 desc = desc[:MAX_DESCRIPTION_LENGTH] + "…"
 
-            # Citation: first line after <summary>Paper</summary>
+            # Citation: full contents of <details>…</details>, minus <summary>
             citation = ""
-            cm = re.search(r'<summary>Paper</summary>\s*\n(.*?)(?:\n|$)', block)
-            if cm:
-                citation = re.sub(r'<[^>]+>', '', cm.group(1)).strip()
-                if len(citation) > 220:
-                    citation = citation[:220] + "…"
+            dm = re.search(r'<details>(.*?)</details>', block, re.DOTALL)
+            if dm:
+                inner = re.sub(r'<summary>.*?</summary>', '', dm.group(1),
+                               flags=re.DOTALL)
+                inner = re.sub(r'<[^>]+>', '', inner)
+                citation = ' '.join(inner.split()).strip()
+                if len(citation) > 600:
+                    citation = citation[:600] + "…"
 
             # GitHub URL
             github_url = ""
@@ -244,24 +245,17 @@ def _card(tool: dict, color: str) -> None:
         proj_btn = (f'<a class="card-link" href="{html.escape(tool["url"])}" '
                     f'target="_blank">🔗 Project</a>')
 
-    cite_btn = ""
-    if tool['citation']:
-        cite_esc = html.escape(tool['citation'], quote=True)
-        cite_btn = (
-            f'<button class="card-link copy" data-citation="{cite_esc}" '
-            f'onclick="navigator.clipboard.writeText(this.dataset.citation)'
-            f'.then(()=>{{this.textContent=\'✓ Copied\';this.classList.add(\'done\');'
-            f'setTimeout(()=>{{this.textContent=\'Copy Citation\';'
-            f'this.classList.remove(\'done\')}},2000)}})">Copy Citation</button>'
-        )
-
     st.markdown(f"""
 <div class="tool-card" style="--ac:{color};">
   <div class="tool-name">{name}</div>
   <div class="chips">{cat_chip}{lang_chips}{year_chip}</div>
   <div class="tool-desc">{desc}</div>
-  <div class="card-links">{gh_btn}{proj_btn}{cite_btn}</div>
+  <div class="card-links">{gh_btn}{proj_btn}</div>
 </div>""", unsafe_allow_html=True)
+
+    if tool['citation']:
+        with st.expander("📋 Citation"):
+            st.code(tool['citation'], language=None)
 
 
 def main():
