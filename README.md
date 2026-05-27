@@ -5,19 +5,19 @@
 
 Tools are added by publication date, newest on top. Unpublished tools are listed at the end of each section. See [Hi-C data notes](https://github.com/mdozmorov/HiC_data) and [single-cell Hi-C notes](https://github.com/mdozmorov/scHiC_notes) for more. Please, [contribute and get in touch](CONTRIBUTING.md)! See [MDnotes](https://github.com/mdozmorov/MDnotes) for other data science and genomics-related notes.
 
-## HiCatalog — Interactive Dashboard
+## Dashboard
 
-An interactive Streamlit dashboard lets you search and filter tools by category, and switch between card, table, and kanban views.
+Live app can be accessed at: https://hicatalog.streamlit.app
 
-> **Live app:** https://hicatalog.streamlit.app
+<details>
+<summary>Run locally</summary>
 
-**Run locally:**
 ```bash
 pip install -r requirements.txt
 streamlit run dashboard.py
-# or use the helper script:
-bash run_dashboard.sh
 ```
+
+</details>
 
 # Table of content
 
