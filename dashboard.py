@@ -180,12 +180,20 @@ def parse_readme(_mtime: float) -> tuple[list, dict]:
         st.error(f"Could not read README.md: {e}")
         return [], {}
 
+    # Strip the doctoc-generated TOC block — its list items look exactly
+    # like tool entries and would otherwise be parsed as empty-description tools.
+    content = re.sub(
+        r'<!-- START doctoc.*?<!-- END doctoc[^\n]*-->',
+        '', content, flags=re.DOTALL,
+    )
+
     tools: list[dict] = []
     categories: dict = defaultdict(list)
     sections = re.split(r'\n## ', content)
     current_category = "General"
 
-    SKIP = {"Table of content", "How to View This README", "Interactive Dashboard"}
+    SKIP = {"Table of content", "How to View This README", "Dashboard",
+            "Interactive Dashboard"}
 
     for section in sections:
         lines = section.split('\n')
@@ -215,9 +223,12 @@ def parse_readme(_mtime: float) -> tuple[list, dict]:
             tool_name = tm.group(2)
             tool_url  = tm.group(3)
 
-            # Description: text on the opening line, before <details>
-            desc = lines[i][tm.end():].strip()
-            desc = re.sub(r'<details>.*', '', desc, flags=re.DOTALL).strip()
+            # Description: text on the opening line, cleaned of HTML and
+            # the trailing <details> block and any leading separator dash.
+            desc = lines[i][tm.end():]
+            desc = re.sub(r'<details>.*', '', desc, flags=re.DOTALL)
+            desc = re.sub(r'<[^>]+>', '', desc)               # strip stray HTML
+            desc = re.sub(r'^\s*-\s*', '', desc).strip()      # strip leading "-"
 
             # Citation: full contents of <details>…</details>, minus <summary>
             citation = ""
