@@ -530,6 +530,11 @@ Live app can be accessed at: https://hicatalog.streamlit.app
   Liu, Li, Kaiyuan Han, Huimin Sun, Lu Han, Dong Gao, Qilemuge Xi, Lirong Zhang, and Hao Lin. “A Comprehensive Review of Bioinformatics Tools for Chromatin Loop Calling.” Briefings in Bioinformatics 24, no. 2 (March 19, 2023): bbad072. https://doi.org/10.1093/bib/bbad072.
 </details>
 
+- [UnionLoops](https://github.com/dekkerlab/unionloops-nf) - consensus chromatin loop calling, aggregates HiCCUPS calls from multiple samples. Additional two-step filtering of singletons. Applied to two time course data (Phanstiel lab generated, distiller-nf processed), improves positional precision, sensitivity, specificity. DESeq2 is overly conservative. Mariner R package has similar functionality but less sensitive. Nextflow pipeline. [Scripts for the paper](https://github.com/dekkerlab/unionloops_paper). <details>
+  <summary>Paper</summary>
+  Liu, Jiangyuan, Johan H. Gibcus, and Job Dekker. UnionLoops: A Workflow for Calling Chromatin Loops across Related Hi-C Datasets with Improved Specificity, Precision, and Sensitivity. n.d.
+</details>
+
 - [RefHiC](#refhic). <details>
   <summary>Paper</summary>
   Zhang, Y., Blanchette, M. Reference panel guided topological structure annotation of Hi-C data. Nat Commun 13, 7426 (2022). https://doi.org/10.1038/s41467-022-35231-3
