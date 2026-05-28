@@ -1203,6 +1203,11 @@ Live app can be accessed at: https://hicatalog.streamlit.app
 
 ## Visualization
 
+- [ARGV](https://argv.cs.mcgill.ca/) - augmented reality genome viewer, 3D, integration of 1D tracks. 343 precomputed models. Compared with the Nucleome Browser, WashU Epigenome Browser, CSynth, DeltaAR. Unity SDK implementation, runs on iOS, Android. <details>
+  <summary>Paper</summary>
+  Drogaris, Chrisostomos, Yanlin Zhang, Eric Zhang, et al. “ARGV: 3D Genome Structure Exploration Using Augmented Reality.” BMC Bioinformatics 25, no. 1 (2024): 277. https://doi.org/10.1186/s12859-024-05882-8.
+</details>
+
 - [gghic](https://github.com/jasonwong-lab/gghic) - Hi-C data visualization, extends ggplot2 with technology-specific layers. Plot triangular heatmaps for genomic interactions, inter- and intrachromosoma, chromosome ideograms, gene/transcript tracks and tracks of other genomic data, e.g., ChIP-seq peaks, BigWig files, concatemers. Plot compartments, TADs, and loops. Support for multi-way contact plotting. Input - data.frame/tibble, HiCExperiment or GInteraction objects. R implementation. <details>
   <summary>Paper</summary>
   Jiang, Minghao, Duohui Jing, and Jason W. H. Wong. “Gghic: A Versatile R Package for Exploring and Visualizing 3D Genome Organization.” arXiv:2412.03005. Preprint, arXiv, December 4, 2024. https://doi.org/10.48550/arXiv.2412.03005.
