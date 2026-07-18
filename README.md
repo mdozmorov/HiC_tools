@@ -1,4 +1,4 @@
-# Hi-C data analysis tools and papers 
+# Hi-C data analysis tools and papers
 
 ![MIT License](https://img.shields.io/badge/license-MIT-brightgreen.svg) 
 [![PR's Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com) 
@@ -933,6 +933,11 @@ Live app can be accessed at: https://hicatalog.streamlit.app
 - <a name="arrowhead">[Arrowhead](https://github.com/aidenlab/juicer/wiki/Arrowhead)</a> - contact domain (TAD) detection using Arrowhead transformation. Described in Section IV.a of the Extended Experimental Procedures of [Rao, Huntley et al. Cell 2014](https://www.cell.com/cms/10.1016/j.cell.2014.11.021/attachment/d3c6dcd8-c799-4f68-bbe4-201be54960b5/mmc1.pdf)
 
 ### TAD benchmarking
+
+- [TADShop](https://tadshop.unil.ch/) - benchmarking of [43 TAD callers](https://tadshop.unil.ch/callerlist), GM12878, 10kb-50kb resolution, HiTC::normICE() normalization. CTCF directionality, CTCF/RAD21/SMC3 epigenomic enrichments, concordance across resolution, sequencing depth. Top-scoring tools: Directionality Index (DI), arrowhead (L1), OnTAD (DL2), SpectralTAD, TopDom and MSTD. Web service to benchmark called TADs. [ConsensusTAD](https://tadshop.unil.ch/calling) - web service implementing consensus TAD calling method, .hic or .cool input, resolution, selection of TAD callers (arrowhead, TopDom, DI, MSTD, OnTAD, SpectralTAD), hg19/hg38 mm9/mm10 genome support, [R package](https://github.com/CSOgroup/consensusTADs). <details>
+  <summary>Paper</summary>
+  Li, Pumin, Andras Hatos, Miljan Petrovic, et al. “TADShop: Systematic Benchmarking and Identification of Topologically Associating Domains.” Nature Methods 23, no. 6 (2026): 1227–35. https://doi.org/10.1038/s41592-026-03100-2.
+</details>
 
 - Benchmarking of 13 hierarchical TAD callers, normalization, resolution, sequencing depth, epigenomic features, tool usability (Rao 2014 data [GSE63525](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE63525),5kb-100kb resolution). Grouped into five strategies (Table 1): linear score (Arrowhead, Armatus, CaTCH, HiTAD, matryoshka, OnTAD, Multi-CD), clustering (IC-Finder, TADpole, BHi-Cect, SpectralTAD), network features (HBM, spectral, 3DNetMod, GRiNCH), structural entropy (deDoc, SuperTAD), statistical model (TADtree, GMAP, PSYCHIC, HiKey). Similarity among TADs by average linkage, grouped into four clusters. Generally, TADs are smaller than 2Mb. Resolution affects TAD callers, SpectralTAD the most reproducible. Introduction about TADs subdivided in sub-TADs, enrichment of TAD boundaries in CTCF, cohesin, active epigenomic marks of strong enhancers, mediators, transcription factors, TSSs, TTSs. Evidence that TAD hierarchy is different from stacking Hi-C heatmaps of heterogeneous cells. An air conditioner model making highly interacting TAD boundaries affecting gene expression analogous to the concentration of AC affecting temperature. Differential interactions between GM12878 and K562, chr7, 86-88Mb region, DMTF1, ADAM22, other genes. [Supplementary figures and tables](https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-024-48593-7/MediaObjects/41467_2024_48593_MOESM1_ESM.pdf). [Supplementary Data 2](https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-024-48593-7/MediaObjects/41467_2024_48593_MOESM5_ESM.xlsx) - data references. <details>
   <summary>Paper</summary>
