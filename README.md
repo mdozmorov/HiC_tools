@@ -1045,6 +1045,11 @@ Live app can be accessed at: https://hicatalog.streamlit.app
 
 ## Machine, deep learning
 
+- [UniversalEPI](https://github.com/BoevaLab/UniversalEPI) - prediction of cell type specific and differential and allele-specific chromatin interactions from DNA sequence and chromatin accessibility. Up to 2Mb apart. Five CNN layers with max pooling, 20% dropouts, and four transformer blocks with sine-cosine positional encoding. Introduction about previous tools, sequence-based DeepC, Akita, Orca, epigenetic-based HiC-Reg, TargetFinder, Epiphany, TransEPI, hybrid DeepTACT, DeepPHiC, ChINN, the most current C.Origami, EPCOT, ChromaFold (using scATAC, CTCF, and sequence), outperform them. Methods: Trimmed mean of M-values normalization of ATAC-seq signal in common CTCF sites and deriving scaling factors. Uncertainty estimation, aleatoric uncertainty, which stems from inherent data variability, and epistemic uncertainty, which reflects model limitations. DeepLIFT attribution scores. Example of allele-specific change in interactions, DCLK3; LCOR and MECOM genes in differentiated and undifferentiated EAC cells. [Wiki](https://github.com/BoevaLab/UniversalEPI/wiki). <details>
+  <summary>Paper</summary>
+  Grover, Aayush, Lin Zhang, Till Muser, et al. “UniversalEPI: Robust Prediction of Cell Type-Specific and Differential Chromatin Interactions from DNA Sequence and Chromatin Accessibility.” Nucleic Acids Research 54, no. 10 (2026): gkag485. https://doi.org/10.1093/nar/gkag485.
+</details>
+
 - [ContextTAD](https://github.com/ai4nucleome/ContextTAD) - left/right boundary detection from local Hi-C windows. SAM3 vision model and text encoder, input images enhanced with TAD O/E Feature Enhancement (Figure 1C). Two-part loss function (pair loss, count loss). Used RobusTAD annotations to train. Benchmarked against 15 TAD callers, the highest CTCF-supported TADs, good cross-cell-line performance. <details>
   <summary>Paper</summary>
   Long, Weicai, Yusen Hou, and Yanlin Zhang. ContextTAD: Context-Aware Boundary Learning for TAD Calling from Hi-C Contact Maps. bioRxiv 2026.05.08.723772; doi: https://doi.org/10.64898/2026.05.08.72377
