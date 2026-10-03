@@ -1783,6 +1783,11 @@ Live app can be accessed at: https://hicatalog.streamlit.app
 
 #### Multi-omics
 
+- Spatial Hi-C of mouse brain at E13 stage (E14.5, E16.5 and E18.5), triplicates, 10um resolution, microfluidics, horizontal and vertical barcodes motivated by DBiT-seq. Differential A/B compartments Also, bulk Hi-C, public datasets, single-cell multiome. Tools: hicCorrelate, scHiCluster, Higashi, DiffDomain. Processed data on [Zenodo](https://zenodo.org/records/17961135). <details>
+  <summary>Paper</summary>
+  Chen, Zhenping, Maoni Guo, Lin Zhang, et al. “Spatially Resolved Chromatin Architectures in Mammalian Brain Tissues.” Nature Methods, ahead of print, September 25, 2026. https://doi.org/10.1038/s41592-026-03218-3.
+</details>
+
 - [Spatial-ATAC-Hi-C](https://github.com/wangjuan001/Spatial-ATAC-Hi-C) - spatially resolved 3D genome and chromatin accessibility, a microfluidic platform. Fresh frozen tissue, Tn5 transposition on tissue section, 50 horizontal and 50 vertical barcodes. Applied to mouse brain. Agrees with bulk ATAC-seq and bulk Hi-C. Gene-associating domain score (GAD) that measures the strength of chromatin contacts across gene body, gene activity score (GAS) which quantifies DNA fragments within gene bodies and promoters. Clustering by different modalities agree.  runHIC for data processing, ScHiCluster for imputation, A/B compartments with Higashi, CNV calling at 50kb using NeoLoopFinder. [AtlasXbrowser](https://github.com/atlasxomics/AtlasXbrowser). Data [GSE307620](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE307620). <details>
   <summary>Paper</summary>
   Wang, Ping, Juan Wang, Qixuan Wang, et al. “Spatial Chromatin Architecture and Accessibility Co-Profiling of Mammalian Tissues.” Nature Methods, ahead of print, September 1, 2026. https://doi.org/10.1038/s41592-026-03217-4.
