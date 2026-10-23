@@ -1438,7 +1438,7 @@ Live app can be accessed at: https://hicatalog.streamlit.app
     Burton, Joshua N., Andrew Adey, Rupali P. Patwardhan, Ruolan Qiu, Jacob O. Kitzman, and Jay Shendure. "Chromosome-Scale Scaffolding of de Novo Genome Assemblies Based on Chromatin Interactions"  https://doi.org/10.1038/nbt.2727 Nature Biotechnology 31, no. 12 (December 2013)
 </details>
 
-- <a name="yahs">[YaHS](https://github.com/c-zhou/yahs)</a> - yet another Hi-C scaffolding tool. It relies on a new algothrim for contig joining detection which considers the topological distribution of Hi-C signals aiming to distinguish real interaction signals from mapping nosies. Implemented in C, very fast.
+- <a name="yahs">[YaHS](https://github.com/c-zhou/yahs)</a> - yet another Hi-C scaffolding tool. It relies on a new algorithm for contig joining detection which considers the topological distribution of Hi-C signals aiming to distinguish real interaction signals from mapping nosies. Implemented in C, very fast.
 
 
 ## 3D modeling
