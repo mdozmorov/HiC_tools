@@ -194,6 +194,11 @@ Live app can be accessed at: https://hicatalog.streamlit.app
 
 ### Capture-C
 
+- [PostChicago](https://bioconductor.org/packages/PostChicago/) - QC, visualization, integration, meta-profiles. Input - chicagoData object. Proeprocessing - HiCUP to BAM, CHiCAGO bam2chicago.sh to chinput. [GitHub](https://github.com/FeldmannLabDKFZ/PostChicago). <details>
+  <summary>Paper</summary>
+  Capture-(Hi)C analysis with PostChicago: Integrative metaprofiling and quantitative comparison of chromatin interactions. Samuel Krall, Belinda Blum, Valeriia Smialkovska, Ezo Oezcan, Sarah-Victoria Dachtler, Gaia Oldfield, Angelika Feldmann. bioRxiv 2026.10.08.757510; doi: https://doi.org/10.64898/2026.10.08.757510
+</details>
+
 - Capture-C (low input, NuTi Capture-C, Tiled-C, Tri-C) wet and dry lab protocols. Introduction, comparison with other technologies, 4-base enzyme cutters. General purpose tools: [Peaky](https://cqgd.github.io/pky/), [PeakC](https://github.com/deWitLab/peakC); Capture-C compatible: [HiC-Pro](https://github.com/nservant/HiC-Pro), [capC-MAP](https://github.com/cbrackley/capC-MAP), [CCseqBasicS](https://github.com/Hughes-Genome-Group/CCseqBasicS); Tri-C compatible: [TriC](https://github.com/oudelaar/TriC); Tiled-C compatible: [TiledC](https://github.com/oudelaar/TiledC). Recommended analysis tool for NG-Capture-C, Tri-C and Tiled-C data: [CapCruncher](https://github.com/sims-lab/CapCruncher). Requires files: a BED file with coordinates of viewpoints, coordinates of enriched regions (for NuTi Capture-C and Tri-C), a configuration file specifying the genome, mapping parameters, experimental method and output directories. [Documentation](https://sims-lab.github.io/CapCruncher/). <details>
   <summary>Paper</summary>
   Downes, Damien J. “Capture-C: A Modular and Flexible Approach for High-Resolution Chromosome Conformation Capture.” NATURE PROTOCOLS 17 (2022). https://doi.org/10.1038/s41596-021-00651-w
